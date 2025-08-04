@@ -1,0 +1,25 @@
+﻿@model BC.ACCOUNTING.CORE.Entities.TDReport
+
+<h2>Delete Report</h2>
+<p>Are you sure you want to delete this report?</p>
+
+<dl>
+    <dt>DB Code</dt>
+    <dd>@Model.DbCode</dd>
+
+    <dt>Report Name</dt>
+    <dd>@Model.ReportName</dd>
+
+    <dt>Report Type</dt>
+    <dd>@Model.ReportType</dd>
+
+    <dt>Status</dt>
+    <dd>@Model.Status</dd>
+</dl>
+
+@using (Html.BeginForm("DeleteConfirmed", "TDReport", new { dbcode = Model.DbCode, reportName = Model.ReportName }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <button type="submit">Yes, Delete</button>
+    <a href="@Url.Action("ReportList", "TDReport")">Cancel</a>
+}

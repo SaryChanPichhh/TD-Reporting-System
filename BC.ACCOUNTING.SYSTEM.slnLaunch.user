@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "BC.ACCOUNTING",
+    "Projects": [
+      {
+        "Path": "BC.ACCOUNTING.API\\BC.ACCOUNTING.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BC.ACCOUNTING.REPORT\\BC.ACCOUNTING.REPORT.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

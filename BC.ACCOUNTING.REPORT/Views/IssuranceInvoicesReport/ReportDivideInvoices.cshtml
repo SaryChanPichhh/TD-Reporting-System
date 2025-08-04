@@ -1,0 +1,22 @@
+﻿
+@using BC.ACCOUNTING.REPORT.PredefinedReports
+@model ReportDividedInvoiceToDeliveries
+
+@{
+    var report = new ReportDividedInvoiceToDeliveries();
+    
+    var viewerRender = Html.DevExpress().WebDocumentViewer("ReportDivideInvoices")
+        .Height("1000px")
+        .Bind(Model); // ✅ Bind report model from Controller
+}
+<h1>Hello World</h1>
+@viewerRender.RenderHtml()
+
+@section Scripts {
+    <link href="~/css/dx-reporting-skeleton-screen.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
+    <script src="~/js/reporting.thirdparty.bundle.js"></script>
+    <script src="~/js/viewer.part.bundle.js"></script>
+
+    @viewerRender.RenderScripts()
+}

@@ -1,0 +1,27 @@
+﻿@model BC.ACCOUNTING.CORE.Entities.TDReport
+
+<h2>Create Report</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        @Html.LabelFor(m => m.DbCode)
+        @Html.TextBoxFor(m => m.DbCode)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ReportName)
+        @Html.TextBoxFor(m => m.ReportName)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ReportType)
+        @Html.TextBoxFor(m => m.ReportType)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Status)
+        @Html.TextBoxFor(m => m.Status)
+    </div>
+    
+    <button type="submit">Save</button>
+}

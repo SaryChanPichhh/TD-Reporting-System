@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <DefaultItemExcludes>Reports\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Reports\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Reports\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Reports\**" />
+    <None Remove="Data\**" />
+    <None Remove="Reports\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="PredefinedReports\XtraReport1.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="node_modules\**" />
+    <Content Remove="node_modules\**" />
+    <EmbeddedResource Remove="node_modules\**" />
+    <None Remove="node_modules\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PredefinedReports\*.repx" />
+  </ItemGroup>
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="LibraryManagerRestore" Condition="!Exists('node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec Command="npm install" />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.18" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="PredefinedReports\XtraReport1.cs">
+      <DependentUpon>XtraReport1.repx</DependentUpon>
+    </Compile>
+    <Compile Update="PredefinedReports\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.repx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+ 
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+		<None Update="appsettings.Development.json">
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="appsettings.Development.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Reports\AR.repx" />
+	  <None Include="Reports\EmployeeReport.repx" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BC.ACCOUNTING.APPLICATION\BC.ACCOUNTING.APPLICATION.csproj" />
+	  <ProjectReference Include="..\BC.ACCOUNTING.INFRASTRUCTURE\BC.ACCOUNTING.INFRASTRUCTURE.csproj" />
+	  <ProjectReference Include="..\BC.ACCOUNTING.LOGGING\BC.ACCOUNTING.LOGGING.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.IssuranceInvoicesReportController",
+    "Method": "ReportDivideInvoices",
+    "RelativePath": "api/issuranceinvoicesreport/reportdivideinvoices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[BC.ACCOUNTING.REPORT.DataSources.ReportDividedInvoiceToDeliveriesDataSource, BC.ACCOUNTING.REPORT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "deliveryName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.IssuranceInvoicesReportController",
+    "Method": "ReportDivideInvoicesView",
+    "RelativePath": "api/issuranceinvoicesreport/reportdivideinvoicesview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "Invoice",
+    "RelativePath": "api/reports/invoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[BC.ACCOUNTING.REPORT.DataSources.ItemSaleReportDataSource, BC.ACCOUNTING.REPORT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsApiController",
+    "Method": "PrepareInvoice",
+    "RelativePath": "api/reportsapi/prepareinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dataSource",
+        "Type": "BC.ACCOUNTING.REPORT.DataSources.ItemSaleReportDataSource",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportStorageApiController",
+    "Method": "DownloadReport",
+    "RelativePath": "api/reportstorageapi/download/{reportName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportStorageApiController",
+    "Method": "UploadReport",
+    "RelativePath": "api/reportstorageapi/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

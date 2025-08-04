@@ -1,0 +1,34 @@
+﻿@* @using DevExpress.XtraPrinting.Native
+@model IEnumerable<BC.ACCOUNTING.CORE.Entities.TDReport>
+
+<h2>Report List</h2>
+<a href="@Url.Action("Create")">Create New Report</a>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>DB Code</th>
+        <th>Report Code</th>
+        <th>Report Name</th>
+        <th>Path</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.DbCode</td>
+            <td>@item.ReportCode</td>
+            <td>@item.ReportName</td>
+            <td>@item.Path</td>
+            <td>@item.Status</td>
+            <td>
+                @ExportOptionsPropertiesNames.Html.ActionLink("Edit", "Edit", new { id = item.ReportCode }) |
+                @ExportOptionsPropertiesNames.Html.ActionLink("Delete", "Delete", new { id = item.ReportCode })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table> *@

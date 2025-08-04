@@ -1,0 +1,6 @@
+@BC.ACCOUNTING.API_HostAddress = http://localhost:5178
+
+GET {{BC.ACCOUNTING.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.2.7.0" Ref="1" ControlType="BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.RpSaleInvoice, BC.ACCOUNTING.REPORT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="Report" Margins="17, 20, 14.99999, 258.75" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="B16SI_SELECT_SALE_INVOICE" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="DevExpress.XtraReports.Web.ReportDesigner.DefaultDataSerializer" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" Name="DB_CODE" />
+    <Item2 Ref="6" Name="HREC_TYPE" Type="#Ref-5" />
+    <Item3 Ref="7" Name="DETAIL_ID1" Type="#Ref-5" />
+    <Item4 Ref="8" Name="DETAIL_ID2" Type="#Ref-5" />
+    <Item5 Ref="9" Name="STATUS" />
+    <Item6 Ref="10" Name="E_ITEM_SPECIAL" Type="#Ref-5" />
+    <Item7 Ref="11" Name="REF1" />
+    <Item8 Ref="12" Name="REF2" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="13" ControlType="TopMarginBand" Name="TopMargin" HeightF="14.99999" />
+    <Item2 Ref="14" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="24.19433">
+      <Controls>
+        <Item1 Ref="15" ControlType="XRLabel" Name="label1" Text="Sale Invoice" SizeF="134.5,24.19433" LocationFloat="303.125,0" StyleName="Title" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="16" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="25.29167">
+      <Controls>
+        <Item1 Ref="17" ControlType="XRTable" Name="xrTable1" SizeF="790,25" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="18" ControlType="XRTableRow" Name="xrTableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="19" ControlType="XRTableCell" Name="xrTableCell1" Weight="1" Multiline="true" Text="xrTableCell1" />
+                <Item2 Ref="20" ControlType="XRTableCell" Name="xrTableCell2" Weight="1" Multiline="true" Text="xrTableCell2" />
+                <Item3 Ref="21" ControlType="XRTableCell" Name="xrTableCell4" Weight="1" Multiline="true" Text="xrTableCell4" />
+                <Item4 Ref="22" ControlType="XRTableCell" Name="xrTableCell3" Weight="1" Multiline="true" Text="xrTableCell3" />
+                <Item5 Ref="23" ControlType="XRTableCell" Name="xrTableCell6" Weight="1" Multiline="true" Text="xrTableCell6" />
+                <Item6 Ref="24" ControlType="XRTableCell" Name="xrTableCell7" Weight="1" Multiline="true" Text="xrTableCell7" />
+                <Item7 Ref="25" ControlType="XRTableCell" Name="xrTableCell5" Weight="1" Multiline="true" Text="xrTableCell5" />
+                <Item8 Ref="26" ControlType="XRTableCell" Name="xrTableCell8" Weight="1" Multiline="true" Text="xrTableCell8" />
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="27" ControlType="DetailBand" Name="Detail" HeightF="205.20833">
+      <Controls>
+        <Item1 Ref="28" ControlType="XRTable" Name="xrTable2" SizeF="790,50" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="29" ControlType="XRTableRow" Name="xrTableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="30" ControlType="XRTableCell" Name="xrTableCell9" Weight="1" Multiline="true" Text="xrTableCell1">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[Customer Address1]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="32" ControlType="XRTableCell" Name="xrTableCell10" Weight="1" Multiline="true" Text="xrTableCell2">
+                  <ExpressionBindings>
+                    <Item1 Ref="33" EventName="BeforePrint" PropertyName="Text" Expression="[Customer Code]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="34" ControlType="XRTableCell" Name="xrTableCell11" Weight="1" Multiline="true" Text="xrTableCell4">
+                  <ExpressionBindings>
+                    <Item1 Ref="35" EventName="BeforePrint" PropertyName="Text" Expression="[Item Custom10 Khmer]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="36" ControlType="XRTableCell" Name="xrTableCell12" Weight="1" Multiline="true" Text="xrTableCell3">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[VALUE_1]" />
+                  </ExpressionBindings>
+                </Item4>
+                <Item5 Ref="38" ControlType="XRTableCell" Name="xrTableCell13" Weight="1" Multiline="true" Text="xrTableCell6">
+                  <ExpressionBindings>
+                    <Item1 Ref="39" EventName="BeforePrint" PropertyName="Text" Expression="[Item Cost]" />
+                  </ExpressionBindings>
+                </Item5>
+                <Item6 Ref="40" ControlType="XRTableCell" Name="xrTableCell14" Weight="1" Multiline="true" Text="xrTableCell7">
+                  <ExpressionBindings>
+                    <Item1 Ref="41" EventName="BeforePrint" PropertyName="Text" Expression="[VALUE_10]" />
+                  </ExpressionBindings>
+                </Item6>
+                <Item7 Ref="42" ControlType="XRTableCell" Name="xrTableCell15" Weight="1" Multiline="true" Text="xrTableCell5">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[VALUE_11]" />
+                  </ExpressionBindings>
+                </Item7>
+                <Item8 Ref="44" ControlType="XRTableCell" Name="xrTableCell16" Weight="1" Multiline="true" Text="xrTableCell8">
+                  <ExpressionBindings>
+                    <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="[VALUE_12]" />
+                  </ExpressionBindings>
+                </Item8>
+              </Cells>
+            </Item1>
+            <Item2 Ref="46" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="47" ControlType="XRTableCell" Name="tableCell1" Weight="1" Multiline="true" Text="tableCell1" />
+                <Item2 Ref="48" ControlType="XRTableCell" Name="tableCell2" Weight="1" Multiline="true" Text="tableCell2" />
+                <Item3 Ref="49" ControlType="XRTableCell" Name="tableCell3" Weight="1" Multiline="true" Text="tableCell3" />
+                <Item4 Ref="50" ControlType="XRTableCell" Name="tableCell4" Weight="1" Multiline="true" Text="tableCell4" />
+                <Item5 Ref="51" ControlType="XRTableCell" Name="tableCell5" Weight="1" Multiline="true" Text="tableCell5" />
+                <Item6 Ref="52" ControlType="XRTableCell" Name="tableCell6" Weight="1" Multiline="true" Text="tableCell6" />
+                <Item7 Ref="53" ControlType="XRTableCell" Name="tableCell7" Weight="1" Multiline="true" Text="tableCell7">
+                  <ExpressionBindings>
+                    <Item1 Ref="54" EventName="BeforePrint" PropertyName="Text" Expression="[Customer Address1]" />
+                  </ExpressionBindings>
+                </Item7>
+                <Item8 Ref="55" ControlType="XRTableCell" Name="tableCell8" Weight="1" Multiline="true" Text="tableCell8" />
+              </Cells>
+            </Item2>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="56" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="258.75">
+      <Controls>
+        <Item1 Ref="57" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="373.5,23" LocationFloat="0,0" StyleName="PageInfo" />
+        <Item2 Ref="58" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="373.5,23" LocationFloat="373.5,0" StyleName="PageInfo" />
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="59" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 14.25pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="60" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="61" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="62" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="63" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="64" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item2 Ref="65" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item3 Ref="66" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item4 Ref="67" LayoutItemType="Parameter" Parameter="#Ref-8" />
+    <Item5 Ref="68" LayoutItemType="Parameter" Parameter="#Ref-9" />
+    <Item6 Ref="69" LayoutItemType="Parameter" Parameter="#Ref-10" />
+    <Item7 Ref="70" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item8 Ref="71" LayoutItemType="Parameter" Parameter="#Ref-12" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9IkNvbm5lY3Rpb25TdHJpbmciIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iQjE2U0lfU0VMRUNUX1NBTEVfSU5WT0lDRSI+PFBhcmFtZXRlciBOYW1lPSJAREJfQ09ERSIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/REJfQ09ERSk8L1BhcmFtZXRlcj48UGFyYW1ldGVyIE5hbWU9IkBIUkVDX1RZUEUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkNoYXIpKD9IUkVDX1RZUEUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAREVUQUlMX0lEMSIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uQ2hhcikoP0RFVEFJTF9JRDEpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAREVUQUlMX0lEMiIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uQ2hhcikoP0RFVEFJTF9JRDIpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAU1RBVFVTIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9TVEFUVVMpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJARV9JVEVNX1NQRUNJQUwiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkNoYXIpKD9FX0lURU1fU1BFQ0lBTCk8L1BhcmFtZXRlcj48UGFyYW1ldGVyIE5hbWU9IkBSRUYxIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9SRUYxKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQFJFRjIiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLlN0cmluZykoP1JFRjIpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkIxNlNJX1NFTEVDVF9TQUxFX0lOVk9JQ0U8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iQjE2U0lfU0VMRUNUX1NBTEVfSU5WT0lDRSI+PEZpZWxkIE5hbWU9IkhlYWRlciBRdW90YXRpb24gTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEludm9pY2UgTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIFRyYW5zYWN0aW9uIERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgVHJhbnNhY3Rpb24gQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgU2FsZSBPcmRlciBObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgT3JkZXIgRGF0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgU2FsZSBPcmRlciBEYXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBEZWxpdmVyeSBEYXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBJbnZvaWNlIERhdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEludm9pY2UgUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgUmVmZXJlbmNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IFJlZmVyZW5jZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIFBheW1lbnQgRGF0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0wIERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNMCBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0wIENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTEgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0xIExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTEgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0yIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNMiBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTIgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNMiBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0zIERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNMyBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE0zIENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTQgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE00IExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTQgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE01IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNNSBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTUgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNNSBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTYiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE02IERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNNiBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE02IENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTcgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE03IExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTcgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE04IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNOCBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTggTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNOCBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIZWFkZXIgQW5hbHlzaXMgTTkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE05IERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBBbmFseXNpcyBNOSBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGVhZGVyIEFuYWx5c2lzIE05IENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBRdW90YXRpb24gRXhwaXJ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhlYWRlciBRdW90YXRpb24gUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVhZGVyIFF1b3RhdGlvbiBEYXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgVGVsZXBob25lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIEZheCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lciBFLW1haWwiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgV2ViIFBhZ2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQ29udGFjdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lciBDb21tZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIFNlY29uZCBDb21tZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RvbWVyIE5hbWUgS2htZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczEgS2htZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdG9tZXIgQWRkcmVzczIgS2htZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVsaXZlcnkgQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWxpdmVyeSBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3MxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3MyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3MzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3M0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3M1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IFRlbGVwaG9uZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWxpdmVyeSBGYXgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVsaXZlcnkgRS1tYWlsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IFdlYiBQYWdlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IENvbnRhY3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVsaXZlcnkgQ29tbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWxpdmVyeSBTZWNvbmQgQ29tbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWxpdmVyeSBOYW1lIEtobWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3MxIEtobWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlbGl2ZXJ5IEFkZHJlc3MyIEtobWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBMaW5lIE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBMaW5lIFR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBEdWUgRGF0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8xIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8yIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8zIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV80IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV81IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV82IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV83IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV84IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV85IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8xMCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkFMVUVfMTEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZBTFVFXzEyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8xMyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkFMVUVfMTQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZBTFVFXzE1IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8xNiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkFMVUVfMTciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZBTFVFXzE4IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWQUxVRV8xOSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkFMVUVfMjAiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBVbml0IG9mIFNhbGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIERlbGl2ZXJ5IERhdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFjY291bnQgQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IG9mIFNhbGUgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCBvZiBTYWxlIERlc2NyaXB0aW9uIEtobWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXQgb2YgU2FsZSBGYWN0b3IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTAgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE0wIExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTAgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE0xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNMSBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTEgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNMSBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE0yIERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNMiBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE0yIENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTMgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE0zIExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTMgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE00IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNCBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTQgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNCBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE01IERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNSBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE01IENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTYgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE02IExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTYgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE03IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNyBEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTcgTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNNyBDb21tZW50cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE04IERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNOCBMb29rdXAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE04IENvbW1lbnRzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBBbmFseXNpcyBNOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTkgRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIEFuYWx5c2lzIE05IExvb2t1cCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXRhaWwgQW5hbHlzaXMgTTkgQ29tbWVudHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGV0YWlsIExpbmUgUmVmZXJlbmNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBJdGVtIENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSBCYXIgQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIERlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gTG9va3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gUHJpY2UxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJdGVtIFByaWNlMiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSXRlbSBQcmljZTMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gUHJpY2U0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJdGVtIExldmVsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIENvc3QiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gVW5pdCBvZiBTdG9jayIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIFVuaXQgb2YgU2FsZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIFVuaXQgb2YgV2VpZ2h0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJdGVtIFVwZGF0ZSBQcmljZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIEN1c3RvbTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSBDdXN0b20yIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gQ3VzdG9tMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIEN1c3RvbTQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSBDdXN0b201IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gQ3VzdG9tNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIEN1c3RvbTciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSBDdXN0b204IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0gQ3VzdG9tOSBLaG1lciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIEN1c3RvbTEwIEtobWVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRldGFpbCBMb2NhdGlvbiBDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxvY2F0aW9uIE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24gQWRkcmVzczEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24gQWRkcmVzczIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24gQWRkZXNzMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMb2NhdGlvbiBUZWxlcGhvbmUxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxvY2F0aW9uIFRlbGVwaG9uZTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24gRmF4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxvY2F0aW9uIENvbW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTG9jYXRpb24gU2Vjb25kIENvbW1lbnQiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="5" Content="System.Char" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

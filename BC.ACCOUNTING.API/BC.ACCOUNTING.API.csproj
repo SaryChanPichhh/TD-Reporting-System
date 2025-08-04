@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.0.18" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BC.ACCOUNTING.APPLICATION\BC.ACCOUNTING.APPLICATION.csproj" />
+    <ProjectReference Include="..\BC.ACCOUNTING.INFRASTRUCTURE\BC.ACCOUNTING.INFRASTRUCTURE.csproj" />
+    <ProjectReference Include="..\BC.ACCOUNTING.LOGGING\BC.ACCOUNTING.LOGGING.csproj" />
+  </ItemGroup>
+
+</Project>
