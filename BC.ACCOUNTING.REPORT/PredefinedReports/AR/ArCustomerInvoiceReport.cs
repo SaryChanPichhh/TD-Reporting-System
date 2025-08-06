@@ -15,7 +15,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.AR
         }
         public ArCustomerInvoiceReport(ArCustomerInvoiceDto dto, string reportName)
         {
-            InitializeComponent();
+            this.LoadLayoutFromXml(reportName);
             this.objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
         }

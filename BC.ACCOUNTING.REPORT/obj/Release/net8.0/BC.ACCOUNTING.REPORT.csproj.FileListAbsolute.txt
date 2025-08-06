@@ -206,9 +206,13 @@ E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.AC
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.CustomerOrder.CustomerOrderReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order.POSSaleInvoiceReport.resources
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceNoProfitReport.resources
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceReport.resources
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingMovementReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Purchase_Order.POListing.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Purchase_Order.PurchaseOrderReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.ReportDividedInvoiceToDeliveries.resources
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Listing.SaleListingReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.DailySale80Report.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.DailySaleReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.HD7SaleInvoiceReport.resources
@@ -216,6 +220,7 @@ E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.AC
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.SA7SaleInvoiceReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.SaleInvoiceA5Report.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.SaleInvoiceReport.resources
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.SCSSaleInvoiceA5Report.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order.VN7SaleInvoiceReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SaleReport.resources
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.csproj.GenerateResource.cache
@@ -241,7 +246,3 @@ E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\refin
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.pdb
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.genruntimeconfig.cache
 E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\ref\BC.ACCOUNTING.REPORT.dll
-E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceReport.resources
-E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceNoProfitReport.resources
-E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingMovementReport.resources
-E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Listing.SaleListingReport.resources

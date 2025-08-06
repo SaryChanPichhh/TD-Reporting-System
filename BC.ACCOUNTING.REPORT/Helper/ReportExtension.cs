@@ -62,6 +62,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                         ItemDesc = isFirst ? item.ItemDesc : string.Empty,
                         Qty = uc.Qty,
                         Discount = item.Discount,
+                        DiscountPercent = item.DiscountPercent,
                         UnitStock = uc.UnitStock,
                         Price = uc.Price,
                         Total = uc.Total

@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
+using BC.ACCOUNTING.REPORT.DTO.POS;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
 {
@@ -11,6 +12,12 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
         public SaleListingMovementReport()
         {
             InitializeComponent();
+        }
+        public SaleListingMovementReport(POSSaleListingMovementDto dto, string reportName)
+        {
+            this.LoadLayoutFromXml(reportName);
+            objectDataSource1.DataSource = dto;
+            this.DataSource = objectDataSource1;
         }
     }
 }

@@ -341,6 +341,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "PosSaleListingMovement",
+    "RelativePath": "api/reports/pos/salelistingmovement",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSaleListingMovementDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "PurchaseOrder",
     "RelativePath": "api/reports/purchaseorder",
     "HttpMethod": "POST",
@@ -382,6 +398,22 @@
       {
         "Name": "dto",
         "Type": "BC.ACCOUNTING.REPORT.DTO.SaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleListingAsync",
+    "RelativePath": "api/reports/salelisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.SaleListing.SaleListingDto",
         "IsRequired": true
       }
     ],

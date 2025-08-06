@@ -140,6 +140,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ArCustomerDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ArCustomerSummaryDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ArCustomerSumInvDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ArCustomerInvoiceDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ArCustomerPaidDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosingInventoryDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosingsDto)); 
@@ -147,6 +148,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ImageItem)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleInvoiceDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingByInvoiceDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingMovementDto)); 
 
             DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
             app.UseDevExpressControls();

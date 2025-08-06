@@ -702,6 +702,36 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
-        
+
+        [HttpPost("pos/salelistingmovement")]
+        public IActionResult PosSaleListingMovement([FromBody] POSSaleListingMovementDto dto)
+        {
+            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
+            //if (user == null)
+            //    return Unauthorized();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new SaleListingMovementReport(dto,reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
     }
 }

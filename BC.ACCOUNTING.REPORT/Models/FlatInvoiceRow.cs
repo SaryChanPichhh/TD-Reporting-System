@@ -11,6 +11,7 @@ namespace BC.ACCOUNTING.REPORT.Models
         [Description("ឯកតាស្តុក")] public string UnitStock { get; set; }       // From UnitConvert
         [Description("តម្លៃ")] public decimal Price { get; set; }          // From UnitConvert
         [Description("បញ្ចុះតម្លៃ​​")] public decimal Discount { get; set; }          // From UnitConvert
+        [Description("បញ្ចុះតម្លៃ%​​")] public decimal DiscountPercent { get; set; }          // From UnitConvert
         [Description("សរុប")] public decimal Total { get; set; }
     }
 }

@@ -1,13 +1,6 @@
-﻿using BC.ACCOUNTING.REPORT.DataSources;
-using BC.ACCOUNTING.REPORT.DTO;
-using BC.ACCOUNTING.REPORT.DTO.POS;
+﻿using BC.ACCOUNTING.REPORT.DTO;
 using BC.ACCOUNTING.REPORT.Helper;
-using DevExpress.XtraReports.UI;
-using System;
-using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
-using System.IO;
 using System.Linq;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order
@@ -48,6 +41,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order
             DetailReport.DataSource = objectDataSource2;
         }
 
+      
         private void DetailReport_BeforePrint(object sender, CancelEventArgs e)
         {
             var data = GetCurrentRow() as SaleInvoiceDto;
