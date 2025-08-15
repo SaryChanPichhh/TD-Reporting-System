@@ -35,6 +35,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         public string? Field7 { get; set; }
         public string? Field8 { get; set; }
         public string? Field9 { get; set; }
+        public bool? IsVisible { get; set; }
         [DisplayName("ទិន្នន័យ")] public List<SaleInvoiceDataSource> Items { get; set; }
         [DisplayName("ទិន្នន័យរូបភាព")] public List<ImageItem> PictureItems { get; set; }
 

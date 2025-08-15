@@ -77,4 +77,8 @@
 	  <ProjectReference Include="..\BC.ACCOUNTING.LOGGING\BC.ACCOUNTING.LOGGING.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="PredefinedReports\Sale Order\QrCode\" />
+	</ItemGroup>
+
 </Project>

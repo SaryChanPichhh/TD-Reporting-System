@@ -139,13 +139,13 @@
             this.xrLabel1,
             this.xrPictureBox1,
             this.xrLabel5});
-            this.ReportHeader.HeightF = 169.7916F;
+            this.ReportHeader.HeightF = 148.3333F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel42
             // 
             this.xrLabel42.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(600.2206F, 74.12501F);
+            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(608.0115F, 74.12501F);
             this.xrLabel42.Multiline = true;
             this.xrLabel42.Name = "xrLabel42";
             this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -156,7 +156,7 @@
             // xrLabel43
             // 
             this.xrLabel43.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(600.2206F, 99.20836F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(608.0115F, 99.20836F);
             this.xrLabel43.Multiline = true;
             this.xrLabel43.Name = "xrLabel43";
             this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -169,41 +169,41 @@
             this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StartDate]")});
             this.xrLabel23.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(611.909F, 73.08334F);
+            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(619.7001F, 73.08334F);
             this.xrLabel23.Multiline = true;
             this.xrLabel23.Name = "xrLabel23";
             this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel23.SizeF = new System.Drawing.SizeF(174.9866F, 25.08334F);
+            this.xrLabel23.SizeF = new System.Drawing.SizeF(167.091F, 25.08334F);
             this.xrLabel23.StylePriority.UseFont = false;
             this.xrLabel23.StylePriority.UseTextAlignment = false;
             this.xrLabel23.Text = "xrLabel23";
             this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel23.TextFormatString = "{0:dd/MM/yyyy hh:mm:ss tt}";
+            this.xrLabel23.TextFormatString = "{0:dd/MM/yyyy}";
             // 
             // xrLabel22
             // 
             this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EndDate]")});
             this.xrLabel22.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(611.8832F, 98.16669F);
+            this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(619.6742F, 98.16667F);
             this.xrLabel22.Multiline = true;
             this.xrLabel22.Name = "xrLabel22";
             this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel22.SizeF = new System.Drawing.SizeF(175.0123F, 25.08329F);
+            this.xrLabel22.SizeF = new System.Drawing.SizeF(167.1168F, 25.08329F);
             this.xrLabel22.StylePriority.UseFont = false;
             this.xrLabel22.StylePriority.UseTextAlignment = false;
             this.xrLabel22.Text = "xrLabel22";
             this.xrLabel22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel22.TextFormatString = "{0:dd/MM/yyyy hh:mm:ss tt}";
+            this.xrLabel22.TextFormatString = "{0:dd/MM/yyyy}";
             // 
             // xrLabel4
             // 
             this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(497.0956F, 98.16663F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(517.9074F, 98.16662F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(103.125F, 25.08332F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(90.10419F, 25.08332F);
             this.xrLabel4.StylePriority.UseFont = false;
             this.xrLabel4.StylePriority.UseTextAlignment = false;
             this.xrLabel4.Text = "ថ្ងៃបញ្ចប់";
@@ -212,11 +212,11 @@
             // xrLabel3
             // 
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(497.0956F, 73.08334F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(517.9074F, 73.08334F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(103.125F, 25.08332F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(90.10419F, 25.08332F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
             this.xrLabel3.Text = "ថ្ងៃចាប់ផ្តើម";
@@ -225,11 +225,11 @@
             // xrLabel8
             // 
             this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(497.1006F, 123.25F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(517.9124F, 123.25F);
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(103.12F, 25.08332F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(90.09921F, 25.08331F);
             this.xrLabel8.StylePriority.UseFont = false;
             this.xrLabel8.StylePriority.UseTextAlignment = false;
             this.xrLabel8.Text = "ថ្ងៃបង្កើត";
@@ -240,11 +240,11 @@
             this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrintDate]")});
             this.xrLabel7.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(611.8832F, 123.2499F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(619.6742F, 123.2499F);
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel7.SizeF = new System.Drawing.SizeF(175.0123F, 25.08331F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(167.1168F, 25.08331F);
             this.xrLabel7.StylePriority.UseFont = false;
             this.xrLabel7.StylePriority.UseTextAlignment = false;
             this.xrLabel7.Text = "xrLabel22";
@@ -254,7 +254,7 @@
             // xrLabel6
             // 
             this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(600.2206F, 124.2917F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(608.0115F, 124.2917F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

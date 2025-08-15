@@ -4,6 +4,8 @@ namespace BC.ACCOUNTING.CORE.DTO.SaleListing
 {
     public class SaleListingDto :ReportDTO
     {
+        public string Database { get; set; }
+        public string CompanyName { get; set; }
         public string DbCode { get; set; }
         public string Code1 { get; set; }
         public string Code2 { get; set; }
@@ -13,8 +15,8 @@ namespace BC.ACCOUNTING.CORE.DTO.SaleListing
         public string Item2 { get; set; } = string.Empty;
         public string Ref1 { get; set; } = string.Empty;
         public string Ref2 { get; set; } = string.Empty;
-        public string Prd1 { get; set; }
-        public string Prd2 { get; set; }
+        public string Prd1 { get; set; } = string.Empty;
+        public string Prd2 { get; set; } = string.Empty;
         public string Date1 { get; set; } = string.Empty;
         public string Date2 { get; set; } = string.Empty;
         public char VoidStatus { get; set; } = 'N';

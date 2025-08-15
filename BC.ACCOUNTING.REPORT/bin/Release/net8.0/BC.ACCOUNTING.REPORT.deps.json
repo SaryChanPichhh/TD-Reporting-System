@@ -1469,18 +1469,12 @@
           "BC.ACCOUNTING.CORE": "1.0.0"
         },
         "runtime": {
-          "BC.ACCOUNTING.APPLICATION.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BC.ACCOUNTING.APPLICATION.dll": {}
         }
       },
       "BC.ACCOUNTING.CORE/1.0.0": {
         "runtime": {
-          "BC.ACCOUNTING.CORE.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BC.ACCOUNTING.CORE.dll": {}
         }
       },
       "BC.ACCOUNTING.INFRASTRUCTURE/1.0.0": {
@@ -1493,10 +1487,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0"
         },
         "runtime": {
-          "BC.ACCOUNTING.INFRASTRUCTURE.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BC.ACCOUNTING.INFRASTRUCTURE.dll": {}
         }
       },
       "BC.ACCOUNTING.LOGGING/1.0.0": {
@@ -1505,10 +1496,7 @@
           "log4net": "3.0.1"
         },
         "runtime": {
-          "BC.ACCOUNTING.LOGGING.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BC.ACCOUNTING.LOGGING.dll": {}
         }
       }
     }

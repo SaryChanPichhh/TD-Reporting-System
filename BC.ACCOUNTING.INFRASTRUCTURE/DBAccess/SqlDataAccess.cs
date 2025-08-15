@@ -33,9 +33,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 return await connection.ExecuteAsync(storedProcedure, parameters, commandType: commandType);
             }
 
-
         }
-
         public T ExecuteScalar<T, TU>(string query, TU parameters, CommandType commandType = CommandType.Text, string connectionString = "Default")
         {
             switch (connectionString)

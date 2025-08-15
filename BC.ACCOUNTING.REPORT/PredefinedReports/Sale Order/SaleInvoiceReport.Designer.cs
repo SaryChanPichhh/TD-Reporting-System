@@ -109,7 +109,21 @@
             this.xrLabel20 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.Market = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field3 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field4 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field5 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field6 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field7 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field8 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field9 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Store = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Note = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BookingPrice = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CustomerTel = new DevExpress.XtraReports.Parameters.Parameter();
             this.TransRef = new DevExpress.XtraReports.Parameters.Parameter();
             this.TransDate = new DevExpress.XtraReports.Parameters.Parameter();
             this.DueDate = new DevExpress.XtraReports.Parameters.Parameter();
@@ -119,16 +133,12 @@
             this.ExchangeRate = new DevExpress.XtraReports.Parameters.Parameter();
             this.TotalRiel = new DevExpress.XtraReports.Parameters.Parameter();
             this.InvoiceIssuer = new DevExpress.XtraReports.Parameters.Parameter();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.CustomerCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.CustomerName = new DevExpress.XtraReports.Parameters.Parameter();
             this.Address = new DevExpress.XtraReports.Parameters.Parameter();
             this.Phone = new DevExpress.XtraReports.Parameters.Parameter();
-            this.Note = new DevExpress.XtraReports.Parameters.Parameter();
             this.Seller = new DevExpress.XtraReports.Parameters.Parameter();
-            this.CustomerTel = new DevExpress.XtraReports.Parameters.Parameter();
-            this.Store = new DevExpress.XtraReports.Parameters.Parameter();
-            this.BookingPrice = new DevExpress.XtraReports.Parameters.Parameter();
+            this.IsVisible = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
@@ -333,7 +343,7 @@
             // xrLabel46
             // 
             this.xrLabel46.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(642.9173F, 107.625F);
+            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(644.0494F, 107.625F);
             this.xrLabel46.Multiline = true;
             this.xrLabel46.Name = "xrLabel46";
             this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -344,44 +354,44 @@
             // xrLabel47
             // 
             this.xrLabel47.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(502.2923F, 107.625F);
+            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(493.0078F, 107.625F);
             this.xrLabel47.Multiline = true;
             this.xrLabel47.Name = "xrLabel47";
             this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel47.SizeF = new System.Drawing.SizeF(140.625F, 22.99998F);
+            this.xrLabel47.SizeF = new System.Drawing.SizeF(151.0416F, 22.99998F);
             this.xrLabel47.StylePriority.UseFont = false;
             this.xrLabel47.Text = "តំណាងលក់";
             // 
             // xrLabel42
             // 
             this.xrLabel42.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(644.0751F, 33.41671F);
+            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(644.0751F, 32.37504F);
             this.xrLabel42.Multiline = true;
             this.xrLabel42.Name = "xrLabel42";
             this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel42.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel42.SizeF = new System.Drawing.SizeF(11.68842F, 25.08325F);
             this.xrLabel42.StylePriority.UseFont = false;
             this.xrLabel42.Text = "៖";
             // 
             // xrLabel43
             // 
             this.xrLabel43.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(644.0752F, 58.50005F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(644.0752F, 57.45838F);
             this.xrLabel43.Multiline = true;
             this.xrLabel43.Name = "xrLabel43";
             this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel43.SizeF = new System.Drawing.SizeF(11.6626F, 22.99998F);
+            this.xrLabel43.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
             this.xrLabel43.StylePriority.UseFont = false;
             this.xrLabel43.Text = "៖";
             // 
             // xrLabel44
             // 
             this.xrLabel44.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(644.0752F, 83.58337F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(644.0752F, 82.5417F);
             this.xrLabel44.Multiline = true;
             this.xrLabel44.Name = "xrLabel44";
             this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel44.SizeF = new System.Drawing.SizeF(11.6626F, 22.99998F);
+            this.xrLabel44.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
             this.xrLabel44.StylePriority.UseFont = false;
             this.xrLabel44.Text = "៖";
             // 
@@ -755,24 +765,24 @@
             // xrLabel5
             // 
             this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(502.2923F, 82.54171F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(493.0336F, 82.5417F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(140.625F, 25.08332F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(151.0416F, 25.08332F);
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "ថ្ងៃណាត់";
+            this.xrLabel5.Text = "ម៉ោងចេញវិក្កយប័ត្រ";
             this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel4
             // 
             this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(502.2923F, 57.45836F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(493.0336F, 57.45835F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(140.625F, 25.08332F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(151.0416F, 25.08332F);
             this.xrLabel4.StylePriority.UseFont = false;
             this.xrLabel4.StylePriority.UseTextAlignment = false;
             this.xrLabel4.Text = "ថ្ងៃចេញវិក្កយប័ត្រ";
@@ -781,11 +791,11 @@
             // xrLabel3
             // 
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(502.2923F, 32.37504F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(493.0336F, 32.37503F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(140.625F, 25.08332F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(151.0416F, 25.08332F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
             this.xrLabel3.Text = "លេខវិក្កយប័ត្រ";
@@ -1114,10 +1124,107 @@
             this.xrLabel17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrLabel17.TextFormatString = "{0:C3}";
             // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(global::BC.ACCOUNTING.REPORT.Models.FlatInvoiceRow);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // Market
             // 
             this.Market.Name = "Market";
             this.Market.Visible = false;
+            // 
+            // Field1
+            // 
+            this.Field1.AllowNull = true;
+            this.Field1.Description = "Parameter1";
+            this.Field1.Name = "Field1";
+            this.Field1.Visible = false;
+            // 
+            // Field2
+            // 
+            this.Field2.AllowNull = true;
+            this.Field2.Description = "Parameter1";
+            this.Field2.Name = "Field2";
+            this.Field2.Visible = false;
+            // 
+            // Field3
+            // 
+            this.Field3.AllowNull = true;
+            this.Field3.Description = "Parameter1";
+            this.Field3.Name = "Field3";
+            this.Field3.Visible = false;
+            // 
+            // Field4
+            // 
+            this.Field4.AllowNull = true;
+            this.Field4.Description = "Parameter1";
+            this.Field4.Name = "Field4";
+            this.Field4.Visible = false;
+            // 
+            // Field5
+            // 
+            this.Field5.AllowNull = true;
+            this.Field5.Description = "Parameter1";
+            this.Field5.Name = "Field5";
+            this.Field5.Visible = false;
+            // 
+            // Field6
+            // 
+            this.Field6.AllowNull = true;
+            this.Field6.Description = "Parameter1";
+            this.Field6.Name = "Field6";
+            this.Field6.Visible = false;
+            // 
+            // Field7
+            // 
+            this.Field7.AllowNull = true;
+            this.Field7.Description = "Parameter1";
+            this.Field7.Name = "Field7";
+            this.Field7.Visible = false;
+            // 
+            // Field8
+            // 
+            this.Field8.AllowNull = true;
+            this.Field8.Description = "Parameter1";
+            this.Field8.Name = "Field8";
+            this.Field8.Visible = false;
+            // 
+            // Field9
+            // 
+            this.Field9.AllowNull = true;
+            this.Field9.Description = "Parameter1";
+            this.Field9.Name = "Field9";
+            this.Field9.Visible = false;
+            // 
+            // Store
+            // 
+            this.Store.AllowNull = true;
+            this.Store.Description = "Parameter1";
+            this.Store.Name = "Store";
+            this.Store.Visible = false;
+            // 
+            // Note
+            // 
+            this.Note.Description = "Parameter1";
+            this.Note.Name = "Note";
+            this.Note.Type = typeof(int);
+            this.Note.ValueInfo = "0";
+            this.Note.Visible = false;
+            // 
+            // BookingPrice
+            // 
+            this.BookingPrice.AllowNull = true;
+            this.BookingPrice.Description = "Parameter1";
+            this.BookingPrice.Name = "BookingPrice";
+            this.BookingPrice.Visible = false;
+            // 
+            // CustomerTel
+            // 
+            this.CustomerTel.AllowNull = true;
+            this.CustomerTel.Description = "Parameter1";
+            this.CustomerTel.Name = "CustomerTel";
+            this.CustomerTel.Visible = false;
             // 
             // TransRef
             // 
@@ -1178,11 +1285,6 @@
             this.InvoiceIssuer.Name = "InvoiceIssuer";
             this.InvoiceIssuer.Visible = false;
             // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(global::BC.ACCOUNTING.REPORT.Models.FlatInvoiceRow);
-            this.objectDataSource1.Name = "objectDataSource1";
-            // 
             // CustomerCode
             // 
             this.CustomerCode.AllowNull = true;
@@ -1211,14 +1313,6 @@
             this.Phone.Name = "Phone";
             this.Phone.Visible = false;
             // 
-            // Note
-            // 
-            this.Note.Description = "Parameter1";
-            this.Note.Name = "Note";
-            this.Note.Type = typeof(int);
-            this.Note.ValueInfo = "0";
-            this.Note.Visible = false;
-            // 
             // Seller
             // 
             this.Seller.AllowNull = true;
@@ -1226,26 +1320,13 @@
             this.Seller.Name = "Seller";
             this.Seller.Visible = false;
             // 
-            // CustomerTel
+            // IsVisible
             // 
-            this.CustomerTel.AllowNull = true;
-            this.CustomerTel.Description = "Parameter1";
-            this.CustomerTel.Name = "CustomerTel";
-            this.CustomerTel.Visible = false;
-            // 
-            // Store
-            // 
-            this.Store.AllowNull = true;
-            this.Store.Description = "Parameter1";
-            this.Store.Name = "Store";
-            this.Store.Visible = false;
-            // 
-            // BookingPrice
-            // 
-            this.BookingPrice.AllowNull = true;
-            this.BookingPrice.Description = "Parameter1";
-            this.BookingPrice.Name = "BookingPrice";
-            this.BookingPrice.Visible = false;
+            this.IsVisible.Description = "Parameter1";
+            this.IsVisible.Name = "IsVisible";
+            this.IsVisible.Type = typeof(bool);
+            this.IsVisible.ValueInfo = "False";
+            this.IsVisible.Visible = false;
             // 
             // SaleInvoiceReport
             // 
@@ -1265,6 +1346,15 @@
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Market, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field1, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field2, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field3, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field4, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field5, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field6, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field7, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field8, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field9, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Store, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Note, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BookingPrice, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -1285,6 +1375,15 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Seller, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.Market,
+            this.Field1,
+            this.Field2,
+            this.Field3,
+            this.Field4,
+            this.Field5,
+            this.Field6,
+            this.Field7,
+            this.Field8,
+            this.Field9,
             this.Store,
             this.Note,
             this.BookingPrice,
@@ -1302,7 +1401,8 @@
             this.CustomerName,
             this.Address,
             this.Phone,
-            this.Seller});
+            this.Seller,
+            this.IsVisible});
             this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
@@ -1316,15 +1416,43 @@
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRTable xrTable1;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell8;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell9;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel45;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel46;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel47;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel42;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel43;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel44;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel41;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel40;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel39;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel38;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel37;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel36;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel35;
+        private DevExpress.XtraReports.UI.XRLine xrLine5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel34;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel32;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel31;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel30;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel29;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel28;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel27;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel26;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel23;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel22;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel21;
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell23;
@@ -1335,26 +1463,20 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell21;
-        private DevExpress.XtraReports.UI.XRTable xrTable1;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell8;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell9;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
-        private DevExpress.XtraReports.Parameters.Parameter Market;
-        private DevExpress.XtraReports.Parameters.Parameter TransRef;
-        private DevExpress.XtraReports.Parameters.Parameter TransDate;
-        private DevExpress.XtraReports.Parameters.Parameter DueDate;
-        private DevExpress.XtraReports.Parameters.Parameter Total;
-        private DevExpress.XtraReports.Parameters.Parameter Discount;
-        private DevExpress.XtraReports.Parameters.Parameter TotalDollar;
-        private DevExpress.XtraReports.Parameters.Parameter ExchangeRate;
-        private DevExpress.XtraReports.Parameters.Parameter TotalRiel;
-        private DevExpress.XtraReports.Parameters.Parameter InvoiceIssuer;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRPanel xrPanel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel24;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
         private DevExpress.XtraReports.UI.XRLine xrLine4;
         private DevExpress.XtraReports.UI.XRLine xrLine3;
         private DevExpress.XtraReports.UI.XRLine xrLine2;
@@ -1370,47 +1492,35 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel20;
         private DevExpress.XtraReports.UI.XRLabel xrLabel19;
         private DevExpress.XtraReports.UI.XRLabel xrLabel17;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel24;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
         private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel26;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel23;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel22;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel21;
+        private DevExpress.XtraReports.Parameters.Parameter Market;
+        private DevExpress.XtraReports.Parameters.Parameter Field1;
+        private DevExpress.XtraReports.Parameters.Parameter Field2;
+        private DevExpress.XtraReports.Parameters.Parameter Field3;
+        private DevExpress.XtraReports.Parameters.Parameter Field4;
+        private DevExpress.XtraReports.Parameters.Parameter Field5;
+        private DevExpress.XtraReports.Parameters.Parameter Field6;
+        private DevExpress.XtraReports.Parameters.Parameter Field7;
+        private DevExpress.XtraReports.Parameters.Parameter Field8;
+        private DevExpress.XtraReports.Parameters.Parameter Field9;
+        private DevExpress.XtraReports.Parameters.Parameter Store;
+        private DevExpress.XtraReports.Parameters.Parameter Note;
+        private DevExpress.XtraReports.Parameters.Parameter BookingPrice;
+        private DevExpress.XtraReports.Parameters.Parameter CustomerTel;
+        private DevExpress.XtraReports.Parameters.Parameter TransRef;
+        private DevExpress.XtraReports.Parameters.Parameter TransDate;
+        private DevExpress.XtraReports.Parameters.Parameter DueDate;
+        private DevExpress.XtraReports.Parameters.Parameter Total;
+        private DevExpress.XtraReports.Parameters.Parameter Discount;
+        private DevExpress.XtraReports.Parameters.Parameter TotalDollar;
+        private DevExpress.XtraReports.Parameters.Parameter ExchangeRate;
+        private DevExpress.XtraReports.Parameters.Parameter TotalRiel;
+        private DevExpress.XtraReports.Parameters.Parameter InvoiceIssuer;
         private DevExpress.XtraReports.Parameters.Parameter CustomerCode;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         private DevExpress.XtraReports.Parameters.Parameter CustomerName;
         private DevExpress.XtraReports.Parameters.Parameter Address;
         private DevExpress.XtraReports.Parameters.Parameter Phone;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel28;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel32;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel33;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel31;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel30;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel29;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel34;
-        private DevExpress.XtraReports.UI.XRLine xrLine5;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel39;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel38;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel37;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel36;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel35;
-        private DevExpress.XtraReports.Parameters.Parameter Note;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel41;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel40;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel42;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel43;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel44;
-        private DevExpress.XtraReports.UI.XRPanel xrPanel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel45;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel46;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel47;
         private DevExpress.XtraReports.Parameters.Parameter Seller;
-        private DevExpress.XtraReports.Parameters.Parameter CustomerTel;
-        private DevExpress.XtraReports.Parameters.Parameter Store;
-        private DevExpress.XtraReports.Parameters.Parameter BookingPrice;
+        private DevExpress.XtraReports.Parameters.Parameter IsVisible;
     }
 }

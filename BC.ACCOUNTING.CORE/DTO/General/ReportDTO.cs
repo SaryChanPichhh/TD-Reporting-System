@@ -18,7 +18,8 @@ namespace BC.ACCOUNTING.CORE.DTO.General
     {
         Pdf = 1,
         Excel = 2,
-        Word = 3
+        Word = 3,
+        Image = 4,
     }
 
 }

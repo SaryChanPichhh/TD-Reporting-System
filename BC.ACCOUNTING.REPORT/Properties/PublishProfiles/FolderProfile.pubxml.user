@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>D:\Project BC\BC.PAYMENT.SYSTEM\publish\Report</_PublishTargetUrl>
-    <History>True|2025-02-12T04:52:40.9768167Z||;True|2025-02-12T10:42:46.1351183+07:00||;False|2025-02-12T10:38:50.7508702+07:00||;False|2025-02-12T10:23:44.2844481+07:00||;</History>
+    <_PublishTargetUrl>D:\BC.ACCOUNTING.SYSTEM\Publish</_PublishTargetUrl>
+    <History>True|2025-08-13T07:06:19.6307442Z||;True|2025-08-13T14:05:54.9240076+07:00||;True|2025-08-13T11:47:06.0823548+07:00||;True|2025-08-13T11:46:16.6572384+07:00||;True|2025-08-13T11:45:08.0092265+07:00||;True|2025-02-12T11:52:40.9768167+07:00||;True|2025-02-12T10:42:46.1351183+07:00||;False|2025-02-12T10:38:50.7508702+07:00||;False|2025-02-12T10:23:44.2844481+07:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

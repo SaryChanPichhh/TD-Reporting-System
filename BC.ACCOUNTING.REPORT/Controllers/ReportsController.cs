@@ -34,6 +34,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Listing;
+using BC.ACCOUNTING.CORE.Entities;
+using DevExpress.Office.Utils;
 
 namespace BC.ACCOUNTING.REPORT.Controllers
 {
@@ -664,30 +666,30 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
-            //var model = new SaleListingDto
-            //{
-            //    Code1 = dto.Code1,
-            //    Code2 = dto.Code2,
-            //    DbCode = dto.DbCode,
-            //    Date1 = dto.Date1,
-            //    Date2 = dto.Date2,
-            //    DetailRecType = dto.DetailRecType,
-            //    HeaderRecType = dto.HeaderRecType,
-            //    Item1 = dto.Item1,
-            //    Item2 = dto.Item2,
-            //    Loc1 = dto.Loc1,
-            //    Loc2 = dto.Loc2,
-            //    Prd1 = dto.Prd1,
-            //    Prd2 = dto.Prd2,
-            //    Ref1 = dto.Ref1,
-            //    Ref2 = dto.Ref2,
-            //    VoidStatus = dto.VoidStatus,
-            //    AnalM3 = dto.AnalM3,
-            //    ReportName = null,
-            //};
             var execute = await _unitOfWork.SaleListingRepository.GetSaleListingsAsync(dto);
+            var report = new SaleListingDailyReport(execute, reportPath, dto);
+            //XtraReport report;
 
-            var report = new SaleListingReport(execute, reportPath, dto);
+            //switch (dto.ReportName)
+            //{
+            //    case "InvoiceRegisterReport":
+            //        report =new InvoiceRegisterReport(execute, dto, reportPath);
+            //        break;
+            //    case "SaleListingDailyReport":
+            //        report =new SaleListingDailyReport(execute, reportPath, dto);
+            //        break;
+            //    case "SaleListingProfitPerInvoiceReport":
+            //        report =new SaleListingProfitPerInvoiceReport(execute, reportPath, dto);
+            //        break;
+            //    case "SummarySaleListingReport":
+            //        report =new SummarySalelistingReport(execute, reportPath, dto);
+            //        break;
+            //    case "SaleListingReport":
+            //        report = new SaleListingReport(execute, reportPath, dto);
+            //        break;
+            //    default:
+            //        return NotFound("Report type not found.");
+            //} 
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);

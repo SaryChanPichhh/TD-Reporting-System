@@ -149,6 +149,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleInvoiceDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingByInvoiceDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingMovementDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(SaleListingModel)); 
 
             DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
             app.UseDevExpressControls();

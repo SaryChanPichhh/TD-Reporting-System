@@ -104,6 +104,16 @@
             this.Address = new DevExpress.XtraReports.Parameters.Parameter();
             this.Phone = new DevExpress.XtraReports.Parameters.Parameter();
             this.Seller = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field3 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field4 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field5 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field6 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field7 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field8 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Field9 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CustomerTel = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
@@ -883,6 +893,75 @@
             this.Seller.Name = "Seller";
             this.Seller.Visible = false;
             // 
+            // Field1
+            // 
+            this.Field1.AllowNull = true;
+            this.Field1.Description = "Parameter1";
+            this.Field1.Name = "Field1";
+            this.Field1.Visible = false;
+            // 
+            // Field2
+            // 
+            this.Field2.AllowNull = true;
+            this.Field2.Description = "Parameter2";
+            this.Field2.Name = "Field2";
+            this.Field2.Visible = false;
+            // 
+            // Field3
+            // 
+            this.Field3.AllowNull = true;
+            this.Field3.Description = "Parameter3";
+            this.Field3.Name = "Field3";
+            this.Field3.Visible = false;
+            // 
+            // Field4
+            // 
+            this.Field4.AllowNull = true;
+            this.Field4.Description = "Parameter4";
+            this.Field4.Name = "Field4";
+            this.Field4.Visible = false;
+            // 
+            // Field5
+            // 
+            this.Field5.AllowNull = true;
+            this.Field5.Description = "Parameter5";
+            this.Field5.Name = "Field5";
+            this.Field5.Visible = false;
+            // 
+            // Field6
+            // 
+            this.Field6.AllowNull = true;
+            this.Field6.Description = "Parameter6";
+            this.Field6.Name = "Field6";
+            this.Field6.Visible = false;
+            // 
+            // Field7
+            // 
+            this.Field7.AllowNull = true;
+            this.Field7.Description = "Parameter7";
+            this.Field7.Name = "Field7";
+            this.Field7.Visible = false;
+            // 
+            // Field8
+            // 
+            this.Field8.AllowNull = true;
+            this.Field8.Description = "Parameter8";
+            this.Field8.Name = "Field8";
+            this.Field8.Visible = false;
+            // 
+            // Field9
+            // 
+            this.Field9.AllowNull = true;
+            this.Field9.Description = "Parameter9";
+            this.Field9.Name = "Field9";
+            this.Field9.Visible = false;
+            // 
+            // CustomerTel
+            // 
+            this.CustomerTel.AllowNull = true;
+            this.CustomerTel.Description = "Parameter10";
+            this.CustomerTel.Name = "CustomerTel";
+            // 
             // DeliveryNoteReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -903,6 +982,16 @@
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Market, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Note, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field1, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field2, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field3, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field4, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field5, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field6, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field7, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field8, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Field9, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CustomerTel, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.TransRef, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.TransDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DueDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -920,6 +1009,16 @@
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.Market,
             this.Note,
+            this.Field1,
+            this.Field2,
+            this.Field3,
+            this.Field4,
+            this.Field5,
+            this.Field6,
+            this.Field7,
+            this.Field8,
+            this.Field9,
+            this.CustomerTel,
             this.TransRef,
             this.TransDate,
             this.DueDate,
@@ -1018,5 +1117,15 @@
         private DevExpress.XtraReports.Parameters.Parameter Address;
         private DevExpress.XtraReports.Parameters.Parameter Phone;
         private DevExpress.XtraReports.Parameters.Parameter Seller;
+        private DevExpress.XtraReports.Parameters.Parameter Field1;
+        private DevExpress.XtraReports.Parameters.Parameter Field2;
+        private DevExpress.XtraReports.Parameters.Parameter Field3;
+        private DevExpress.XtraReports.Parameters.Parameter Field4;
+        private DevExpress.XtraReports.Parameters.Parameter Field5;
+        private DevExpress.XtraReports.Parameters.Parameter Field6;
+        private DevExpress.XtraReports.Parameters.Parameter Field7;
+        private DevExpress.XtraReports.Parameters.Parameter Field8;
+        private DevExpress.XtraReports.Parameters.Parameter Field9;
+        private DevExpress.XtraReports.Parameters.Parameter CustomerTel;
     }
 }

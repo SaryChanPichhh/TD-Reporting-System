@@ -23,6 +23,9 @@ public class ReportExportService
             case Export.Word:
                 report.ExportToDocx(stream);
                 break;
+            case Export.Image:
+                report.ExportToImage(stream);
+                break;
             default:
                 throw new InvalidOperationException("Unsupported export format.");
         }
@@ -37,7 +40,7 @@ public class ReportExportService
             Export.Pdf => ("application/pdf", "pdf"),
             Export.Excel => ("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "xlsx"),
             Export.Word => ("application/vnd.openxmlformats-officedocument.wordprocessingml.document", "docx"),
-            
+            Export.Image => ("image/png", "png"),
             _ => ("application/octet-stream", "bin")
         };
     }
@@ -57,6 +60,9 @@ public class ReportExportService
             case BC.ACCOUNTING.CORE.DTO.General.Export.Word:
                 report.ExportToDocx(stream);
                 break;
+            case BC.ACCOUNTING.CORE.DTO.General.Export.Image:
+                report.ExportToImage(stream);
+                break;
             default:
                 throw new InvalidOperationException("Unsupported export format.");
         }
@@ -71,7 +77,7 @@ public class ReportExportService
             BC.ACCOUNTING.CORE.DTO.General.Export.Pdf => ("application/pdf", "pdf"),
             BC.ACCOUNTING.CORE.DTO.General.Export.Excel => ("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "xlsx"),
             BC.ACCOUNTING.CORE.DTO.General.Export.Word => ("application/vnd.openxmlformats-officedocument.wordprocessingml.document", "docx"),
-
+            BC.ACCOUNTING.CORE.DTO.General.Export.Image => ("image/png", "png"),
             _ => ("application/octet-stream", "bin")
         };
     }

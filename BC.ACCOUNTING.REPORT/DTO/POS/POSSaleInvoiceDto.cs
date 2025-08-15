@@ -10,7 +10,7 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
         public string ShopImage { get; set; }
         public string CustomerName { get; set; }
         public string TransRef { get; set; }
-        public DateTime TransDate { get; set; }
+        public string TransDate { get; set; }
         public string SubTotal { get; set; }
         public string DiscountInvoice { get; set; }
         public string TransValue { get; set; }

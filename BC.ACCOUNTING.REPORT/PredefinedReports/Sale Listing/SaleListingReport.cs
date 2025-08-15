@@ -14,11 +14,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Listing
         public SaleListingReport(List<SaleListingModel> ls, string reportName, SaleListingDto dto)
         {
             LoadLayoutFromXml(reportName);
-            ls.ForEach(x =>
-            {
-                x.HeaderTransactionDate = Convert.ToDateTime(x.HeaderTransactionDate).ToString("dd/MM/yyyy");
-            });
-           // objectDataSource1.DataSource = ls;
+            
+            objectDataSource1.DataSource = ls;
             prm_EndDate.Value = dto.Date2 is null or ""?dto.Prd2:dto.Date2;
             prm_StartDate.Value = dto.Date1 is null or ""?dto.Prd1:dto.Date1;
         }
