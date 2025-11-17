@@ -4,6 +4,5 @@
     {
         public string PaymentType { get; set; }
         public string TotalRecieved { get; set; }
-       
     }
 }

@@ -26,7 +26,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
             this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint;
             this.xrLabel15.BeforePrint += xrLabel15_BeforePrint;
             this.xrLabel16.BeforePrint += xrLabel16_BeforePrint;
-            //InitializeComponent();
             objectDataSource1.DataSource = inventoryDto;
             this.DataSource = objectDataSource1;
             Payments = inventoryDto.Payments;

@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
@@ -17,6 +18,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
         }
         public SaleListingByInvoiceNoProfitReport(POSSaleListingByInvoiceDto dto, string reportName)
         {
+            
             this.LoadLayoutFromXml(reportName);
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;

@@ -1,8 +1,5 @@
 using BC.ACCOUNTING.REPORT.DataSources;
 using BC.ACCOUNTING.REPORT.PredefinedReports;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order;
 using DevExpress.AspNetCore.Reporting.WebDocumentViewer;
 using DevExpress.DataAccess.ObjectBinding;
 using DevExpress.XtraReports.UI;
@@ -10,6 +7,10 @@ using DevExpress.XtraReports.Web.WebDocumentViewer;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
 
 namespace BC.ACCOUNTING.REPORT.Services
 {

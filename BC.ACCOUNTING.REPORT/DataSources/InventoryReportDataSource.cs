@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 
 namespace BC.ACCOUNTING.REPORT.DataSources
 {
@@ -14,6 +16,14 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("លក់")] public int ON_ORDER { get; set; }
         [DisplayName("ក្នុងស្តុក")] public int TOTAL { get; set; }
         [DisplayName("រូបទំនិញ")] public string ITEM_IMAGE { get; set; }
-        [DisplayName("ទិន្នន័យខ្នាតទំនិញ")] public List<UnitConversion> UNIT_CONV { get; set; }
+        [AllowNull] public List<UnitConversion>? UNIT_CONV { get; set; }
+        [AllowNull]
+        public string? FIELD_1 { get; set; } = string.Empty;
+        [AllowNull]
+        public string? FIELD_2 { get; set; } = string.Empty;
+        [AllowNull]
+        public string? FIELD_3 { get; set; } = string.Empty;
+        [AllowNull]
+        public string? FIELD_4 { get; set; }
     }
 }

@@ -13,7 +13,6 @@ namespace BC.ACCOUNTING.CORE.DTO.General
         [Browsable(false)] public Export? ExportFormat { get; set; } = null; // null = View, otherwise Export
         [Browsable(false)] public string Connection { get; set; } = "Default";
     }
-
     public enum Export
     {
         Pdf = 1,

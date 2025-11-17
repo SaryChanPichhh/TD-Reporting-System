@@ -13,6 +13,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("ទឹកប្រាក់")] public decimal TransValue { get; set; }
         [DisplayName("ចំនួនទូទាត់")] public decimal Amount { get; set; }
         [DisplayName("នៅសល់")] public decimal Balance { get; set; }
-        
+        [DisplayName("លេខទូរស័ព្ទ")] public string? PhoneNumber { get; set; }
+
     }
 }

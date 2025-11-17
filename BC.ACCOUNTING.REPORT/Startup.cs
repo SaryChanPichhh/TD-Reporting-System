@@ -1,25 +1,20 @@
-using BC.ACCOUNTING.APPLICATION.Interfaces.General;
 using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE;
-using BC.ACCOUNTING.INFRASTRUCTURE.Repository.General;
 using BC.ACCOUNTING.REPORT.DataSources;
 using BC.ACCOUNTING.REPORT.DTO;
 using BC.ACCOUNTING.REPORT.DTO.POS;
+using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
 using BC.ACCOUNTING.REPORT.IService.ReportToken;
 using BC.ACCOUNTING.REPORT.Models;
 using BC.ACCOUNTING.REPORT.PredefinedReports;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing;
 using BC.ACCOUNTING.REPORT.Services;
 using BC.ACCOUNTING.REPORT.Services.ReportToken;
 using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
 using DevExpress.Data.Entity;
 using DevExpress.XtraReports.Web.Extensions;
-using DevExpress.XtraReports.Web.ReportDesigner;
 using DevExpress.XtraReports.Web.WebDocumentViewer;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
@@ -27,10 +22,20 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System;
 using System.IO;
-using System.Text;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
+using BC.ACCOUNTING.REPORT.ImageCache;
+using System.Net.Http;
+using System.Net;
+using DevExpress.XtraPrinting.Preview;
+using System.Threading;
+using BC.ACCOUNTING.REPORT.DTO.MB;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT
 {
@@ -60,6 +65,8 @@ namespace BC.ACCOUNTING.REPORT
             services.AddScoped<IConnectionStringsProvider, CustomSqlDataSourceProvider>();
             services.AddTransient<IWebDocumentViewerReportResolver, CustomWebDocumentViewerReportResolver>();
             services.AddTransient<ITokenValidatorService, TokenValidatorService>();
+            services.AddSingleton<IImageCache, ImageCache.ImageCache>();
+            
 
 
             services.Configure<RouteOptions>(options =>
@@ -75,6 +82,7 @@ namespace BC.ACCOUNTING.REPORT
             services.AddScoped<ReportExportService>();
             services.AddScoped<DailySale80Report>();
             services.AddScoped<SaleReport>();
+            services.AddScoped<POSSaleListingReport>();
 
             //var jwtKey = Configuration["Jwt:Key"];
             //var jwtIssuer = Configuration["Jwt:Issuer"];
@@ -94,7 +102,7 @@ namespace BC.ACCOUNTING.REPORT
             //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
             //        };
             //    });
-
+            services.AddMemoryCache();
             services
                 .AddControllersWithViews();
             services.AddDistributedMemoryCache(); // ? Required for Session
@@ -104,9 +112,19 @@ namespace BC.ACCOUNTING.REPORT
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+            services.AddHttpClient("images", c =>
+            {
+                c.Timeout = TimeSpan.FromSeconds(10);
+            }).ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
+            {
+                MaxConnectionsPerServer = 64,
+                AutomaticDecompression = DecompressionMethods.All,
+                PooledConnectionLifetime = TimeSpan.FromMinutes(5)
+            });
 
             services.ConfigureReportingServices(configurator =>
             {
+
                 configurator.ConfigureReportDesigner(designerConfigurator =>
                 {
                     designerConfigurator.RegisterDataSourceWizardConfigFileConnectionStringsProvider();
@@ -150,7 +168,44 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingByInvoiceDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingMovementDto)); 
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(SaleListingModel)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSaleListingReportDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESSaleInvoiceDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESSaleInventoryDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(InventoryDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESSaleListingInvoiceDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSSalelistingSummaryDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESPurchaseOrderDto)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESFlatternPurchaseOrderRow)); 
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESSaleListingMovementDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESItemDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSItemDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleListingCustomereDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(InventoryExpiredDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESSaleReceiptDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ClosingInventoryDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(NOSaleInvoiceDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(CreditNoteDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(CreditNoteFlattenDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleInvoiceSummaryDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESBZSaleInvoiceDto));
 
+
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .Enrich.WithProperty("App", "Reporting")
+                .WriteTo.File(
+                    path: @"D:\.NetAPI\Reports\Log\LogInformationFor-.txt",
+                    rollingInterval: RollingInterval.Day,
+                    fileSizeLimitBytes:50_000_000, 
+                    rollOnFileSizeLimit: true,
+                    retainedFileCountLimit: 20,
+                    shared: true,
+                    flushToDiskInterval: TimeSpan.FromSeconds(1)
+                    )
+                .CreateLogger();
+            app.UseMiddleware<ExceptionLoggingMiddleware>();
+            app.UseMiddleware<ErrorResponseLoggingMiddleware>();
+            app.UseSerilogRequestLogging();
             DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
             app.UseDevExpressControls();
             System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;

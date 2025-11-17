@@ -8,7 +8,7 @@ namespace BC.ACCOUNTING.CORE.DTO.AR
         public DateTime BY_DATE { get; set; }           // smalldatetime
         public string FROM_ACC { get; set; }            // nvarchar(15)
         public string TO_ACC { get; set; }              // nvarchar(15)
-        public string ACC_TYPE { get; set; }            // char(1)
+        public string ACC_TYPE { get; set; }            // char(1)  
         public string T { get; set; }                   // char(2)
         public string FROM_ANAL { get; set; }           // nvarchar(15)
         public string TO_ANAL { get; set; }             // nvarchar(15)
@@ -23,7 +23,7 @@ namespace BC.ACCOUNTING.CORE.DTO.AR
         public string T8 { get; set; } = "%";           // nvarchar(15)
         public string T9 { get; set; } = "%";           // nvarchar(15)
 
-       // public string? Company { get; set; }
+        public string? CompanyName { get; set; }
 
     }
 }

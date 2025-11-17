@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
 using DevExpress.XtraReports.UI;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports

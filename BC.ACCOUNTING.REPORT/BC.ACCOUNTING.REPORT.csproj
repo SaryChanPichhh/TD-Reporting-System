@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <DefaultItemExcludes>Reports\**</DefaultItemExcludes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Data\**" />
@@ -39,12 +40,106 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.18" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.117" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
     <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="PredefinedReports\POS\ENGVer\ClosingEntry\A4DailyClosingInventoryEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\ClosingEntry\DailyClosingInventoryEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\ClosingEntry\DailyClosingEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\CustomerOrder\CustomerOrderEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Inventory\IUInventoryAuditA4EVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Inventory\POSInventoryOutOfStockEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Purchase Order\POSPurchaseOrderByDateEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Purchase Order\POSPurchaseOrderByInvoiceEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Purchase Order\POSPurchaseOrderBySupplierEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Purchase Order\POSPurchaseOrderListingEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Sale Order\POSSaleInvoiceEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\POSSaleListingEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\POSSaleListingSummaryEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingByDateEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingByInvoiceNoProfitEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingByInvoiceEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingMovementEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderByDateReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderByInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderBySupplierReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderListingReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Inventory\RESInventoryOutOfStockReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderByDateReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByCustomer\Detail\SaleListingDailyDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByCustomer\Detail\SaleListingMonthlyDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByCustomer\Detail\SaleListingYearlyDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByInvoice\SaleListingDailyDetailByInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByInvoice\SaleListingDailyDetailByInvoiceWithProfitReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\XtraReport1.cs">
       <DependentUpon>XtraReport1.repx</DependentUpon>
     </Compile>
@@ -78,7 +173,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="PredefinedReports\Sale Order\QrCode\" />
+	  <Folder Include="wwwroot\assets\MB\" />
+	  <Folder Include="wwwroot\assets\RES\" />
 	</ItemGroup>
 
 </Project>

@@ -20,11 +20,12 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("លេខយោង")] public string Footnote { get; set; }
         [DisplayName("លេខកូដ")] public string ItemCode { get; set; }
         [DisplayName("ឈ្មោះទំនិញ")] public string ItemDesc { get; set; }
-        [DisplayName("ឈ្មោះទំនិញខ្មែរ")] public string ItemDescKH { get; set; }
-        [DisplayName("ខ្នាត")] public string PurchUnit { get; set; }
+        [DisplayName("ឈ្មោះទំនិញខ្មែរ")] public string? ItemDescKH { get; set; }
+        [DisplayName("ខ្នាត")] public string? PurchUnit { get; set; }
         [DisplayName("ចំនួន")] public int Qty { get; set; }
         [DisplayName("តម្លៃ")] public decimal Cost { get; set; }
         [DisplayName("តម្លៃសរុប")] public decimal TotalCost { get; set; }
         [DisplayName("ឯកតាស្តុក")] public string UnitDesc { get; set; }
+        public decimal ExchangeRate { get; set; } = 1;
     }
 }

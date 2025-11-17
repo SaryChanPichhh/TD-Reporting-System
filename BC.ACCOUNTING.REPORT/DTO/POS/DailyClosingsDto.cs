@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
+using BC.ACCOUNTING.REPORT.Helper;
+using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS
 {
@@ -14,14 +18,16 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
         public string OwnedAmount { get; set; }
         public string CashOB { get; set; }
         public string CashOBRiel { get; set; }
-
         public string Subtotal { get; set; }
         public string Discount { get; set; }
         public string TotalRiel { get; set; }
         public string TotalDollar { get; set; }
         public string CashIn { get; set; }
         public string Remaining { get; set; }
-
+        [Nullable(true)]
+        [Browsable(false)]
+        [NullValue(true)]
+        public Languages? Language { get; set; } =Languages.KM;
         public List<DailyClosingDataSource> Items { get; set; }
     }
 }

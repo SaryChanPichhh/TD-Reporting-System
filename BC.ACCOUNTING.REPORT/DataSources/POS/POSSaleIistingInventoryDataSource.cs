@@ -9,6 +9,7 @@
         public int TotalSaleQty { get; set; } 
         public decimal TotalSaleCost { get; set; } 
         public int TotalRemainQty { get; set; } 
-        public decimal TotalRemainCost { get; set; } 
+        public decimal TotalRemainCost { get; set; }
+        public string ExchangeSign { get; set; } = "$";
     }
 }

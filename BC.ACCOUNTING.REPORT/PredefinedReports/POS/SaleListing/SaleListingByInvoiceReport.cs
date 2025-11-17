@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using BC.ACCOUNTING.REPORT.Helper;
+using System.Globalization;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
 {
@@ -16,18 +17,21 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
         }
         public SaleListingByInvoiceReport(POSSaleListingByInvoiceDto dto, string reportName)
         {
+            
             this.LoadLayoutFromXml(reportName);
         
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
-            xrPictureBox1.BeforePrint += xrPictureBox1_BeforePrint;
-            xrTableCell34.BeforePrint += xrTableCell34_BeforePrint;
-            xrTableCell11.PrintOnPage += xrTableCell31_PrintOnPage;
-            xrTableCell24.PrintOnPage += xrTableCell24_PrintOnPage;
+            if(xrPictureBox1 is not null)
+                xrPictureBox1.BeforePrint += xrPictureBox1_BeforePrint;
+            if (xrTableCell34 is not null)
+                xrTableCell34.BeforePrint += xrTableCell34_BeforePrint;
+            if (xrTableCell11 is not null)
+                xrTableCell11.PrintOnPage += xrTableCell31_PrintOnPage;
+            if (xrTableCell24 is not null)
+                xrTableCell24.PrintOnPage += xrTableCell24_PrintOnPage;
             
         }
-
-
         private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {
             var pictureBox = sender as XRPictureBox;
@@ -44,14 +48,10 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
                     }
                     else if (Uri.IsWellFormedUriString(data.ShopImage, UriKind.Absolute))
                     {
-                        using (var client = new System.Net.WebClient())
-                        {
-                            byte[] imageBytes = client.DownloadData(data.ShopImage);
-                            using (var ms = new MemoryStream(imageBytes))
-                            {
-                                pictureBox.Image = Image.FromStream(ms);
-                            }
-                        }
+                        using var client = new System.Net.WebClient();
+                        byte[] imageBytes = client.DownloadData(data.ShopImage);
+                        using var ms = new MemoryStream(imageBytes);
+                        pictureBox.Image = Image.FromStream(ms);
                     }
                     else
                     {

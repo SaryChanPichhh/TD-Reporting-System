@@ -14,6 +14,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("ទឹកប្រាក់")] public string TransValue { get; set; }
         [DisplayName("ទឹកប្រាក់ទូទាត់")] public string PaidValue { get; set; }
         [DisplayName("ទឹកប្រាក់ជំពាក់")] public string InDebt { get; set; }
+        [DisplayName("លេខទូរស័ព្ទ")] public string? PhoneNumber { get; set; }
 
     }
 }

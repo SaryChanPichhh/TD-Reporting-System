@@ -3,6 +3,7 @@
     public class ReportSettings
     {
         public string Directory { get; set; }
+
     }
 
 }

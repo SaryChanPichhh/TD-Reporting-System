@@ -24,6 +24,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
                     break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
             }
 
             using (var connection = new SqlConnection(connectionString))
@@ -44,6 +47,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
                     break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
             }
             using var connection = new SqlConnection(connectionString);
             if (connection.State == ConnectionState.Closed)
@@ -60,6 +66,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
+                    break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
                     break;
             }
 
@@ -79,6 +88,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
                     break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
             }
             using var connection = new SqlConnection(connectionString);
             if (connection.State == ConnectionState.Closed)
@@ -95,6 +107,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
+                    break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
                     break;
             }
 
@@ -117,6 +132,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
+                    break;
+                case "MBDev":
+                    connectionString = _settings.GetConnectionString("MBDevConnection")!;
                     break;
             }
 

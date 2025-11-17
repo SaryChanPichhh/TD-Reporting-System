@@ -6,12 +6,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using BC.ACCOUNTING.REPORT.DataSources.MB;
+using BC.ACCOUNTING.REPORT.DTO.MB;
+using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace BC.ACCOUNTING.REPORT.Helper
 {
@@ -36,7 +41,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                         Qty = uc.Qty,
                         UnitStock = uc.UnitStock,
                         Price = uc.Price,
-                        Total = uc.Total
+                        Total = uc.Total,
+
                     });
 
                     isFirst = false;
@@ -45,6 +51,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
 
             return result;
         }
+
         public static List<FlatInvoiceRow> Flatten(SaleInvoiceDto po)
         {
             var result = new List<FlatInvoiceRow>();
@@ -74,6 +81,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
 
             return result;
         }
+
+        
         public static OtpEntry GenerateSecureOtp()
         {
             byte[] bytes = new byte[4];
@@ -90,18 +99,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 CreatedAt = DateTime.UtcNow
             };
         }
-        public static bool VerifyOtp(string inputOtp, OtpEntry storedOtp)
-        {
-            // Check expiration
-            if ((DateTime.UtcNow - storedOtp.CreatedAt).TotalMinutes > 1)
-            {
-                return false; // expired
-            }
-
-            // Check value
-            return inputOtp == storedOtp.OtpCode;
-        }
-        public static void SetCellColorBasedOnValue(XRTableCell cell)
+        public static void SetCellColorBasedOnValue(XRTableCell? cell)
         {
             if (cell == null) return;
 
@@ -178,5 +176,43 @@ namespace BC.ACCOUNTING.REPORT.Helper
         }
 
         #endregion
+
+
+        public static CreditNoteFlattenDto CreditNoteFlatten(this CreditNoteDto dto)
+        {
+            var data = new List<CreditNoteFlattenDataSource>();
+            foreach (var item in dto.Items)
+            {
+                var isDuplicate = false;
+                foreach (var unit in item.UnitConvert)
+                {
+                    
+                    data.Add(new CreditNoteFlattenDataSource
+                    {
+                        ItemCode = isDuplicate ? string.Empty : item.ItemCode,
+                        ItemDesc = isDuplicate ? string.Empty : item.ItemDesc,
+                        Qty = unit.Qty,
+                        UnitStock = unit.UnitStock,
+                        Price = unit.Price,
+                        Total = unit.Total
+                    });
+                    isDuplicate = true;
+                }
+            }
+            Debug.WriteLine(data);
+            return new CreditNoteFlattenDto
+            {
+                Items = data,
+                Address = dto.Address,
+                CreditTransRef = dto.CreditTransRef,
+                CustomerName = dto.CustomerName,
+                Date = dto.Date,
+                Note = dto.Note,
+                SaleRep = dto.SaleRep,
+                TransRef = dto.TransRef,ExchangeRate = dto.ExchangeRate,
+                TotalRiel = dto.TotalRiel,
+                TotalDollar = dto.TotalDollar
+            };
+        }
     }
 }

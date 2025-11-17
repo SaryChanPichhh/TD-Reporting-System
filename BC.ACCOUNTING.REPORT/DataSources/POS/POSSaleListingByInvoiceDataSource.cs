@@ -1,4 +1,7 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
+using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DataSources.POS
 {
@@ -12,6 +15,10 @@ namespace BC.ACCOUNTING.REPORT.DataSources.POS
         public string CustomerName { get; set; }
         public decimal Total { get; set; }
         public decimal Cost { get; set; }
-        public decimal Profit { get; set; }
+        public decimal Profit { get; set; } 
+        [Nullable(true)]
+        //[MemberNotNull()]
+        public decimal? DeliveryFee { get; set; } = 0;
+        public string ExchangeSign { get; set; } = "$";
     }
 }

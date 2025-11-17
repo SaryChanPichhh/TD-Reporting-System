@@ -110,10 +110,10 @@ namespace BC.ACCOUNTING.CORE.Entities
         public decimal StockQuantity { get; set; }
         public decimal TotalValue { get; set; }
         public decimal ReportConvertStockQuantity { get; set; }
-        public int ReportConvertUnit { get; set; }
+        public string ReportConvertUnit { get; set; }
         public string DetailDeliveryDate { get; set; }
         public string DetailAccountCode { get; set; }
-        public int DetailUnitOfSale { get; set; }
+        public string DetailUnitOfSale { get; set; }
         public string DetailUnitOfDesc { get; set; } = string.Empty;
         public decimal UnitOfSaleFactor { get; set; }
         public decimal CostValue { get; set; }

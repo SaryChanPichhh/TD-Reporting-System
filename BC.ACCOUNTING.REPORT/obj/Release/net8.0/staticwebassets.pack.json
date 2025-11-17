@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
+      "PackagePath": "staticwebassets\\assets\\No_Image_Available.jpg"
+    },
+    {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg",
+      "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA091\\4414.jpg"
+    },
+    {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg",
+      "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA094\\4420.jpg"
+    },
+    {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png",
+      "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA118\\SOCHEATA.png"
+    },
+    {
       "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ace.bundle.css",
       "PackagePath": "staticwebassets\\css\\ace\\ace.bundle.css"
     },

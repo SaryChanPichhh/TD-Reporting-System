@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.Models
 {
@@ -13,5 +14,7 @@ namespace BC.ACCOUNTING.REPORT.Models
         [Description("បញ្ចុះតម្លៃ​​")] public decimal Discount { get; set; }          // From UnitConvert
         [Description("បញ្ចុះតម្លៃ%​​")] public decimal DiscountPercent { get; set; }          // From UnitConvert
         [Description("សរុប")] public decimal Total { get; set; }
+        public string ItemImage { get; set; } = string.Empty;
+
     }
 }

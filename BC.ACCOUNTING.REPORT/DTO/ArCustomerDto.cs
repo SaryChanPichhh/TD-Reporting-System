@@ -7,7 +7,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
 {
     public record ArCustomerDto:ReportDto
     {
-        [DisplayName("ក្រុមហ៊ុន")] public string Company { get; set; }
+        [DisplayName("ក្រុមហ៊ុន")] public string? Company { get; set; }
         [DisplayName("កាលបរិច្ឆេទ")] public string Dates { get; set; }
         [DisplayName("កូដអតិថិជន")] public string CustomerCode { get; set; }
         [DisplayName("ឈ្មោះអតិថិជន")] public string CustomerName { get; set; }

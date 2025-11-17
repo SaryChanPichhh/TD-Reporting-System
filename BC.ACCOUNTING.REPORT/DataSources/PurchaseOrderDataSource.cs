@@ -1,15 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DataSources
 {
-    public class PurchaseOrderDataSource
+    public class PurchaseOrderDataSource 
     {
-        [Description("លេខកូដទំនិញ")] public string ItemCode { get; set; }
-        [Description("ឈ្មោះទំនិញ")] public string ItemDesc { get; set; }
-        [Description("រូបទំនិញ")] public string ItemImage { get; set; }
-        [Description("ទិន្នន័យបម្លែងឯកតា")] public List<ItemUnit> UnitConvert { get; set; }
+        public string? Supplier { get; set; }
+        public string? InvoiceNumber { get; set; }
+        public string? Category { get; set; }
+        public DateTime? InvoiceDate { get; set; }
+        public string ItemCode { get; set; }
+        public string ItemDesc { get; set; }
+        public string? ItemImage { get; set; }
+        [Nullable(true)]
+        public byte[]? ImageByte { get; set; }
+        public int Qty { get; set; }
+        public decimal? Cost { get; set; }
+        public decimal? ExchangeRate { get; set; } = 0;
     }
 
    
