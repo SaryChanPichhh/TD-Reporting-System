@@ -14,6 +14,11 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("ចំនួនទូទាត់")] public decimal Amount { get; set; }
         [DisplayName("នៅសល់")] public decimal Balance { get; set; }
         [DisplayName("លេខទូរស័ព្ទ")] public string? PhoneNumber { get; set; }
+        [DisplayName("អ្នកលក់")] public string? SaleRep { get; set; } = string.Empty;
+        [DisplayName("អ្នកចេញវិក្កយបត្រ")] public string? InvoiceIssuer { get; set; } = string.Empty;
+        [DisplayName("ពិពណ៏នា")] public string? Note { get; set; } = string.Empty;
+        [DisplayName("ថ្ងៃទិញ")] public string? TransDate { get; set; } = string.Empty;
+
 
     }
 }

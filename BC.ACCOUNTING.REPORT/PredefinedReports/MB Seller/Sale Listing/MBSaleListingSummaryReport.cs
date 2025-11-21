@@ -1,7 +1,4 @@
 ﻿using BC.ACCOUNTING.REPORT.DTO.MB;
-using DevExpress.XtraReports.UI;
-using System.Drawing;
-using System;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
 {

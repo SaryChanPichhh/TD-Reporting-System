@@ -32,6 +32,9 @@
     <Compile Update="PredefinedReports\MB Seller\Purchase Order\SCS\PurchaseOrderByYearReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBIncomeAndExpenseA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBSaleInvoiceSummaryReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -252,6 +255,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingSummaryReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\AR\SCSARPaidReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByArea\DetailArea\SaleListingDailyDetailByAreaReport.cs">

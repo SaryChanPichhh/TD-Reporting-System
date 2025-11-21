@@ -188,6 +188,8 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(CreditNoteFlattenDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleInvoiceSummaryDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESBZSaleInvoiceDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleListingSummaryDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(IncomeExpenseDto));
 
 
             Log.Logger = new LoggerConfiguration()

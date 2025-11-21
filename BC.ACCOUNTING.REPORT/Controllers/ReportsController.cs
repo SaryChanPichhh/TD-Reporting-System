@@ -1185,18 +1185,19 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
                   var  report = new RESInventoryOutOfStockReport(dto, reportPath);
 
-                    if (dto.ExportFormat.HasValue)
-            {
-                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
-                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                  if (dto.ExportFormat.HasValue)
+                  {
+                      var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                      var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
 
-                return File(
-                    fileBytes,
-                    contentType,
-                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
-                );
-            }
-            ViewBag.HideHeader = true;
+                      return File(
+                          fileBytes,
+                          contentType,
+                          $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                      );
+                  }
+
+                  ViewBag.HideHeader = true;
             return View("Invoice", report);
 
         }
@@ -1636,6 +1637,32 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 return NotFound("Report file not found.");
 
             var report = new MBSaleListingSummaryReport(dto, reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+        [HttpPost("mb-incomeandexpense")]
+        public IActionResult MBIncomeAndExpense([FromBody] IncomeExpenseDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+
+            var report = new MBIncomeAndExpenseA4Report(dto, reportPath);
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);

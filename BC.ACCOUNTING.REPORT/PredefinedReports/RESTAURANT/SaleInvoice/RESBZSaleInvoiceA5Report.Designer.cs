@@ -93,6 +93,9 @@
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrPictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable12 = new DevExpress.XtraReports.UI.XRTable();
@@ -111,14 +114,11 @@
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrPictureBox5 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.SubTotal = new DevExpress.XtraReports.UI.CalculatedField();
             this.GrandTotal = new DevExpress.XtraReports.UI.CalculatedField();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
-            this.xrPictureBox5 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrPictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
@@ -747,6 +747,32 @@
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.PrintAtBottom = true;
             // 
+            // xrPictureBox3
+            // 
+            this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox3.ImageSource"));
+            this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(100F, 27.00003F);
+            this.xrPictureBox3.Name = "xrPictureBox3";
+            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.xrPictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.CanGrow = false;
+            this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(54.09795F, 3.000001F);
+            this.xrLabel8.Multiline = true;
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(66.80417F, 23F);
+            this.xrLabel8.StylePriority.UseFont = false;
+            this.xrLabel8.Text = "អេស៊ីលីដា";
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(563F, 2F);
+            // 
             // xrLabel6
             // 
             this.xrLabel6.CanGrow = false;
@@ -942,6 +968,22 @@
             this.xrTableCell35.TextFormatString = "{0:$0.00}";
             this.xrTableCell35.Weight = 1.1699319714005578D;
             // 
+            // xrPictureBox5
+            // 
+            this.xrPictureBox5.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox5.ImageSource"));
+            this.xrPictureBox5.LocationFloat = new DevExpress.Utils.PointFloat(2.288818E-05F, 27F);
+            this.xrPictureBox5.Name = "xrPictureBox5";
+            this.xrPictureBox5.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.xrPictureBox5.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // xrPictureBox2
+            // 
+            this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"));
+            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(120.9021F, 2F);
+            this.xrPictureBox2.Name = "xrPictureBox2";
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(25F, 25F);
+            this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
             // objectDataSource1
             // 
             this.objectDataSource1.DataSource = typeof(global::BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESBZSaleInvoiceDto);
@@ -958,47 +1000,6 @@
             this.GrandTotal.DataMember = "Items";
             this.GrandTotal.Expression = "[SubTotal] - [DiscountPrice]";
             this.GrandTotal.Name = "GrandTotal";
-            // 
-            // xrLine1
-            // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(563F, 2F);
-            // 
-            // xrPictureBox5
-            // 
-            this.xrPictureBox5.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox5.ImageSource"));
-            this.xrPictureBox5.LocationFloat = new DevExpress.Utils.PointFloat(2.288818E-05F, 27F);
-            this.xrPictureBox5.Name = "xrPictureBox5";
-            this.xrPictureBox5.SizeF = new System.Drawing.SizeF(100F, 100F);
-            this.xrPictureBox5.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // xrLabel8
-            // 
-            this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(54.09795F, 3.000001F);
-            this.xrLabel8.Multiline = true;
-            this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(66.80417F, 23F);
-            this.xrLabel8.StylePriority.UseFont = false;
-            this.xrLabel8.Text = "អេស៊ីលីដា";
-            // 
-            // xrPictureBox2
-            // 
-            this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"));
-            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(120.9021F, 2F);
-            this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(25F, 25F);
-            this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // xrPictureBox3
-            // 
-            this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox3.ImageSource"));
-            this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(100F, 27.00003F);
-            this.xrPictureBox3.Name = "xrPictureBox3";
-            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(100F, 100F);
-            this.xrPictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrControlStyle1
             // 

@@ -15,9 +15,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public string ShopName { get; set; }
         public string ShopImage { get; set; }
         public List<MBSaleListingSummaryDataSource> Data { get; set; }
-        [Nullable(true)]
-        [Browsable(false)]
-        public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
-        public string CurrencySymbol => CurrencyCode.GetEnumDescription();
+        public string CurrencySymbol { get; set; } = "$";
     }
 }

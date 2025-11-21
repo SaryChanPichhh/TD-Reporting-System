@@ -484,7 +484,6 @@
             this.xrTableCell17.Summary = xrSummary2;
             this.xrTableCell17.Text = "ទឹកប្រាក់អនុម័ត";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell17.TextFormatString = "{0:C3}";
             this.xrTableCell17.Weight = 2.3948117937884223D;
             // 
             // xrTableCell22
