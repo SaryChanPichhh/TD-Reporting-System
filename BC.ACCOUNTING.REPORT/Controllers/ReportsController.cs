@@ -36,6 +36,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -43,8 +44,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.CreditNote;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Items;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AP;
+using DevExpress.XtraPrinting;
 using DailyClosingReport = BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using System.Net.Http.Json;
 
 
 namespace BC.ACCOUNTING.REPORT.Controllers
@@ -59,21 +65,32 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         private readonly ReportExportService _reportExportService;
         private readonly IConfiguration _configuration;
         private const string POSImageRoute = "ImageRoute:POSImageRoute";
-        private readonly Dictionary<string,string> reportPOSDirectories;
+        private readonly Dictionary<string, string>? _imageRoutes;
+        private readonly Dictionary<string, string>? reportPOSDirectories;
         private readonly IImageCache _imageCache;
         private readonly IHttpClientFactory _factory;
-        public ReportsController(IOptions<ReportSettings> options,IUnitOfWork unitOfWork, ReportExportService reportExportService, IConfiguration configuration, IImageCache imageCache, IHttpClientFactory factory)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public ReportsController(IOptions<ReportSettings> options,IUnitOfWork unitOfWork, ReportExportService reportExportService, IConfiguration configuration, IImageCache imageCache, IHttpClientFactory factory, IHttpContextAccessor httpContextAccessor)
         {
+            
             _unitOfWork = unitOfWork;
             _reportExportService = reportExportService;
             _configuration = configuration;
             _imageCache = imageCache;
             _factory = factory;
+            _httpContextAccessor = httpContextAccessor;
             _reportDirectory = options.Value.Directory;
-            reportPOSDirectories = _configuration
-                .GetSection("ReportDirectories:POS_PATH")
-                .Get<Dictionary<string, string>>();
+            _imageRoutes =  _configuration
+                .GetSection("ImageRoute").Get<Dictionary<string, string>>(); 
+            reportPOSDirectories =  _configuration
+                .GetSection("ReportDirectories:POS_PATH").Get<Dictionary<string, string>>();
+
+            ReportHelper.ReportDirectory = _reportDirectory;
+            ReportHelper.ImageUrl = _imageRoutes;
+            //var json = HttpContext.Items["RequestJson"] as Dictionary<string, object>;
         }
+
+
         [HttpPost("DailySaleReport")]
         public IActionResult DailySaleReport([FromBody] InvoiceReportDto dto)
         {
@@ -392,21 +409,18 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var imageDic = _configuration.GetSection("ImageDirectory:MB_PATH").Value;
-            
+
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             
-            var  report = new SaleInvoiceReport(dto, reportPath, imageDic??"");
+            var  report = new SaleInvoiceReport(dto, reportPath, _imageRoutes[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]??"");
             
-           
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
                 var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
-
                 return File(
                     fileBytes,
                     contentType,
@@ -414,7 +428,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 );
             }
             ViewBag.HideHeader = true;
-            return View("Invoice", report);
+            return View("Invoice",report);
 
         }
 
@@ -617,16 +631,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             
@@ -656,16 +662,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
            
@@ -694,16 +692,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             var  report = new CustomerOrderReport(dto, reportPath);
@@ -767,29 +757,14 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName,Languages.ENG);
-                    break;
-            }
-            var newReportPath = string.Empty;
-            switch (dto.ReportMode)
-            {
-                case ReportModes.NormalMode:
-                    newReportPath = reportPath;
-                    break;
-                case ReportModes.DeliveryFeeMode:
-                    newReportPath = $@"D:\.NetAPI\Reports\Accounting\POSSaleInvoiceWithDeliveryFeeReport.repx";
-                    break;
-            }
-            if (!System.IO.File.Exists(newReportPath))
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
+      
+            
+            if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            var report = new POSSaleInvoiceReport(dto, newReportPath);
+            var report = new POSSaleInvoiceReport(dto, reportPath);
 
             if (dto.ExportFormat.HasValue)
             {
@@ -814,16 +789,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM
+                );
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -853,36 +821,12 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
-
-            var deliveryFeeReportPath = string.Empty;
-            deliveryFeeReportPath = dto.ReportMode switch
-            {
-                ReportModes.NormalMode => reportPath,
-                ReportModes.DeliveryFeeMode => dto.ReportName switch
-                {
-                    "SaleListingByDateReport" =>
-                        "D:\\.NetAPI\\Reports\\Accounting\\SaleListingByDateWithDeliveryFeeReport.repx",
-                    "SaleListingByInvoiceReport" =>
-                        "D:\\.NetAPI\\Reports\\Accounting\\SaleListingByInvoiceWithDeliveryFeeReport.repx",
-                    "SaleListingBySellerReport" =>
-                        "D:\\.NetAPI\\Reports\\Accounting\\SaleListingBySellerWithDeliveryFeeReport.repx",
-                    _ => reportPath
-                },
-                _ => deliveryFeeReportPath
-            };
-            if (!System.IO.File.Exists(deliveryFeeReportPath))
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
+            if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            var report = new SaleListingByInvoiceReport(dto, deliveryFeeReportPath);
+            var report = new SaleListingByInvoiceReport(dto, reportPath);
 
             if (dto.ExportFormat.HasValue)
             {
@@ -908,16 +852,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -978,16 +914,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             var report = new IUInventoryAuditA4Report(dto, reportPath);
@@ -1016,30 +944,12 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
-            var newReportPath = string.Empty;
-            switch (dto.ReportMode)
-            {
-                case ReportModes.NormalMode:
-                    newReportPath = reportPath;
-                    break;
-                case ReportModes.DeliveryFeeMode:
-                    newReportPath = "D:\\.NetAPI\\Reports\\Accounting\\POSSaleListingSummaryWithDeliveryFeeReport.repx";
-
-                    break;
-            }
-            if (!System.IO.File.Exists(newReportPath))
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
+            if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            var report = new POSSaleListingSummaryReport(dto, newReportPath);
+            var report = new POSSaleListingSummaryReport(dto, reportPath);
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1064,17 +974,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 if (map.TryGetValue(r.ItemImage??"", out var b)) r.ImageByte = b;
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
@@ -1106,16 +1007,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 if (map.TryGetValue(r.Image??"", out var b)) r.ImageByte = b;
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = string.Empty;
-            switch (dto.Language.Value)
-            {
-                case Languages.KM:
-                    reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-                    break;
-                case Languages.ENG:
-                    reportPath = ReportHelper.GetReportPath(_reportDirectory, reportPOSDirectories[Languages.ENG.ToString()], dto.ReportName, Languages.ENG);
-                    break;
-            }
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             var report = new POSInventoryOutOfStockReport(dto, reportPath);
@@ -1496,6 +1389,34 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         }
 
         #region MB Seller
+
+
+        [HttpPost("mb-itemsinfo")]
+        public IActionResult ItemsInfo([FromBody] ItemInfoDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new ItemInfoReport(dto,reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
+
         [HttpPost("mb-saleinvoicesummary")]
         public IActionResult MBSaleInvoiceSummary([FromBody] MBSaleInvoiceSummaryDto dto)
         {

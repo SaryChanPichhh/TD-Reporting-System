@@ -42,6 +42,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
             switch (connectionString)
             {
                 case "Default":
+                    connectionString = _settings.GetConnectionString("DBConnection")!;break;
+                case "SIDB":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;
                 case "MB":
@@ -64,6 +66,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "Default":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;
+                case "SIDB":
+                    connectionString = _settings.GetConnectionString("DBConnection")!;break;
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
                     break;
@@ -82,6 +86,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
         {
             switch (connectionString)
             {
+                case "SIDB":
+                    connectionString = _settings.GetConnectionString("DBConnection")!; break;
                 case "Default":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;
@@ -102,6 +108,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
         {
             switch (connectionString)
             {
+                case "SIDB":
+                    connectionString = _settings.GetConnectionString("DBConnection")!; break;
                 case "Default":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;
@@ -127,6 +135,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
         {
             switch (connectionString)
             {
+                case "SIDB":
+                    connectionString = _settings.GetConnectionString("DBConnection")!; break;
                 case "Default":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;

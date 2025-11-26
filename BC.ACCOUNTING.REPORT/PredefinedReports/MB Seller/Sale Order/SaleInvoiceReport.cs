@@ -25,7 +25,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
         }
 
         private int _rowsOnCurrentPage;
-        private int _rowCount;
         private bool _firstPageCompleted;
         private void Report_BeforePrint(object sender, CancelEventArgs e)
         {
@@ -36,7 +35,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
         private void Detail_BeforePrint(object sender, CancelEventArgs e)
         {
             _rowsOnCurrentPage++;
-            _rowCount++;
             int limit = _firstPageCompleted ? 32:27;
 
             // Default: no page break
@@ -75,7 +73,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             }
         }
         
-
         public SaleInvoiceReport(SaleInvoiceDto dto,string reportName,string imageUrl = "")
         {
             this.LoadLayoutFromXml(reportName);
@@ -240,9 +237,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                 
             }
                 
-            objectDataSource1.DataSource = data;
-            this.DataSource = objectDataSource1;
-            
+            //objectDataSource1.DataSource = data;
+            //this.DataSource = objectDataSource1;
+            this.DataSource = data;
             Parameters["CustomerCode"].Value = dto.CustomerCode;
             Parameters["CustomerName"].Value = dto.CustomerName;
             Parameters["CustomerTel"].Value = dto.CustomerTel;

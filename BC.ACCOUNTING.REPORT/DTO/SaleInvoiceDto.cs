@@ -6,11 +6,12 @@ using System.Diagnostics.CodeAnalysis;
 using BC.ACCOUNTING.REPORT.Helper;
 using DevExpress.Xpo;
 
+
 namespace BC.ACCOUNTING.REPORT.DTO
 {
     public record SaleInvoiceDto:ReportDto
     {
-        [System.ComponentModel.DisplayName("លេខវិក័យប័ត្រ")] public string InvoiceNumber { get; set; }
+        [DevExpress.Xpo.DisplayName("លេខវិក័យប័ត្រ")] public string InvoiceNumber { get; set; }
         [System.ComponentModel.DisplayName("ថ្ងៃចេញវិក័យប័ត្រ")] public DateTime? InvoiceDate { get; set; }
         [System.ComponentModel.DisplayName("អ្នកលក់")] public string Seller { get; set; }
         [System.ComponentModel.DisplayName("អ្នកចេញវិក័យប័ត្រ")] public string InvoicePrinted { get; set; }
@@ -44,7 +45,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [Browsable(false)]
         public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
         public string CurrencySymbol => CurrencyCode.GetEnumDescription();
-        [DevExpress.Xpo.DisplayName("ទិន្នន័យ")] public List<SaleInvoiceDataSource> Items { get; set; }
+        [System.ComponentModel.DisplayName("ទិន្នន័យ")] public List<SaleInvoiceDataSource> Items { get; set; }
         [DevExpress.Xpo.DisplayName("ទិន្នន័យរូបភាព")] public List<ImageItem>? PictureItems { get; set; }
 
     }

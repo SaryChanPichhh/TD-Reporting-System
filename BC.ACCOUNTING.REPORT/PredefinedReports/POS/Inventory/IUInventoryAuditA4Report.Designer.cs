@@ -395,7 +395,7 @@
             this.xrLabel13.StylePriority.UseTextAlignment = false;
             this.xrLabel13.Text = "xrLabel22";
             this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel13.TextFormatString = "{0:dd-MMM-yyyy}";
+            this.xrLabel13.TextFormatString = "{0:dd-MM-yyyy}";
             // 
             // xrLabel14
             // 

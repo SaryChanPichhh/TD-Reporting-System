@@ -26,6 +26,9 @@
     <Compile Update="PredefinedReports\MB Seller\Inventory\InventoryNoUnitStockReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Items\ItemInfoReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Purchase Order\SCS\PurchaseOrderByMonthReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -56,7 +59,13 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\Report1.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\TD7SaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\VN7SaleInvoice80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\Y8SSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">

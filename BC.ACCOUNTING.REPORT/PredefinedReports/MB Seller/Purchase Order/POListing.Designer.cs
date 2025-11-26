@@ -109,14 +109,14 @@
             this.xrLabel5,
             this.xrLabel3,
             this.xrLabel2});
-            this.ReportHeader1.HeightF = 69.75001F;
+            this.ReportHeader1.HeightF = 67.25002F;
             this.ReportHeader1.Name = "ReportHeader1";
             this.ReportHeader1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.ReportHeader1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel6
             // 
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(559.7178F, 36.75001F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(559.7178F, 30.29167F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -129,7 +129,7 @@
             // 
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EndDate]")});
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(569.2822F, 36.75001F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(569.2821F, 30.29167F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -143,7 +143,7 @@
             // 
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StartDate]")});
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(459.7177F, 36.75001F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(459.7177F, 30.29167F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

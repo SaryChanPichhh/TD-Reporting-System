@@ -14,7 +14,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources
 
     public class ItemUnit
     {
-        [DisplayName("ឯកតាស្តុក")] public string UnitStock { get; set; }
+        [DisplayName("ឯកតាស្តុក")] public string UnitStock { get; set; }   
         [DisplayName("ចំនួន")] public int Qty { get; set; }
         [DisplayName("តម្លៃ")] public decimal Price { get; set; }
         [DisplayName("សរុប")] public decimal Total { get; set; }

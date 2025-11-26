@@ -36,7 +36,6 @@ using DevExpress.XtraPrinting.Preview;
 using System.Threading;
 using BC.ACCOUNTING.REPORT.DTO.MB;
 using BC.ACCOUNTING.REPORT.Helper;
-
 namespace BC.ACCOUNTING.REPORT
 {
     public class Startup
@@ -102,6 +101,19 @@ namespace BC.ACCOUNTING.REPORT
             //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
             //        };
             //    });
+
+            services.AddHttpContextAccessor();
+            services.AddScoped<ReadJsonBody>(); services.AddControllers(options =>
+                {
+                    options.Filters.Add<ReadJsonBody>();
+                })
+                .AddNewtonsoftJson(options =>
+                {
+                    
+                    options.SerializerSettings.ReferenceLoopHandling =
+                        Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                });
+
             services.AddMemoryCache();
             services
                 .AddControllersWithViews();
@@ -136,6 +148,7 @@ namespace BC.ACCOUNTING.REPORT
                 configurator.ConfigureWebDocumentViewer(viewerConfigurator =>
                 {
                     viewerConfigurator.UseCachedReportSourceBuilder();
+                    
                 });
             });
 
@@ -190,6 +203,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESBZSaleInvoiceDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleListingSummaryDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(IncomeExpenseDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ItemInfoDto));
 
 
             Log.Logger = new LoggerConfiguration()
