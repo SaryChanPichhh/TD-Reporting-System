@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
-using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS

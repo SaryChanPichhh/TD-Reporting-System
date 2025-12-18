@@ -24,6 +24,5 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public string? Field7 { get; set; }
         public string? Field8 { get; set; }
         public string? Field9 { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
     }
 }

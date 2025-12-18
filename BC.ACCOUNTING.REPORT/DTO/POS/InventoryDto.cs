@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using BC.ACCOUNTING.REPORT.Helper;
 using DevExpress.Xpo;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS
 {

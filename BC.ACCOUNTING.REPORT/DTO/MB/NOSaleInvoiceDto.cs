@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text.Json.Serialization;
-using BC.ACCOUNTING.REPORT.DataSources.MB;
+﻿using BC.ACCOUNTING.REPORT.DataSources.MB;
 using BC.ACCOUNTING.REPORT.Helper;
 using DevExpress.Xpo;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace BC.ACCOUNTING.REPORT.DTO.MB
 {
@@ -18,21 +17,18 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public string CustomerName { get; set; }
         public string CustomerTel1 { get; set; }
         public string CustomerTel2 { get; set; }
+        public decimal ExchangeRate { get; set; } = 0;
         [Browsable(false)]
         public List<string> Tables { get; set; } = new();
         [Browsable(false)]
         public List<string> Queues { get; set; } = new();
-        public decimal Discount { get; set; }
+        public decimal DiscountOnInvoice { get; set; }
         public decimal TotalUSD { get; set; }
         public decimal TotalKHR { get; set; }
         public string Note { get; set; }
         public string Seller { get; set; }
         public decimal Deposit { get; set; }
-        public decimal DiscountPercent { get; set; }
-        [Nullable(true)]
-        [Browsable(false)]
-        public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
-        public string CurrencySymbol => CurrencyCode.GetEnumDescription();
+        public decimal DiscountPercentOnInvoice { get; set; }
         [Nullable(true)]
         [Browsable(false)]
         public int IsCombo { get; set; } = 0;

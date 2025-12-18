@@ -98,6 +98,10 @@
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
             this.SubTotal_Field = new DevExpress.XtraReports.UI.CalculatedField();
+            this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CurrencySymbol = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubCurrencySymbol = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
@@ -193,7 +197,7 @@
             // 
             this.xrTableCell23.CanGrow = false;
             this.xrTableCell23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrnecySymbol] + FormatString(\'{0:$#,##0.###}\',[Price]*[ExchangeRate])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,[Price]*[ExchangeRate])")});
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.StylePriority.UseTextAlignment = false;
@@ -206,7 +210,7 @@
             // 
             this.xrTableCell24.CanGrow = false;
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(\'{0:$ #,##0.###}\',[Total] * [ExchangeRate])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,[Total] * [ExchangeRate])\n")});
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.StylePriority.UseTextAlignment = false;
@@ -620,7 +624,7 @@
             this.xrLabel17.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel17.CanGrow = false;
             this.xrLabel17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ExchangeRate]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n0}\', [ExchangeRate])\n")});
             this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(419.0746F, 60.16665F);
             this.xrLabel17.Multiline = true;
@@ -653,7 +657,7 @@
             this.xrLabel9.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel9.CanGrow = false;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'$ \' + FormatString(\'{0:#.00}\', [TotalDollar])\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision, [TotalDollar])\n")});
             this.xrLabel9.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(419.1009F, 10.00001F);
             this.xrLabel9.Multiline = true;
@@ -812,6 +816,30 @@
             this.SubTotal_Field.Expression = "Sum([Total])";
             this.SubTotal_Field.Name = "SubTotal_Field";
             // 
+            // DecimalPrecision
+            // 
+            this.DecimalPrecision.Description = "Parameter1";
+            this.DecimalPrecision.Name = "DecimalPrecision";
+            this.DecimalPrecision.Visible = false;
+            // 
+            // SubDecimalPrecision
+            // 
+            this.SubDecimalPrecision.Description = "Parameter1";
+            this.SubDecimalPrecision.Name = "SubDecimalPrecision";
+            this.SubDecimalPrecision.Visible = false;
+            // 
+            // CurrencySymbol
+            // 
+            this.CurrencySymbol.Description = "Parameter1";
+            this.CurrencySymbol.Name = "CurrencySymbol";
+            this.CurrencySymbol.Visible = false;
+            // 
+            // SubCurrencySymbol
+            // 
+            this.SubCurrencySymbol.Description = "Parameter1";
+            this.SubCurrencySymbol.Name = "SubCurrencySymbol";
+            this.SubCurrencySymbol.Visible = false;
+            // 
             // CreditNoteReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -831,6 +859,11 @@
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A5;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.DecimalPrecision,
+            this.SubDecimalPrecision,
+            this.CurrencySymbol,
+            this.SubCurrencySymbol});
             this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
@@ -917,5 +950,9 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;
         private DevExpress.XtraReports.UI.XRLabel xrLabel15;
         private DevExpress.XtraReports.UI.XRLabel xrLabel20;
+        private DevExpress.XtraReports.Parameters.Parameter DecimalPrecision;
+        private DevExpress.XtraReports.Parameters.Parameter SubDecimalPrecision;
+        private DevExpress.XtraReports.Parameters.Parameter CurrencySymbol;
+        private DevExpress.XtraReports.Parameters.Parameter SubCurrencySymbol;
     }
 }

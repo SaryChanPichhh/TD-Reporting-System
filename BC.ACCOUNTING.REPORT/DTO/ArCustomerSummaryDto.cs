@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using BC.ACCOUNTING.REPORT.DataSources;
 
 namespace BC.ACCOUNTING.REPORT.DTO

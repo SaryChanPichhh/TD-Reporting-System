@@ -1,4 +1,5 @@
 ﻿using BC.ACCOUNTING.REPORT.DTO;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory
 {
@@ -16,6 +17,14 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory
             this.DataSource = objectDataSource;
             if(DetailReport is not null)
                 DetailReport.Visible = dto.FIELD_4?.ToUpper() != "FALSE";
+            if(Parameters["DecimalPrecision"] != null)
+            {
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if(Parameters["SubDecimalPrecision"] != null)
+            {
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
         }
         public InventoryReport(string report)
         {

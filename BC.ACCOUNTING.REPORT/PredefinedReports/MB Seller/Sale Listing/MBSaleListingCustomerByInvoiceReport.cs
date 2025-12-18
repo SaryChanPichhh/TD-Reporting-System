@@ -4,6 +4,7 @@ using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
 {
@@ -18,6 +19,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
 
         public MBSaleListingCustomerByInvoiceReport(MBSaleListingCustomereDto dto, string reportLayoutPath)
         {
+            LoadLayoutFromXml(reportLayoutPath);
             List<CustomerDto> customerInfo = new();
             foreach (var group in dto.Data)
             {
@@ -27,13 +29,13 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
                         x.ItemCode,
                         x.TransRef,
                         x.ConvDesc,
-                        x.SalePrice,x.Discount,x.DiscountOnInvoice,x.ExchangeRate
+                        x.SalePrice,x.Discount,x.DiscountOnInvoice,x.ExchangeRate,x.Cost,x.SetPrice
                     })
                     .Select(x =>
                     {
                         var first = x.FirstOrDefault();
                         return new MBSaleListingCustomerDataSource
-                        {
+                        {   
                             ItemCode = x.Key.ItemCode,
                             ConvDesc = x.Key.ConvDesc,
                             ConvDescKH = first?.ConvDescKH,
@@ -45,7 +47,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
                             Qty = x.Sum(s => s.Qty),
                             SalePrice = x.Key.SalePrice,
                             TransRef = x.Key.TransRef,
-
+                            Cost = x.Key.Cost,
+                            SetPrice = x.Key.SetPrice,
                             Date = first?.Date != null
                                 ? Convert.ToDateTime(first.Date).ToString("dd/MM/yyyy")
                                 : string.Empty
@@ -81,13 +84,21 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
                     TotalPaidAmount = group.TotalPaidAmount, 
                     CustomerName = group.CustomerName, 
                     CustomerNameKH = group.CustomerNameKH,
+                    
                     Items = flattenItems,
                 });
             }
 
             dto.Data = customerInfo;
-
-            LoadLayoutFromXml(reportLayoutPath);
+            if(Parameters["DecimalPrecision"] != null)
+            {
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if(Parameters["SubDecimalPrecision"] != null)
+            {
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
+            
             objectDataSource1.DataSource = dto;
             DataSource = objectDataSource1;
         }

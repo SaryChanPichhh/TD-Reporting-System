@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Globalization;
+using BC.ACCOUNTING.CORE.Enums;
 
 namespace BC.ACCOUNTING.CORE.DTO.General
 {
@@ -12,6 +10,10 @@ namespace BC.ACCOUNTING.CORE.DTO.General
         [Browsable(false)] public required string ReportName { get; set; }
         [Browsable(false)] public Export? ExportFormat { get; set; } = null; // null = View, otherwise Export
         [Browsable(false)] public string Connection { get; set; } = "Default";
+        public string CurrencySymbol { get; set; } = "$";
+        public string SubCurrencySymbol { get; set; } = "៛";
+        [Browsable(false)]public DecimalFormatting DecimalPrecision { get; set; } = DecimalFormatting.TwoDecimalPrecision;
+        [Browsable(false)]public DecimalFormatting SubDecimalPrecision { get; set; } = DecimalFormatting.Standard;
     }
     public enum Export
     {

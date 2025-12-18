@@ -12,6 +12,5 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public DateTime EndDate { get; set; }
         public DateTime PrintDate { get; set; }
         public List<IncomeExpenseDataSource> Data { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
     }
 }

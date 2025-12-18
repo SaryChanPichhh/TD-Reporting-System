@@ -1,6 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
-
+using DevExpress.Xpo;
 namespace BC.ACCOUNTING.REPORT.DataSources
 {
     public class ArCustomerInvoiceDataSource
@@ -12,5 +11,13 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("ទឹកប្រាក់")] public string TransValue { get; set; }
         [DisplayName("ទឹកប្រាក់ទូទាត់")] public string PaidValue { get; set; }
         [DisplayName("ទឹកប្រាក់ជំពាក់")] public string InDebt { get; set; }
+        [Nullable(true)]
+        public string InvoiceStatus { get; set; } = string.Empty;
+        [Nullable(true)]
+        public string InvoiceIssuer { get; set; } = string.Empty;
+        [Nullable(true)]
+        public string Note { get; set; } = string.Empty;
+        [Nullable(true)]
+        public string PaymentMethod { get; set; } = string.Empty;
     }
 }

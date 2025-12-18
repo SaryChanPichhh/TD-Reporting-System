@@ -9,6 +9,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         [DisplayName("លេខកូដទំនិញ")] public string ItemCode { get; set; }
         [DisplayName("ឈ្មោះទំនិញ")] public string ItemDesc { get; set; }
         [DisplayName("រូបទំនិញ")] public string? ItemImage { get; set; }
+        public string? ItemDescCN { get; set; } = string.Empty;
         [DisplayName("ទិន្នន័យបម្លែងឯកតា")] public List<ItemUnit>? UnitConvert { get; set; }
     }
 

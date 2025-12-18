@@ -121,4 +121,9 @@
     <value>Iif([ShopName]== 'សុជាតា','https://accreport.tonairedigital.net/assets/POS/user_image/AA118/SOCHEATA.png' ,
 Iif([ShopName]=='POS IU','https://accreport.tonairedigital.net/assets/POS/user_image/AA094/4420.jpg' , Iif([ShopName]=='Bee Auto','https://accreport.tonairedigital.net/assets/POS/user_image/AA091/4414.jpg' ,[ShopImage] )))</value>
   </data>
+  <data name="xrLabel17.ExpressionBindings" xml:space="preserve">
+    <value>FormatString('{0:$#,##0.##}',Iif([CurrencySymbol]=='$',ToDouble(Replace(Trim([TransValue]) , '$', '') ),ToDouble(Replace(Trim([TransValue]) , '$', '') ) / ToDouble(Replace(Trim([ExchangeRate]) , '$', '') ))
+)
+</value>
+  </data>
 </root>

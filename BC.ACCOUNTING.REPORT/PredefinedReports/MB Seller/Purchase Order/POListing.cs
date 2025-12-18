@@ -1,5 +1,6 @@
 ﻿using System;
 using BC.ACCOUNTING.REPORT.DTO;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order
 {
@@ -16,6 +17,14 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order
             objectDataSource1.DataSource = dto;
             Parameters["StartDate"].Value = dto.StartDate;
             Parameters["EndDate"].Value = dto.EndDate;
+            if(Parameters["DecimalPrecision"]!=null)
+            {
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if(Parameters["SubDecimalPrecision"]!=null)
+            {
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
             if (StartDate.Value.Equals(DateTime.MinValue) && EndDate.Value.Equals(DateTime.MinValue))
             {
                 xrLabel3.Visible = false;

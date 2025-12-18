@@ -127,6 +127,8 @@
             this.Quantity_Field = new DevExpress.XtraReports.UI.CalculatedField();
             this.SalePrice_Field = new DevExpress.XtraReports.UI.CalculatedField();
             this.Discount_Field = new DevExpress.XtraReports.UI.CalculatedField();
+            this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
@@ -272,7 +274,7 @@
             // 
             this.xrTableCell41.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell41.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',([Discount_Field])\n) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,([Discount_Field])\n) \n")});
             this.xrTableCell41.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
@@ -301,7 +303,7 @@
             // 
             this.xrTableCell30.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',[SalePrice_Field]) ")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,[SalePrice_Field]) ")});
             this.xrTableCell30.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
@@ -315,7 +317,7 @@
             // 
             this.xrTableCell7.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',[SubTotals_Field]) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,[SubTotals_Field]) \n")});
             this.xrTableCell7.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
@@ -909,7 +911,7 @@
             this.xrTableCell37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
             this.xrTableCell37.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',([TotalAmount])\n) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,([TotalAmount])\n) \n")});
             this.xrTableCell37.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
@@ -942,7 +944,7 @@
             this.xrTableCell34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
             this.xrTableCell34.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',([TotalPaidAmount])\n) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,([TotalPaidAmount])\n) \n")});
             this.xrTableCell34.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
@@ -968,15 +970,15 @@
             this.xrTableCell25.StylePriority.UseTextAlignment = false;
             this.xrTableCell25.Text = "នៅសល់:";
             this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell25.Weight = 0.54569555099212119D;
+            this.xrTableCell25.Weight = 0.51858509360333971D;
             // 
             // xrTableCell39
             // 
             this.xrTableCell39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
             this.xrTableCell39.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell39.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',([TotalAmount] - [TotalPaidAmount" +
-                    "])\n) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,([TotalAmount] - [TotalPaidAmou" +
+                    "nt])\n) \n")});
             this.xrTableCell39.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
@@ -987,7 +989,7 @@
             this.xrTableCell39.Text = "xrTableCell39";
             this.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell39.TextFormatString = "{0:$0.###}";
-            this.xrTableCell39.Weight = 0.719777964128598D;
+            this.xrTableCell39.Weight = 0.74688842151737944D;
             // 
             // ReportFooter2
             // 
@@ -1050,8 +1052,8 @@
             // 
             this.xrTableCell43.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell43.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum([Items.Discount_Field])))" +
-                    "\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([CurrencySymbol] +FormatString(?DecimalPrecision,sumSum([Items.Discount_Field]))" +
+                    ")\n")});
             this.xrTableCell43.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell43.Multiline = true;
             this.xrTableCell43.Name = "xrTableCell43";
@@ -1084,8 +1086,8 @@
             // 
             this.xrTableCell31.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum(([Items].[SalePrice]))\n) \n" +
-                    "")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,sumSum(([Items].[SalePrice]))\n) " +
+                    "\n")});
             this.xrTableCell31.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
@@ -1102,8 +1104,8 @@
             // 
             this.xrTableCell32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum([Items].[SubTotals_Field]\n" +
-                    ")\n) ")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,sumSum([Items].[SubTotals_Field]" +
+                    "\n)\n) ")});
             this.xrTableCell32.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
@@ -1173,8 +1175,8 @@
             // 
             this.xrTableCell42.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum([Items.Discount_Field])) " +
-                    "\n)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([CurrencySymbol] +FormatString(?DecimalPrecision,sumSum([Items.Discount_Field]))" +
+                    " \n)")});
             this.xrTableCell42.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
@@ -1208,8 +1210,8 @@
             // 
             this.xrTableCell14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum([Items].[SalePrice_Field])" +
-                    "\n) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(?DecimalPrecision,sumSum([Items].[SalePrice_Field]" +
+                    ")\n) \n")});
             this.xrTableCell14.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
@@ -1226,8 +1228,8 @@
             // 
             this.xrTableCell15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([CurrencySymbol] +\' \'+ FormatString(\'{0:0.###}\',sumSum([Items.SubTotals_Field])\n" +
-                    ") \n)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum([Items.SubTotals_Field])" +
+                    ") \n")});
             this.xrTableCell15.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
@@ -1264,6 +1266,18 @@
             this.Discount_Field.Expression = "([Discount]+[DiscountOnInvoice] )*[ExchangeRate]";
             this.Discount_Field.Name = "Discount_Field";
             // 
+            // DecimalPrecision
+            // 
+            this.DecimalPrecision.Description = "Parameter1";
+            this.DecimalPrecision.Name = "DecimalPrecision";
+            this.DecimalPrecision.Visible = false;
+            // 
+            // SubDecimalPrecision
+            // 
+            this.SubDecimalPrecision.Description = "Parameter1";
+            this.SubDecimalPrecision.Name = "SubDecimalPrecision";
+            this.SubDecimalPrecision.Visible = false;
+            // 
             // MBSaleListingCustomerByInvoiceReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1286,6 +1300,9 @@
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.DecimalPrecision,
+            this.SubDecimalPrecision});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1,
             this.xrControlStyle2});
@@ -1393,5 +1410,7 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell40;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell43;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell42;
+        private DevExpress.XtraReports.Parameters.Parameter DecimalPrecision;
+        private DevExpress.XtraReports.Parameters.Parameter SubDecimalPrecision;
     }
 }

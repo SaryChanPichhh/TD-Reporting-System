@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using BC.ACCOUNTING.REPORT.DTO.POS;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
 {
@@ -17,6 +18,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
     
 
             LoadLayoutFromXml(reportName);
+            if (this.Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
             objectDataSource1.DataSource = dto;
 
         }

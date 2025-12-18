@@ -1,4 +1,5 @@
 ﻿using BC.ACCOUNTING.REPORT.DTO;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AR
 {
@@ -13,10 +14,10 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AR
             this.LoadLayoutFromXml(reportName);
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
-            //var count = dto.Items
-            //    .Select(x => x.TransRef)
-            //    .Distinct()
-            //    .Count();
+            if (Parameters["DecimalPrecision"] is not null)
+                DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+            if (Parameters["SubDecimalPrecision"] is not null)
+                SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
 
         }
     }

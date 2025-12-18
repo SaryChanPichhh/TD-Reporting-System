@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using DevExpress.Xpo;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 
 namespace BC.ACCOUNTING.REPORT.DataSources.MB
 {

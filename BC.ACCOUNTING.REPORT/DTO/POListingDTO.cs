@@ -12,6 +12,5 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [DisplayName("ថ្ងៃចាប់ផ្តើម")] public DateTime StartDate { get; set; } = DateTime.MinValue;
         [DisplayName("ថ្ងៃបញ្ចប់")] public DateTime EndDate { get; set; } = DateTime.MinValue;
         [DisplayName("ទិន្នន័យ")] public List<POListingDataSource> Orders { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
     }
 }

@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
 {
@@ -20,6 +21,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
         {
             
             this.LoadLayoutFromXml(reportName);
+            if (this.Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
             xrPictureBox1.BeforePrint += xrPictureBox1_BeforePrint;

@@ -21,7 +21,6 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [DisplayName("អ្នកត្រួតពិនិត្យ")] public string Checker { get; set; }
         [DisplayName("កាលបរិច្ឆេទពិនិត្យ")] public string CheckDate { get; set; }
         [DisplayName("ទិន្នន័យ")] public List<ItemDataSource> Items { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
 
     }
 }

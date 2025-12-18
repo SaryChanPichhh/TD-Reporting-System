@@ -15,6 +15,5 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public string ShopName { get; set; }
         public string ShopImage { get; set; }
         public List<MBSaleListingSummaryDataSource> Data { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
     }
 }

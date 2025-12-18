@@ -26,7 +26,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
         public static List<FlatPurchaseOrderRow> Flatten(PurchaseOrderDto po)
         {
             var result = new List<FlatPurchaseOrderRow>();
-            int rowNumber = 1;
+            var rowNumber = 1;
 
             foreach (var item in po.Items)
             {
@@ -38,6 +38,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                         RowNumber = isFirst ? rowNumber++.ToString() : string.Empty,  // Only show row number on first line
                         ItemCode = isFirst ? item.ItemCode : string.Empty,
                         ItemDesc = isFirst ? item.ItemDesc : string.Empty,
+                        ItemDescCN  = isFirst ? item.ItemDescCN : string.Empty,
                         Qty = uc.Qty,
                         UnitStock = uc.UnitStock,
                         Price = uc.Price,
@@ -210,8 +211,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 Note = dto.Note,
                 SaleRep = dto.SaleRep,
                 TransRef = dto.TransRef,ExchangeRate = dto.ExchangeRate,
-                TotalRiel = dto.TotalRiel,
-                TotalDollar = dto.TotalDollar
+                TotalRiel = dto.TotalRiel==0?dto.TotalSubCurrency:dto.TotalRiel,
+                TotalDollar = dto.TotalDollar==0?dto.TotalMainCurrency:dto.TotalDollar,
             };
         }
     }

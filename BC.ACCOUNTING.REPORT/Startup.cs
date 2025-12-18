@@ -2,11 +2,17 @@ using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE;
 using BC.ACCOUNTING.REPORT.DataSources;
 using BC.ACCOUNTING.REPORT.DTO;
+using BC.ACCOUNTING.REPORT.DTO.MB;
 using BC.ACCOUNTING.REPORT.DTO.POS;
 using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
+using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.ImageCache;
 using BC.ACCOUNTING.REPORT.IService.ReportToken;
 using BC.ACCOUNTING.REPORT.Models;
 using BC.ACCOUNTING.REPORT.PredefinedReports;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
 using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing;
 using BC.ACCOUNTING.REPORT.Services;
 using BC.ACCOUNTING.REPORT.Services.ReportToken;
@@ -25,17 +31,8 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
 using System.IO;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
-using BC.ACCOUNTING.REPORT.ImageCache;
-using System.Net.Http;
 using System.Net;
-using DevExpress.XtraPrinting.Preview;
-using System.Threading;
-using BC.ACCOUNTING.REPORT.DTO.MB;
-using BC.ACCOUNTING.REPORT.Helper;
+using System.Net.Http;
 namespace BC.ACCOUNTING.REPORT
 {
     public class Startup
@@ -204,6 +201,8 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBSaleListingSummaryDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(IncomeExpenseDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ItemInfoDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(MBCustomersDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ARCustomerInvoiceDetailDto));
 
 
             Log.Logger = new LoggerConfiguration()

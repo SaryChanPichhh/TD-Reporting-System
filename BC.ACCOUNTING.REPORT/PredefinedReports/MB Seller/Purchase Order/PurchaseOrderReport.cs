@@ -39,7 +39,16 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order
             Parameters["CheckDate"].Value = dto.CheckDate;
             Parameters["TotalRiel"].Value = dto.ExchangeRate * dto.Total;
             Parameters["CurrencySymbol"].Value = dto.CurrencySymbol;
-
+            if(Parameters["SubCurrencySymbol"]!=null)
+                Parameters["SubCurrencySymbol"].Value = dto.SubCurrencySymbol;
+            if(Parameters["DecimalPrecision"]!=null)
+            {
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if(Parameters["SubDecimalPrecision"]!=null)
+            {
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
         }
         public PurchaseOrderReport(string report)
         {

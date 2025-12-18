@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics;
 using BC.ACCOUNTING.REPORT.DTO.POS;
+using BC.ACCOUNTING.REPORT.Helper;
 using DevExpress.XtraReports.UI;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
@@ -18,6 +19,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
             this.objectDataSource1.DataSource = dto;
             if(GroupHeader1 is not null)
                 GroupHeader1.BeforePrint += GroupHeader1_BeforePrint;
+            if (this.Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
 
         }
 

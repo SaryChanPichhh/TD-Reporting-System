@@ -6,11 +6,16 @@ using BC.ACCOUNTING.REPORT.DTO.MB;
 using BC.ACCOUNTING.REPORT.DTO.POS;
 using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
 using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 using BC.ACCOUNTING.REPORT.ImageCache;
 using BC.ACCOUNTING.REPORT.Models;
 using BC.ACCOUNTING.REPORT.PredefinedReports;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.CreditNote;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Customer;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory.Expired;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Items;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order.SCS;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing;
@@ -27,30 +32,24 @@ using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Inventory;
 using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Purchase_Order;
 using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleInvoice;
 using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleListing;
+using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AP;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AR;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.Summary;
 using BC.ACCOUNTING.REPORT.Services;
 using DevExpress.XtraReports.UI;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.CreditNote;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Items;
-using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AP;
-using DevExpress.XtraPrinting;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO;
 using DailyClosingReport = BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport;
-using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
-using System.Net.Http.Json;
 
 
 namespace BC.ACCOUNTING.REPORT.Controllers
@@ -87,7 +86,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
             ReportHelper.ReportDirectory = _reportDirectory;
             ReportHelper.ImageUrl = _imageRoutes;
-            //var json = HttpContext.Items["RequestJson"] as Dictionary<string, object>;
         }
 
 
@@ -105,6 +103,36 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 return NotFound("Report file not found.");
 
             var report = new DailySaleReport(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+
+        [HttpPost("mb-arcustomerinvoicedetail")]
+        public IActionResult ARCustomerInvoiceDetail([FromBody] ARCustomerInvoiceDetailDto dto)
+        {
+            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
+            //if (user == null)
+            //    return Unauthorized();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+
+            var report = new ARCustomerInvoiceDetailReport(dto, reportPath);
 
             if (dto.ExportFormat.HasValue)
             {
@@ -184,6 +212,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             ViewBag.HideHeader = true;
             return View("Invoice", report);
         }
+        
+        
         [HttpPost("mb-ap")]
         public async Task<IActionResult> AP([FromBody] AgingDto dto)
         {
@@ -196,6 +226,32 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 return NotFound("Report file not found.");
             var arList = await _unitOfWork.AccountRecievables.GetAgingReport(dto);
             var report = new APReport(arList,reportPath,dto.CompanyName);
+            
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+        [HttpPost("mb-customerlisting")]
+        public async Task<IActionResult> MBCustomerListing([FromBody] MBCustomersDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new MBCustomerListingA4Report(dto, reportPath);
             
             if (dto.ExportFormat.HasValue)
             {
@@ -336,7 +392,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
-            var report = new PredefinedReports.MB_Seller.Purchase_Order.PurchaseOrderReport(dto, reportPath);
+            var report = new PurchaseOrderReport(dto, reportPath);
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -409,13 +465,12 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            
-            var  report = new SaleInvoiceReport(dto, reportPath, _imageRoutes[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]??"");
+            var imageUrl = Path.Combine(_imageRoutes[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]);
+            var  report = new SaleInvoiceReport(dto, reportPath, imageUrl);
             
             if (dto.ExportFormat.HasValue)
             {

@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using BC.ACCOUNTING.REPORT.DTO;
+﻿using BC.ACCOUNTING.REPORT.DTO;
 using BC.ACCOUNTING.REPORT.Helper;
 using BC.ACCOUNTING.REPORT.Models;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.IO;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
 {
@@ -76,6 +74,14 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
         public SaleInvoiceReport(SaleInvoiceDto dto,string reportName,string imageUrl = "")
         {
             this.LoadLayoutFromXml(reportName);
+            if(this.Parameters["DecimalPrecision"]!=null)
+            {
+                this.Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if(this.Parameters["SubDecimalPrecision"] != null)
+            {
+                this.Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
             var data = ReportExtension.Flatten(dto);
             if(reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\HD7SaleInvoiceReport.repx"))
             {
@@ -253,8 +259,12 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             Parameters["Discount"].Value = dto.Discount;
             Parameters["ExchangeRate"].Value = dto.ExchangeRate;
             Parameters["Total"].Value = dto.SubTotal;
-            Parameters["TotalRiel"].Value = dto.TotalKHR;
-            Parameters["TotalDollar"].Value = dto.TotalUSD;
+            Parameters["TotalRiel"].Value = dto.TotalKHR ==0 ? 
+                dto.CurrencySymbol.Equals(ExchangesCurrency.KHR.GetEnumDescription())? dto.TotalMainCurr : dto.TotalSubCurr
+                : dto.CurrencySymbol.Equals(ExchangesCurrency.KHR.GetEnumDescription()) ? dto.TotalUSD :dto.TotalKHR;
+            Parameters["TotalDollar"].Value = dto.TotalUSD ==0 ? 
+                dto.CurrencySymbol.Equals(ExchangesCurrency.USD.GetEnumDescription()) ? dto.TotalMainCurr : dto.TotalSubCurr  
+                : dto.CurrencySymbol.Equals(ExchangesCurrency.USD.GetEnumDescription()) ? dto.TotalUSD: dto.TotalKHR;
             Parameters["Note"].Value = dto.Note;
             Parameters["Seller"].Value = dto.Seller;
             Parameters["Field1"].Value = dto.Field1;
@@ -268,6 +278,12 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             Parameters["Field9"].Value = dto.Field9;
             if(Parameters["CurrencySymbol"] != null)
                 Parameters["CurrencySymbol"].Value = dto.CurrencySymbol;
+            if (Parameters["SubCurrencySymbol"] != null)
+                Parameters["SubCurrencySymbol"].Value = dto.SubCurrencySymbol;
+            if (Parameters["DecimalPrecision"] != null)
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            if (Parameters["SubDecimalPrecision"] != null)
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
             if (Parameters["Store"] != null)
                 Parameters["Store"].Value = dto.Store;
 

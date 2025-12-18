@@ -27,7 +27,7 @@ namespace BC.ACCOUNTING.REPORT
             _next = next;
             _log = log;
             _logReqBody = cfg.GetValue("Logging:LogRequestBodyOnError", true);
-            _maxBody = cfg.GetValue("Logging:MaxLoggedBodyBytes", 4096);
+            _maxBody = cfg.GetValue("Logging:MaxLoggedBodyBytes", 10485760);
             _maskFields = cfg.GetSection("Logging:MaskFields").Get<string[]>() ?? Array.Empty<string>();
             _pretty = cfg.GetValue("Logging:PrettyPrintJson", true);
         }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using BC.ACCOUNTING.REPORT.DataSources;
 using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DTO.RESTAURANT

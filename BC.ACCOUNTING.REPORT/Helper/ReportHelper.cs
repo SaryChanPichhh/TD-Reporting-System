@@ -1,16 +1,13 @@
-﻿using System;
+﻿using BC.ACCOUNTING.REPORT.DTO;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
+using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using BC.ACCOUNTING.REPORT.DTO;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
-using DevExpress.Office.NumberConverters;
-using DevExpress.XtraReports.UI;
-using DevExpress.XtraReports.Wizards;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
 
 namespace BC.ACCOUNTING.REPORT.Helper
 {
@@ -40,6 +37,26 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceWithDeliveryFeeReport.repx"),
                                     (ReportModes.NormalMode, "POSSaleInvoiceReport.repx")
+                                }
+                            },
+                        }
+                    },{
+                        "POSSaleInvoiceA5Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5Report.repx"),
+                                    (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
                                 }
                             },
                         }
@@ -468,7 +485,32 @@ namespace BC.ACCOUNTING.REPORT.Helper
 
             return (null, null);
         }
-  
+        public static string DisplayCurrency(ExchangesCurrency currencySymbol)
+        {
+            return currencySymbol switch
+            {
+                ExchangesCurrency.KHR => "សរុបរៀល",
+                ExchangesCurrency.USD => "សរុបដុល្លារ",
+                ExchangesCurrency.BTH => "សរុបបាត",
+                ExchangesCurrency.VND => "សរុបដុង",
+                _ => "សរុបដុល្លារ",
+            };
+
+        }
+        public static TEnum FromDescription<TEnum>(string description)
+            where TEnum : Enum
+        {
+            foreach (var field in typeof(TEnum).GetFields())
+            {
+                var attribute = field.GetCustomAttribute<DescriptionAttribute>();
+                if (attribute?.Description == description)
+                {
+                    return (TEnum)field.GetValue(null)!;
+                }
+            }
+
+            throw new ArgumentException($"No enum found for description '{description}'");
+        }
 
     }
 }

@@ -9,7 +9,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public DateTime PrintDate { get; set; }
         public DateTime FromDate { get; set; }
         public DateTime EndDate { get; set; }
-        public string CurrencySymbol { get; set; } = "$";
         public List<SaleInvoiceSummaryDataSource> Items { get; set; }
     }
 }

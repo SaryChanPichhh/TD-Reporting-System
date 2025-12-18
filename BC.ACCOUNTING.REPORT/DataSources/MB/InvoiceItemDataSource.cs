@@ -19,7 +19,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
         public string UnitStock { get; set; }
         public int Qty { get; set; }
         public decimal Price { get; set; }
-        public decimal ExchangeRate { get; set; } = 0;
+
         public List<ComboItemDataSource> Combo { get; set; } = new();
     }
     public class ComboItemDataSource

@@ -305,7 +305,7 @@
             // xrTableCell34
             // 
             this.xrTableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Cost]*[Quantity])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Cost])")});
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
             this.xrTableCell34.StylePriority.UseTextAlignment = false;
@@ -319,7 +319,7 @@
             // xrTableCell42
             // 
             this.xrTableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([UnitPrice]*[Quantity]-[DiscountPrice]) - sumSum([Cost]*[Quantity])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([UnitPrice]*[Quantity]-[DiscountPrice]) - sumSum([Cost])")});
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.StylePriority.UseTextAlignment = false;
@@ -340,7 +340,7 @@
             this.xrPictureBox1,
             this.xrLabel2,
             this.xrLabel1});
-            this.ReportHeader.HeightF = 337.6573F;
+            this.ReportHeader.HeightF = 337.6574F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable3
@@ -468,7 +468,7 @@
             this.xrLabel3});
             this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 213.1299F);
             this.xrPanel1.Name = "xrPanel1";
-            this.xrPanel1.SizeF = new System.Drawing.SizeF(787F, 81.1458F);
+            this.xrPanel1.SizeF = new System.Drawing.SizeF(788.9998F, 81.1458F);
             this.xrPanel1.StylePriority.UseBackColor = false;
             // 
             // xrLabel4
@@ -648,7 +648,7 @@
             // 
             this.xrPictureBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ImageUrl", "[ShopImage]")});
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 0F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(120F, 120F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
@@ -772,7 +772,7 @@
             // xrTableCell56
             // 
             this.xrTableCell56.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Cost]*[Quantity])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Cost])")});
             this.xrTableCell56.Multiline = true;
             this.xrTableCell56.Name = "xrTableCell56";
             this.xrTableCell56.StylePriority.UseTextAlignment = false;
@@ -1264,7 +1264,7 @@
             // 
             this.totalcost_cal.DataMember = "Data";
             this.totalcost_cal.DisplayName = "totalCost";
-            this.totalcost_cal.Expression = "([Cost]*[Quantity] )*[ExchangeRate]";
+            this.totalcost_cal.Expression = "([Cost])*[ExchangeRate]";
             this.totalcost_cal.Name = "totalcost_cal";
             // 
             // profit_cal

@@ -7,6 +7,7 @@ namespace BC.ACCOUNTING.REPORT.Models
         [Description("ល.រ")]public string RowNumber { get; set; }          // For numbering visible rows (ល.រ)
         [Description("លេខកូដទំនិញ")]public string ItemCode { get; set; }        // Item Code (once per group)
         [Description("ឈ្មោះទំនិញ")]public string ItemDesc { get; set; }        // Item Name/Description
+        public string ItemDescCN { get; set; } = string.Empty;      // Item Name/Description
         [Description("ចំនួន")]public decimal Qty { get; set; }            // From UnitConvert
         [Description("ឯកតាស្តុក")]public string UnitStock { get; set; }       // From UnitConvert
         [Description("តម្លៃ")]public decimal Price { get; set; }          // From UnitConvert

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
-using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS
 {

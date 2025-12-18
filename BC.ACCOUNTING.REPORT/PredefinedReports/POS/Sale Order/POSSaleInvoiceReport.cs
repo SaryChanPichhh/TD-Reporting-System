@@ -1,12 +1,10 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using BC.ACCOUNTING.REPORT.DTO.POS;
+using DevExpress.XtraReports.UI;
 using System;
-using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
-using BC.ACCOUNTING.REPORT.DTO.POS;
-using DevExpress.XtraCharts.Native;
-using DevExpress.XtraPrinting.Drawing;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
 {
@@ -18,7 +16,11 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
         }
         public POSSaleInvoiceReport(POSSaleInvoiceDto dto, string reportName)
         {
+            
             this.LoadLayoutFromXml(reportName);
+            Console.WriteLine(dto.DecimalPrecision);
+            if (Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
         }

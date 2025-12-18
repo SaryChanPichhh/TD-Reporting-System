@@ -737,8 +737,7 @@
             // 
             this.xrTableCell16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ExchangeSign] +\' \'+Iif([ExchangeSign] = \'$\',FormatString(\'{0:#,##0.00}\',sumSum([" +
-                    "Cost])*[ExchangeRate]) \n,FormatString(\'{0:#,###}\',Round( sumSum([Cost])*[Exchang" +
-                    "eRate]) )) \n")});
+                    "Cost])) \n,FormatString(\'{0:#,###}\',Round( sumSum([Cost])) )) \n")});
             this.xrTableCell16.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";

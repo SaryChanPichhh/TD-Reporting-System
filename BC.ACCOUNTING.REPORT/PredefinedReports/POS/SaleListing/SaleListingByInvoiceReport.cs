@@ -30,7 +30,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing
                 xrTableCell11.PrintOnPage += xrTableCell31_PrintOnPage;
             if (xrTableCell24 is not null)
                 xrTableCell24.PrintOnPage += xrTableCell24_PrintOnPage;
-            
+            if (this.Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
         }
         private void xrPictureBox1_BeforePrint(object sender, CancelEventArgs e)
         {

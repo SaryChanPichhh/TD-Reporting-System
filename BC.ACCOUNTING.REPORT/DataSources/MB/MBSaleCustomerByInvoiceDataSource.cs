@@ -21,6 +21,8 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
         public string? CategoryCode { get; set; }
         public string? Category { get; set; }
         public string? CategoryKh { get; set; }
+        public decimal Cost { get; set; } = 0;
+        public decimal SetPrice { get; set; } = 0;
         public decimal ExchangeRate { get; set; } = 1;
         public decimal Discount { get; set; } = 0;
         public decimal DiscountOnInvoice { get; set; } = 0;

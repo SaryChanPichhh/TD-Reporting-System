@@ -17,6 +17,17 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.CreditNote
         public CreditNoteReport(CreditNoteDto dto,string reportName)
         {
             LoadLayoutFromXml(reportName);
+            if (Parameters["DecimalPrecision"] is not null)
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            
+            if (Parameters["SubDecimalPrecision"] is not null)
+                Parameters["SubDecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+            
+            if (Parameters["CurrencySymbol"] is not null)
+                Parameters["CurrencySymbol"].Value = dto.CurrencySymbol;
+            
+            if (Parameters["SubCurrencySymbol"] is not null)
+                Parameters["SubCurrencySymbol"].Value = dto.SubCurrencySymbol;
             objectDataSource1.DataSource = dto.CreditNoteFlatten();
         }
     }

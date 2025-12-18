@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
 {
@@ -21,6 +22,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
         public DailyClosingInventoryReport(DailyClosingInventoryDto inventoryDto, string reportName)
         {
             this.LoadLayoutFromXml(reportName);
+            if (this.Parameters["DecimalPrecision"] is not null)
+                this.DecimalPrecision.Value = inventoryDto.DecimalPrecision.GetEnumDescription();
+
             this.ReportHeader1.BeforePrint += ReportHeader1_BeforePrint;
             this.Detail2.BeforePrint += Detail2_BeforePrint;
             this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint;

@@ -14,10 +14,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public DateTime EndDate { get; set; }
         public DateTime PrintDate { get; set; }
         public decimal DiscountOnInvoice { get; set; }
-        [DevExpress.Xpo.Nullable(true)]
-        [Browsable(false)]
-        public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
-        public string CurrencySymbol => CurrencyCode.GetEnumDescription();
         public List<ClosingInventoryDataSource> Items { get; set; } 
     }
 }

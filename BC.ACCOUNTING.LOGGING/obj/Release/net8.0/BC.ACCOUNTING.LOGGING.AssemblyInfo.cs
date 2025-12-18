@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BC.ACCOUNTING.LOGGING")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31d09eee26e45fe67ed9c9ba14fffa4fdac70535")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08bb6f17d8762cebb6e341e09252dc533bee1f9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BC.ACCOUNTING.LOGGING")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BC.ACCOUNTING.LOGGING")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

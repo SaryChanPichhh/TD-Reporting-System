@@ -11,9 +11,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
 
         public SaleInvoiceA5Report(SaleInvoiceDto dto, string reportName)
         {
-            //this.LoadLayoutFromXml(reportName);
-            
-
+ 
         }
     }
 }

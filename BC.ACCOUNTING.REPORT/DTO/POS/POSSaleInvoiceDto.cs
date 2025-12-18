@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
-using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS
 {
-        public record POSSaleInvoiceDto : ReportDto
+    public record POSSaleInvoiceDto : ReportDto
         {
             public string ShopName { get; set; }
             public string ShopImage { get; set; }
@@ -22,6 +22,7 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
             public string Note { get; set; }
             [Nullable(true)] [Browsable(false)] public Languages? Language { get; set; } = Languages.KM;
             [Nullable(true)] [Browsable(false)] public ReportModes? ReportMode { get; set; } = ReportModes.NormalMode;
+            
             public decimal? DeliveryFee { get; set; } = 0;
             public string? Field1 { get; set; }
             [Nullable(true)] public string? Field2 { get; set; }
