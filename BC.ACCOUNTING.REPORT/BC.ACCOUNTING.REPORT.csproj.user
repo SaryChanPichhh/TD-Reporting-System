@@ -65,6 +65,9 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\SaleInvoiceNoDisReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\SCS\SCSSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>

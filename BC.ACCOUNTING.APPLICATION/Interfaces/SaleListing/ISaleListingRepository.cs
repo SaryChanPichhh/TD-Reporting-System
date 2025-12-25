@@ -7,5 +7,6 @@ namespace BC.ACCOUNTING.APPLICATION.Interfaces.SaleListing
     {
         Task<List<SaleListingModel>> GetSaleListingsAsync(SaleListingDto dto);
         Task<List<SaleListingModel>> GetSaleListingsWithListOfInvoiceTypeAsync(SaleListingDto dto);
+        Task<List<MOSaleListingModel>> GetSaleListingForMOAsync(SaleListingDto dto);
     }
 }

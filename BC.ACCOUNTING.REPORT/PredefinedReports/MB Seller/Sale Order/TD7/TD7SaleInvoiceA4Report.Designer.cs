@@ -1,4 +1,4 @@
-﻿namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
+﻿namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7
 {
     partial class TD7SaleInvoiceA4Report
     {
@@ -34,9 +34,6 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -46,7 +43,16 @@
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrLabel30 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrBarCode2 = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrLabel51 = new DevExpress.XtraReports.UI.XRLabel();
@@ -66,8 +72,6 @@
             this.xrLabel58 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel49 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel50 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel45 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel46 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel47 = new DevExpress.XtraReports.UI.XRLabel();
@@ -83,14 +87,9 @@
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine4 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLine2 = new DevExpress.XtraReports.UI.XRLine();
@@ -98,6 +97,8 @@
             this.xrLine6 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
@@ -111,8 +112,7 @@
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel20 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.Market = new DevExpress.XtraReports.Parameters.Parameter();
@@ -166,83 +166,6 @@
             this.xrTable1});
             this.Detail.HeightF = 30F;
             this.Detail.Name = "Detail";
-            // 
-            // ReportHeader
-            // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable2,
-            this.xrLabel30,
-            this.xrBarCode2,
-            this.xrLabel51,
-            this.xrLabel52,
-            this.xrLabel53,
-            this.xrLabel54,
-            this.xrLabel33,
-            this.xrLabel32,
-            this.xrLabel39,
-            this.xrLine5,
-            this.xrLabel34,
-            this.xrLabel27,
-            this.xrLabel28,
-            this.xrLabel55,
-            this.xrLabel56,
-            this.xrLabel57,
-            this.xrLabel58,
-            this.xrLabel49,
-            this.xrLabel50,
-            this.xrLabel6,
-            this.xrLabel2,
-            this.xrLabel45,
-            this.xrLabel46,
-            this.xrLabel47,
-            this.xrLabel42,
-            this.xrLabel43,
-            this.xrLabel44,
-            this.xrLabel36,
-            this.xrLabel26,
-            this.xrLabel23,
-            this.xrLabel22,
-            this.xrLabel21,
-            this.xrLabel7,
-            this.xrLabel5,
-            this.xrLabel4,
-            this.xrLabel3});
-            this.ReportHeader.HeightF = 277.8622F;
-            this.ReportHeader.Name = "ReportHeader";
-            // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLine4,
-            this.xrLine3,
-            this.xrLine2,
-            this.xrLabel1,
-            this.xrLine6,
-            this.xrLabel29,
-            this.xrPanel1,
-            this.xrLabel18,
-            this.xrLabel14,
-            this.xrLabel12,
-            this.xrLabel10,
-            this.xrLabel11,
-            this.xrLabel8,
-            this.xrLabel9,
-            this.xrLine1,
-            this.xrBarCode1,
-            this.xrLabel13,
-            this.xrLabel16,
-            this.xrLabel20,
-            this.xrLabel17});
-            this.ReportFooter.HeightF = 244.5524F;
-            this.ReportFooter.Name = "ReportFooter";
-            this.ReportFooter.PrintAtBottom = true;
-            // 
-            // PageFooter
-            // 
-            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPageInfo1});
-            this.PageFooter.HeightF = 22.99998F;
-            this.PageFooter.Name = "PageFooter";
             // 
             // xrTable1
             // 
@@ -355,6 +278,47 @@
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell9.Weight = 0.87705237699199634D;
             // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2,
+            this.xrLabel30,
+            this.xrBarCode2,
+            this.xrLabel51,
+            this.xrLabel52,
+            this.xrLabel53,
+            this.xrLabel54,
+            this.xrLabel33,
+            this.xrLabel32,
+            this.xrLabel39,
+            this.xrLine5,
+            this.xrLabel34,
+            this.xrLabel27,
+            this.xrLabel28,
+            this.xrLabel55,
+            this.xrLabel56,
+            this.xrLabel57,
+            this.xrLabel58,
+            this.xrLabel49,
+            this.xrLabel50,
+            this.xrLabel45,
+            this.xrLabel46,
+            this.xrLabel47,
+            this.xrLabel42,
+            this.xrLabel43,
+            this.xrLabel44,
+            this.xrLabel36,
+            this.xrLabel26,
+            this.xrLabel23,
+            this.xrLabel22,
+            this.xrLabel21,
+            this.xrLabel7,
+            this.xrLabel5,
+            this.xrLabel4,
+            this.xrLabel3});
+            this.ReportHeader.HeightF = 277.8623F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
             // xrTable2
             // 
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -371,444 +335,6 @@
             this.xrTable2.StylePriority.UseFont = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
             this.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            // 
-            // xrLabel30
-            // 
-            this.xrLabel30.CanGrow = false;
-            this.xrLabel30.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 12F);
-            this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(612.7091F, 28.35693F);
-            this.xrLabel30.Multiline = true;
-            this.xrLabel30.Name = "xrLabel30";
-            this.xrLabel30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel30.SizeF = new System.Drawing.SizeF(112.1219F, 32.37516F);
-            this.xrLabel30.StylePriority.UseFont = false;
-            this.xrLabel30.StylePriority.UseTextAlignment = false;
-            this.xrLabel30.Text = "វិក្កយប័ត្រ";
-            this.xrLabel30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
-            // 
-            // xrBarCode2
-            // 
-            this.xrBarCode2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransRef")});
-            this.xrBarCode2.LocationFloat = new DevExpress.Utils.PointFloat(709.4137F, 165.2223F);
-            this.xrBarCode2.Module = 2.5F;
-            this.xrBarCode2.Name = "xrBarCode2";
-            this.xrBarCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.xrBarCode2.ShowText = false;
-            this.xrBarCode2.SizeF = new System.Drawing.SizeF(77.58612F, 58.59311F);
-            this.xrBarCode2.StylePriority.UseTextAlignment = false;
-            this.xrBarCode2.Symbology = qrCodeGenerator1;
-            this.xrBarCode2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
-            // 
-            // xrLabel51
-            // 
-            this.xrLabel51.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(7.947285E-05F, 131.8154F);
-            this.xrLabel51.Multiline = true;
-            this.xrLabel51.Name = "xrLabel51";
-            this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel51.SizeF = new System.Drawing.SizeF(117.08F, 23F);
-            this.xrLabel51.StylePriority.UseFont = false;
-            this.xrLabel51.Text = "កូដអតិថិជន";
-            // 
-            // xrLabel52
-            // 
-            this.xrLabel52.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel52.LocationFloat = new DevExpress.Utils.PointFloat(117.0804F, 131.8153F);
-            this.xrLabel52.Multiline = true;
-            this.xrLabel52.Name = "xrLabel52";
-            this.xrLabel52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel52.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
-            this.xrLabel52.StylePriority.UseFont = false;
-            this.xrLabel52.Text = "៖";
-            // 
-            // xrLabel53
-            // 
-            this.xrLabel53.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(117.0803F, 108.8154F);
-            this.xrLabel53.Multiline = true;
-            this.xrLabel53.Name = "xrLabel53";
-            this.xrLabel53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel53.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
-            this.xrLabel53.StylePriority.UseFont = false;
-            this.xrLabel53.Text = "៖";
-            // 
-            // xrLabel54
-            // 
-            this.xrLabel54.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel54.LocationFloat = new DevExpress.Utils.PointFloat(7.947285E-05F, 108.8155F);
-            this.xrLabel54.Multiline = true;
-            this.xrLabel54.Name = "xrLabel54";
-            this.xrLabel54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel54.SizeF = new System.Drawing.SizeF(117.08F, 22.99998F);
-            this.xrLabel54.StylePriority.UseFont = false;
-            this.xrLabel54.Text = "អតិថិជន";
-            // 
-            // xrLabel33
-            // 
-            this.xrLabel33.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(0F, 200.8154F);
-            this.xrLabel33.Multiline = true;
-            this.xrLabel33.Name = "xrLabel33";
-            this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel33.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
-            this.xrLabel33.StylePriority.UseFont = false;
-            this.xrLabel33.Text = "អាស័យដ្ឋាន";
-            // 
-            // xrLabel32
-            // 
-            this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Address")});
-            this.xrLabel32.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 200.8155F);
-            this.xrLabel32.Multiline = true;
-            this.xrLabel32.Name = "xrLabel32";
-            this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel32.SizeF = new System.Drawing.SizeF(359.3182F, 47.04678F);
-            this.xrLabel32.StylePriority.UseFont = false;
-            this.xrLabel32.Text = "xrLabel31";
-            // 
-            // xrLabel39
-            // 
-            this.xrLabel39.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 200.8156F);
-            this.xrLabel39.Multiline = true;
-            this.xrLabel39.Name = "xrLabel39";
-            this.xrLabel39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel39.SizeF = new System.Drawing.SizeF(11.68838F, 23F);
-            this.xrLabel39.StylePriority.UseFont = false;
-            this.xrLabel39.Text = "៖";
-            // 
-            // xrLine5
-            // 
-            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(601.2505F, 230.0555F);
-            this.xrLine5.Name = "xrLine5";
-            this.xrLine5.SizeF = new System.Drawing.SizeF(182.2913F, 3.119995F);
-            // 
-            // xrLabel34
-            // 
-            this.xrLabel34.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel34.LocationFloat = new DevExpress.Utils.PointFloat(502.2917F, 207.0555F);
-            this.xrLabel34.Multiline = true;
-            this.xrLabel34.Name = "xrLabel34";
-            this.xrLabel34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel34.SizeF = new System.Drawing.SizeF(98.95892F, 22.99998F);
-            this.xrLabel34.StylePriority.UseFont = false;
-            this.xrLabel34.Text = "អ្នកត្រួតពិនិត្យ ៖";
-            // 
-            // xrLabel27
-            // 
-            this.xrLabel27.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(0.0001854367F, 177.8154F);
-            this.xrLabel27.Multiline = true;
-            this.xrLabel27.Name = "xrLabel27";
-            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel27.SizeF = new System.Drawing.SizeF(117.08F, 23F);
-            this.xrLabel27.StylePriority.UseFont = false;
-            this.xrLabel27.Text = "ទូរស័ព្ទ";
-            // 
-            // xrLabel28
-            // 
-            this.xrLabel28.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(117.0804F, 177.8154F);
-            this.xrLabel28.Multiline = true;
-            this.xrLabel28.Name = "xrLabel28";
-            this.xrLabel28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel28.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
-            this.xrLabel28.StylePriority.UseFont = false;
-            this.xrLabel28.Text = "៖";
-            // 
-            // xrLabel55
-            // 
-            this.xrLabel55.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 154.8155F);
-            this.xrLabel55.Multiline = true;
-            this.xrLabel55.Name = "xrLabel55";
-            this.xrLabel55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel55.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
-            this.xrLabel55.StylePriority.UseFont = false;
-            this.xrLabel55.Text = "៖";
-            // 
-            // xrLabel56
-            // 
-            this.xrLabel56.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel56.LocationFloat = new DevExpress.Utils.PointFloat(0.0001854367F, 154.8155F);
-            this.xrLabel56.Multiline = true;
-            this.xrLabel56.Name = "xrLabel56";
-            this.xrLabel56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel56.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
-            this.xrLabel56.StylePriority.UseFont = false;
-            this.xrLabel56.Text = "លេខទូរស័ព្ទ";
-            // 
-            // xrLabel57
-            // 
-            this.xrLabel57.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerTel2")});
-            this.xrLabel57.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 177.8155F);
-            this.xrLabel57.Multiline = true;
-            this.xrLabel57.Name = "xrLabel57";
-            this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel57.SizeF = new System.Drawing.SizeF(171.3285F, 23.00003F);
-            this.xrLabel57.StylePriority.UseFont = false;
-            this.xrLabel57.Text = "xrLabel28";
-            // 
-            // xrLabel58
-            // 
-            this.xrLabel58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerTel1")});
-            this.xrLabel58.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel58.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 154.8154F);
-            this.xrLabel58.Multiline = true;
-            this.xrLabel58.Name = "xrLabel58";
-            this.xrLabel58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel58.SizeF = new System.Drawing.SizeF(171.3286F, 23.00003F);
-            this.xrLabel58.StylePriority.UseFont = false;
-            this.xrLabel58.Text = "xrLabel27";
-            // 
-            // xrLabel49
-            // 
-            this.xrLabel49.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerCode")});
-            this.xrLabel49.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 131.8155F);
-            this.xrLabel49.Multiline = true;
-            this.xrLabel49.Name = "xrLabel49";
-            this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel49.SizeF = new System.Drawing.SizeF(171.3286F, 22.99999F);
-            this.xrLabel49.StylePriority.UseFont = false;
-            this.xrLabel49.Text = "xrLabel27";
-            // 
-            // xrLabel50
-            // 
-            this.xrLabel50.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerName")});
-            this.xrLabel50.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 108.8155F);
-            this.xrLabel50.Multiline = true;
-            this.xrLabel50.Name = "xrLabel50";
-            this.xrLabel50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel50.SizeF = new System.Drawing.SizeF(171.3286F, 23.00001F);
-            this.xrLabel50.StylePriority.UseFont = false;
-            this.xrLabel50.Text = "xrLabel28";
-            // 
-            // xrLabel6
-            // 
-            this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 60.7321F);
-            this.xrLabel6.Multiline = true;
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(244.6302F, 25.08324F);
-            this.xrLabel6.StylePriority.UseFont = false;
-            this.xrLabel6.StylePriority.UseTextAlignment = false;
-            this.xrLabel6.Text = "081 89 5000 / 070 400 476";
-            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.CanGrow = false;
-            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 26F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0.0001956255F, 0F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(157.1044F, 60.73211F);
-            this.xrLabel2.StylePriority.UseFont = false;
-            this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "TD";
-            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrLabel45
-            // 
-            this.xrLabel45.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Seller")});
-            this.xrLabel45.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(666.1802F, 135.9821F);
-            this.xrLabel45.Multiline = true;
-            this.xrLabel45.Name = "xrLabel45";
-            this.xrLabel45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel45.SizeF = new System.Drawing.SizeF(120.8199F, 23.00002F);
-            this.xrLabel45.StylePriority.UseFont = false;
-            this.xrLabel45.StylePriority.UseTextAlignment = false;
-            this.xrLabel45.Text = "xrLabel28";
-            this.xrLabel45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrLabel46
-            // 
-            this.xrLabel46.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(654.4661F, 135.9821F);
-            this.xrLabel46.Multiline = true;
-            this.xrLabel46.Name = "xrLabel46";
-            this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel46.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
-            this.xrLabel46.StylePriority.UseFont = false;
-            this.xrLabel46.Text = "៖";
-            // 
-            // xrLabel47
-            // 
-            this.xrLabel47.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(552.7609F, 135.9821F);
-            this.xrLabel47.Multiline = true;
-            this.xrLabel47.Name = "xrLabel47";
-            this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel47.SizeF = new System.Drawing.SizeF(101.7052F, 22.99998F);
-            this.xrLabel47.StylePriority.UseFont = false;
-            this.xrLabel47.Text = "អ្នកលក់";
-            // 
-            // xrLabel42
-            // 
-            this.xrLabel42.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(654.4918F, 60.7321F);
-            this.xrLabel42.Multiline = true;
-            this.xrLabel42.Name = "xrLabel42";
-            this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel42.SizeF = new System.Drawing.SizeF(11.68842F, 25.08325F);
-            this.xrLabel42.StylePriority.UseFont = false;
-            this.xrLabel42.Text = "៖";
-            // 
-            // xrLabel43
-            // 
-            this.xrLabel43.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(654.4919F, 85.81551F);
-            this.xrLabel43.Multiline = true;
-            this.xrLabel43.Name = "xrLabel43";
-            this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel43.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
-            this.xrLabel43.StylePriority.UseFont = false;
-            this.xrLabel43.Text = "៖";
-            // 
-            // xrLabel44
-            // 
-            this.xrLabel44.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(654.4919F, 110.8988F);
-            this.xrLabel44.Multiline = true;
-            this.xrLabel44.Name = "xrLabel44";
-            this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel44.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
-            this.xrLabel44.StylePriority.UseFont = false;
-            this.xrLabel44.Text = "៖";
-            // 
-            // xrLabel36
-            // 
-            this.xrLabel36.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 85.81535F);
-            this.xrLabel36.Multiline = true;
-            this.xrLabel36.Name = "xrLabel36";
-            this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel36.SizeF = new System.Drawing.SizeF(11.68862F, 23F);
-            this.xrLabel36.StylePriority.UseFont = false;
-            this.xrLabel36.Text = "៖";
-            // 
-            // xrLabel26
-            // 
-            this.xrLabel26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?InvoiceIssuer")});
-            this.xrLabel26.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(128.7691F, 85.81549F);
-            this.xrLabel26.Multiline = true;
-            this.xrLabel26.Name = "xrLabel26";
-            this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel26.SizeF = new System.Drawing.SizeF(171.3286F, 22.99998F);
-            this.xrLabel26.StylePriority.UseFont = false;
-            this.xrLabel26.Text = "xrLabel26";
-            // 
-            // xrLabel23
-            // 
-            this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransRef")});
-            this.xrLabel23.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(666.1802F, 60.7321F);
-            this.xrLabel23.Multiline = true;
-            this.xrLabel23.Name = "xrLabel23";
-            this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel23.SizeF = new System.Drawing.SizeF(120.8199F, 25.08334F);
-            this.xrLabel23.StylePriority.UseFont = false;
-            this.xrLabel23.StylePriority.UseTextAlignment = false;
-            this.xrLabel23.Text = "xrLabel23";
-            this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrLabel22
-            // 
-            this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransDate")});
-            this.xrLabel22.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(666.1545F, 85.81551F);
-            this.xrLabel22.Multiline = true;
-            this.xrLabel22.Name = "xrLabel22";
-            this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel22.SizeF = new System.Drawing.SizeF(120.8456F, 25.08328F);
-            this.xrLabel22.StylePriority.UseFont = false;
-            this.xrLabel22.StylePriority.UseTextAlignment = false;
-            this.xrLabel22.Text = "xrLabel22";
-            this.xrLabel22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel22.TextFormatString = "{0:dd/MM/yyyy}";
-            // 
-            // xrLabel21
-            // 
-            this.xrLabel21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?DueDate")});
-            this.xrLabel21.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(666.1545F, 110.8988F);
-            this.xrLabel21.Multiline = true;
-            this.xrLabel21.Name = "xrLabel21";
-            this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel21.SizeF = new System.Drawing.SizeF(120.8456F, 25.08333F);
-            this.xrLabel21.StylePriority.UseFont = false;
-            this.xrLabel21.StylePriority.UseTextAlignment = false;
-            this.xrLabel21.Text = "xrLabel21";
-            this.xrLabel21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel21.TextFormatString = "{0:dd/MM/yyyy}";
-            // 
-            // xrLabel7
-            // 
-            this.xrLabel7.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0.0001854367F, 85.81538F);
-            this.xrLabel7.Multiline = true;
-            this.xrLabel7.Name = "xrLabel7";
-            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel7.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
-            this.xrLabel7.StylePriority.UseFont = false;
-            this.xrLabel7.Text = "អ្នកចេញវិក្កយប័ត្រ";
-            // 
-            // xrLabel5
-            // 
-            this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 110.8988F);
-            this.xrLabel5.Multiline = true;
-            this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(101.7053F, 25.08334F);
-            this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "ថ្ងៃណាត់";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 85.81551F);
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(101.7053F, 25.0833F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.StylePriority.UseTextAlignment = false;
-            this.xrLabel4.Text = "ថ្ងៃចេញវិក្កយប័ត្រ";
-            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 60.7321F);
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(101.7053F, 25.08332F);
-            this.xrLabel3.StylePriority.UseFont = false;
-            this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.Text = "លេខវិក្កយប័ត្រ";
-            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrTableRow2
             // 
@@ -912,6 +438,478 @@
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell15.Weight = 0.92734257119238839D;
             // 
+            // xrLabel30
+            // 
+            this.xrLabel30.CanGrow = false;
+            this.xrLabel30.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 12F);
+            this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(612.7091F, 0F);
+            this.xrLabel30.Multiline = true;
+            this.xrLabel30.Name = "xrLabel30";
+            this.xrLabel30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel30.SizeF = new System.Drawing.SizeF(112.1219F, 32.37516F);
+            this.xrLabel30.StylePriority.UseFont = false;
+            this.xrLabel30.StylePriority.UseTextAlignment = false;
+            this.xrLabel30.Text = "វិក្កយប័ត្រ";
+            this.xrLabel30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
+            // 
+            // xrBarCode2
+            // 
+            this.xrBarCode2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransRef")});
+            this.xrBarCode2.LocationFloat = new DevExpress.Utils.PointFloat(709.4137F, 165.2223F);
+            this.xrBarCode2.Module = 2.5F;
+            this.xrBarCode2.Name = "xrBarCode2";
+            this.xrBarCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.xrBarCode2.ShowText = false;
+            this.xrBarCode2.SizeF = new System.Drawing.SizeF(77.58612F, 58.59311F);
+            this.xrBarCode2.StylePriority.UseTextAlignment = false;
+            this.xrBarCode2.Symbology = qrCodeGenerator1;
+            this.xrBarCode2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
+            // 
+            // xrLabel51
+            // 
+            this.xrLabel51.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(6.357829E-05F, 74.75005F);
+            this.xrLabel51.Multiline = true;
+            this.xrLabel51.Name = "xrLabel51";
+            this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel51.SizeF = new System.Drawing.SizeF(117.08F, 23F);
+            this.xrLabel51.StylePriority.UseFont = false;
+            this.xrLabel51.Text = "កូដអតិថិជន";
+            // 
+            // xrLabel52
+            // 
+            this.xrLabel52.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel52.LocationFloat = new DevExpress.Utils.PointFloat(117.0804F, 74.74995F);
+            this.xrLabel52.Multiline = true;
+            this.xrLabel52.Name = "xrLabel52";
+            this.xrLabel52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel52.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel52.StylePriority.UseFont = false;
+            this.xrLabel52.Text = "៖";
+            // 
+            // xrLabel53
+            // 
+            this.xrLabel53.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel53.LocationFloat = new DevExpress.Utils.PointFloat(117.0803F, 51.75006F);
+            this.xrLabel53.Multiline = true;
+            this.xrLabel53.Name = "xrLabel53";
+            this.xrLabel53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel53.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel53.StylePriority.UseFont = false;
+            this.xrLabel53.Text = "៖";
+            // 
+            // xrLabel54
+            // 
+            this.xrLabel54.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel54.LocationFloat = new DevExpress.Utils.PointFloat(6.357829E-05F, 51.75015F);
+            this.xrLabel54.Multiline = true;
+            this.xrLabel54.Name = "xrLabel54";
+            this.xrLabel54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel54.SizeF = new System.Drawing.SizeF(117.08F, 22.99998F);
+            this.xrLabel54.StylePriority.UseFont = false;
+            this.xrLabel54.Text = "អតិថិជន";
+            // 
+            // xrLabel33
+            // 
+            this.xrLabel33.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(0F, 143.75F);
+            this.xrLabel33.Multiline = true;
+            this.xrLabel33.Name = "xrLabel33";
+            this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel33.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
+            this.xrLabel33.StylePriority.UseFont = false;
+            this.xrLabel33.Text = "អាស័យដ្ឋាន";
+            // 
+            // xrLabel32
+            // 
+            this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Address")});
+            this.xrLabel32.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 143.7502F);
+            this.xrLabel32.Multiline = true;
+            this.xrLabel32.Name = "xrLabel32";
+            this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(359.3181F, 80.06525F);
+            this.xrLabel32.StylePriority.UseFont = false;
+            this.xrLabel32.Text = "xrLabel31";
+            // 
+            // xrLabel39
+            // 
+            this.xrLabel39.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 143.7503F);
+            this.xrLabel39.Multiline = true;
+            this.xrLabel39.Name = "xrLabel39";
+            this.xrLabel39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel39.SizeF = new System.Drawing.SizeF(11.68838F, 23F);
+            this.xrLabel39.StylePriority.UseFont = false;
+            this.xrLabel39.Text = "៖";
+            // 
+            // xrLine5
+            // 
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(601.2505F, 230.0555F);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.SizeF = new System.Drawing.SizeF(182.2913F, 3.119995F);
+            // 
+            // xrLabel34
+            // 
+            this.xrLabel34.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel34.LocationFloat = new DevExpress.Utils.PointFloat(502.2917F, 207.0555F);
+            this.xrLabel34.Multiline = true;
+            this.xrLabel34.Name = "xrLabel34";
+            this.xrLabel34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel34.SizeF = new System.Drawing.SizeF(98.95892F, 22.99998F);
+            this.xrLabel34.StylePriority.UseFont = false;
+            this.xrLabel34.Text = "អ្នកត្រួតពិនិត្យ ៖";
+            // 
+            // xrLabel27
+            // 
+            this.xrLabel27.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(0.0001589457F, 120.75F);
+            this.xrLabel27.Multiline = true;
+            this.xrLabel27.Name = "xrLabel27";
+            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel27.SizeF = new System.Drawing.SizeF(117.08F, 23F);
+            this.xrLabel27.StylePriority.UseFont = false;
+            this.xrLabel27.Text = "ទូរស័ព្ទ";
+            // 
+            // xrLabel28
+            // 
+            this.xrLabel28.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(117.0804F, 120.75F);
+            this.xrLabel28.Multiline = true;
+            this.xrLabel28.Name = "xrLabel28";
+            this.xrLabel28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel28.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel28.StylePriority.UseFont = false;
+            this.xrLabel28.Text = "៖";
+            // 
+            // xrLabel55
+            // 
+            this.xrLabel55.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel55.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 97.75015F);
+            this.xrLabel55.Multiline = true;
+            this.xrLabel55.Name = "xrLabel55";
+            this.xrLabel55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel55.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel55.StylePriority.UseFont = false;
+            this.xrLabel55.Text = "៖";
+            // 
+            // xrLabel56
+            // 
+            this.xrLabel56.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel56.LocationFloat = new DevExpress.Utils.PointFloat(0.0001589457F, 97.75015F);
+            this.xrLabel56.Multiline = true;
+            this.xrLabel56.Name = "xrLabel56";
+            this.xrLabel56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel56.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
+            this.xrLabel56.StylePriority.UseFont = false;
+            this.xrLabel56.Text = "លេខទូរស័ព្ទ";
+            // 
+            // xrLabel57
+            // 
+            this.xrLabel57.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerTel2")});
+            this.xrLabel57.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 120.7501F);
+            this.xrLabel57.Multiline = true;
+            this.xrLabel57.Name = "xrLabel57";
+            this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel57.SizeF = new System.Drawing.SizeF(171.3285F, 23.00003F);
+            this.xrLabel57.StylePriority.UseFont = false;
+            this.xrLabel57.Text = "xrLabel28";
+            // 
+            // xrLabel58
+            // 
+            this.xrLabel58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerTel1")});
+            this.xrLabel58.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel58.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 97.75005F);
+            this.xrLabel58.Multiline = true;
+            this.xrLabel58.Name = "xrLabel58";
+            this.xrLabel58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel58.SizeF = new System.Drawing.SizeF(171.3286F, 23.00003F);
+            this.xrLabel58.StylePriority.UseFont = false;
+            this.xrLabel58.Text = "xrLabel27";
+            // 
+            // xrLabel49
+            // 
+            this.xrLabel49.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerCode")});
+            this.xrLabel49.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 74.75015F);
+            this.xrLabel49.Multiline = true;
+            this.xrLabel49.Name = "xrLabel49";
+            this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel49.SizeF = new System.Drawing.SizeF(171.3286F, 22.99999F);
+            this.xrLabel49.StylePriority.UseFont = false;
+            this.xrLabel49.Text = "xrLabel27";
+            // 
+            // xrLabel50
+            // 
+            this.xrLabel50.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CustomerName")});
+            this.xrLabel50.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(128.7689F, 51.75015F);
+            this.xrLabel50.Multiline = true;
+            this.xrLabel50.Name = "xrLabel50";
+            this.xrLabel50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel50.SizeF = new System.Drawing.SizeF(171.3286F, 23.00001F);
+            this.xrLabel50.StylePriority.UseFont = false;
+            this.xrLabel50.Text = "xrLabel28";
+            // 
+            // xrLabel45
+            // 
+            this.xrLabel45.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Seller")});
+            this.xrLabel45.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(666.1802F, 107.6252F);
+            this.xrLabel45.Multiline = true;
+            this.xrLabel45.Name = "xrLabel45";
+            this.xrLabel45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel45.SizeF = new System.Drawing.SizeF(120.8199F, 23.00002F);
+            this.xrLabel45.StylePriority.UseFont = false;
+            this.xrLabel45.StylePriority.UseTextAlignment = false;
+            this.xrLabel45.Text = "xrLabel28";
+            this.xrLabel45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel46
+            // 
+            this.xrLabel46.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(654.4661F, 107.6252F);
+            this.xrLabel46.Multiline = true;
+            this.xrLabel46.Name = "xrLabel46";
+            this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel46.SizeF = new System.Drawing.SizeF(11.68839F, 22.99999F);
+            this.xrLabel46.StylePriority.UseFont = false;
+            this.xrLabel46.Text = "៖";
+            // 
+            // xrLabel47
+            // 
+            this.xrLabel47.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel47.LocationFloat = new DevExpress.Utils.PointFloat(552.7609F, 107.6252F);
+            this.xrLabel47.Multiline = true;
+            this.xrLabel47.Name = "xrLabel47";
+            this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel47.SizeF = new System.Drawing.SizeF(101.7052F, 22.99998F);
+            this.xrLabel47.StylePriority.UseFont = false;
+            this.xrLabel47.Text = "អ្នកលក់";
+            // 
+            // xrLabel42
+            // 
+            this.xrLabel42.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(654.4918F, 32.37517F);
+            this.xrLabel42.Multiline = true;
+            this.xrLabel42.Name = "xrLabel42";
+            this.xrLabel42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel42.SizeF = new System.Drawing.SizeF(11.68842F, 25.08325F);
+            this.xrLabel42.StylePriority.UseFont = false;
+            this.xrLabel42.Text = "៖";
+            // 
+            // xrLabel43
+            // 
+            this.xrLabel43.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(654.4919F, 57.45858F);
+            this.xrLabel43.Multiline = true;
+            this.xrLabel43.Name = "xrLabel43";
+            this.xrLabel43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel43.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
+            this.xrLabel43.StylePriority.UseFont = false;
+            this.xrLabel43.Text = "៖";
+            // 
+            // xrLabel44
+            // 
+            this.xrLabel44.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(654.4919F, 82.54188F);
+            this.xrLabel44.Multiline = true;
+            this.xrLabel44.Name = "xrLabel44";
+            this.xrLabel44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel44.SizeF = new System.Drawing.SizeF(11.6626F, 25.08329F);
+            this.xrLabel44.StylePriority.UseFont = false;
+            this.xrLabel44.Text = "៖";
+            // 
+            // xrLabel36
+            // 
+            this.xrLabel36.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(117.0805F, 28.75001F);
+            this.xrLabel36.Multiline = true;
+            this.xrLabel36.Name = "xrLabel36";
+            this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel36.SizeF = new System.Drawing.SizeF(11.68862F, 23F);
+            this.xrLabel36.StylePriority.UseFont = false;
+            this.xrLabel36.Text = "៖";
+            // 
+            // xrLabel26
+            // 
+            this.xrLabel26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?InvoiceIssuer")});
+            this.xrLabel26.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(128.7691F, 28.75013F);
+            this.xrLabel26.Multiline = true;
+            this.xrLabel26.Name = "xrLabel26";
+            this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel26.SizeF = new System.Drawing.SizeF(171.3286F, 22.99998F);
+            this.xrLabel26.StylePriority.UseFont = false;
+            this.xrLabel26.Text = "xrLabel26";
+            // 
+            // xrLabel23
+            // 
+            this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransRef")});
+            this.xrLabel23.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(666.1802F, 32.37517F);
+            this.xrLabel23.Multiline = true;
+            this.xrLabel23.Name = "xrLabel23";
+            this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel23.SizeF = new System.Drawing.SizeF(120.8199F, 25.08334F);
+            this.xrLabel23.StylePriority.UseFont = false;
+            this.xrLabel23.StylePriority.UseTextAlignment = false;
+            this.xrLabel23.Text = "xrLabel23";
+            this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel22
+            // 
+            this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransDate")});
+            this.xrLabel22.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(666.1545F, 57.45858F);
+            this.xrLabel22.Multiline = true;
+            this.xrLabel22.Name = "xrLabel22";
+            this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel22.SizeF = new System.Drawing.SizeF(120.8456F, 25.08328F);
+            this.xrLabel22.StylePriority.UseFont = false;
+            this.xrLabel22.StylePriority.UseTextAlignment = false;
+            this.xrLabel22.Text = "xrLabel22";
+            this.xrLabel22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel22.TextFormatString = "{0:dd/MM/yyyy}";
+            // 
+            // xrLabel21
+            // 
+            this.xrLabel21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?DueDate")});
+            this.xrLabel21.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(666.1545F, 82.54188F);
+            this.xrLabel21.Multiline = true;
+            this.xrLabel21.Name = "xrLabel21";
+            this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel21.SizeF = new System.Drawing.SizeF(120.8456F, 25.08333F);
+            this.xrLabel21.StylePriority.UseFont = false;
+            this.xrLabel21.StylePriority.UseTextAlignment = false;
+            this.xrLabel21.Text = "xrLabel21";
+            this.xrLabel21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel21.TextFormatString = "{0:dd/MM/yyyy}";
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0.0001589457F, 28.75002F);
+            this.xrLabel7.Multiline = true;
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(117.0801F, 22.99998F);
+            this.xrLabel7.StylePriority.UseFont = false;
+            this.xrLabel7.Text = "អ្នកចេញវិក្កយប័ត្រ";
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 82.54188F);
+            this.xrLabel5.Multiline = true;
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(101.7053F, 25.08334F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "ថ្ងៃណាត់";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 57.45858F);
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(101.7053F, 25.0833F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "ថ្ងៃចេញវិក្កយប័ត្រ";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(552.7865F, 32.37517F);
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(101.7053F, 25.08332F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "លេខវិក្កយប័ត្រ";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel2,
+            this.xrLabel6,
+            this.xrLine4,
+            this.xrLine3,
+            this.xrLine2,
+            this.xrLabel1,
+            this.xrLine6,
+            this.xrLabel29,
+            this.xrPanel1,
+            this.xrLabel18,
+            this.xrLabel14,
+            this.xrLabel12,
+            this.xrLabel10,
+            this.xrLabel11,
+            this.xrLabel8,
+            this.xrLabel9,
+            this.xrLine1,
+            this.xrBarCode1,
+            this.xrLabel13,
+            this.xrLabel16,
+            this.xrLabel20,
+            this.xrLabel17});
+            this.ReportFooter.HeightF = 244.5524F;
+            this.ReportFooter.Name = "ReportFooter";
+            this.ReportFooter.PrintAtBottom = true;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +\' \'+ FormatString(\'{0:0.###}\',?Discount)\n")});
+            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(628.5177F, 53.29164F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(158.4823F, 25.08332F);
+            this.xrLabel2.StylePriority.UseBorders = false;
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "សរុប";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrLabel2.TextFormatString = "{0:C3}";
+            this.xrLabel2.WordWrap = false;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(505.7498F, 53.29164F);
+            this.xrLabel6.Multiline = true;
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(122.7678F, 25.08332F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "បញ្ចុះតម្លៃសរុប";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
             // xrLine4
             // 
             this.xrLine4.LineWidth = 1.5F;
@@ -971,6 +969,31 @@
             this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(7.064255E-05F, 85.24987F);
             this.xrPanel1.Name = "xrPanel1";
             this.xrPanel1.SizeF = new System.Drawing.SizeF(418.1631F, 77.81815F);
+            // 
+            // xrLabel24
+            // 
+            this.xrLabel24.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(0F, 7.629395E-06F);
+            this.xrLabel24.Multiline = true;
+            this.xrLabel24.Name = "xrLabel24";
+            this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel24.SizeF = new System.Drawing.SizeF(56.31256F, 22.99998F);
+            this.xrLabel24.StylePriority.UseFont = false;
+            this.xrLabel24.Text = "ចំណាំ ៖";
+            // 
+            // xrLabel25
+            // 
+            this.xrLabel25.AutoWidth = true;
+            this.xrLabel25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Note")});
+            this.xrLabel25.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(56.31253F, 0.0001449585F);
+            this.xrLabel25.Multiline = true;
+            this.xrLabel25.Name = "xrLabel25";
+            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel25.SizeF = new System.Drawing.SizeF(361.8506F, 22.99988F);
+            this.xrLabel25.StylePriority.UseFont = false;
+            this.xrLabel25.Text = "xrLabel25";
             // 
             // xrLabel18
             // 
@@ -1087,7 +1110,7 @@
             // 
             this.xrBarCode1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?TransRef")});
-            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(421.5587F, 9.999974F);
+            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(421.5587F, 5.208333F);
             this.xrBarCode1.Module = 2.5F;
             this.xrBarCode1.Name = "xrBarCode1";
             this.xrBarCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
@@ -1100,7 +1123,7 @@
             // xrLabel13
             // 
             this.xrLabel13.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(505.6873F, 53.29164F);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(505.6873F, 78.37496F);
             this.xrLabel13.Multiline = true;
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1113,7 +1136,7 @@
             // xrLabel16
             // 
             this.xrLabel16.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(505.6874F, 78.37496F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(505.6874F, 103.4583F);
             this.xrLabel16.Multiline = true;
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1127,9 +1150,9 @@
             // 
             this.xrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n2}\', ?TotalRiel)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n0}\', ?TotalRiel)\n")});
             this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(628.4552F, 78.37496F);
+            this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(628.4552F, 103.4583F);
             this.xrLabel20.Multiline = true;
             this.xrLabel20.Name = "xrLabel20";
             this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1146,7 +1169,7 @@
             this.xrLabel17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +\' \'+ FormatString(\'{0:0.###}\',?TotalDollar)\n")});
             this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(628.4552F, 53.29164F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(628.4552F, 78.37496F);
             this.xrLabel17.Multiline = true;
             this.xrLabel17.Name = "xrLabel17";
             this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1158,30 +1181,12 @@
             this.xrLabel17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrLabel17.TextFormatString = "{0:C3}";
             // 
-            // xrLabel24
+            // PageFooter
             // 
-            this.xrLabel24.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(0F, 7.629395E-06F);
-            this.xrLabel24.Multiline = true;
-            this.xrLabel24.Name = "xrLabel24";
-            this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel24.SizeF = new System.Drawing.SizeF(56.31256F, 22.99998F);
-            this.xrLabel24.StylePriority.UseFont = false;
-            this.xrLabel24.Text = "ចំណាំ ៖";
-            // 
-            // xrLabel25
-            // 
-            this.xrLabel25.AutoWidth = true;
-            this.xrLabel25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?Note")});
-            this.xrLabel25.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
-            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(56.31253F, 0.0001449585F);
-            this.xrLabel25.Multiline = true;
-            this.xrLabel25.Name = "xrLabel25";
-            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel25.SizeF = new System.Drawing.SizeF(361.8506F, 22.99988F);
-            this.xrLabel25.StylePriority.UseFont = false;
-            this.xrLabel25.Text = "xrLabel25";
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPageInfo1});
+            this.PageFooter.HeightF = 22.99998F;
+            this.PageFooter.Name = "PageFooter";
             // 
             // xrPageInfo1
             // 
@@ -1532,8 +1537,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel58;
         private DevExpress.XtraReports.UI.XRLabel xrLabel49;
         private DevExpress.XtraReports.UI.XRLabel xrLabel50;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel45;
         private DevExpress.XtraReports.UI.XRLabel xrLabel46;
         private DevExpress.XtraReports.UI.XRLabel xrLabel47;
@@ -1605,5 +1608,7 @@
         private DevExpress.XtraReports.Parameters.Parameter Phone;
         private DevExpress.XtraReports.Parameters.Parameter Seller;
         private DevExpress.XtraReports.Parameters.Parameter CustomerTel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
     }
 }

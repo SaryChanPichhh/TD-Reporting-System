@@ -172,4 +172,19 @@ namespace BC.ACCOUNTING.CORE.Entities
         public string LocationSecondComment { get; set; }
 
     }
+
+    public class MOSaleListingModel : SaleListingModel
+    {
+        public List<MOSubItemDataSource> MoSubItemDataSources { get; set; } = new();
+    }
+    public class MOSubItemDataSource
+    {
+        public string ItemCode { get; set; }
+        public string ItemDesc { get; set; }
+        public string UnitConv { get; set; }
+        public int Quantity { get; set; }
+        public decimal ItemCost { get; set; }
+        public decimal SalePrice { get; set; }
+
+    }
 }
