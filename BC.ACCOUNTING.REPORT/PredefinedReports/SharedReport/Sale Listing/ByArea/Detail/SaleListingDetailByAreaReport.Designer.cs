@@ -275,7 +275,8 @@
             this.xrTable1});
             this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("DetailItemCode", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
-            new DevExpress.XtraReports.UI.GroupField("ItemCost", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            new DevExpress.XtraReports.UI.GroupField("ItemCost", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
+            new DevExpress.XtraReports.UI.GroupField("Value_3", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.HeightF = 27.97619F;
             this.GroupHeader1.Name = "GroupHeader1";
             xrGroupSortingSummary1.Enabled = true;
@@ -337,7 +338,7 @@
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.Text = "ឈ្មោះទំនិញ";
-            this.xrTableCell16.Weight = 9.40678681476062D;
+            this.xrTableCell16.Weight = 11.261766222951326D;
             // 
             // xrTableCell17
             // 
@@ -351,7 +352,7 @@
             this.xrTableCell17.Text = "ចំនួន";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell17.TextFormatString = "{0:#}";
-            this.xrTableCell17.Weight = 21.5711316246404D;
+            this.xrTableCell17.Weight = 21.357093489085255D;
             // 
             // xrTableCell18
             // 
@@ -367,7 +368,7 @@
             this.xrTableCell18.Text = "តម្លៃឯកតា";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell18.TextFormatString = "{0:#}";
-            this.xrTableCell18.Weight = 5.8668679342860024D;
+            this.xrTableCell18.Weight = 4.2259266616504405D;
             // 
             // xrTableCell19
             // 
@@ -386,7 +387,7 @@
             // xrTableCell6
             // 
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_4]))\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_13]))\n")});
             this.xrTableCell6.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
@@ -454,7 +455,7 @@
             this.xrTableCell10.StylePriority.UseBackColor = false;
             this.xrTableCell10.StylePriority.UseBorders = false;
             this.xrTableCell10.Text = "លេខកូដទំនិញ";
-            this.xrTableCell10.Weight = 13.71539107219254D;
+            this.xrTableCell10.Weight = 16.420003204361446D;
             // 
             // xrTableCell9
             // 
@@ -465,7 +466,7 @@
             this.xrTableCell9.StylePriority.UseBackColor = false;
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.Text = "ឈ្មោះទំនិញ";
-            this.xrTableCell9.Weight = 31.451393456218646D;
+            this.xrTableCell9.Weight = 31.139322942797758D;
             // 
             // xrTableCell7
             // 
@@ -478,7 +479,7 @@
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.Text = "ចំនួន";
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell7.Weight = 8.5540691878006712D;
+            this.xrTableCell7.Weight = 6.1615275690526516D;
             // 
             // xrTableCell8
             // 
@@ -582,7 +583,7 @@
             this.xrTable4,
             this.xrTable9});
             this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("HeaderAnalysisM9Description", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
+            new DevExpress.XtraReports.UI.GroupField("HeaderAnalysisM9", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
             new DevExpress.XtraReports.UI.GroupField("HeaderAnalysisM0", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader2.HeightF = 50.00001F;
             this.GroupHeader2.Level = 1;
@@ -712,7 +713,7 @@
             this.xrTableCell20.StylePriority.UseFont = false;
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell20.Weight = 12.484017237995387D;
+            this.xrTableCell20.Weight = 14.426349316418168D;
             // 
             // xrTableCell21
             // 
@@ -725,7 +726,7 @@
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "សរុប";
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell21.Weight = 22.586992759529995D;
+            this.xrTableCell21.Weight = 22.362879245358272D;
             // 
             // xrTableCell11
             // 
@@ -743,7 +744,7 @@
             this.xrTableCell11.Text = "xrTableCell11";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell11.TextFormatString = "{0:#}";
-            this.xrTableCell11.Weight = 6.1431534773712846D;
+            this.xrTableCell11.Weight = 4.4249349131202234D;
             // 
             // xrTableCell5
             // 
@@ -767,7 +768,7 @@
             // 
             this.xrTableCell35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_4]))\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_13]))\n")});
             this.xrTableCell35.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
@@ -858,7 +859,7 @@
             this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell12.Weight = 12.484017237995387D;
+            this.xrTableCell12.Weight = 14.426349316418168D;
             // 
             // xrTableCell13
             // 
@@ -871,7 +872,7 @@
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "សរុប";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell13.Weight = 22.586992759529995D;
+            this.xrTableCell13.Weight = 22.362879245358272D;
             // 
             // xrTableCell14
             // 
@@ -889,7 +890,7 @@
             this.xrTableCell14.Text = "xrTableCell11";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell14.TextFormatString = "{0:#}";
-            this.xrTableCell14.Weight = 6.1431534773712846D;
+            this.xrTableCell14.Weight = 4.4249349131202234D;
             // 
             // xrTableCell15
             // 
@@ -913,7 +914,7 @@
             // 
             this.xrTableCell22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_4]))\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,sumSum([Value_13]))\n")});
             this.xrTableCell22.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";

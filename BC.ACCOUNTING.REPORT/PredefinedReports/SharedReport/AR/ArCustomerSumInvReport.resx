@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrTableCell13.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains([TransValue], '$'),ToDouble(Trim( Replace([TransValue],'$', ''))) ,Iif(Contains([TransValue], '៛'),ToDouble(Trim( Replace([TransValue],'៛', ''))) ,ToDouble([TransValue]) ) ))
+
+</value>
+  </data>
+  <data name="xrTableCell29.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains( [PaidValue] , '$'),ToDouble(Trim( Replace( [PaidValue] ,'$', ''))) ,Iif(Contains( [PaidValue] , '៛'),ToDouble(Trim( Replace( [PaidValue] ,'៛', ''))) ,ToDouble( [PaidValue]  ) )))
+</value>
+  </data>
+  <data name="xrTableCell14.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains( [InDebt] , '$'),ToDouble(Trim( Replace( [InDebt] ,'$', ''))) ,Iif(Contains( [InDebt] , '៛'),ToDouble(Trim( Replace( [InDebt],'៛', ''))) ,ToDouble( [InDebt] ) )))
+
+</value>
+  </data>
+  <data name="xrTableCell23.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains([TotalAmount], '$'),ToDouble(Trim( Replace([TotalAmount],'$', ''))) ,Iif(Contains([TotalAmount], '៛'),ToDouble(Trim( Replace([TotalAmount],'៛', ''))) ,ToDouble([TotalAmount]) ) ))
+
+
+</value>
+  </data>
+  <data name="xrTableCell19.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains([TotalInDebt], '$'),ToDouble(Trim( Replace([TotalInDebt],'$', ''))) ,Iif(Contains([TotalInDebt], '៛'),ToDouble(Trim( Replace([TotalInDebt],'៛', ''))) ,ToDouble([TotalInDebt]) ) ))
+</value>
+  </data>
 </root>

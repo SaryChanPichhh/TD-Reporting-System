@@ -14,6 +14,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.CustomerOrder
             this.LoadLayoutFromXml(reportName);
             if (this.Parameters["DecimalPrecision"] is not null)
                 this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+            if (this.Parameters["SubDecimalPrecision"] is not null)
+                this.SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
+
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
         }

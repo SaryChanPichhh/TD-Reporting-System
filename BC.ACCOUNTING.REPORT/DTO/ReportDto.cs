@@ -1,8 +1,10 @@
 ﻿using BC.ACCOUNTING.REPORT.Models;
 using DevExpress.Xpo;
 using System.ComponentModel;
+using System.Diagnostics;
 using BC.ACCOUNTING.REPORT.Helper;
 using BC.ACCOUNTING.REPORT.Helper.Enums;
+using System.Runtime.Serialization;
 
 namespace BC.ACCOUNTING.REPORT.DTO
 {
@@ -18,5 +20,11 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [Nullable(true)] public string SubCurrencySymbol { get; set; } = "៛";
         [Browsable(false)][Nullable(true)] public DecimalFormatting DecimalPrecision { get; set; }  = DecimalFormatting.TwoDecimalPrecision;
         [Browsable(false)][Nullable(true)] public DecimalFormatting SubDecimalPrecision { get; set; }  = DecimalFormatting.Standard;
-    }
+        [OnDeserialized]
+        private void InitializeData(StreamingContext context)
+        {
+            CurrencySymbol = string.IsNullOrEmpty(CurrencySymbol.Trim()) ? "$" : CurrencySymbol;
+            SubCurrencySymbol = string.IsNullOrEmpty(SubCurrencySymbol.Trim()) ? "៛" : SubCurrencySymbol;
+        }
+    }   
 }

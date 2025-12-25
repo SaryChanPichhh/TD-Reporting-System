@@ -23,6 +23,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing
             List<CustomerDto> customerInfo = new();
             foreach (var group in dto.Data)
             {
+       
                 var flattenItems = group.Items
                     .GroupBy(x => new
                     {

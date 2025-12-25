@@ -21,16 +21,16 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDat
             LoadLayoutFromXml(reportName);
           
             if(Parameters["DecimalPrecision"] != null)
-                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
+                DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
 
             if (Parameters["SubDecimalPrecision"] != null)
-                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
+                SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
 
             if(Parameters["CurrencySymbol"] != null)
-                Parameters["CurrencySymbol"].Value = dto.CurrencySymbol;
+                CurrencySymbol.Value = string.IsNullOrEmpty(dto.CurrencySymbol)?"$":dto.CurrencySymbol;
 
             if (Parameters["SubCurrencySymbol"] != null)
-                Parameters["SubCurrencySymbol"].Value = dto.SubCurrencySymbol;
+                SubCurrencySymbol.Value = string.IsNullOrEmpty(dto.SubCurrencySymbol) ? "៛" : dto.SubCurrencySymbol;
 
             objectDataSource1.DataSource = ls;
             prm_EndDate.Value = string.IsNullOrWhiteSpace(dto.Date2) ? dto.Prd2 : dto.Date2;

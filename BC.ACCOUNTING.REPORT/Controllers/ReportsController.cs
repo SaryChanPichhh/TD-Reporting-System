@@ -20,6 +20,7 @@ using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order.SCS;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO;
 using BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry;
 using BC.ACCOUNTING.REPORT.PredefinedReports.POS.CustomerOrder;
 using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
@@ -39,6 +40,7 @@ using BC.ACCOUNTING.REPORT.Services;
 using DevExpress.XtraReports.UI;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
@@ -48,7 +50,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO;
 using DailyClosingReport = BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport;
 
 
@@ -246,7 +247,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
+ 
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
 
             if (!System.IO.File.Exists(reportPath))
@@ -488,7 +489,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         }
 
         [HttpPost("ARDepreciation")]
-        public IActionResult SaleInvoice([FromBody] ArDepreciationDto dto)
+        public IActionResult ARDepreciation([FromBody] ArDepreciationDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -591,9 +592,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
-
         }
-
         [HttpPost("ArCustomerSumInv")]
         public IActionResult ArCustomerSumInv([FromBody] ArCustomerSumInvDto dto)
         {
@@ -1418,7 +1417,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("salelisting")]
         public async Task<IActionResult> SaleListingAsync([FromBody] SaleListingDto dto)
         {
-
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
@@ -1440,9 +1438,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
-
         }
-
         #region MB Seller
 
 

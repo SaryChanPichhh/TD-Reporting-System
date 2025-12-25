@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrTableCell4.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,Iif(Contains([Balance], '$'),ToDouble(Trim( Replace([Balance],'$', ''))) ,Iif(Contains([Balance], '៛'),ToDouble(Trim( Replace([Balance],'៛', ''))) ,ToDouble([Balance]) ) ))
+</value>
+  </data>
 </root>

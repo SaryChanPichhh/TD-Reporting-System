@@ -404,6 +404,9 @@
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByInvoice\SaleListingYearlyDetailByInvoiceWithProfitReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\BySeller\Detail\M01\M01SaleListingDetailBySellerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\BySeller\Detail\SaleListingDailyDetailBySellerReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>

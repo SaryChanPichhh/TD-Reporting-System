@@ -20,9 +20,5 @@ namespace BC.ACCOUNTING.REPORT.DTO
         // For Visibility in Report Designer
         public string? FIELD_4 { get; set; }
         public List<InventoryReportDataSource> Items { get; set; }
-        [Nullable(true)]
-        [Browsable(false)]
-        public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
-        public string CurrencySymbol => CurrencyCode.GetEnumDescription();
     }
 }

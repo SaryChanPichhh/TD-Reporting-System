@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace BC.ACCOUNTING.REPORT.Helper
+namespace BC.ACCOUNTING.REPORT.Helper.Enums
 {
     public enum ExchangesCurrency
     {

@@ -220,7 +220,7 @@
             // xrTableCell7
             // 
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +FormatString(?DecimalPrecision,[Price]*?ExchangeRate) ")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +FormatString(?DecimalPrecision,[Price]) ")});
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
@@ -232,7 +232,7 @@
             // xrTableCell8
             // 
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +FormatString(?DecimalPrecision,[Total]*?ExchangeRate) \n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol +FormatString(?DecimalPrecision,[Total]) \n")});
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
@@ -704,7 +704,8 @@
             // 
             this.xrLabel17.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CurrencySymbol + FormatString(?DecimalPrecision,?Total)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'$\' + FormatString(?DecimalPrecision,Iif(?CurrencySymbol=\'$\',?Total ,?Total/?Exch" +
+                    "angeRate ))")});
             this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(628.5176F, 3.124964F);
             this.xrLabel17.Multiline = true;
@@ -739,7 +740,8 @@
             // 
             this.xrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n2}\', ?TotalRiel)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n2}\',Iif(?CurrencySymbol=\'$\', ?TotalRiel*?ExchangeRate ,?" +
+                    "TotalRiel ))\n")});
             this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(628.5176F, 53.29159F);
             this.xrLabel20.Multiline = true;

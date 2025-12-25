@@ -1,12 +1,13 @@
 ﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Globalization;
 using BC.ACCOUNTING.CORE.Enums;
+using System.Runtime.Serialization;
 
 namespace BC.ACCOUNTING.CORE.DTO.General
 {
     public class ReportDTO
     {
+
+
         [Browsable(false)] public required string ReportName { get; set; }
         [Browsable(false)] public Export? ExportFormat { get; set; } = null; // null = View, otherwise Export
         [Browsable(false)] public string Connection { get; set; } = "Default";
@@ -14,7 +15,15 @@ namespace BC.ACCOUNTING.CORE.DTO.General
         public string SubCurrencySymbol { get; set; } = "៛";
         [Browsable(false)]public DecimalFormatting DecimalPrecision { get; set; } = DecimalFormatting.TwoDecimalPrecision;
         [Browsable(false)]public DecimalFormatting SubDecimalPrecision { get; set; } = DecimalFormatting.Standard;
+
+        [OnDeserialized]
+        private void InitializeData(StreamingContext context)
+        {
+            CurrencySymbol = string.IsNullOrEmpty(CurrencySymbol.Trim()) ? "$" : CurrencySymbol;
+            SubCurrencySymbol = string.IsNullOrEmpty(SubCurrencySymbol.Trim()) ? "៛" : SubCurrencySymbol;
+        }
     }
+    
     public enum Export
     {
         Pdf = 1,

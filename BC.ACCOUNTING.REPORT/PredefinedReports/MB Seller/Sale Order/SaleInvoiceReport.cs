@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
 {
@@ -87,7 +88,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             {
                 data.ForEach(item =>
                     {
-                        item.ItemImage = Path.Combine(imageUrl, item.ItemCode+".jpg");
+                        item.ItemImage = Path.Combine(imageUrl, "HD7/","item/", item.ItemCode+".jpg");
                     });
             }
             if (reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\VN7SaleInvoice80Report.repx"))
@@ -225,12 +226,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                     this.xrLabel48.Font = new Font("Khmer OS Content", 10.8f);
 
 
-                    
-                    
-
-
-
-
+                                   
                     this.xrLabel14.Width = 150;
                     this.ReportFooter.PrintAtBottom = true;
                     this.PageFooter.Visible = true;
@@ -239,13 +235,11 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                     this.xrTableCell6.Font= new Font("Khmer OS Content", 10.8f);
                     this.ReportHeader.HeightF = 100;
                 }
-
-                
             }
                 
             //objectDataSource1.DataSource = data;
             //this.DataSource = objectDataSource1;
-            this.DataSource = data;
+                this.DataSource = data;
             Parameters["CustomerCode"].Value = dto.CustomerCode;
             Parameters["CustomerName"].Value = dto.CustomerName;
             Parameters["CustomerTel"].Value = dto.CustomerTel;
@@ -287,8 +281,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             if (Parameters["Store"] != null)
                 Parameters["Store"].Value = dto.Store;
 
-
-            //Parameters["CustomerCode"].Value = dto.CustomerCode;
+             //Parameters["CustomerCode"].Value = dto.CustomerCode;
             //Parameters["CustomerName"].Value = dto.CustomerName;
             //Parameters["CustomerTel"].Value = dto.CustomerTel;
             //Parameters["Market"].Value = dto.Market;

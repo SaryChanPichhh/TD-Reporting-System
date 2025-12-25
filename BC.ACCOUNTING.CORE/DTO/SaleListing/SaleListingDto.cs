@@ -24,7 +24,8 @@ namespace BC.ACCOUNTING.CORE.DTO.SaleListing
         [AllowNull]
         public string? Date2 { get; set; } = string.Empty;
         public string? VoidStatus { get; set; } = "N";
-        public string? HeaderRecType { get; set; } ="O";
+        public string? HeaderRecType { get; set; } =  "O";
+        public List<string>? HeaderRecTypes { get; set; } = new ();
         public string? DetailRecType { get; set; } = "D";
         public string? AnalM0 { get; set; } = string.Empty;
         public string? AnalM1 { get; set; } = string.Empty;
