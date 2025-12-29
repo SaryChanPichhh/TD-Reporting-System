@@ -527,7 +527,7 @@
             // 
             // xrTable4
             // 
-            this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable4.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable4.BorderWidth = 2F;
             this.xrTable4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(0.0001271566F, 25F);
@@ -620,7 +620,7 @@
             // 
             // xrTable5
             // 
-            this.xrTable5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
+            this.xrTable5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTable5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable5.BorderWidth = 2F;
             this.xrTable5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
@@ -648,13 +648,15 @@
             // 
             // xrTableCell200
             // 
-            this.xrTableCell200.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
+            this.xrTableCell200.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTableCell200.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell200.CanGrow = false;
+            this.xrTableCell200.ForeColor = System.Drawing.Color.White;
             this.xrTableCell200.Multiline = true;
             this.xrTableCell200.Name = "xrTableCell200";
             this.xrTableCell200.StylePriority.UseBackColor = false;
             this.xrTableCell200.StylePriority.UseBorders = false;
+            this.xrTableCell200.StylePriority.UseForeColor = false;
             this.xrTableCell200.StylePriority.UseTextAlignment = false;
             this.xrTableCell200.Text = "កាលបរិច្ឆេទ";
             this.xrTableCell200.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -662,13 +664,15 @@
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
+            this.xrTableCell11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell11.CanGrow = false;
+            this.xrTableCell11.ForeColor = System.Drawing.Color.White;
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.StylePriority.UseBackColor = false;
             this.xrTableCell11.StylePriority.UseBorders = false;
+            this.xrTableCell11.StylePriority.UseForeColor = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "៖";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -676,15 +680,17 @@
             // 
             // xrTableCell12
             // 
-            this.xrTableCell12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
+            this.xrTableCell12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell12.CanGrow = false;
             this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "GetDate([HeaderTransactionDate])")});
+            this.xrTableCell12.ForeColor = System.Drawing.Color.White;
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.StylePriority.UseBackColor = false;
             this.xrTableCell12.StylePriority.UseBorders = false;
+            this.xrTableCell12.StylePriority.UseForeColor = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "xrTableCell44";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;

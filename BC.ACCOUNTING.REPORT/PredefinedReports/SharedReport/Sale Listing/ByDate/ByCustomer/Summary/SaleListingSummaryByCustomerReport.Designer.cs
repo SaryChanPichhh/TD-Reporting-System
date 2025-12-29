@@ -154,18 +154,22 @@
             // 
             // xrTable3
             // 
-            this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable3.BorderWidth = 2F;
             this.xrTable3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTable3.ForeColor = System.Drawing.Color.White;
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 105.7766F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
             this.xrTable3.SizeF = new System.Drawing.SizeF(767F, 25F);
+            this.xrTable3.StylePriority.UseBackColor = false;
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseFont = false;
+            this.xrTable3.StylePriority.UseForeColor = false;
             this.xrTable3.StylePriority.UseTextAlignment = false;
             this.xrTable3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 

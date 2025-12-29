@@ -128,7 +128,7 @@
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 9.583333F;
+            this.TopMargin.HeightF = 3.33333F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -291,8 +291,8 @@
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Company]")});
-            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(426.6774F, 0F);
+            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(426.6775F, 0F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -305,9 +305,9 @@
             // 
             this.xrLabel3.CanGrow = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PrintDate]")});
-            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9.75F);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(426.6774F, 54F);
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Today()")});
+            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(426.6775F, 53.99999F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -316,17 +316,17 @@
             this.xrLabel3.StylePriority.UseTextAlignment = false;
             this.xrLabel3.Text = "lblFromDate";
             this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrLabel3.TextFormatString = "{0:dd/MMM/yyyy}";
+            this.xrLabel3.TextFormatString = "{0:dd-MM-yyyy​​ HH:mm}";
             // 
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
-            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 10F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(426.6774F, 27F);
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 12F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(382.4066F, 27F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(296.6451F, 27F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(385.1867F, 27F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "របាយការណ៍អតិថិជនដែលជាប់ជំពាក់";
@@ -334,10 +334,11 @@
             // 
             // xrTable3
             // 
-            this.xrTable3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
-            this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable3.BorderWidth = 2F;
             this.xrTable3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTable3.ForeColor = System.Drawing.Color.White;
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0.0008477106F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -348,6 +349,7 @@
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseFont = false;
+            this.xrTable3.StylePriority.UseForeColor = false;
             this.xrTable3.StylePriority.UseTextAlignment = false;
             this.xrTable3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
@@ -577,7 +579,7 @@
             // 
             this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable5.BorderWidth = 2F;
-            this.xrTable5.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
+            this.xrTable5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(0.0005651404F, 29.99991F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -1039,7 +1041,7 @@
             this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9.75F);
             this.Landscape = true;
-            this.Margins = new DevExpress.Drawing.DXMargins(8F, 11F, 9.583333F, 20F);
+            this.Margins = new DevExpress.Drawing.DXMargins(8F, 11F, 3.33333F, 20F);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;

@@ -120,12 +120,6 @@
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.GroupFooter2 = new DevExpress.XtraReports.UI.GroupFooterBand();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.xrControlStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.Sub_Total = new DevExpress.XtraReports.UI.CalculatedField();
             this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -142,6 +136,14 @@
             this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell44 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell46 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.xrControlStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.Sub_Total = new DevExpress.XtraReports.UI.CalculatedField();
+            this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -1142,54 +1144,6 @@
             this.GroupFooter2.HeightF = 113.7551F;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
-            // xrLine1
-            // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(562.9999F, 2F);
-            // 
-            // xrLabel6
-            // 
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(7.947285E-05F, 13.75504F);
-            this.xrLabel6.Multiline = true;
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(59.71268F, 23F);
-            this.xrLabel6.Text = "ចំណាំ ៖";
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Note]")});
-            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(59.71276F, 13.75504F);
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(237.8354F, 97.99999F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.StylePriority.UseTextAlignment = false;
-            this.xrLabel4.Text = "xrLabel4";
-            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrControlStyle1
-            // 
-            this.xrControlStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrControlStyle1.Name = "xrControlStyle1";
-            this.xrControlStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            // 
-            // xrControlStyle2
-            // 
-            this.xrControlStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrControlStyle2.Name = "xrControlStyle2";
-            this.xrControlStyle2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            // 
-            // Sub_Total
-            // 
-            this.Sub_Total.DataMember = "Items";
-            this.Sub_Total.Expression = "[UnitConvert].[Price]*[UnitConvert].[Qty]";
-            this.Sub_Total.Name = "Sub_Total";
-            // 
             // xrTable11
             // 
             this.xrTable11.Borders = DevExpress.XtraPrinting.BorderSide.None;
@@ -1387,6 +1341,65 @@
             this.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell46.Weight = 1.256458435008436D;
             // 
+            // xrLine1
+            // 
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(562.9999F, 2F);
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(7.947285E-05F, 13.75504F);
+            this.xrLabel6.Multiline = true;
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(59.71268F, 23F);
+            this.xrLabel6.Text = "ចំណាំ ៖";
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Note]")});
+            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(59.71276F, 13.75504F);
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(237.8354F, 97.99999F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "xrLabel4";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrControlStyle1
+            // 
+            this.xrControlStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrControlStyle1.Name = "xrControlStyle1";
+            this.xrControlStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            // 
+            // xrControlStyle2
+            // 
+            this.xrControlStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrControlStyle2.Name = "xrControlStyle2";
+            this.xrControlStyle2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            // 
+            // Sub_Total
+            // 
+            this.Sub_Total.DataMember = "Items";
+            this.Sub_Total.Expression = "[UnitConvert].[Price]*[UnitConvert].[Qty]";
+            this.Sub_Total.Name = "Sub_Total";
+            // 
+            // DecimalPrecision
+            // 
+            this.DecimalPrecision.Description = "Parameter1";
+            this.DecimalPrecision.Name = "DecimalPrecision";
+            this.DecimalPrecision.Visible = false;
+            // 
+            // SubDecimalPrecision
+            // 
+            this.SubDecimalPrecision.Description = "Parameter1";
+            this.SubDecimalPrecision.Name = "SubDecimalPrecision";
+            // 
             // NOSaleInvoiceA4Report
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1409,6 +1422,9 @@
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A5;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.DecimalPrecision,
+            this.SubDecimalPrecision});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1,
             this.xrControlStyle2});
@@ -1547,5 +1563,7 @@
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow16;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell44;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell46;
+        private DevExpress.XtraReports.Parameters.Parameter DecimalPrecision;
+        private DevExpress.XtraReports.Parameters.Parameter SubDecimalPrecision;
     }
 }

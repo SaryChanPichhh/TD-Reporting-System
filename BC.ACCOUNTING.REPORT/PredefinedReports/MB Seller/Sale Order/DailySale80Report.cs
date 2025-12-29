@@ -15,6 +15,14 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
         public DailySale80Report(InvoiceReportDto saleReportDataSources, string report)
         {
             this.LoadLayoutFromXml(report); //use this instead of InitializeComponent when use with file .repx
+            if (Parameters["DecimalPrecision"] is not null)
+            {
+                this.Parameters["DecimalPrecision"].Value = saleReportDataSources.DecimalPrecision;
+            }
+            else if (Parameters["SubDecimalPrecision"] is not null)
+            {
+                this.Parameters["SubDecimalPrecision"].Value = saleReportDataSources.SubDecimalPrecision;
+            }
             SaleReportDataSource.DataSource = saleReportDataSources;
             this.DataSource = SaleReportDataSource;
         }

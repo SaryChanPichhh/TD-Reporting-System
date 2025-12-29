@@ -18,13 +18,17 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [Browsable(false)][Nullable(true)] public string DbCode { get; set; } = string.Empty;
         [Nullable(true)] public string CurrencySymbol { get; set; } = "$";
         [Nullable(true)] public string SubCurrencySymbol { get; set; } = "៛";
-        [Browsable(false)][Nullable(true)] public DecimalFormatting DecimalPrecision { get; set; }  = DecimalFormatting.TwoDecimalPrecision;
+        [Browsable(false)][Nullable(true)] public DecimalFormatting DecimalPrecision { get; set; }  = DecimalFormatting.ThreeDecimalPrecision;
         [Browsable(false)][Nullable(true)] public DecimalFormatting SubDecimalPrecision { get; set; }  = DecimalFormatting.Standard;
         [OnDeserialized]
         private void InitializeData(StreamingContext context)
         {
+            // Init Default Currency Symbol
             CurrencySymbol = string.IsNullOrEmpty(CurrencySymbol.Trim()) ? "$" : CurrencySymbol;
             SubCurrencySymbol = string.IsNullOrEmpty(SubCurrencySymbol.Trim()) ? "៛" : SubCurrencySymbol;
+            // Init Default Decimal Precision
+            DecimalPrecision = CurrencySymbol.Equals("៛")? DecimalFormatting.Standard : DecimalFormatting.ThreeDecimalPrecision;
+            SubDecimalPrecision = SubCurrencySymbol.Equals("$")? DecimalFormatting.ThreeDecimalPrecision : DecimalFormatting.Standard;
         }
     }   
 }

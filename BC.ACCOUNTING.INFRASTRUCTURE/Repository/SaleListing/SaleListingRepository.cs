@@ -4,16 +4,20 @@ using BC.ACCOUNTING.APPLICATION.Interfaces.SaleListing;
 using BC.ACCOUNTING.CORE.DTO.SaleListing;
 using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE.DBAccess;
+using Dapper;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.SaleListing
 {
     public class SaleListingRepository : ISaleListingRepository
     {
         private readonly ISqlDataAccess _sqlDataAccess;
-
-        public SaleListingRepository(ISqlDataAccess sqlDataAccess)
+        private readonly IConfiguration _configuration;
+        public SaleListingRepository(ISqlDataAccess sqlDataAccess, IConfiguration configuration)
         {
             _sqlDataAccess = sqlDataAccess;
+            _configuration = configuration;
         }
 
         public async Task<List<SaleListingModel>> GetSaleListingsAsync(SaleListingDto dto)
@@ -210,8 +214,7 @@ FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H
             };
             Console.WriteLine(sql);
             var execute = await _sqlDataAccess.LoadData<SaleListingModel, dynamic>(sql, param,connectionString: chgConnection);
-            var testInvoice = execute.ToList().Where(x => x.HeaderTransactionRef=="TG25100002").ToList();
-            Console.WriteLine(testInvoice.Count);
+
             return execute.ToList();
         }
 
@@ -430,9 +433,22 @@ FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H
             return execute.ToList();
         }
 
-        public async Task<List<MOSaleListingModel>> GetSaleListingForMOAsync(SaleListingDto dto)
+        public async Task<List<SaleListingModel>> GetSaleListingForMOAsync(SaleListingDto dto)
         {
-            var chgConnection = dto.Connection ?? "Default";
+            var dataDictionary = new Dictionary<string, SaleListingModel>();
+            var connectionString = dto.Connection switch
+            {
+                "Default" => _configuration.GetConnectionString("DBConnection"),
+                "SIDB" => _configuration.GetConnectionString("DBConnection"),
+                "MB" => _configuration.GetConnectionString("MBConnection"),
+                "MBDev" => _configuration.GetConnectionString("MBDevConnection"),
+                _ => _configuration.GetConnectionString("DBConnection")
+            };
+            await using var connection = new SqlConnection(connectionString: connectionString);
+            await connection.OpenAsync(
+            );
+            #region Condition Code
+
             var conditionByDate = string.Empty;
             var conditionByPeriod = string.Empty;
             var conditionByAnalysisCode = string.Empty;
@@ -519,6 +535,8 @@ FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H
                 DB_CODE = dto.DbCode,
             };
             var sql = string.Empty;
+
+            #endregion
             foreach (var item in dto.HeaderRecTypes)
             {
                 #region Query
@@ -629,19 +647,18 @@ D.LOCATION [Detail Location Code], (CASE WHEN D.LOCATION='' THEN '' ELSE (SELECT
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_TEL2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationTelephone2],
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_FAX FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationFax], 
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM1 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationComment],
-(CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationSecondComment] 
+(CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationSecondComment],CONCAT(SUB_MENU.TRANS_REF,D.TRANS_LINE) UniqueKey,SUB_MENU.TRANS_REF HeaderTransactionRef 
+,SUB_MENU.TRANS_LINE DetailLineNumber,SUB_MENU.CONV_ID, SUB_MENU.ITEM_CODE ItemCode,SUB_MENU.DESCRIPTION ItemDesc,SUB_MENU.CONV_F_CODE UnitConvCode,SUB_MENU.CONV_F_DESC UnitConv,SUB_MENU.CONV_F_DESCKH ConvFromDesc
 FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H.TRANS_REF
-LEFT JOIN (SELECT {dto.DbCode}SISODET_MENU.DESCRIPTION, M01SISODET_WHOLE.TRANS_REF ,M01SISODET_MENU.ITEM_CODE,M01SISODET_MENU.TRANS_LINE,M01SISODET_MENU.CONV_ID
-,CONV_F_CODE,CONV_F_DESC
+LEFT JOIN (SELECT MENU.DESCRIPTION, WHOLE.TRANS_REF ,MENU.ITEM_CODE,MENU.TRANS_LINE,MENU.CONV_ID
+,CONV_F_CODE,CONV_F_DESC,CONV_F_DESCKH
 FROM M01SISODET_WHOLE WHOLE INNER JOIN  M01SISODET_MENU MENU ON 
-M01SISODET_MENU.TRANS_REF = M01SISODET_WHOLE.TRANS_REF AND M01SISODET_MENU.TRANS_LINE = M01SISODET_WHOLE.TRANS_LINE AND M01SISODET_WHOLE.ITEM_CODE = MENU_CODE
-INNER JOIN MB_ITEM_MEASURECONV ON MB_ITEM_MEASURECONV.CONV_ID = M01SISODET_MENU.CONV_ID
+MENU.TRANS_REF = WHOLE.TRANS_REF AND MENU.TRANS_LINE = WHOLE.TRANS_LINE AND WHOLE.ITEM_CODE = MENU_CODE
+INNER JOIN MB_ITEM_MEASURECONV ON MB_ITEM_MEASURECONV.CONV_ID = MENU.CONV_ID
 INNER JOIN SIUNITCONV ON CONV_F_CODE = CONV_FROM 
-WHERE MB_ITEM_MEASURECONV.DB_CODE = '{dto.DbCode}' AND SIUNITCONV.DB_CODE = '{dto.DbCode}'
-)
+WHERE MB_ITEM_MEASURECONV.DB_CODE = '{dto.DbCode}' AND SIUNITCONV.DB_CODE = '{dto.DbCode}')
 SUB_MENU ON SUB_MENU.TRANS_REF = H.TRANS_REF AND D.TRANS_LINE = SUB_MENU.TRANS_LINE 
-
-WHERE " + voidStatus +
+WHERE  D.VALUE_3 > 0 AND " + voidStatus +
                 detailRecType + conditionByDate + conditionByAnalysisCode + conditionByPeriod
                 + conditionByReference + conditionByLocation + conditionByItem + conditionByTransCode + conditionM;
                 #endregion
@@ -651,9 +668,26 @@ WHERE " + voidStatus +
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS > 80 UNION ALL ";
             }
             sql = sql.TrimEnd(" UNION ALL ".ToCharArray());
-            var execute =
-                await _sqlDataAccess.LoadData<MOSaleListingModel, dynamic>(sql, param, connectionString: chgConnection);
-            return execute.ToList();
+
+            var execute = await connection.QueryAsync<SaleListingModel, MOSubItemDataSource, SaleListingModel>(sql,
+                (main, sub) =>
+                {
+                    var uniqueKey = main.HeaderTransactionRef! + main.DetailLineNumber.Trim();
+                    if (!dataDictionary.TryGetValue(uniqueKey, out var data))
+                    {
+                        data = main;
+                        dataDictionary.Add(uniqueKey, data);
+                    }
+                    if (sub.HeaderTransactionRef != null)
+                    {
+
+                        data.SubItems.Add(sub);
+                    }
+                    return data;
+                }, param: param, splitOn : "UniqueKey");
+            var data = execute.Distinct().ToList();
+            Console.WriteLine(data);
+            return execute.Distinct().ToList();
         }
     }
 }

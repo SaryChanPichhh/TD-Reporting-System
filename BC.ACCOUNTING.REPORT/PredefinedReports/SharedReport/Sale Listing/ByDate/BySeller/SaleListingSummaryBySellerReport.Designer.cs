@@ -108,10 +108,11 @@
             // 
             // xrTable1
             // 
-            this.xrTable1.BackColor = System.Drawing.Color.Transparent;
-            this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTable1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable1.BorderWidth = 2F;
             this.xrTable1.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
+            this.xrTable1.ForeColor = System.Drawing.Color.White;
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0.000793457F, 103.7713F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -122,6 +123,7 @@
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseFont = false;
+            this.xrTable1.StylePriority.UseForeColor = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
             this.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -191,7 +193,7 @@
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?prm_CompanyName")});
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 14F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(168.1666F, 0F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(168.1665F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -205,7 +207,7 @@
             // 
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol Light", 13F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(168.1666F, 30F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(168.1665F, 30F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

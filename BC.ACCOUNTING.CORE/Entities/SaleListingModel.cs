@@ -5,6 +5,7 @@ namespace BC.ACCOUNTING.CORE.Entities
 {
     public class SaleListingModel
     {
+        public List<MOSubItemDataSource> SubItems { get; set; } = new();
         public string HeaderTransactionRef { get; set; }
         public string HeaderQuotationNumber { get; set; }
         public string HeaderInvoiceNumber { get; set; } 
@@ -180,8 +181,12 @@ namespace BC.ACCOUNTING.CORE.Entities
     public class MOSubItemDataSource
     {
         public string ItemCode { get; set; }
-        public string ItemDesc { get; set; }
+        public string HeaderTransactionRef { get; set; }
+        public string DetailLineNumber { get; set; }
+        public string? ItemDesc { get; set; }
         public string UnitConv { get; set; }
+        public string UnitConvCode { get; set; }
+        public string? ConvFromDesc { get; set; }
         public int Quantity { get; set; }
         public decimal ItemCost { get; set; }
         public decimal SalePrice { get; set; }

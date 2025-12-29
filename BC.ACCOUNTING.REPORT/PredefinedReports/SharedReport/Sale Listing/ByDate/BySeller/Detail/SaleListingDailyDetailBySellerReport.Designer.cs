@@ -684,12 +684,16 @@
             // 
             // xrTableCell8
             // 
+            this.xrTableCell8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTableCell8.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell8.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
+            this.xrTableCell8.ForeColor = System.Drawing.Color.White;
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
+            this.xrTableCell8.StylePriority.UseBackColor = false;
             this.xrTableCell8.StylePriority.UseBorders = false;
             this.xrTableCell8.StylePriority.UseFont = false;
+            this.xrTableCell8.StylePriority.UseForeColor = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.Text = "កាលបរិច្ឆេទ";
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -697,12 +701,16 @@
             // 
             // xrTableCell10
             // 
+            this.xrTableCell10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "GetDate([HeaderTransactionDate])")});
             this.xrTableCell10.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
+            this.xrTableCell10.ForeColor = System.Drawing.Color.White;
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.StylePriority.UseBackColor = false;
             this.xrTableCell10.StylePriority.UseFont = false;
+            this.xrTableCell10.StylePriority.UseForeColor = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "លេខវិក្កយបត្រ";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;

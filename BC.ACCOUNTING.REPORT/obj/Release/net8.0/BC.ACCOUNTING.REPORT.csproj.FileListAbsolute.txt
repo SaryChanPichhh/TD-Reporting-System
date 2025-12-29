@@ -486,6 +486,7 @@ D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\ne
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order.SCS.PurchaseOrderListingReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.MBIncomeAndExpenseA4Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.MBSaleInvoiceSummaryReport.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.MBSaleListingByCustomerV2Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.MBSaleListingCustomerByInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.MBSaleListingSummaryReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing.SCS.SCSMBSaleListingCustomerReport.resources
@@ -494,15 +495,18 @@ D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\ne
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.HD7SaleInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.KS7SaleInvoice80Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.KS7SaleInvoiceA4Report.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO.NOSaleInvoice80mmReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO.NOSaleInvoice80Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO.NOSaleInvoiceA4Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.ReportTemplateEditing.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SA7SaleInvoice80Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SA7SaleInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SaleInvoiceA5Report.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SaleInvoiceNoDisReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SaleInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SCSSaleInvoice80Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SCSSaleInvoiceA5Report.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7.TD7SaleInvoiceA4Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.QuotationReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.VN7SaleInvoice80Report.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.VN7SaleInvoiceReport.resources
@@ -637,6 +641,7 @@ D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\ne
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.ByInvoice.SaleListingMonthlyDetailByInvoiceWithProfitReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.ByInvoice.SaleListingYearlyDetailByInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.ByInvoice.SaleListingYearlyDetailByInvoiceWithProfitReport.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01.M01SaleListingDetailBySellerReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.SaleListingDailyDetailBySellerReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.SaleListingDailyDetailBySellerWithProfitReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.SaleListingDetailBySellerReport.resources
@@ -700,6 +705,3 @@ D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\ne
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.pdb
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.genruntimeconfig.cache
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\ref\BC.ACCOUNTING.REPORT.dll
-D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01.M01SaleListingDetailBySellerReport.resources
-D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7.TD7SaleInvoiceA4Report.resources
-D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.SaleInvoiceNoDisReport.resources

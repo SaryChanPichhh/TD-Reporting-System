@@ -114,7 +114,7 @@
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 20F;
+            this.TopMargin.HeightF = 5.416664F;
             this.TopMargin.Name = "TopMargin";
             // 
             // ReportHeader
@@ -124,7 +124,7 @@
             this.xrLabel5,
             this.xrLabel6,
             this.xrLabel2});
-            this.ReportHeader.HeightF = 68.33331F;
+            this.ReportHeader.HeightF = 56.66665F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel3
@@ -196,11 +196,9 @@
             // 
             // xrTable3
             // 
-            this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable3.BorderWidth = 1F;
-            this.xrTable3.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrTable3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(3.178914E-05F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -225,12 +223,18 @@
             // 
             // xrTableCell1
             // 
-            this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell1.BorderWidth = 2F;
+            this.xrTableCell1.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTableCell1.ForeColor = System.Drawing.Color.White;
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(20, 2, 0, 0, 100F);
+            this.xrTableCell1.StylePriority.UseBackColor = false;
             this.xrTableCell1.StylePriority.UseBorders = false;
             this.xrTableCell1.StylePriority.UseBorderWidth = false;
+            this.xrTableCell1.StylePriority.UseFont = false;
+            this.xrTableCell1.StylePriority.UseForeColor = false;
             this.xrTableCell1.StylePriority.UsePadding = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "កាលបរិច្ឆេទទូទាត់";
@@ -239,14 +243,20 @@
             // 
             // xrTableCell18
             // 
-            this.xrTableCell18.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell18.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell18.BorderWidth = 2F;
             this.xrTableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PaidDate]")});
+            this.xrTableCell18.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTableCell18.ForeColor = System.Drawing.Color.White;
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
+            this.xrTableCell18.StylePriority.UseBackColor = false;
             this.xrTableCell18.StylePriority.UseBorders = false;
             this.xrTableCell18.StylePriority.UseBorderWidth = false;
+            this.xrTableCell18.StylePriority.UseFont = false;
+            this.xrTableCell18.StylePriority.UseForeColor = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
             this.xrTableCell18.Text = "កូដអតិថិជន";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -255,12 +265,18 @@
             // 
             // xrTableCell2
             // 
-            this.xrTableCell2.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell2.BorderWidth = 2F;
+            this.xrTableCell2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTableCell2.ForeColor = System.Drawing.Color.White;
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.StylePriority.UseBackColor = false;
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseBorderWidth = false;
+            this.xrTableCell2.StylePriority.UseFont = false;
+            this.xrTableCell2.StylePriority.UseForeColor = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell2.Weight = 4.9103156639545631D;
@@ -281,19 +297,23 @@
             // xrTableCell17
             // 
             this.xrTableCell17.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell17.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
             this.xrTableCell17.StylePriority.UseBorders = false;
+            this.xrTableCell17.StylePriority.UseFont = false;
             this.xrTableCell17.Text = "ល.រ";
             this.xrTableCell17.Weight = 0.69038612712946523D;
             // 
             // xrTableCell19
             // 
             this.xrTableCell19.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell19.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
             this.xrTableCell19.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F);
             this.xrTableCell19.StylePriority.UseBorders = false;
+            this.xrTableCell19.StylePriority.UseFont = false;
             this.xrTableCell19.StylePriority.UsePadding = false;
             this.xrTableCell19.StylePriority.UseTextAlignment = false;
             this.xrTableCell19.Text = "កូដអតិថិជន";
@@ -303,10 +323,12 @@
             // xrTableCell20
             // 
             this.xrTableCell20.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell20.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F);
             this.xrTableCell20.StylePriority.UseBorders = false;
+            this.xrTableCell20.StylePriority.UseFont = false;
             this.xrTableCell20.StylePriority.UsePadding = false;
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.Text = "ឈ្មោះអតិថិជន";
@@ -316,10 +338,12 @@
             // xrTableCell21
             // 
             this.xrTableCell21.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell21.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
             this.xrTableCell21.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 0, 0, 100F);
             this.xrTableCell21.StylePriority.UseBorders = false;
+            this.xrTableCell21.StylePriority.UseFont = false;
             this.xrTableCell21.StylePriority.UsePadding = false;
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "វិក្កយបត្រ";
@@ -329,10 +353,12 @@
             // xrTableCell22
             // 
             this.xrTableCell22.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell22.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 10, 0, 0, 100F);
             this.xrTableCell22.StylePriority.UseBorders = false;
+            this.xrTableCell22.StylePriority.UseFont = false;
             this.xrTableCell22.StylePriority.UsePadding = false;
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "ទឹកប្រាក់";
@@ -342,10 +368,12 @@
             // xrTableCell23
             // 
             this.xrTableCell23.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell23.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 10, 0, 0, 100F);
             this.xrTableCell23.StylePriority.UseBorders = false;
+            this.xrTableCell23.StylePriority.UseFont = false;
             this.xrTableCell23.StylePriority.UsePadding = false;
             this.xrTableCell23.StylePriority.UseTextAlignment = false;
             this.xrTableCell23.Text = "ចំនួនទូទាត់";
@@ -355,10 +383,12 @@
             // xrTableCell24
             // 
             this.xrTableCell24.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell24.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 10, 0, 0, 100F);
             this.xrTableCell24.StylePriority.UseBorders = false;
+            this.xrTableCell24.StylePriority.UseFont = false;
             this.xrTableCell24.StylePriority.UsePadding = false;
             this.xrTableCell24.StylePriority.UseTextAlignment = false;
             this.xrTableCell24.Text = "នៅសល់";
@@ -600,7 +630,7 @@
             // 
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5});
-            this.GroupFooter2.HeightF = 28.25522F;
+            this.GroupFooter2.HeightF = 38.04677F;
             this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
@@ -875,7 +905,7 @@
             this.DataMember = "Items";
             this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(20F, 20F, 20F, 20F);
+            this.Margins = new DevExpress.Drawing.DXMargins(20F, 20F, 5.416664F, 20F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using BC.ACCOUNTING.REPORT.DataSources.MB;
 using BC.ACCOUNTING.REPORT.DTO.MB;
+using BC.ACCOUNTING.REPORT.Helper;
 using DevExpress.XtraReports.UI;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
@@ -83,6 +84,14 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
             dto.Items = invoice;
 
             LoadLayoutFromXml(reportName);
+            if (Parameters["DecimalPrecision"] is not null)
+            {
+                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+            }
+            if (Parameters["SubDecimalPrecision"] is not null)
+            {
+                this.SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
+            }
             objectDataSource1.DataSource = dto;
             DataSource = objectDataSource1;
             if(xrTableCellRecordNumber != null)

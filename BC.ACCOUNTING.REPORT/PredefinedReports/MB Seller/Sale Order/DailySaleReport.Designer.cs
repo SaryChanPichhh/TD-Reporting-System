@@ -78,6 +78,8 @@
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaleReportDataSource)).BeginInit();
@@ -151,11 +153,10 @@
             // xrTableCell3
             // 
             this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Items].[ITEM_PRICE1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,([ITEM_PRICE1])\n)\n")});
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Text = "xrTableCell3";
-            this.xrTableCell3.TextFormatString = "{0:$0.00}";
             this.xrTableCell3.Weight = 0.82971495412775376D;
             // 
             // xrTableCell4
@@ -171,41 +172,37 @@
             // xrTableCell5
             // 
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Items].[TOTAL_REVENUE]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,([Items].[TOTAL_REVENUE])\n)")});
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.Text = "xrTableCell5";
-            this.xrTableCell5.TextFormatString = "{0:$0.00}";
             this.xrTableCell5.Weight = 1.3086423910440614D;
             // 
             // xrTableCell6
             // 
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Items].[TOTAL_DISCOUNT]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,[Items].[TOTAL_DISCOUNT]\n)")});
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Text = "xrTableCell6";
-            this.xrTableCell6.TextFormatString = "{0:$0.00}";
             this.xrTableCell6.Weight = 1D;
             // 
             // xrTableCell7
             // 
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Items].[TOTAL_COST]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,[Items].[TOTAL_COST]\n)")});
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Text = "xrTableCell7";
-            this.xrTableCell7.TextFormatString = "{0:$0.00}";
             this.xrTableCell7.Weight = 1D;
             // 
             // xrTableCell8
             // 
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Items].[TOTAL_PROFIT]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,[Items].[TOTAL_PROFIT])\n")});
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Text = "xrTableCell8";
-            this.xrTableCell8.TextFormatString = "{0:$0.00}";
             this.xrTableCell8.Weight = 1D;
             this.xrTableCell8.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrTableCell8_BeforePrint);
             // 
@@ -499,54 +496,65 @@
             // xrTableCell10
             // 
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Items.TOTAL_REVENUE])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum([Items.TOTAL_REVENUE])\n)" +
+                    "")});
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             xrSummary1.IgnoreNullValues = true;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell10.Summary = xrSummary1;
             this.xrTableCell10.Text = "xrTableCell5";
-            this.xrTableCell10.TextFormatString = "{0:$0.00}";
             this.xrTableCell10.Weight = 1.3086424030734589D;
             // 
             // xrTableCell11
             // 
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Items.TOTAL_DISCOUNT])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum([Items.TOTAL_DISCOUNT])\n" +
+                    ")")});
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             xrSummary2.IgnoreNullValues = true;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell11.Summary = xrSummary2;
             this.xrTableCell11.Text = "xrTableCell6";
-            this.xrTableCell11.TextFormatString = "{0:$0.00}";
             this.xrTableCell11.Weight = 1D;
             // 
             // xrTableCell25
             // 
             this.xrTableCell25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Items].[TOTAL_COST])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum([Items.TOTAL_COST])\n)")});
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
             xrSummary3.IgnoreNullValues = true;
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell25.Summary = xrSummary3;
             this.xrTableCell25.Text = "xrTableCell7";
-            this.xrTableCell25.TextFormatString = "{0:$0.00}";
             this.xrTableCell25.Weight = 1D;
             // 
             // xrTableCell26
             // 
             this.xrTableCell26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Items].[TOTAL_PROFIT])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum([Items].[TOTAL_PROFIT])\n" +
+                    ")")});
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             xrSummary4.IgnoreNullValues = true;
             xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell26.Summary = xrSummary4;
             this.xrTableCell26.Text = "xrTableCell8";
-            this.xrTableCell26.TextFormatString = "{0:$0.00}";
             this.xrTableCell26.Weight = 1D;
+            // 
+            // DecimalPrecision
+            // 
+            this.DecimalPrecision.Description = "Parameter1";
+            this.DecimalPrecision.Name = "DecimalPrecision";
+            this.DecimalPrecision.Visible = false;
+            // 
+            // SubDecimalPrecision
+            // 
+            this.SubDecimalPrecision.Description = "Parameter1";
+            this.SubDecimalPrecision.Name = "SubDecimalPrecision";
+            this.SubDecimalPrecision.Visible = false;
             // 
             // DailySaleReport
             // 
@@ -566,6 +574,9 @@
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.DecimalPrecision,
+            this.SubDecimalPrecision});
             this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
@@ -622,5 +633,7 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel18;
         private DevExpress.XtraReports.UI.XRLabel xrLabel17;
         private DevExpress.XtraReports.UI.XRLine xrLine5;
+        private DevExpress.XtraReports.Parameters.Parameter DecimalPrecision;
+        private DevExpress.XtraReports.Parameters.Parameter SubDecimalPrecision;
     }
 }

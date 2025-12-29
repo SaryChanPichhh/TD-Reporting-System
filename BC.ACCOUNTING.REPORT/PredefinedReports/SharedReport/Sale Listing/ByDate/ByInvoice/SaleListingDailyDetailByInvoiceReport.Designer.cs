@@ -621,10 +621,12 @@
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
             this.GroupFooter1.HeightF = 37F;
+            this.GroupFooter1.Level = 1;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrTable1
             // 
+            this.xrTable1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTable1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable1.BorderWidth = 1F;
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
@@ -633,6 +635,7 @@
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
             this.xrTable1.SizeF = new System.Drawing.SizeF(807F, 30F);
+            this.xrTable1.StylePriority.UseBackColor = false;
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -718,11 +721,12 @@
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.GroupFooter2.HeightF = 37F;
-            this.GroupFooter2.Level = 1;
+            this.GroupFooter2.Level = 2;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
             // xrTable3
             // 
+            this.xrTable3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable3.BorderWidth = 1F;
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(7.335956E-05F, 0F);
@@ -731,6 +735,7 @@
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
             this.xrTable3.SizeF = new System.Drawing.SizeF(807F, 29.99999F);
+            this.xrTable3.StylePriority.UseBackColor = false;
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseTextAlignment = false;
@@ -859,10 +864,11 @@
             // 
             // xrTable5
             // 
-            this.xrTable5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
-            this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTable5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable5.BorderWidth = 2F;
             this.xrTable5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
+            this.xrTable5.ForeColor = System.Drawing.Color.White;
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -873,6 +879,7 @@
             this.xrTable5.StylePriority.UseBorders = false;
             this.xrTable5.StylePriority.UseBorderWidth = false;
             this.xrTable5.StylePriority.UseFont = false;
+            this.xrTable5.StylePriority.UseForeColor = false;
             this.xrTable5.StylePriority.UseTextAlignment = false;
             this.xrTable5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
@@ -887,8 +894,8 @@
             // 
             // xrTableCell200
             // 
-            this.xrTableCell200.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
-            this.xrTableCell200.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell200.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell200.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell200.CanGrow = false;
             this.xrTableCell200.Multiline = true;
             this.xrTableCell200.Name = "xrTableCell200";
@@ -901,8 +908,8 @@
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
-            this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell11.CanGrow = false;
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
@@ -915,8 +922,8 @@
             // 
             // xrTableCell12
             // 
-            this.xrTableCell12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(247)))), ((int)(((byte)(62)))), ((int)(((byte)(114)))));
-            this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(10)))), ((int)(((byte)(57)))));
+            this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell12.CanGrow = false;
             this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "GetDate([HeaderTransactionDate])")});
@@ -977,7 +984,7 @@
             this.objectDataSource1});
             this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
-            this.Margins = new DevExpress.Drawing.DXMargins(10F, 10F, 10F, 52.1473F);
+            this.Margins = new DevExpress.Drawing.DXMargins(9F, 10F, 10F, 52.1473F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;

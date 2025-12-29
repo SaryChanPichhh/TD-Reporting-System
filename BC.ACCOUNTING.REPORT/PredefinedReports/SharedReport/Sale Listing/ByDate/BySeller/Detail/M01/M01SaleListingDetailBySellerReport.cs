@@ -1,8 +1,14 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using DevExpress.CodeParser;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
+using BC.ACCOUNTING.CORE.Entities;
+using System.Collections.Generic;
+using System.Linq;
+using BC.ACCOUNTING.CORE.DTO.SaleListing;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01
 {
@@ -11,6 +17,96 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDat
         public M01SaleListingDetailBySellerReport()
         {
             InitializeComponent();
+        }
+        public M01SaleListingDetailBySellerReport(List<SaleListingModel> ls, string reportName, SaleListingDto dto)
+        {
+            LoadLayoutFromXml(reportName);
+
+            if (Parameters["DecimalPrecision"] != null)
+                DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+
+            if (Parameters["SubDecimalPrecision"] != null)
+                SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
+
+            if (Parameters["CurrencySymbol"] != null)
+                CurrencySymbol.Value = string.IsNullOrEmpty(dto.CurrencySymbol) ? "$" : dto.CurrencySymbol;
+
+            if (Parameters["SubCurrencySymbol"] != null)
+                SubCurrencySymbol.Value = string.IsNullOrEmpty(dto.SubCurrencySymbol) ? "៛" : dto.SubCurrencySymbol;
+
+
+            if (reportName.Equals("M01SaleListingDetailBySellerReport"))
+            {
+                ls.ForEach(x =>
+                {
+                    var list = x.SubItems.GroupBy(group => group.ItemCost).Select(newData=>new MOSubItemDataSource
+                    {
+                        ItemCost = newData.Key,
+                        ItemDesc = newData.FirstOrDefault()?.ItemDesc,
+                        ConvFromDesc = newData.FirstOrDefault()?.ConvFromDesc,
+
+                    }).ToList();
+                    x.SubItems = list;
+                });
+            }
+
+            objectDataSource1.DataSource = ls;
+            prm_EndDate.Value = string.IsNullOrWhiteSpace(dto.Date2) ? dto.Prd2 : dto.Date2;
+            prm_StartDate.Value = string.IsNullOrWhiteSpace(dto.Date1) ? dto.Prd1 : dto.Date1;
+            if (prm_StartDate?.Value != null && string.IsNullOrEmpty(dto.Date1)&&string.IsNullOrEmpty(dto.Prd1))
+            {
+                if (xrLabel13 is not null &&xrLabel8 is not null)
+                    xrLabel8.Visible = xrLabel13.Visible = false;
+            }
+
+            if (prm_EndDate?.Value != null && string.IsNullOrEmpty(dto.Date2)&&string.IsNullOrEmpty(dto.Prd2))
+            {
+                if (xrLabel13 is not null && xrLabel14 is not null)
+                    xrLabel14.Visible = xrLabel13.Visible = false;
+            }
+
+            prm_CompanyName.Value = dto.CompanyName;
+            try
+            {
+                if (xrTableCell2 != null)
+                {
+                    if (GroupHeader1 != null)
+                    {
+                        GroupHeader1.BeforePrint -= GroupHeader1_BeforePrint;
+                        GroupHeader1.BeforePrint += GroupHeader1_BeforePrint;
+                    }
+                    if (GroupHeader2 != null)
+                    {
+                        GroupHeader2.BeforePrint -= GroupHeader2_BeforePrint;
+                        GroupHeader2.BeforePrint += GroupHeader2_BeforePrint;
+                    }
+                    if (GroupHeader3 != null)
+                    {
+                        GroupHeader3.BeforePrint -= GroupHeader3_BeforePrint;
+                        GroupHeader3.BeforePrint += GroupHeader3_BeforePrint;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private int groupIndex = 0;
+        private void GroupHeader1_BeforePrint(object sender, CancelEventArgs e)
+        {
+            groupIndex++;
+            xrTableCell2.Text = groupIndex.ToString();
+            if (xrTable2 is not null)
+                xrTable2.BackColor = groupIndex%2 == 0 ? Color.WhiteSmoke : Color.White;
+        }
+        private void GroupHeader2_BeforePrint(object sender, CancelEventArgs e)
+        {
+            groupIndex = 0;
+        }
+        private void GroupHeader3_BeforePrint(object sender, CancelEventArgs e)
+        {
+            groupIndex = 0;
         }
     }
 }

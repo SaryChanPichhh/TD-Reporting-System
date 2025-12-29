@@ -35,6 +35,7 @@ using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleInvoice;
 using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleListing;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AP;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AR;
+using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01;
 using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.Summary;
 using BC.ACCOUNTING.REPORT.Services;
 using DevExpress.XtraReports.UI;
@@ -1439,6 +1440,35 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             ViewBag.HideHeader = true;
             return View("Invoice", report);
         }
+
+        [HttpPost("mo-salelisting")]
+        public async Task<IActionResult> SaleListingForMOAsync([FromBody] SaleListingDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+
+            var execute = await _unitOfWork.SaleListingRepository.GetSaleListingForMOAsync(dto);
+            var report = new M01SaleListingDetailBySellerReport(execute, reportPath, dto);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+
+
+
         #region MB Seller
 
 

@@ -47,6 +47,9 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBSaleInvoiceSummaryReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBSaleListingByCustomerV2Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBSaleListingCustomerByInvoiceReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -57,6 +60,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\KS7\KS7SaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoice80mmReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoice80Report.cs">
