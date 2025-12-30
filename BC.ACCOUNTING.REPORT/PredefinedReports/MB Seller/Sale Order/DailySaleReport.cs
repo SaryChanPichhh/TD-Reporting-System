@@ -29,6 +29,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
         {
             this.LoadLayoutFromXml(report); //use this instead of InitializeComponent when use with file .repx
         }
+
         private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
         {
             XRTableCell cell = sender as XRTableCell;
@@ -51,9 +52,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                     cell.ForeColor = Color.Black;
                 }
             }
-            
-        }
 
+        }
 
         private void xrTableCell16_PrintOnPage(object sender, DevExpress.XtraReports.UI.PrintOnPageEventArgs e)
         {

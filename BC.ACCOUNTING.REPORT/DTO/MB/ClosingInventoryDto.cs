@@ -4,16 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using BC.ACCOUNTING.REPORT.DataSources.POS;
+using ExpenseDataSource = BC.ACCOUNTING.REPORT.DataSources.MB.ExpenseDataSource;
 
 namespace BC.ACCOUNTING.REPORT.DTO.MB
 {
     public record ClosingInventoryDto : ReportDto
     {
-        public string Seller { get; set; }
+        public decimal ExchangeRate { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public DateTime PrintDate { get; set; }
-        public decimal DiscountOnInvoice { get; set; }
-        public List<ClosingInventoryDataSource> Items { get; set; } 
+        public decimal TotalDiscountOnInvoice { get; set; }
+        public decimal TotalDiscountOnItem { get; set; }
+        public List<ClosingInventoryDataSource> Items { get; set; }
+        public List<PaymentMethodDataSource> Payments { get; set; }
+        public List<ExpenseDataSource> Expenses { get; set; }
+
     }
 }

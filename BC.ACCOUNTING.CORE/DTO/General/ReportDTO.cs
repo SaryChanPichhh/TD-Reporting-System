@@ -21,7 +21,7 @@ namespace BC.ACCOUNTING.CORE.DTO.General
             CurrencySymbol = string.IsNullOrEmpty(CurrencySymbol.Trim()) ? "$" : CurrencySymbol;
             SubCurrencySymbol = string.IsNullOrEmpty(SubCurrencySymbol.Trim()) ? "៛" : SubCurrencySymbol;
             // Init Default Decimal Precision
-            DecimalPrecision = CurrencySymbol.Equals("៛") ? DecimalFormatting.Standard : DecimalFormatting.ThreeDecimalPrecision;
+            DecimalPrecision = CurrencySymbol.Equals("៛") ? DecimalFormatting.TwoDecimalPrecision : DecimalFormatting.ThreeDecimalPrecision;
             SubDecimalPrecision = SubCurrencySymbol.Equals("$") ? DecimalFormatting.ThreeDecimalPrecision : DecimalFormatting.Standard;
         }
     }

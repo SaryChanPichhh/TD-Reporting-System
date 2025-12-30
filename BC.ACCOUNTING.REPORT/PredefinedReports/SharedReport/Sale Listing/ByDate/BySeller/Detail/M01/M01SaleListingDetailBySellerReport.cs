@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BC.ACCOUNTING.CORE.DTO.SaleListing;
 using BC.ACCOUNTING.REPORT.Helper;
+using DevExpress.Data.Helpers;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01
 {
@@ -37,17 +38,20 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDat
 
             if (reportName.Equals("M01SaleListingDetailBySellerReport"))
             {
-                ls.ForEach(x =>
-                {
-                    var list = x.SubItems.GroupBy(group => group.ItemCost).Select(newData=>new MOSubItemDataSource
-                    {
-                        ItemCost = newData.Key,
-                        ItemDesc = newData.FirstOrDefault()?.ItemDesc,
-                        ConvFromDesc = newData.FirstOrDefault()?.ConvFromDesc,
+                
+                
 
-                    }).ToList();
-                    x.SubItems = list;
-                });
+                //    ForEach(x =>
+                //{
+                //    var list = x.SubItems.GroupBy(group => group.ItemCost).Select(newData=>new MOSubItemDataSource
+                //    {
+                //        ItemCost = newData.Key,
+                //        ItemDesc = newData.FirstOrDefault()?.ItemDesc,
+                //        ConvFromDesc = newData.FirstOrDefault()?.ConvFromDesc,
+
+                //    }).ToList();
+                //    x.SubItems = list;
+                //});
             }
 
             objectDataSource1.DataSource = ls;
