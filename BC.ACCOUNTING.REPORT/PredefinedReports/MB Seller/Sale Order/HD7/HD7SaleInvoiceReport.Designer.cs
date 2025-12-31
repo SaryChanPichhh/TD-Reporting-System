@@ -1,4 +1,4 @@
-﻿namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
+﻿namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.HD7
 {
     partial class HD7SaleInvoiceReport
     {
