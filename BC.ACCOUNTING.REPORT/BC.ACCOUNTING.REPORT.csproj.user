@@ -119,6 +119,9 @@
     <Compile Update="PredefinedReports\POS\SaleListing\SaleListingByInvoiceWithDeliveryFeeReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\SaleListing\SaleListingBySellerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\SaleListing\SaleListingBySellerWithDeliveryFeeReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>

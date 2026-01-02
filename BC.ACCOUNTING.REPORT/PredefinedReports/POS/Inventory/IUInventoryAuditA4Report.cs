@@ -30,7 +30,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
             RowNum++;
             if (xrTableCell2 is not null)
                 xrTableCell2.Text = (RowNum).ToString();
-            Debug.WriteLine(RowNum);
+            xrTableRow6.BackColor = RowNum % 2 == 0 ? System.Drawing.Color.WhiteSmoke : System.Drawing.Color.White;
         }
         public void GroupHeader2_BeforePrint(object sender, CancelEventArgs e)
         {

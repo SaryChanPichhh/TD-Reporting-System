@@ -556,6 +556,7 @@ D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\ne
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceNoProfitReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingByInvoiceWithDeliveryFeeReport.resources
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingBySellerReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingBySellerWithDeliveryFeeReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing.SaleListingMovementReport.resources
 D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\obj\Release\net8.0\BC.ACCOUNTING.REPORT.PredefinedReports.ReportDividedInvoiceToDeliveries.resources

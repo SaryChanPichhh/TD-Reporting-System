@@ -141,7 +141,7 @@
             // 
             // xrTableCell1
             // 
-            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell1.CanGrow = false;
             this.xrTableCell1.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
             this.xrTableCell1.Multiline = true;

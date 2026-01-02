@@ -822,7 +822,7 @@
             this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(92F, 116.021F);
             this.xrPictureBox2.Name = "xrPictureBox2";
             this.xrPictureBox2.SizeF = new System.Drawing.SizeF(130F, 130F);
-            this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.Squeeze;
             // 
             // xrTable13
             // 
@@ -1094,13 +1094,13 @@
             // 
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[QueuesDisplay]")});
-            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(47.8149F, 246.021F);
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerName]")});
+            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(4.999908F, 246.021F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(218.3702F, 25F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(304.0002F, 25.00002F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.Text = "xrLabel2";

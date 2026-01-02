@@ -569,7 +569,7 @@
             this.xrLabel20.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n0}\', Iif([CurrencySymbol]==\'៛\', Round(ToDouble([TransVal" +
-                    "ue])),Round(ToDouble([TransValueKH])) ))\n")});
+                    "ue])),Round(ToDouble([TransValueKH])*[ExchangeRate]) ))\n")});
             this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 10F);
             this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(625.0598F, 103.4583F);
             this.xrLabel20.Multiline = true;

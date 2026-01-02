@@ -17,8 +17,6 @@ namespace BC.ACCOUNTING.REPORT.DataSources.POS
         public decimal Cost { get; set; }
         public decimal Profit { get; set; } 
         [Nullable(true)]
-        //[MemberNotNull()]
         public decimal? DeliveryFee { get; set; } = 0;
-        public string ExchangeSign { get; set; } = "$";
     }
 }
