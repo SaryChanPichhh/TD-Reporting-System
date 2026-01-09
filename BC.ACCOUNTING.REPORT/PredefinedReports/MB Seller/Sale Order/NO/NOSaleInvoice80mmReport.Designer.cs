@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NOSaleInvoice80mmReport));
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
@@ -96,8 +97,7 @@
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportFooter1 = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
@@ -132,6 +132,7 @@
             this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             this.Phone_Field = new DevExpress.XtraReports.Parameters.Parameter();
             this.Extra_Sub_Total_Field = new DevExpress.XtraReports.UI.CalculatedField();
+            this.TotalExtraBasedUnitConv = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -571,7 +572,7 @@
             // 
             // Detail
             // 
-            this.Detail.HeightF = 0F;
+            this.Detail.HeightF = 1.205667F;
             this.Detail.Name = "Detail";
             // 
             // DetailReport
@@ -579,8 +580,7 @@
             this.DetailReport.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail1,
             this.DetailReport1,
-            this.DetailReport2,
-            this.ReportFooter1});
+            this.DetailReport2});
             this.DetailReport.DataMember = "Items.UnitConvert";
             this.DetailReport.DataSource = this.objectDataSource1;
             this.DetailReport.Level = 0;
@@ -590,7 +590,6 @@
             // 
             this.Detail1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable10});
-            this.Detail1.Expanded = false;
             this.Detail1.HeightF = 20F;
             this.Detail1.Name = "Detail1";
             this.Detail1.SortFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
@@ -599,7 +598,8 @@
             // xrTable10
             // 
             this.xrTable10.BackColor = System.Drawing.Color.Transparent;
-            this.xrTable10.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable10.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
+            this.xrTable10.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable10.Name = "xrTable10";
             this.xrTable10.OddStyleName = "xrControlStyle2";
@@ -609,6 +609,7 @@
             this.xrTable10.SizeF = new System.Drawing.SizeF(314F, 20F);
             this.xrTable10.StyleName = "xrControlStyle1";
             this.xrTable10.StylePriority.UseBackColor = false;
+            this.xrTable10.StylePriority.UseBorderDashStyle = false;
             this.xrTable10.StylePriority.UseBorders = false;
             // 
             // xrTableRow10
@@ -1002,25 +1003,27 @@
             this.xrLabel7.StylePriority.UseBackColor = false;
             this.xrLabel7.StylePriority.UseFont = false;
             this.xrLabel7.StylePriority.UsePadding = false;
-            this.xrLabel7.Text = "បន្ថែមលើមួយទំនិញ";
+            this.xrLabel7.Text = "បន្ថែមលើមួយមុខទំនិញ";
             // 
-            // ReportFooter1
+            // xrLabel13
             // 
-            this.ReportFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLine1});
-            this.ReportFooter1.HeightF = 9.703064F;
-            this.ReportFooter1.Name = "ReportFooter1";
-            // 
-            // xrLine1
-            // 
-            this.xrLine1.LineStyle = DevExpress.Drawing.DXDashStyle.Dash;
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 3.851532F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(316F, 2F);
+            this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Items].[UnitConvert].[Qty]*[Items.UnitConvert.Extra.Extra_Sub_Total_Field" +
+                    "]\n)")});
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(0.02651215F, 93.02101F);
+            this.xrLabel13.Multiline = true;
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(88.00043F, 23F);
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrLabel13.Summary = xrSummary1;
+            this.xrLabel13.Text = "xrLabel13";
+            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel13,
             this.xrLabel11,
             this.xrPictureBox2,
             this.xrTable13,
@@ -1114,8 +1117,8 @@
             this.xrTableCell46.StylePriority.UseFont = false;
             this.xrTableCell46.StylePriority.UsePadding = false;
             this.xrTableCell46.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell46.Summary = xrSummary1;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell46.Summary = xrSummary2;
             this.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell46.Weight = 2.5288875051727282D;
             // 
@@ -1298,8 +1301,8 @@
             this.xrTableCell22.StylePriority.UseFont = false;
             this.xrTableCell22.StylePriority.UsePadding = false;
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell22.Summary = xrSummary2;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell22.Summary = xrSummary3;
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell22.Weight = 2.555633887557482D;
             // 
@@ -1384,9 +1387,14 @@
             // Extra_Sub_Total_Field
             // 
             this.Extra_Sub_Total_Field.DataMember = "Items.UnitConvert.Extra";
-            this.Extra_Sub_Total_Field.Expression = "([UnitConvert].[Price]*[UnitConvert].[Qty] )- ([UnitConvert].[Price]*[UnitConvert" +
-    "].[Qty]) *[DiscountPercent]/100";
+            this.Extra_Sub_Total_Field.Expression = "Sum(([UnitConvert].[Price])- ([UnitConvert].[Price]) *[DiscountPercent]/100\n)";
             this.Extra_Sub_Total_Field.Name = "Extra_Sub_Total_Field";
+            // 
+            // TotalExtraBasedUnitConv
+            // 
+            this.TotalExtraBasedUnitConv.DataMember = "Items.UnitConvert";
+            this.TotalExtraBasedUnitConv.Expression = "[Items].[UnitConvert].[Qty]*[Items.UnitConvert.Extra.Extra_Sub_Total_Field]\n\n";
+            this.TotalExtraBasedUnitConv.Name = "TotalExtraBasedUnitConv";
             // 
             // NOSaleInvoice80mmReport
             // 
@@ -1401,7 +1409,8 @@
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
             this.SubTotal_Field,
             this.discount_on_item,
-            this.Extra_Sub_Total_Field});
+            this.Extra_Sub_Total_Field,
+            this.TotalExtraBasedUnitConv});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.objectDataSource1});
             this.DataMember = "Items";
@@ -1537,7 +1546,7 @@
         private DevExpress.XtraReports.UI.CalculatedField Extra_Sub_Total_Field;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter1;
-        private DevExpress.XtraReports.UI.XRLine xrLine1;
+        private CalculatedField TotalExtraBasedUnitConv;
+        private XRLabel xrLabel13;
     }
 }
