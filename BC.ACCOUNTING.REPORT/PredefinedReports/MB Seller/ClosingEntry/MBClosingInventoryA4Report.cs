@@ -1,9 +1,5 @@
-﻿using DevExpress.XtraReports.UI;
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
-using BC.ACCOUNTING.REPORT.DTO.MB;
+﻿using BC.ACCOUNTING.REPORT.DTO.MB;
+using BC.ACCOUNTING.REPORT.Helper;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry
 {
@@ -18,11 +14,11 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry
             LoadLayoutFromXml(reportName);
             if (Parameters["SubDecimalPrecision"] is not null)
             {
-                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision;
+                Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
             }
             if (Parameters["DecimalPrecision"] is not null)
             {
-                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision;
+                Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
             }
             objectDataSource1.DataSource = dto;
 

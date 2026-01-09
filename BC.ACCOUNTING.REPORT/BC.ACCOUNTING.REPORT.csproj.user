@@ -41,6 +41,12 @@
     <Compile Update="PredefinedReports\MB Seller\Purchase Order\SCS\PurchaseOrderByYearReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBExpenseA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBIncomeA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBIncomeAndExpenseA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -92,9 +98,6 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\Y8S\Y8SSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\MB Seller\TEST.cs">
-      <SubType>XtraReport</SubType>
-    </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -143,7 +146,16 @@
     <Compile Update="PredefinedReports\SharedReport\AP\APCustomerVoucherReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\SharedReport\AP\APPaidReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\SharedReport\AP\APReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\AP\APSupplierInvoiceDetailReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\AP\APSupplierSummaryReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\AR\AR.cs">

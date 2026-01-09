@@ -1,59 +1,4 @@
-﻿using BC.ACCOUNTING.APPLICATION.Interfaces.General;
-using BC.ACCOUNTING.CORE.DTO.AR;
-using BC.ACCOUNTING.CORE.DTO.SaleListing;
-using BC.ACCOUNTING.REPORT.DTO;
-using BC.ACCOUNTING.REPORT.DTO.MB;
-using BC.ACCOUNTING.REPORT.DTO.POS;
-using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
-using BC.ACCOUNTING.REPORT.Helper;
-using BC.ACCOUNTING.REPORT.Helper.Enums;
-using BC.ACCOUNTING.REPORT.ImageCache;
-using BC.ACCOUNTING.REPORT.Models;
-using BC.ACCOUNTING.REPORT.PredefinedReports;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.CreditNote;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Customer;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Inventory.Expired;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Items;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order.SCS;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Listing;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.CustomerOrder;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SaleListing;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Audit;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.ClosingEntry;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Inventory;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Purchase_Order;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleInvoice;
-using BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.SaleListing;
-using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AP;
-using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.AR;
-using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.BySeller.Detail.M01;
-using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.Summary;
-using BC.ACCOUNTING.REPORT.Services;
-using DevExpress.XtraReports.UI;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
-using DailyClosingReport = BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport;
-
-
+﻿
 namespace BC.ACCOUNTING.REPORT.Controllers
 {
 
@@ -68,18 +13,18 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         private const string POSImageRoute = "ImageRoute:POSImageRoute";
         private readonly Dictionary<string, string>? _imageRoutes;
         private readonly Dictionary<string, string>? reportPOSDirectories;
-        private readonly IImageCache _imageCache;
         private readonly IHttpClientFactory _factory;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public ReportsController(IOptions<ReportSettings> options,IUnitOfWork unitOfWork, ReportExportService reportExportService, IConfiguration configuration, IImageCache imageCache, IHttpClientFactory factory, IHttpContextAccessor httpContextAccessor)
+        private readonly IWebHostEnvironment _env;
+        public ReportsController(IOptions<ReportSettings> options,IUnitOfWork unitOfWork, ReportExportService reportExportService, IConfiguration configuration,IHttpClientFactory factory, IHttpContextAccessor httpContextAccessor, IWebHostEnvironment env)
         {
             
             _unitOfWork = unitOfWork;
             _reportExportService = reportExportService;
             _configuration = configuration;
-            _imageCache = imageCache;
             _factory = factory;
             _httpContextAccessor = httpContextAccessor;
+            _env = env;
             _reportDirectory = options.Value.Directory;
             _imageRoutes =  _configuration
                 .GetSection("ImageRoute").Get<Dictionary<string, string>>(); 
@@ -273,21 +218,39 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("mb-nosaleinvoice")]
         public IActionResult NOSaleInvoice([FromBody] NOSaleInvoiceDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+            var jsonPath = Path.Combine(_env.WebRootPath,"jsonFiles","mikes_burger.json");
+            var jsonString = System.IO.File.ReadAllText(path: jsonPath);
+            List<NoAddressInfoModel>? data = new();
+            try
+            {
+                var token = JToken.Parse(jsonString);
+                
+                if (token.Type == JTokenType.Array)
+                {
+                    data = token.ToObject<List<NoAddressInfoModel>>();
+                }
+                else if (token.Type == JTokenType.Object && token["Branches"] != null)
+                {
+                    data = token["Branches"]?.ToObject<List<NoAddressInfoModel>>();
+                }
+                else
+                {
+                    data = [];
+                }
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
+            if (data != null) dto.Info = data.FirstOrDefault(x => x.BranchId == dto.DbCode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
-            // Build dto.Data and each group's Items as usual…
             var report = new NOSaleInvoiceA4Report(dto, reportPath);
-
-            // Now the report gets a single row per (TransRef, ItemCode, ItemDescKH)
-            // with Qty and SalePrice aggregated, fixing the duplicate rows in your screenshot.
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -330,6 +293,33 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             ViewBag.HideHeader = true;
             return View("Invoice", report);
         }
+
+        [HttpPost("mb-apsupplierinvoicedetail")]
+        public IActionResult APSupplierInvoiceDetail([FromBody] APSupplierInvoiceDetailDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new APSupplierInvoiceDetailReport(dto,reportPath);
+            
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
         [HttpPost("mb-apcustomerreceipt")]
         public async Task<IActionResult> APCustomerReceipt([FromBody] ArCustomerDto dto)
         {
@@ -343,6 +333,60 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 return NotFound("Report file not found.");
             var report = new APCustomerReceiptReport(dto,reportPath);
             
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+        [HttpPost("mb-apsuppliersummary")]
+        public IActionResult APSupplierSummaryReport([FromBody] APCustomerSummaryDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new APSupplierSummaryReport(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+        [HttpPost(template:"mb-appaid")]
+        public IActionResult APPaidReport([FromBody] APPaidDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new APPaidReport(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1023,10 +1067,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("pos/purchaseorder")]
         public async Task<IActionResult> POSPurchaseOrder([FromBody] RESPurchaseOrderDto dto,CancellationToken _cancellationToken)
         {
-
-            var map = await _imageCache.PrefetchAsync(_factory, dto.Items.Where(x=>!string.IsNullOrEmpty(x.ItemImage) && x.ItemImage.Contains("http")).Select(x=>x.ItemImage).ToList(), _cancellationToken);
-            foreach (var r in dto.Items)
-                if (map.TryGetValue(r.ItemImage??"", out var b)) r.ImageByte = b;
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = ReportHelper.GetReportPath(_reportDirectory,
@@ -1057,9 +1097,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //var user = _tokenValidator.ValidateJwtFromCookie(Request);
             //if (user == null)
             //    return Unauthorized();
-            var map = await _imageCache.PrefetchAsync(_factory, dto.Items.Where(x=>!string.IsNullOrEmpty(x.Image)&&x.Image.Contains("http")).Select(x => x.Image).ToList(), cancellationToken);
-            foreach (var r in dto.Items)
-                if (map.TryGetValue(r.Image??"", out var b)) r.ImageByte = b;
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = ReportHelper.GetReportPath(_reportDirectory,
@@ -1121,9 +1159,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //var user = _tokenValidator.ValidateJwtFromCookie(Request);
             //if (user == null)
             //    return Unauthorized();
-            var map = await _imageCache.PrefetchAsync(_factory, dto.Items.Select(x => x.Image).ToList(), cancellationToken);
-            foreach (var r in dto.Items)
-                if (map.TryGetValue(r.Image??"", out var b)) r.ImageByte = b;
+            
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
@@ -1688,9 +1724,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //var user = _tokenValidator.ValidateJwtFromCookie(Request);
             //if (user == null)
             //    return Unauthorized();
-            var map = await _imageCache.PrefetchAsync(_factory, dto.Items.Where(x => !string.IsNullOrEmpty(x.ItemImage) && x.ItemImage.Contains("http")).Select(x => x.ItemImage).ToList(), _cancellationToken);
-            foreach (var r in dto.Items)
-                if (map.TryGetValue(r.ItemImage??"", out var b)) r.ImageByte = b;
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");

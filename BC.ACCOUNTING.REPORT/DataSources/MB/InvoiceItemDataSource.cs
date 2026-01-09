@@ -19,7 +19,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
         public string UnitStock { get; set; }
         public int Qty { get; set; }
         public decimal Price { get; set; }
-
+        public List<ExtraInvoiceItemDataSource> Extra { get; set; } = new();
         public List<ComboItemDataSource> Combo { get; set; } = new();
     }
     public class ComboItemDataSource
@@ -28,6 +28,21 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
         public string ItemDesc { get; set; }
         public string UnitStock { get; set; }
         public int Qty { get; set; }
+    }
+    public class ExtraInvoiceItemDataSource
+    {   
+        public string ItemCode { get; set; }
+        public string ItemDesc { get; set; }
+        public decimal DiscountPercent { get; set; }
+        public decimal Discount { get; set; }
+        public List<ExtraItemUnitConvertDataSource> UnitConvert { get; set; } = new();
+    }
+
+    public class ExtraItemUnitConvertDataSource
+    {
+        public string UnitStock { get; set; }
+        public int Qty { get; set; }
+        public decimal Price { get; set; }
     }
 }
 

@@ -35,6 +35,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.ClosingEntry
         {
             var data = GetCurrentRow() as DailyClosingInventoryDto;
             e.Cancel = data?.Payments == null || !data.Payments.Any();
+            
         }
 
         private void Detail2_BeforePrint(object sender, CancelEventArgs e)

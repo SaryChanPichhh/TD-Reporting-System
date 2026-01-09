@@ -289,7 +289,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "SaleListingBySellerReport.repx"),
-                                    (ReportModes.DeliveryFeeMode , "SaleListingByDateWithDeliveryFeeReport.repx"),
+                                    (ReportModes.DeliveryFeeMode , "SaleListingBySellerWithDeliveryFeeReport.repx"),
                                 }
                             },
                         }
@@ -497,19 +497,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
             };
 
         }
-        public static TEnum FromDescription<TEnum>(string description)
-            where TEnum : Enum
+        public static string FormatCurrency(decimal value, DecimalFormatting format)
         {
-            foreach (var field in typeof(TEnum).GetFields())
-            {
-                var attribute = field.GetCustomAttribute<DescriptionAttribute>();
-                if (attribute?.Description == description)
-                {
-                    return (TEnum)field.GetValue(null)!;
-                }
-            }
+            var formatString = format.GetEnumDescription();
 
-            throw new ArgumentException($"No enum found for description '{description}'");
+            var formattedValue = string.Format(formatString, value);
+
+            return "$" + formattedValue;
         }
 
     }

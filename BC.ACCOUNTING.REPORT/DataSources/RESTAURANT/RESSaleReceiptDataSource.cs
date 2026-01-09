@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
+﻿using System.Text.Json.Serialization;
 
 namespace BC.ACCOUNTING.REPORT.DataSources.RESTAURANT
 {
@@ -38,7 +34,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources.RESTAURANT
             return new List<string>();
         }
 
-        [JsonIgnore]
+        [System.Text.Json.Serialization.JsonIgnore]
         public string AddOnsDisplay => string.Join(", ", GetAddOns().Where(a => !string.IsNullOrWhiteSpace(a)));
     }
     public class AddOnDataSource

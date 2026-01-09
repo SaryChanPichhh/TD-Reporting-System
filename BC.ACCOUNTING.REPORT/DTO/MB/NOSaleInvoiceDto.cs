@@ -36,6 +36,21 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public List<InvoiceItemDataSource> Items { get; set; } = new();
         public string TablesDisplay => string.Join(", ", Tables);
         public string QueuesDisplay => string.Join(", ", Queues);
+        [Nullable(true)]
+        public NoAddressInfoModel? Info { get; set; } = new();
+    }
+
+    public class NoAddressInfoModel
+    {
+        public string BranchId { get; set; } = string.Empty;
+        public string BranchName { get; set; } = string.Empty;
+        public string Image { get; set; } = string.Empty;
+        public string QrCode { get; set; } = string.Empty;
+        public string Address_KH { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+        public string Phone_1 { get; set; } = string.Empty;
+        public string Phone_2 { get; set; } = string.Empty;
+
     }
 }
 

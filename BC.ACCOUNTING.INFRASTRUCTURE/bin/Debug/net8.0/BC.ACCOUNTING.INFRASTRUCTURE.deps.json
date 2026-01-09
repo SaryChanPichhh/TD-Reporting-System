@@ -429,12 +429,18 @@
           "BC.ACCOUNTING.CORE": "1.0.0"
         },
         "runtime": {
-          "BC.ACCOUNTING.APPLICATION.dll": {}
+          "BC.ACCOUNTING.APPLICATION.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "BC.ACCOUNTING.CORE/1.0.0": {
         "runtime": {
-          "BC.ACCOUNTING.CORE.dll": {}
+          "BC.ACCOUNTING.CORE.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

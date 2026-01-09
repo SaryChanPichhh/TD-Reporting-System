@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using BC.ACCOUNTING.CORE.Enums;
 using BC.ACCOUNTING.REPORT.DataSources.MB;
 using BC.ACCOUNTING.REPORT.DTO.MB;
 using BC.ACCOUNTING.REPORT.Helper;
@@ -15,11 +16,12 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
         public NOSaleInvoiceA4Report()
         {
             InitializeComponent();
-        }public NOSaleInvoiceA4Report(NOSaleInvoiceDto dto,string reportName)
+        }
+        public NOSaleInvoiceA4Report(NOSaleInvoiceDto dto,string reportName)
         {
             if (dto == null)
                 throw new ArgumentNullException(nameof(dto));
-
+            
             dto.Items ??= new List<InvoiceItemDataSource>();
             List<InvoiceItemDataSource> invoice = new();
             foreach (var group in dto.Items)
@@ -35,21 +37,69 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
                         var first = x.FirstOrDefault();
                         var qty = first?.Qty ?? 0;
                         var price = x.Key.Price;
+                        var extraItems = new List<ExtraInvoiceItemDataSource>();
+                        foreach (var extraItem in first.Extra)
+                        {
 
+                            var flatten = extraItem.UnitConvert.GroupBy(x => new
+                            {
+                                x.Price, x.UnitStock
+                            }).Select(x => new ExtraInvoiceItemDataSource
+                            {
+                                ItemCode = extraItem.ItemCode,  
+                                ItemDesc = extraItem.ItemDesc,
+                                Discount = extraItem.Discount,
+                                DiscountPercent = extraItem.DiscountPercent,
+                                UnitConvert = [
+                                    new ExtraItemUnitConvertDataSource
+                                    {
+                                        Price = x.Key.Price,
+                                        UnitStock = x.Key.UnitStock,
+                                        Qty = x.Sum(y => y.Qty)
+                                    }
+                                    ]
+                            }).OrderByDescending(x=>x.ItemCode).ToList();
+
+                            var IsExists = new Dictionary<string, ExtraInvoiceItemDataSource>();
+                            foreach (var item in flatten)
+                            {
+                             
+                                if (IsExists.ContainsKey(item.ItemCode))
+                                {
+                                    item.ItemCode = string.Empty;
+                                    item.ItemDesc = string.Empty;
+                                   
+                                }
+                                else
+                                {
+                                    IsExists.Add(item.ItemCode, new ExtraInvoiceItemDataSource()
+                                    {
+                                        ItemCode = item.ItemCode,
+                                        ItemDesc = item.ItemDesc,
+                                        UnitConvert = item.UnitConvert
+                                    });
+                                    
+                                }
+                                extraItems.Add(item);
+                            }
+                        }
+
+                        Console.WriteLine(extraItems);
                         return new InvoiceItemDataSource
                         {
                             ItemCode = group.ItemCode,
                             ItemDesc = group.ItemDesc,
-                            UnitConvert = new List<UnitConvertDataSource>
-                            {
+                            UnitConvert =
+                            [
                                 new UnitConvertDataSource
                                 {
                                     UnitStock = first?.UnitStock,
                                     Price = price,
                                     Qty = qty,
-                                    Combo = dto.ShowCombo ? first.Combo : null
+                                    Combo = dto.ShowCombo ? first.Combo : null,
+                                    Extra = extraItems
                                 }
-                            },
+                            ],
                             Discount = group.Discount,
                             DiscountPercent = group.DiscountPercent
                         };
@@ -61,14 +111,10 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
                 foreach (var item in flattenItems)
                 {
                     var key = (item.ItemCode ?? string.Empty, item.ItemDesc ?? string.Empty);
-                    if (seen.Contains(key))
+                    if (!seen.Add(key))
                     {
                         item.ItemCode = string.Empty;
                         item.ItemDesc = string.Empty;
-                    }
-                    else
-                    {
-                        seen.Add(key);
                     }
 
                     invoice.Add(item);
@@ -92,6 +138,13 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
             {
                 this.SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
             }
+
+            if (Parameters["Phone"] is not null)
+            {
+                Console.WriteLine();
+            }
+
+
             objectDataSource1.DataSource = dto;
             DataSource = objectDataSource1;
             if(xrTableCellRecordNumber != null)
@@ -127,5 +180,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.NO
         {
 
         }
+
+        
+
     }
 }

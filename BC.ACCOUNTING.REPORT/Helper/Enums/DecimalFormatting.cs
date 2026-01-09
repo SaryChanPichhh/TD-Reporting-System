@@ -15,7 +15,7 @@ namespace BC.ACCOUNTING.REPORT.Helper.Enums
         ThreeDecimalPrecision = 3,
         [Description("{0:# ### ##0.####}")]
         FourDecimalPrecision = 4,
-        [Description("{0:# ### ###0.#####}")]
+        [Description("{0:# ### ##0.#####}")]
         FiveDecimalPrecision = 5,
         [Description("{0:# ### ##0.######}")]
         SixDecimalPrecision = 6,

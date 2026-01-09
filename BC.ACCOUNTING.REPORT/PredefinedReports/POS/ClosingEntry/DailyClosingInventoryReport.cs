@@ -24,12 +24,16 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
             this.LoadLayoutFromXml(reportName);
             if (this.Parameters["DecimalPrecision"] is not null)
                 this.DecimalPrecision.Value = inventoryDto.DecimalPrecision.GetEnumDescription();
-
-            this.ReportHeader1.BeforePrint += ReportHeader1_BeforePrint;
-            this.Detail2.BeforePrint += Detail2_BeforePrint;
-            this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint;
-            this.xrLabel15.BeforePrint += xrLabel15_BeforePrint;
-            this.xrLabel16.BeforePrint += xrLabel16_BeforePrint;
+            if(ReportHeader1 is not null)
+                this.ReportHeader1.BeforePrint += ReportHeader1_BeforePrint;
+            if (Detail2 is not null)
+                this.Detail2.BeforePrint += Detail2_BeforePrint;
+            if (ReportFooter2 is not null)
+                this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint;
+            if (xrLabel15 is not null)
+                this.xrLabel15.BeforePrint += xrLabel15_BeforePrint;
+            if (xrLabel16 is not null)
+                this.xrLabel16.BeforePrint += xrLabel16_BeforePrint;
             objectDataSource1.DataSource = inventoryDto;
             this.DataSource = objectDataSource1;
             Payments = inventoryDto.Payments;
