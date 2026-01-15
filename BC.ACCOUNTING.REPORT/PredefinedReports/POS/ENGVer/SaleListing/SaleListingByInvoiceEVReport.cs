@@ -22,7 +22,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ENGVer.SaleListing
             objectDataSource1.DataSource = dto;
             this.DataSource = objectDataSource1;
             xrPictureBox1.BeforePrint += xrPictureBox1_BeforePrint;
-            xrTableCell34.BeforePrint += xrTableCell34_BeforePrint;
             xrTableCell11.PrintOnPage += xrTableCell31_PrintOnPage;
             xrTableCell24.PrintOnPage += xrTableCell24_PrintOnPage;
             

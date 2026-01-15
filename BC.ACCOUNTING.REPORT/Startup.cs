@@ -187,6 +187,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APCustomerSummaryDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APPaidDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APSupplierInvoiceDetailDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSPOListingDto));
 
 
             Log.Logger = new LoggerConfiguration()

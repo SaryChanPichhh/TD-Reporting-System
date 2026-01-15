@@ -408,6 +408,25 @@ namespace BC.ACCOUNTING.REPORT.Helper
                             },
                         }
                     },
+                    {
+                        "POSPOListingReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPOListingReport.repx")
+                                }
+                            },{
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPOListingReport.repx")
+                                }
+                            },
+                        }
+                    },
                 };
         #endregion  
 

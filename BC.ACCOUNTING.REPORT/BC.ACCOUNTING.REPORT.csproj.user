@@ -8,9 +8,6 @@
     <NameOfLastUsedPublishProfile>D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\MBClosingInventory80Report.cs">
-      <SubType>XtraReport</SubType>
-    </Compile>
     <Compile Update="PredefinedReports\MB Seller\ClosingEntry\MBClosingInventoryA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -74,9 +71,6 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\KS7\KS7SaleInvoiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NODailySaleA4Report.cs">
-      <SubType>XtraReport</SubType>
-    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoice80mmReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -108,6 +102,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Inventory\POSInventoryOutOfStockReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\PO\POSPOListingReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Sale Order\POSSaleInvoiceA5Report.cs">

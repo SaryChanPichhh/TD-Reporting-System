@@ -656,6 +656,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSPOListing",
+    "RelativePath": "api/reports/pos/pospolisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSPOListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "POSPurchaseOrder",
     "RelativePath": "api/reports/pos/purchaseorder",
     "HttpMethod": "POST",

@@ -17,6 +17,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
     public class UnitConvertDataSource
     {
         public string UnitStock { get; set; }
+        public string Note { get; set; } = string.Empty;
         public int Qty { get; set; }
         public decimal Price { get; set; }
         public List<ExtraInvoiceItemDataSource> Extra { get; set; } = new();

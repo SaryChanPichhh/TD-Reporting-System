@@ -1,4 +1,6 @@
 ﻿
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.PO;
+
 namespace BC.ACCOUNTING.REPORT.Controllers
 {
 
@@ -842,10 +844,41 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
         }
 
-        
+
 
         #region Point Of Sale
+        [HttpPost("pos/pospolisting")]
+        public IActionResult POSPOListing([FromBody] POSPOListingDto dto)
+        {
+            //var user = _tokenValidator    .ValidateJwtFromCookie(Request);
+            //if (user == null)
+            //    return Unauthorized();
 
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
+
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new POSPOListingReport(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
 
         [HttpPost("pos/saleinvoice")]
         public IActionResult PosSaleInvoice([FromBody] POSSaleInvoiceDto dto)
@@ -1609,6 +1642,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+
         [HttpPost("mb-inventoryexpired")]
         public IActionResult MBInventoryExpired([FromBody] InventoryExpiredDto dto)
         {

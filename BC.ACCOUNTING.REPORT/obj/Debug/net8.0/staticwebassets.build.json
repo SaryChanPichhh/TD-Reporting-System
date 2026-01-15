@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AJ7+MT3uHc0K/kS/1Y5LDGOCke3e73m+VTKg5akUVwk=",
+  "Hash": "/mE6dJZSHnTBA4Fg0p0c8HMFQKkI7RSeF4B7Ko4rbQU=",
   "Source": "BC.ACCOUNTING.REPORT",
   "BasePath": "_content/BC.ACCOUNTING.REPORT",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
-      "SourceId": "BC.ACCOUNTING.REPORT",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\",
-      "BasePath": "_content/BC.ACCOUNTING.REPORT",
-      "RelativePath": "assets/MB/M01/mikes_burger_qr.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg"
-    },
     {
       "Identity": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
@@ -53,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\MB\\M01\\mikes_burger.jpg"
+    },
+    {
+      "Identity": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
+      "SourceId": "BC.ACCOUNTING.REPORT",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "BasePath": "_content/BC.ACCOUNTING.REPORT",
+      "RelativePath": "assets/MB/M01/mikes_burger_qr.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg"
     },
     {
       "Identity": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
