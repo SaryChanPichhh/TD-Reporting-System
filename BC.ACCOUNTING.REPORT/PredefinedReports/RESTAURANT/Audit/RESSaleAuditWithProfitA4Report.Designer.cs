@@ -254,7 +254,7 @@
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(203.5F, 0F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(360F, 31.12817F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
@@ -275,7 +275,7 @@
             this.xrTable2.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 11F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(203.5F, 61.12817F);
             this.xrTable2.Name = "xrTable2";
-            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2,
             this.xrTableRow4});
@@ -334,7 +334,7 @@
             this.xrTableCell25,
             this.xrTableCell17});
             this.xrTableRow4.Name = "xrTableRow4";
-            this.xrTableRow4.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.xrTableRow4.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.xrTableRow4.StylePriority.UsePadding = false;
             this.xrTableRow4.Weight = 1D;
             // 
@@ -378,7 +378,7 @@
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(203.5F, 31.12817F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(360F, 30F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
@@ -402,7 +402,7 @@
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 5.550671F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel6.SizeF = new System.Drawing.SizeF(767.0004F, 25F);
             this.xrLabel6.StylePriority.UseBackColor = false;
             this.xrLabel6.StylePriority.UseBorders = false;
@@ -418,7 +418,7 @@
             this.xrTable12.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 30.55067F);
             this.xrTable12.Name = "xrTable12";
-            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow19,
             this.xrTableRow21,
@@ -771,7 +771,7 @@
             // 
             // Detail1
             // 
-            this.Detail1.HeightF = 0F;
+            this.Detail1.HeightF = 2.776718F;
             this.Detail1.Name = "Detail1";
             // 
             // GroupHeader1
@@ -795,7 +795,7 @@
             this.xrTable1.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0.0001220703F, 0F);
             this.xrTable1.Name = "xrTable1";
-            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
             this.xrTable1.SizeF = new System.Drawing.SizeF(767.0005F, 25F);
@@ -922,7 +922,7 @@
             this.xrTable6.Font = new DevExpress.Drawing.DXFont("Bayon", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable6.Name = "xrTable6";
-            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
             this.xrTable6.SizeF = new System.Drawing.SizeF(383.4999F, 25F);
@@ -942,7 +942,7 @@
             this.xrTableCell20,
             this.xrTableCell48});
             this.xrTableRow8.Name = "xrTableRow8";
-            this.xrTableRow8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableRow8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableRow8.StylePriority.UsePadding = false;
             this.xrTableRow8.Weight = 1D;
             // 
@@ -1040,7 +1040,7 @@
             this.xrTable9.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F);
             this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(383.5009F, 23F);
             this.xrTable9.Name = "xrTable9";
-            this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow11});
             this.xrTable9.SizeF = new System.Drawing.SizeF(383.4991F, 24.99999F);
@@ -1123,7 +1123,7 @@
             this.xrTable8.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F);
             this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 23F);
             this.xrTable8.Name = "xrTable8";
-            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
             this.xrTable8.SizeF = new System.Drawing.SizeF(383.5009F, 25F);
@@ -1211,7 +1211,7 @@
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(0.0005779844F, 0F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel4.SizeF = new System.Drawing.SizeF(767.0004F, 23F);
             this.xrLabel4.StylePriority.UseBackColor = false;
             this.xrLabel4.StylePriority.UseBorders = false;
@@ -1237,7 +1237,7 @@
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel5.SizeF = new System.Drawing.SizeF(767.0004F, 13.901F);
             this.xrLabel5.StylePriority.UseBackColor = false;
             this.xrLabel5.StylePriority.UseBorders = false;
@@ -1283,7 +1283,7 @@
             this.xrTable15.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable15.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable15.Name = "xrTable15";
-            this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow17});
             this.xrTable15.SizeF = new System.Drawing.SizeF(383.4999F, 25F);
@@ -1303,7 +1303,7 @@
             this.xrTableCell87,
             this.xrTableCell88});
             this.xrTableRow17.Name = "xrTableRow17";
-            this.xrTableRow17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableRow17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableRow17.StylePriority.UsePadding = false;
             this.xrTableRow17.Weight = 1D;
             // 
@@ -1404,7 +1404,7 @@
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(0.0001220703F, 0F);
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel8.SizeF = new System.Drawing.SizeF(767.0004F, 25F);
             this.xrLabel8.StylePriority.UseBackColor = false;
             this.xrLabel8.StylePriority.UseBorders = false;
@@ -1422,7 +1422,7 @@
             this.xrTable13.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F);
             this.xrTable13.LocationFloat = new DevExpress.Utils.PointFloat(0F, 25F);
             this.xrTable13.Name = "xrTable13";
-            this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow15});
             this.xrTable13.SizeF = new System.Drawing.SizeF(383.5009F, 23F);
@@ -1509,7 +1509,7 @@
             this.xrTable14.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F);
             this.xrTable14.LocationFloat = new DevExpress.Utils.PointFloat(383.5009F, 25.00002F);
             this.xrTable14.Name = "xrTable14";
-            this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow16});
             this.xrTable14.SizeF = new System.Drawing.SizeF(383.4992F, 23F);
@@ -1602,7 +1602,7 @@
             this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
-            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel7.SizeF = new System.Drawing.SizeF(767.0004F, 23.90097F);
             this.xrLabel7.StylePriority.UseBackColor = false;
             this.xrLabel7.StylePriority.UseBorders = false;
@@ -1626,7 +1626,7 @@
             this.xrTable3.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 9F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0.001037598F, 0F);
             this.xrTable3.Name = "xrTable3";
-            this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
             this.xrTable3.SizeF = new System.Drawing.SizeF(766.9995F, 25F);
@@ -1649,7 +1649,7 @@
             this.xrTableCell21,
             this.xrTableCell23});
             this.xrTableRow3.Name = "xrTableRow3";
-            this.xrTableRow3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableRow3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableRow3.StylePriority.UsePadding = false;
             this.xrTableRow3.Weight = 1D;
             // 
@@ -1787,7 +1787,7 @@
             this.xrTable4.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(1.525879E-05F, 0F);
             this.xrTable4.Name = "xrTable4";
-            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
             this.xrTable4.SizeF = new System.Drawing.SizeF(767F, 25F);
@@ -1806,7 +1806,7 @@
             this.xrTableCell29});
             this.xrTableRow5.Name = "xrTableRow5";
             this.xrTableRow5.OddStyleName = "xrControlStyle1";
-            this.xrTableRow5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableRow5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableRow5.StylePriority.UsePadding = false;
             this.xrTableRow5.Weight = 1D;
             // 
@@ -1877,7 +1877,7 @@
             this.xrTable5.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 30.55067F);
             this.xrTable5.Name = "xrTable5";
-            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
             this.xrTable5.SizeF = new System.Drawing.SizeF(767.0005F, 25F);
@@ -1945,7 +1945,7 @@
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 5.550671F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(767.0004F, 25F);
             this.xrLabel3.StylePriority.UseBackColor = false;
             this.xrLabel3.StylePriority.UseBorders = false;
@@ -1969,7 +1969,7 @@
             this.xrTable11.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 10F);
             this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable11.Name = "xrTable11";
-            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow14});
             this.xrTable11.SizeF = new System.Drawing.SizeF(767.0001F, 25F);
@@ -1987,7 +1987,7 @@
             this.xrTableCell60});
             this.xrTableRow14.Name = "xrTableRow14";
             this.xrTableRow14.OddStyleName = "xrControlStyle1";
-            this.xrTableRow14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableRow14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableRow14.StylePriority.UsePadding = false;
             this.xrTableRow14.Weight = 1D;
             // 
@@ -2030,7 +2030,7 @@
             // 
             this.xrControlStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrControlStyle1.Name = "xrControlStyle1";
-            this.xrControlStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrControlStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // SubTotal
             // 
@@ -2119,12 +2119,12 @@
             this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(30F, 30F, 12.04978F, 33.64768F);
-            this.PageHeight = 1169;
-            this.PageWidth = 827;
+            this.PageHeightF = 1169.291F;
+            this.PageWidthF = 826.7717F;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
-            this.Version = "24.2";
+            this.Version = "25.2";
             this.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.RESSaleInventoryWithProfitA4Report_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();

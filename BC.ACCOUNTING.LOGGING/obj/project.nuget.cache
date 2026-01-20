@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ufI7tIeOIhI=",
+  "dgSpecHash": "xdg+xA1vZro=",
   "success": true,
-  "projectFilePath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj",
+  "projectFilePath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\log4net\\3.0.1\\log4net.3.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",

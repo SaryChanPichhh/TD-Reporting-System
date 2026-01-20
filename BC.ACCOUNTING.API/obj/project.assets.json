@@ -2174,27 +2174,24 @@
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.API\\BC.ACCOUNTING.API.csproj",
+      "projectUniqueName": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.API\\BC.ACCOUNTING.API.csproj",
       "projectName": "BC.ACCOUNTING.API",
-      "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.API\\BC.ACCOUNTING.API.csproj",
+      "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.API\\BC.ACCOUNTING.API.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.API\\obj\\",
+      "outputPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -2204,7 +2201,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2212,14 +2208,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
-              "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
+            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
+              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
             },
-            "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj": {
-              "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj"
+            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj": {
+              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj"
             },
-            "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj": {
-              "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj"
+            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj": {
+              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj"
             }
           }
         }
@@ -2275,7 +2271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -187,7 +187,7 @@ namespace BC.ACCOUNTING.CORE.Entities
         public string UnitConv { get; set; }
         public string UnitConvCode { get; set; }
         public string? ConvFromDesc { get; set; }
-        public int Quantity { get; set; }
+        public int Qty { get; set; }
         public decimal ItemCost { get; set; }
         public decimal SalePrice { get; set; }
 

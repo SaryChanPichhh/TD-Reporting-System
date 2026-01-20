@@ -9,27 +9,24 @@
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
+      "projectUniqueName": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
       "projectName": "BC.ACCOUNTING.CORE",
-      "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
+      "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.CORE\\obj\\",
+      "outputPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -39,7 +36,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -79,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
