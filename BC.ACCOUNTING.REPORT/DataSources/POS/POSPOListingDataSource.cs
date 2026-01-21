@@ -7,7 +7,7 @@
     }
     public class POSPOList
     {
-        public string Time { get; set; }
+        public string Time { get; set; } = string.Empty;
         public string Warehouse { get; set; }
         public string SupplierCode { get; set; }
         public string SupplierName { get; set; }
