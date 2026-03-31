@@ -11,8 +11,8 @@ namespace BC.ACCOUNTING.REPORT.DataSources.POS
         [DisplayName("តម្លៃ")] public string Price { get; set; }
         [DisplayName("បញ្ចុះតម្លៃ")] public string DiscountPrice { get; set; }
         [DisplayName("សរុបចុងក្រោយ")] public string? FinalPrice { get; set; }
-        [DisplayName("សរុប")] public string Total { get; set; }
-       
+        [DisplayName("សរុប")] public string Total { get; set; } = string.Empty;
+
     }
 
   

@@ -12,6 +12,8 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [DisplayName("ឈ្មោះអតិថិជន")] public string CustomerName { get; set; }
         [DisplayName("ទឹកប្រាក់")] public string TransValue { get; set; }
         [DisplayName("ចំនួនទូទាត់")] public string Amount { get; set; }
+        public string Paid { get; set; } = string.Empty;
+        public string Discount { get; set; } = string.Empty;
         [DisplayName("ចំនួនជាពាក្យ")] public string AmountLetter { get; set; }
         [DisplayName("នៅសល់")] public string Balance { get; set; }
         [DisplayName("វិធីសាស្រ្តទូទាត់")] public string PaymentMethod { get; set; }

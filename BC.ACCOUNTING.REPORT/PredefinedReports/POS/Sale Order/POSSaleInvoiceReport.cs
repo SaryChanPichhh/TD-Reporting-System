@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SubReport;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
 {
@@ -18,6 +19,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
         {
             
             this.LoadLayoutFromXml(reportName);
+            xrSubreport1.BeforePrint += xrSubreport1_BeforePrint;
             Console.WriteLine(dto.DecimalPrecision);
             if (Parameters["DecimalPrecision"] is not null)
                 this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
@@ -55,6 +57,21 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
             }
         }
 
-
+        private void xrSubreport1_BeforePrint(object sender, CancelEventArgs e)
+        {
+            var subReport = new ShowImagesReport();
+            if (GetCurrentRow() is POSSaleInvoiceDto currentRow)
+            {
+                if (currentRow.Images is null or [])
+                {
+                    subReport.Visible = false;
+                }
+                if (currentRow.Images is not null or not [])
+                {
+                    subReport.DataSource = currentRow.Images;
+                }
+            }
+            ((XRSubreport)sender).ReportSource = subReport;
+        }
     }
 }

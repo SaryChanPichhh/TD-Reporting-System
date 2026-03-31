@@ -145,6 +145,10 @@
             this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             this.Phone = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CurrencySymbol = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubCurrencySymbol = new DevExpress.XtraReports.Parameters.Parameter();
+            this.InvoiceStatusDesc = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubTotal_prm = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -1407,6 +1411,32 @@
             this.Phone.Name = "Phone";
             this.Phone.Visible = false;
             // 
+            // CurrencySymbol
+            // 
+            this.CurrencySymbol.Description = "Parameter1";
+            this.CurrencySymbol.Name = "CurrencySymbol";
+            this.CurrencySymbol.Visible = false;
+            // 
+            // SubCurrencySymbol
+            // 
+            this.SubCurrencySymbol.Description = "Parameter1";
+            this.SubCurrencySymbol.Name = "SubCurrencySymbol";
+            this.SubCurrencySymbol.Visible = false;
+            // 
+            // InvoiceStatusDesc
+            // 
+            this.InvoiceStatusDesc.Description = "Parameter1";
+            this.InvoiceStatusDesc.Name = "InvoiceStatusDesc";
+            this.InvoiceStatusDesc.Visible = false;
+            // 
+            // SubTotal_prm
+            // 
+            this.SubTotal_prm.Description = "Parameter1";
+            this.SubTotal_prm.Name = "SubTotal_prm";
+            this.SubTotal_prm.Type = typeof(decimal);
+            this.SubTotal_prm.ValueInfo = "0";
+            this.SubTotal_prm.Visible = false;
+            // 
             // NOSaleInvoiceA4Report
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1431,12 +1461,18 @@
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A5;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DecimalPrecision, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CurrencySymbol, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.SubCurrencySymbol, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.SubDecimalPrecision, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Phone, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.DecimalPrecision,
+            this.CurrencySymbol,
+            this.SubCurrencySymbol,
             this.SubDecimalPrecision,
-            this.Phone});
+            this.Phone,
+            this.InvoiceStatusDesc,
+            this.SubTotal_prm});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1,
             this.xrControlStyle2});
@@ -1578,5 +1614,9 @@
         private DevExpress.XtraReports.Parameters.Parameter DecimalPrecision;
         private DevExpress.XtraReports.Parameters.Parameter SubDecimalPrecision;
         private DevExpress.XtraReports.Parameters.Parameter Phone;
+        private DevExpress.XtraReports.Parameters.Parameter CurrencySymbol;
+        private DevExpress.XtraReports.Parameters.Parameter SubCurrencySymbol;
+        private DevExpress.XtraReports.Parameters.Parameter InvoiceStatusDesc;
+        private DevExpress.XtraReports.Parameters.Parameter SubTotal_prm;
     }
 }

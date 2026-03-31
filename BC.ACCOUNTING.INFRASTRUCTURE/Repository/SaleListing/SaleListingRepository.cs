@@ -426,6 +426,8 @@ FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS < 80 UNION ALL ";
                 else if (item.Equals("I"))
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS > 80 UNION ALL ";
+                else
+                    sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' UNION ALL ";
             }
             sql = sql.TrimEnd(" UNION ALL ".ToCharArray());
             var execute =
@@ -666,6 +668,8 @@ WHERE  D.VALUE_3 > 0 AND " + voidStatus +
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS < 80 UNION ALL ";
                 else if (item.Equals("I"))
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS > 80 UNION ALL ";
+                else 
+                    sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' UNION ALL ";
             }
             sql = sql.TrimEnd(" UNION ALL ".ToCharArray());
 

@@ -9,7 +9,7 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
 {
     public record MBSaleListingCustomereDto : ReportDto
     {
-        public List<CustomerDto> Data { get; set; } = new List<CustomerDto>();
+        public List<CustomerDto> Data { get; set; } = [];
         public string? ShopName { get; set; }
         public string? ShopImage { get; set; }
         public DateTime StartDate { get; set; }

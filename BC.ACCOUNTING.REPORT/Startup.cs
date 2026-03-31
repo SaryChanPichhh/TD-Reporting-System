@@ -1,11 +1,13 @@
 using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE;
 using BC.ACCOUNTING.REPORT.DataSources;
+using BC.ACCOUNTING.REPORT.Helper.ExpressionFunction;
 using BC.ACCOUNTING.REPORT.IService.ReportToken;
 using BC.ACCOUNTING.REPORT.Services.ReportToken;
 using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
 using DevExpress.Data.Entity;
+using DevExpress.Data.Filtering;
 using DevExpress.XtraReports.Web.Extensions;
 using DevExpress.XtraReports.Web.WebDocumentViewer;
 using Microsoft.AspNetCore.Builder;
@@ -43,7 +45,7 @@ namespace BC.ACCOUNTING.REPORT
             services.AddScoped<IConnectionStringsProvider, CustomSqlDataSourceProvider>();
             services.AddTransient<IWebDocumentViewerReportResolver, CustomWebDocumentViewerReportResolver>();
             services.AddTransient<ITokenValidatorService, TokenValidatorService>();
-            
+           
 
 
             services.Configure<RouteOptions>(options =>
@@ -188,7 +190,14 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APPaidDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APSupplierInvoiceDetailDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSPOListingDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosingInventoryDetailDto));
 
+            // Register Built-in and Custom Expression Functions for DevExpress Reports
+
+            if (CriteriaOperator.GetCustomFunction("HasKhmer") == null)
+            {
+                CriteriaOperator.RegisterCustomFunction(new HasKhmerLangFunction());
+            }
 
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()

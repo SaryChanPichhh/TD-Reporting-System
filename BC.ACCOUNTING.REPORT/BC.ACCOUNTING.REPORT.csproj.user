@@ -11,6 +11,15 @@
     <Compile Update="PredefinedReports\MB Seller\ClosingEntry\MBClosingInventoryA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventory80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventoryA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\sample.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\CreditNote\CreditNoteReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -59,10 +68,22 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\SCS\SCSMBSaleListingCustomerReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\HJ7\HJ7SaleInvoice80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\HJ7\HJ7SaleInvoiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\HJ7\HJ7SaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\HL\HL7SaleInvoiceA5PortraitReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\HL\HL7SaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\KC7\KC7SaleInvoiceA5PortraitReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\KS7\KS7SaleInvoice80Report.cs">
@@ -95,6 +116,12 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\Y8S\Y8SSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetail80mmReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetailA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -105,6 +132,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\PO\POSPOListingReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Sale Order\AKA\AKASaleInvoiceA5Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Sale Order\POSSaleInvoiceA5Report.cs">
@@ -128,16 +158,85 @@
     <Compile Update="PredefinedReports\POS\SaleListing\SaleListingBySellerWithDeliveryFeeReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\SubReport\ShowImagesReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\EngVer\Audit\RESSaleAuditWithProfitA4EngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\ClosingEntry\RESDailyClosingInventory80EngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\ClosingEntry\RESDailyClosingInventoryA4EngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Inventory\RESInventoryOutOfStockEngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderByDateEngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderByInvoiceEngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderBySupplierEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderBySupplierReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderEngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESBZSaleInvoiceA5EngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESBZSaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleInvoice80EngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleInvoiceA4EngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleInvoiceA4WithProfitEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleReceipt58EngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleReceipt80EngReport.repx.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleReceipt80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\SaleInvoice\RESSaleReceipt58Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceNoProfitByDateEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceNoProfitBySaleEngReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceNoProfitEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceProfitByDateEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceProfitBySellerEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingInvoiceProfitEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingMovementEngReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\SaleListing\RESSaleListingSummaryEngReport.repx.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\AP\APCustomerReceiptReport.cs">
@@ -363,6 +462,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByArea\Detail\SaleListingYearlySummaryWithProfitByAreaReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByArea\SaleListingSummaryByAreaReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByCustomer\Detail\SaleListingDailyDetailByCustomerReport.cs">

@@ -4,5 +4,6 @@
     {
         public string ExpenseDesc { get; set; }
         public decimal ExpenseAmount { get; set; }
+        public string CurrencySymbol { get; set; } = "$";
     }
 }

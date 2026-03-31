@@ -13,11 +13,14 @@ namespace BC.ACCOUNTING.REPORT.DataSources.MB
         public decimal Discount { get; set; }
         public List<UnitConvertDataSource> UnitConvert { get; set; } = new();
         public string? RowNum { get; set; }
+        public decimal SubTotal { get; set; }
     }
     public class UnitConvertDataSource
     {
         public string UnitStock { get; set; }
         public string Note { get; set; } = string.Empty;
+    
+        public bool IsNoteVisible => !string.IsNullOrWhiteSpace(Note);
         public int Qty { get; set; }
         public decimal Price { get; set; }
         public List<ExtraInvoiceItemDataSource> Extra { get; set; } = new();

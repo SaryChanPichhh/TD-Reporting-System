@@ -15,6 +15,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [Browsable(false)]
         public Export? ExportFormat { get; set; } = null; 
         [Browsable(false)] public string? Connection { get; set; } = "Default";
+        [Browsable(false)] public Languages? Language { get; set; } = Languages.KM;
         [Browsable(false)][Nullable(true)] public string DbCode { get; set; } = string.Empty;
         [Nullable(true)] public string CurrencySymbol { get; set; } = "$";
         [Nullable(true)] public string SubCurrencySymbol { get; set; } = "៛";
@@ -23,12 +24,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [OnDeserialized]
         private void InitializeData(StreamingContext context)
         {
-            // Init Default Currency Symbol
-            CurrencySymbol = string.IsNullOrEmpty(CurrencySymbol.Trim()) ? "$" : CurrencySymbol;
-            SubCurrencySymbol = string.IsNullOrEmpty(SubCurrencySymbol.Trim()) ? "៛" : SubCurrencySymbol;
-            // Init Default Decimal Precision
-            DecimalPrecision = CurrencySymbol.Equals("៛")? DecimalFormatting.TwoDecimalPrecision : DecimalFormatting.ThreeDecimalPrecision;
-            SubDecimalPrecision = SubCurrencySymbol.Equals("$")? DecimalFormatting.ThreeDecimalPrecision : DecimalFormatting.Standard;
+            
         }
     }   
 }

@@ -123,4 +123,8 @@
   <data name="xrTableCell29.ExpressionBindings" xml:space="preserve">
     <value>[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum(Iif(Contains([FIELD_1], '$'), ToDecimal(Trim(Replace(Trim([FIELD_1]), '$', ''))),Iif(Contains([FIELD_1],'៛'), ToDecimal(Trim(Replace(Trim([FIELD_1]), '៛', ''))), ToDecimal([FIELD_1])))))</value>
   </data>
+  <data name="xrTableCell5.ExpressionBindings" xml:space="preserve">
+    <value>[CurrencySymbol] + FormatString(?DecimalPrecision,sumSum(Iif(Contains([FIELD_1], '$'), ToDecimal(Trim(Replace(Trim([FIELD_1]), '$', ''))),Iif(Contains([FIELD_1],'៛'), ToDecimal(Trim(Replace(Trim([FIELD_1]), '៛', ''))), ToDecimal([FIELD_1])))))
+</value>
+  </data>
 </root>

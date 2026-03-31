@@ -6,7 +6,7 @@ global using BC.ACCOUNTING.REPORT.DTO.MB;
 global using BC.ACCOUNTING.REPORT.DTO.POS;
 global using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
 global using BC.ACCOUNTING.REPORT.Helper;
- global using BC.ACCOUNTING.REPORT.Helper.Enums;
+global using BC.ACCOUNTING.REPORT.Helper.Enums;
 global using BC.ACCOUNTING.REPORT.Models;
 global using BC.ACCOUNTING.REPORT.PredefinedReports;
 global using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry;

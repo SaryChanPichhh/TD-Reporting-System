@@ -13,6 +13,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources
         public decimal TransValue { get; set; }
         public decimal Amount { get; set; }
         public decimal Balance { get; set; }
+        public decimal Discount { get; set; } = 0;
         public string? PhoneNumber { get; set; }
         public string? SaleRep { get; set; } = string.Empty;
         public string? InvoiceIssuer { get; set; } = string.Empty;

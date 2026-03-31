@@ -20,6 +20,11 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry
             {
                 Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
             }
+            if (Parameters["TotalReceived_PRM"] != null)
+                Parameters["TotalReceived_PRM"].Value = dto.TotalReceived;
+
+            if (Parameters["TotalReceivedRiel_PRM"] != null)
+                Parameters["TotalReceivedRiel_PRM"].Value = dto.TotalReceivedRiel;
             objectDataSource1.DataSource = dto;
 
         }

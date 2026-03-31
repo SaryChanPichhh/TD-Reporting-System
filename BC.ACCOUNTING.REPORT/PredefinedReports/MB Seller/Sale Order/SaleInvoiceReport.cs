@@ -1,6 +1,9 @@
 ﻿using BC.ACCOUNTING.REPORT.DTO;
 using BC.ACCOUNTING.REPORT.Helper;
+using BC.ACCOUNTING.REPORT.Helper.Enums;
 using BC.ACCOUNTING.REPORT.Models;
+using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.XtraCharts.Native;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +11,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
-using BC.ACCOUNTING.REPORT.Helper.Enums;
+using BC.ACCOUNTING.REPORT.DataSources;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
 {
@@ -71,11 +75,121 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                    
             }
         }
-        
+        private void AddFillerRows(List<FlatInvoiceRow> data, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                data.Add(new FlatInvoiceRow()
+                {
+                    RowNumber = string.Empty,
+                    ItemDesc = string.Empty,
+                    Qty = 0,
+                    Price = null,
+                    Total = null
+                });
+            }
+        }
+
+        private void GenerateEmptyData(List<FlatInvoiceRow> data,int P1_SMALL,int P1_MEDIUM_SIZE,int P1_LARGE,int SUB_PAGE_SIZE,int SUB_PAGES_SIZE)
+        {
+
+                var total = data.Count;
+                var targetCount = 0;
+                if (total <= P1_SMALL)
+                {
+                    targetCount = P1_SMALL;
+                }
+                else if (total <= P1_MEDIUM_SIZE)
+                {
+                    targetCount = P1_MEDIUM_SIZE;
+                }
+                else
+                {
+                    if (total <= P1_LARGE)
+                    {
+                        targetCount = P1_LARGE;
+                    }
+                    else if (total <= (P1_LARGE + SUB_PAGE_SIZE))
+                    {
+                        var overflow = total - P1_LARGE;
+                        var subPagesNeeded = (overflow + SUB_PAGE_SIZE - 1) / SUB_PAGE_SIZE;
+                        targetCount = P1_LARGE + (subPagesNeeded * SUB_PAGE_SIZE);
+                    }
+                    else
+                    {
+                        var overflow = total - (P1_LARGE + SUB_PAGE_SIZE);
+                        var subPagesNeeded = (overflow + SUB_PAGES_SIZE - 1) / SUB_PAGES_SIZE;
+                        targetCount = P1_LARGE + SUB_PAGE_SIZE + (subPagesNeeded * SUB_PAGES_SIZE);
+                    }
+                }
+                var padding = targetCount - total;
+                if (padding > 0)
+                {
+                    AddFillerRows(data, padding);
+                }
+            
+        }
         public SaleInvoiceReport(SaleInvoiceDto dto,string reportName,string imageUrl = "")
         {
             this.LoadLayoutFromXml(reportName);
-            if(this.Parameters["DecimalPrecision"]!=null)
+            if (dto?.Items == null) return;
+            var data = ReportExtension.Flatten(dto);
+            if (reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\HL7SaleInvoiceA5PortraitReport"))
+            {
+                 var P1_SMALL = 13;
+                 var P1_MEDIUM_SIZE = 41;
+                 var P1_LARGE = 18;
+                 var SUB_PAGE_SIZE = 23;
+                 var SUB_PAGES_SIZE = 27;
+                
+                GenerateEmptyData(data, P1_SMALL, P1_MEDIUM_SIZE, P1_LARGE, SUB_PAGE_SIZE, SUB_PAGES_SIZE);
+                var unitTotals = dto.Items
+                    .Where(item => item.UnitConvert != null)
+                    .SelectMany(item => item.UnitConvert)
+                    .Where(u => !string.IsNullOrWhiteSpace(u.UnitStock))
+                    .GroupBy(u => u.UnitStock.Trim())
+                    .ToDictionary(g => g.Key, g => g.Sum(x => x.Qty));
+
+                var displayUnits = string.Join(", ", unitTotals.Select(x => $"{x.Value} {x.Key}"));
+
+                if (Parameters["totalPerUnit"] != null)
+                    Parameters["totalPerUnit"].Value = displayUnits;
+
+            }
+            if (reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\KC7SaleInvoiceA5PortraitReport"))
+            {
+                var P1_SMALL = 14;
+                var P1_MEDIUM_SIZE = 41;
+                var P1_LARGE = 18;
+                var SUB_PAGE_SIZE = 23;
+                var SUB_PAGES_SIZE = 27;
+
+                GenerateEmptyData(data, P1_SMALL, P1_MEDIUM_SIZE, P1_LARGE, SUB_PAGE_SIZE, SUB_PAGES_SIZE);
+            }
+            if (reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\HL7SaleInvoiceA5Report"))
+            {
+                var P1_SMALL = 9;
+                var P1_MEDIUM_SIZE = 28;
+                var P1_LARGE = 27;
+                var SUB_PAGE_SIZE = 19;
+                var SUB_PAGES_SIZE = 27;
+
+                GenerateEmptyData(data, P1_SMALL, P1_MEDIUM_SIZE, P1_LARGE, SUB_PAGE_SIZE, SUB_PAGES_SIZE);
+                var unitTotals = dto.Items
+                    .Where(item => item.UnitConvert != null)
+                    .SelectMany(item => item.UnitConvert)
+                    .Where(u => !string.IsNullOrWhiteSpace(u.UnitStock))
+                    .GroupBy(u => u.UnitStock.Trim())
+                    .ToDictionary(g => g.Key, g => g.Sum(x => x.Qty));
+
+                var displayUnits = string.Join(", ", unitTotals.Select(x => $"{x.Value} {x.Key}"));
+
+                if (Parameters["totalPerUnit"] != null)
+                    Parameters["totalPerUnit"].Value = displayUnits;
+
+            }
+
+            if (this.Parameters["DecimalPrecision"]!=null)
             {
                 this.Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();
             }
@@ -83,7 +197,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             {
                 this.Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
             }
-            var data = ReportExtension.Flatten(dto);
+            
             if(reportName.Contains("D:\\.NetAPI\\Reports\\Accounting\\HD7SaleInvoiceReport.repx"))
             {
                 data.ForEach(item =>
@@ -117,7 +231,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                         this.xrLine1.Visible = false;
                     }
                 }
-                else if (data.Count > 9 && data.Count < 26)
+                else 
+                if (data.Count > 9 && data.Count < 26)
                 {
                     this.xrLabel7.Font = new Font("Khmer OS Content", 10.8f);
                     this.xrLabel2.Font = new Font("Khmer OS Content", 10.8f);
@@ -176,7 +291,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                     }
                     
 
-                } else if (data.Count >= 26)
+                } 
+                else 
+                if (data.Count >= 26)
                 {
                     this.BeforePrint += Report_BeforePrint;
                     this.Detail.BeforePrint += Detail_BeforePrint;
@@ -248,6 +365,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             Parameters["InvoiceIssuer"].Value = dto.InvoicePrinted;
             Parameters["TransRef"].Value = dto.InvoiceNumber;
             Parameters["Phone"].Value = dto.Phone;
+            
             Parameters["TransDate"].Value = dto.InvoiceDate;
             Parameters["DueDate"].Value = dto.DueDate;
             Parameters["Discount"].Value = dto.Discount;
@@ -280,24 +398,24 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
                 Parameters["SubDecimalPrecision"].Value = dto.SubDecimalPrecision.GetEnumDescription();
             if (Parameters["Store"] != null)
                 Parameters["Store"].Value = dto.Store;
+            if (Parameters["Phone2"] is not null)
+            {
+                Parameters["Phone2"].Value = dto.Phone2;
+            }
 
-             //Parameters["CustomerCode"].Value = dto.CustomerCode;
-            //Parameters["CustomerName"].Value = dto.CustomerName;
-            //Parameters["CustomerTel"].Value = dto.CustomerTel;
-            //Parameters["Market"].Value = dto.Market;
-            //Parameters["Address"].Value = dto.Address;
-            //Parameters["InvoiceIssuer"].Value = dto.InvoicePrinted;
-            //Parameters["TransRef"].Value = dto.InvoiceNumber;
-            //Parameters["Phone"].Value = dto.Phone;
-            //Parameters["TransDate"].Value = dto.InvoiceDate;
-            //Parameters["DueDate"].Value = dto.DueDate;
-            //Parameters["Discount"].Value = dto.Discount;
-            //Parameters["ExchangeRate"].Value = dto.ExchangeRate;
-            //Parameters["Total"].Value = dto.SubTotal;
-            //Parameters["TotalRiel"].Value = dto.TotalKHR;
-            //Parameters["TotalDollar"].Value = dto.TotalUSD;
-            //Parameters["Note"].Value = dto.Note;
-            //Parameters["Seller"].Value = dto.Seller;
+            if (Parameters["AddressFormatting"] is not null)
+            {
+                Parameters["AddressFormatting"].Value = ReportHelper.AddressFormatting(new AddressDataSource
+                {
+                    Street = dto.Street,
+                    District = dto.District,
+                    HomeAddress = dto.HomeAddress,
+                    Province = dto.Province,
+                    Commune = dto.Commune
+                }, dto.AddressFormatting);
+
+            }
+
 
         }
 

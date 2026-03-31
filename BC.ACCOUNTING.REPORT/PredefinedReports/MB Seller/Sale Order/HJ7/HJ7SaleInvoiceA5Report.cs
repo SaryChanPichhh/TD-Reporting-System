@@ -12,5 +12,40 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.HJ7
         {
             InitializeComponent();
         }
+
+        private void xrLabel4_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel5_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel6_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel22_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel23_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel24_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void xrLabel25_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
