@@ -20,6 +20,9 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [DisplayName("អ្នកផ្គត់ផ្គង")] public string Supplier { get; set; }
         [DisplayName("អ្នកត្រួតពិនិត្យ")] public string Checker { get; set; }
         [DisplayName("កាលបរិច្ឆេទពិនិត្យ")] public string CheckDate { get; set; }
+        [Nullable(true)]
+        [DisplayName("លេខយោងវិក្កយបត្រអ្នកផ្គត់ផ្គង់")]
+        public string SupplierInvoiceRef { get; set; } = string.Empty;
         [DisplayName("ទិន្នន័យ")] public List<ItemDataSource> Items { get; set; }
 
     }

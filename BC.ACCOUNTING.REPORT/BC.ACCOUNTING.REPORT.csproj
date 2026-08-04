@@ -144,6 +144,9 @@
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByInvoice\SaleListingDailyDetailByInvoiceWithProfitReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\Test\DailyClosingInventoryCloneReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\XtraReport1.cs">
       <DependentUpon>XtraReport1.repx</DependentUpon>
     </Compile>

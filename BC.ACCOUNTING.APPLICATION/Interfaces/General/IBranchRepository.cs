@@ -12,6 +12,7 @@ namespace BC.ACCOUNTING.APPLICATION.Interfaces.General
     {
         public Task<List<BranchDTO>> GetLoginBranchAsync(string username, string appCode = "PYS");
         public Task<List<BranchDTO>> GetBranchAsync();
-       
+        public Task<string> GetCompanyCodeByBranchCodeAsync(string dbCode);
+
     }
 }

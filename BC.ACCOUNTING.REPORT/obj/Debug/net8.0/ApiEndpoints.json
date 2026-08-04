@@ -192,6 +192,54 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ClockAttendances",
+    "RelativePath": "api/reports/clock-attendances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.Clock.AttendanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ClockOverTimes",
+    "RelativePath": "api/reports/clock-overtimes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.Clock.OverTimeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "CloneReportAsync",
+    "RelativePath": "api/reports/clone-report",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "CustomerOrder",
     "RelativePath": "api/reports/customerorder",
     "HttpMethod": "POST",
@@ -231,8 +279,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDto",
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
         "IsRequired": true
       }
     ],
@@ -448,6 +496,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBExchangeIems",
+    "RelativePath": "api/reports/mb-exchangeitem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.ExchangeItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "MBIncomeAndExpense",
     "RelativePath": "api/reports/mb-incomeandexpense",
     "HttpMethod": "POST",
@@ -569,6 +633,22 @@
       {
         "Name": "dto",
         "Type": "BC.ACCOUNTING.REPORT.DTO.MB.MBSaleListingSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "GetStockReport",
+    "RelativePath": "api/reports/mb-viewstock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.StockReqDto",
         "IsRequired": true
       }
     ],
@@ -805,6 +885,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "Quotation",
+    "RelativePath": "api/reports/quotation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.QuotationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "RESBZSaleInvoice",
     "RelativePath": "api/reports/res-bzsaleinvoice",
     "HttpMethod": "POST",
@@ -845,7 +941,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESDailyClosingInventoryDto",
         "IsRequired": true
       }
     ],
@@ -958,6 +1054,22 @@
       {
         "Name": "dto",
         "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleReceiptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleService",
+    "RelativePath": "api/reports/sale-service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.QuotationDto",
         "IsRequired": true
       }
     ],

@@ -51,10 +51,10 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ENGVer.ClosingEntry
                 return;
             }
 
-            bool isAllEmpty = string.IsNullOrWhiteSpace(data.Expense) &&
-                              string.IsNullOrWhiteSpace(data.ExpenseRiel) &&
-                              string.IsNullOrWhiteSpace(data.ExchangeRate) &&
-                              string.IsNullOrWhiteSpace(data.Vat) &&
+            bool isAllEmpty = string.IsNullOrWhiteSpace(data.Expense.ToString()) &&
+                              string.IsNullOrWhiteSpace(data.ExpenseRiel.ToString()) &&
+                              string.IsNullOrWhiteSpace(data.ExchangeRate.ToString()) &&
+                              string.IsNullOrWhiteSpace(data.Vat.ToString()) &&
                               string.IsNullOrWhiteSpace(data.CashChange);
 
             e.Cancel = isAllEmpty;

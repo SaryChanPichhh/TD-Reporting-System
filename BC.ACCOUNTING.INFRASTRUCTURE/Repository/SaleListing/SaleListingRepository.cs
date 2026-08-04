@@ -10,16 +10,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.SaleListing
 {
-    public class SaleListingRepository : ISaleListingRepository
+    public class SaleListingRepository(ISqlDataAccess sqlDataAccess, IConfiguration configuration)
+        : ISaleListingRepository
     {
-        private readonly ISqlDataAccess _sqlDataAccess;
-        private readonly IConfiguration _configuration;
-        public SaleListingRepository(ISqlDataAccess sqlDataAccess, IConfiguration configuration)
-        {
-            _sqlDataAccess = sqlDataAccess;
-            _configuration = configuration;
-        }
-
         public async Task<List<SaleListingModel>> GetSaleListingsAsync(SaleListingDto dto)
         {
             var chgConnection = dto.Connection ?? "Default";
@@ -182,7 +175,7 @@ D.ITEM_CODE [DetailItemCode], (CASE WHEN D.ITEM_CODE='' THEN '' ELSE (SELECT ITE
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_PRICE4 FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemPrice4],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_LEVEL FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemLevel], 
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_TYPE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemType],
-(CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_DCOST FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemCost],
+(SELECT ISNULL(SUM(COST),0) FROM {dto.DbCode}SIINVMOV WHERE MOV_REF=H.TRANS_REF AND ORIG_LINE_NO=D.TRANS_LINE) [ItemCost],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_STOCK FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfStock],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_SALE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfSale],
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT UNIT_WEIGHT FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfWeight],
@@ -206,14 +199,15 @@ D.LOCATION [Detail Location Code], (CASE WHEN D.LOCATION='' THEN '' ELSE (SELECT
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_FAX FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationFax], 
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM1 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationComment],
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationSecondComment] 
-FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H.TRANS_REF WHERE "+voidStatus+headerRecType+detailRecType+conditionByDate+conditionByAnalysisCode+conditionByPeriod
+FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H.TRANS_REF
+WHERE " +voidStatus+headerRecType+detailRecType+conditionByDate+conditionByAnalysisCode+conditionByPeriod
                 +conditionByReference+conditionByLocation+conditionByItem+conditionByTransCode+conditionM;
             var param = new
             {
                 DB_CODE = dto.DbCode,
             };
             Console.WriteLine(sql);
-            var execute = await _sqlDataAccess.LoadData<SaleListingModel, dynamic>(sql, param,connectionString: chgConnection);
+            var execute = await sqlDataAccess.LoadData<SaleListingModel, dynamic>(sql, param,connectionString: chgConnection);
 
             return execute.ToList();
         }
@@ -394,7 +388,7 @@ D.ITEM_CODE [DetailItemCode], (CASE WHEN D.ITEM_CODE='' THEN '' ELSE (SELECT ITE
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_PRICE4 FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemPrice4],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_LEVEL FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemLevel], 
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_TYPE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemType],
-(CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_DCOST FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemCost],
+(SELECT ISNULL(SUM(COST),0) FROM {dto.DbCode}SIINVMOV WHERE MOV_REF=H.TRANS_REF AND ORIG_LINE_NO=D.TRANS_LINE) [ItemCost],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_STOCK FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfStock],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_SALE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfSale],
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT UNIT_WEIGHT FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfWeight],
@@ -418,20 +412,20 @@ D.LOCATION [Detail Location Code], (CASE WHEN D.LOCATION='' THEN '' ELSE (SELECT
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_FAX FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationFax], 
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM1 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationComment],
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationSecondComment] 
-FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H.TRANS_REF WHERE " + voidStatus +
-                detailRecType + conditionByDate + conditionByAnalysisCode + conditionByPeriod
-                + conditionByReference + conditionByLocation + conditionByItem + conditionByTransCode + conditionM;
+FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON D.TRANS_REF = H.TRANS_REF 
+WHERE " + voidStatus + detailRecType + conditionByDate + conditionByAnalysisCode + conditionByPeriod
++ conditionByReference + conditionByLocation + conditionByItem + conditionByTransCode + conditionM;
                 #endregion
                 if (item.Equals("O"))
-                    sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS < 80 UNION ALL ";
+                    sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS < 80 UNION ALL ";   
                 else if (item.Equals("I"))
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' AND H.STATUS > 80 UNION ALL ";
                 else
                     sql += $@" AND H.REC_TYPE = '{item.ToUpper()}' UNION ALL ";
             }
             sql = sql.TrimEnd(" UNION ALL ".ToCharArray());
-            var execute =
-                await _sqlDataAccess.LoadData<SaleListingModel, dynamic>(sql, param, connectionString: chgConnection);
+                var execute =
+                await sqlDataAccess.LoadData<SaleListingModel, dynamic>(sql, param, connectionString: chgConnection);
             return execute.ToList();
         }
 
@@ -440,11 +434,11 @@ FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H
             var dataDictionary = new Dictionary<string, SaleListingModel>();
             var connectionString = dto.Connection switch
             {
-                "Default" => _configuration.GetConnectionString("DBConnection"),
-                "SIDB" => _configuration.GetConnectionString("DBConnection"),
-                "MB" => _configuration.GetConnectionString("MBConnection"),
-                "MBDev" => _configuration.GetConnectionString("MBDevConnection"),
-                _ => _configuration.GetConnectionString("DBConnection")
+                "Default" => configuration.GetConnectionString("DBConnection"),
+                "SIDB" => configuration.GetConnectionString("DBConnection"),
+                "MB" => configuration.GetConnectionString("MBConnection"),
+                "MBDev" => configuration.GetConnectionString("MBDevConnection"),
+                _ => configuration.GetConnectionString("DBConnection")
             };
             await using var connection = new SqlConnection(connectionString: connectionString);
             await connection.OpenAsync(
@@ -626,7 +620,8 @@ D.ITEM_CODE [DetailItemCode], (CASE WHEN D.ITEM_CODE='' THEN '' ELSE (SELECT ITE
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_PRICE4 FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemPrice4],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_LEVEL FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemLevel], 
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT ITEM_TYPE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemType],
-(CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT ITEM_DCOST FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemCost],
+(CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (CASE ( SELECT ITEM_TYPE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) WHEN 'S' THEN TS.COST 
+WHEN 'N' THEN (SELECT ITEM_DCOST FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) ELSE 0 END) END) [ItemCost],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_STOCK FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfStock],
 (CASE WHEN D.ITEM_CODE='''' THEN '''' ELSE (SELECT UNIT_SALE FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfSale],
 (CASE WHEN D.ITEM_CODE='''' THEN 0 ELSE (SELECT UNIT_WEIGHT FROM SIITEMS WHERE DB_CODE=@DB_CODE AND ITEM_CODE=D.ITEM_CODE) END) [ItemUnitOfWeight],
@@ -651,7 +646,9 @@ D.LOCATION [Detail Location Code], (CASE WHEN D.LOCATION='' THEN '' ELSE (SELECT
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM1 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationComment],
 (CASE WHEN D.LOCATION='''' THEN '''' ELSE (SELECT WAR_COM2 FROM SIWAREH WHERE DB_CODE=@DB_CODE AND WAR_CODE=D.LOCATION) END) [LocationSecondComment],CONCAT(SUB_MENU.TRANS_REF,D.TRANS_LINE) UniqueKey,SUB_MENU.TRANS_REF HeaderTransactionRef 
 ,SUB_MENU.TRANS_LINE DetailLineNumber,SUB_MENU.CONV_ID, SUB_MENU.ITEM_CODE ItemCode,SUB_MENU.DESCRIPTION ItemDesc,SUB_MENU.CONV_F_CODE UnitConvCode,SUB_MENU.CONV_F_DESC UnitConv,SUB_MENU.CONV_F_DESCKH ConvFromDesc
-FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON  D.TRANS_REF = H.TRANS_REF
+FROM  {dto.DbCode}SISOHDR H INNER JOIN {dto.DbCode}SISODET D ON D.TRANS_REF = H.TRANS_REF
+LEFT JOIN {dto.DbCode}SIINVMOV TS ON D.TRANS_REF = TS.MOV_REF AND D.ITEM_CODE = TS.ITEM_CODE
+AND D.VALUE_2 = (-1 * TS.QUANTITY)
 LEFT JOIN (SELECT MENU.DESCRIPTION, WHOLE.TRANS_REF ,MENU.ITEM_CODE,MENU.TRANS_LINE,MENU.CONV_ID
 ,CONV_F_CODE,CONV_F_DESC,CONV_F_DESCKH
 FROM M01SISODET_WHOLE WHOLE INNER JOIN  M01SISODET_MENU MENU ON 

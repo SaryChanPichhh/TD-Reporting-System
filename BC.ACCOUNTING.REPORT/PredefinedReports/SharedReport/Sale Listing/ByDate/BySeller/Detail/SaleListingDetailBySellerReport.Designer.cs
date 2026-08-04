@@ -83,6 +83,7 @@
             this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupFooter3 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -100,7 +101,6 @@
             this.CurrencySymbol = new DevExpress.XtraReports.Parameters.Parameter();
             this.DecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubDecimalPrecision = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -340,7 +340,7 @@
             // xrLabel18
             // 
             this.xrLabel18.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(510.101F, 76.99999F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(529.9868F, 76.99999F);
             this.xrLabel18.Multiline = true;
             this.xrLabel18.Name = "xrLabel18";
             this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -353,21 +353,21 @@
             // xrLine2
             // 
             this.xrLine2.LineWidth = 1.5F;
-            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(59.78458F, 73.875F);
+            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(79.67038F, 73.875F);
             this.xrLine2.Name = "xrLine2";
             this.xrLine2.SizeF = new System.Drawing.SizeF(220F, 3.12F);
             // 
             // xrLine4
             // 
             this.xrLine4.LineWidth = 1.5F;
-            this.xrLine4.LocationFloat = new DevExpress.Utils.PointFloat(487.2155F, 73.875F);
+            this.xrLine4.LocationFloat = new DevExpress.Utils.PointFloat(507.1013F, 73.875F);
             this.xrLine4.Name = "xrLine4";
             this.xrLine4.SizeF = new System.Drawing.SizeF(220F, 3.12F);
             // 
             // xrLabel12
             // 
             this.xrLabel12.Font = new DevExpress.Drawing.DXFont("Khmer OS Content", 12F);
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(100.3858F, 76.99999F);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(120.2716F, 76.99999F);
             this.xrLabel12.Multiline = true;
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -678,6 +678,13 @@
             this.GroupFooter3.Level = 2;
             this.GroupFooter3.Name = "GroupFooter3";
             // 
+            // xrLine1
+            // 
+            this.xrLine1.LineStyle = DevExpress.Drawing.DXDashStyle.Dash;
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0.0002543131F, 0F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(806.9999F, 2F);
+            // 
             // xrTable5
             // 
             this.xrTable5.Borders = DevExpress.XtraPrinting.BorderSide.None;
@@ -848,13 +855,6 @@
             this.SubDecimalPrecision.Description = "Parameter1";
             this.SubDecimalPrecision.Name = "SubDecimalPrecision";
             this.SubDecimalPrecision.Visible = false;
-            // 
-            // xrLine1
-            // 
-            this.xrLine1.LineStyle = DevExpress.Drawing.DXDashStyle.Dash;
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0.0002543131F, 0F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(806.9999F, 2F);
             // 
             // SaleListingDetailBySellerReport
             // 

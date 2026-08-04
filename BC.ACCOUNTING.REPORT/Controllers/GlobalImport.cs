@@ -38,9 +38,9 @@ global using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.By
 global using BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDate.Summary;
 global using BC.ACCOUNTING.REPORT.Services;
 global using DevExpress.XtraReports.UI;
+global using Microsoft.AspNetCore.Hosting;
 global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Mvc;
-global using Microsoft.Data.SqlClient;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Options;
 global using Newtonsoft.Json;
@@ -52,5 +52,6 @@ global using System.Linq;
 global using System.Net.Http;
 global using System.Threading;
 global using System.Threading.Tasks;
-global using Microsoft.AspNetCore.Hosting;
 global using DailyClosingReport = BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry.DailyClosingReport;
+global using BC.ACCOUNTING.CORE.Entities;
+global using BC.ACCOUNTING.REPORT.PredefinedReports.POS.PO;

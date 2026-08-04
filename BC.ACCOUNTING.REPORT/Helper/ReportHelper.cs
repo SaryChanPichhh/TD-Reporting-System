@@ -17,10 +17,32 @@ namespace BC.ACCOUNTING.REPORT.Helper
         #region Initialization Report+
 
         private static readonly
-            Dictionary<string, Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>> reports =
+            Dictionary<string, Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>> Reports =
                 new()
 
                 {
+                    {
+                        "POSSaleInvoice80Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoice80EngReport.repx"),
+                                    (ReportModes.NormalMode, "POSSaleInvoice80EngReport.repx"),
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoice80Report.repx"),
+                                    (ReportModes.NormalMode, "POSSaleInvoice80Report.repx")
+                                }
+                            },
+                        }
+                    },
                     {
                         "DailyClosingInventoryDetail80mmReport",
                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
@@ -50,7 +72,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 Languages.ENG,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx")
+                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx"),
+                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx"),
                                 }
                             },
                             {
@@ -71,7 +94,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 Languages.ENG,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
-                                    (ReportModes.NormalMode, "POSSaleInvoiceEVReport.repx")
+                                    (ReportModes.NormalMode, "POSSaleInvoiceEVReport.repx"),
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceEVWithDeliveryReport.repx")
                                 }
                             },
                             {
@@ -83,7 +107,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 }
                             },
                         }
-                    },{
+                    },
+                    {
                         "POSSaleInvoiceA5Report",
                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
                         {
@@ -114,7 +139,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "A4DailyClosingInventoryEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -133,7 +159,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "DailyClosingInventoryEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -142,7 +169,46 @@ namespace BC.ACCOUNTING.REPORT.Helper
                             },
                         }
                     },
-
+                    {
+                        "DailyClosingInventoryByCategory80Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategory80Report.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategory80Report.repx")
+                                }
+                            },
+                        }
+                    },
+                    {
+                        "DailyClosingInventoryByCategoryA4Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategoryA4Report.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategoryA4Report.repx")
+                                }
+                            },
+                        }
+                    },
                     {
                         "DailyClosingReport",
                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
@@ -153,7 +219,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "DailyClosingEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -172,7 +239,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "CustomerOrderEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -191,7 +259,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSSaleListingEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -208,9 +277,11 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 Languages.ENG,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
-                                    (ReportModes.NormalMode, "SaleListingByInvoiceEVReport.repx")
+                                    (ReportModes.NormalMode, "SaleListingByInvoiceEVReport.repx"),
+                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -230,7 +301,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingMovementEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -249,7 +321,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "IUInventoryAuditA4EVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -268,7 +341,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSInventoryOutOfStockEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -287,12 +361,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSSaleListingSummaryEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "POSSaleListingSummaryReport.repx"),
-                                    (ReportModes.DeliveryFeeMode , "SaleListingByInvoiceWithDeliveryFeeReport.repx"),
+                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx"),
                                 }
                             },
                         }
@@ -307,7 +382,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingByDateEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -327,12 +403,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingBySellerEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "SaleListingBySellerReport.repx"),
-                                    (ReportModes.DeliveryFeeMode , "SaleListingBySellerWithDeliveryFeeReport.repx"),
+                                    (ReportModes.DeliveryFeeMode, "SaleListingBySellerWithDeliveryFeeReport.repx"),
                                 }
                             },
                         }
@@ -347,7 +424,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingBySellerNoProfitEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -366,7 +444,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingByInvoiceNoProfitEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -385,7 +464,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderByDateEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -404,7 +484,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderByInvoiceEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -423,7 +504,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderBySupplierEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -442,7 +524,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderListingEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -461,7 +544,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSPOListingReport.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -469,7 +553,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 }
                             },
                         }
-                    },{
+                    },
+                    {
                         "AKASaleInvoiceA5Report",
                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
                         {
@@ -479,7 +564,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")
                                 }
-                            },{
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -489,62 +575,46 @@ namespace BC.ACCOUNTING.REPORT.Helper
                         }
                     },
                 };
-        #endregion  
 
-        #region Initialization Auto Print Report
-
-        public static string ReportDirectory = "D:\\.NetAPI\\Reports\\Accounting";
-        public static Dictionary<string, string> ImageUrl = new();
-
-        private static readonly Dictionary<string, (Func<ReportDto> dtoFactory, Func<ReportDto, XtraReport> reportFactory)>
-            AutoPrintReports = new()
-            {
-                {
-                    "Y8SSaleInvoice80Report",
-                    (
-                        () => new SaleInvoiceDto(),                // Create DTO
-                        dto => new SaleInvoiceReport(              // Create report with DTO
-                            (SaleInvoiceDto)dto,
-                            Path.Combine(ReportDirectory, "Y8SSaleInvoice80Report.repx"),
-                            ImageUrl[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]
-                        )
-                    )
-                },
-                {
-                    "SA7SaleInvoice80Report",
-                    (
-                        () => new SaleInvoiceDto(),
-                        dto => new SaleInvoiceReport(
-                            (SaleInvoiceDto)dto,
-                            Path.Combine(ReportDirectory, "SA7SaleInvoice80Report.repx"),
-                            ImageUrl[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]
-                        )
-                    )
-                }
-            };
-
-        public static bool IsAutoPrint = false;
-        public static string PrinterName = string.Empty;
-        public static string ReportName = string.Empty;
         #endregion
-        public static string 
-            GetReportPath(string reportDirectory,string? folderPath, string reportName,Languages language = Languages.KM,ReportModes reportMode = ReportModes.NormalMode)
+
+        #region Report Configuration For Generate Empty Rows
+
+        public static Dictionary<string, (int small, int medium, int large, int subPage, int subPages)> ReportConfigs =
+            new()
+            {
+                { "HL7SaleInvoiceA5PortraitReport", (12, 41, 18, 23, 27) },
+                { "DefaultSaleInvoiceA5Report", (18, 43, 18, 23, 27) },
+                { "KM7SaleInvoiceA5PortraitReport", (15, 43, 18, 23, 27) },
+                { "KM7SaleInvoiceA5PortraitSecondaryReport", (15, 43, 18, 23, 27) },
+                { "HK7SaleInvoiceA5PortraitReport", (14, 41, 18, 23, 27) },
+                { "HL7SaleInvoiceA5Report", (9, 28, 27, 19, 27) },
+                { "CH7SaleInvoiceA5PortraitReport", (13, 41, 18, 23, 27) },
+            };
+        #endregion
+
+        public static string
+            GetReportPath(string reportDirectory, string? folderPath, string reportName,
+                Languages language = Languages.KM, ReportModes reportMode = ReportModes.NormalMode)
         {
-            var reportVer = reports.ContainsKey(reportName) && reports[reportName].ContainsKey(language)
-                                                                && reports[reportName][language].Any(x => x.reportModes == reportMode)
-                ? reports[reportName][language].Where(x => x.reportModes.Equals(reportMode)).Select(x => x.reportName).FirstOrDefault()??string.Empty
+            var reportVer = Reports.ContainsKey(reportName) && Reports[reportName].ContainsKey(language)
+                                                            && Reports[reportName][language]
+                                                                .Any(x => x.reportModes == reportMode)
+                ? Reports[reportName][language].Where(x => x.reportModes.Equals(reportMode)).Select(x => x.reportName)
+                    .FirstOrDefault() ?? string.Empty
                 : string.Empty;
             return Path.Combine(reportDirectory, folderPath, reportVer);
         }
+
         public static string GetEnumDescription(this Enum value)
         {
             var fi = value.GetType().GetField(value.ToString());
 
-            if (fi.GetCustomAttributes(typeof(DescriptionAttribute), false) is DescriptionAttribute[] attributes && attributes.Any())
+            if (fi.GetCustomAttributes(typeof(DescriptionAttribute), false) is DescriptionAttribute[] attributes &&
+                attributes.Length != 0)
             {
                 return attributes.First().Description;
             }
-
             return value.ToString();
         }
 
@@ -556,16 +626,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 _ => false,
             };
         }
-
-        public static (ReportDto dto, Func<ReportDto, XtraReport> reportFactory)
-            GetAutoPrintReportInstance(string reportName)
-        {
-            if (AutoPrintReports.TryGetValue(reportName, out var tuple))
-                return (tuple.dtoFactory(), tuple.reportFactory);
-
-            return (null, null);
-        }
-        public static string DisplayCurrency(ExchangesCurrency currencySymbol)
+        public static string GrandTotalDisplayByCurrency(ExchangesCurrency currencySymbol)
         {
             return currencySymbol switch
             {
@@ -580,13 +641,28 @@ namespace BC.ACCOUNTING.REPORT.Helper
         public static string FormatCurrency(decimal value, DecimalFormatting format)
         {
             var formatString = format.GetEnumDescription();
-
             var formattedValue = string.Format(formatString, value);
-
             return "$" + formattedValue;
         }
-
-        public static string AddressFormatting(AddressDataSource address,AddressFormatting addressEnum)
+        public static string GetReportClosingInventoryNameByCode(List<string> branches,string dbCode, string reportName)
+        {
+            var reportReturnName = string.Empty;
+            if  ( branches is not [] && branches.Contains(dbCode))
+            {
+                reportReturnName = reportName switch
+                {
+                    "DailyClosingInventoryReport" => "DailyClosingInventoryByCategory80Report",
+                    "A4DailyClosingInventoryReport" => "DailyClosingInventoryByCategoryA4Report",
+                    _ => reportReturnName
+                };
+            }
+            else
+            {
+                reportReturnName = reportName;
+            }
+            return reportReturnName;
+        }
+        public static string AddressFormatting(AddressDataSource address, AddressFormatting addressEnum)
         {
             if (addressEnum.Equals(Enums.AddressFormatting.DESC))
             {
@@ -610,7 +686,67 @@ namespace BC.ACCOUNTING.REPORT.Helper
                     address.Province
                 }.Where(x => !string.IsNullOrWhiteSpace(x)));
             }
-            
+
         }
+        public static List<FlatInvoiceRow> GenerateEmptyData(List<FlatInvoiceRow> data, int P1_SMALL,
+            int P1_MEDIUM_SIZE, int P1_LARGE, int SUB_PAGE_SIZE, int SUB_PAGES_SIZE)
+        {
+            var total = data.Count;
+            var targetCount = 0;
+            if (total <= P1_SMALL)
+            {
+                targetCount = P1_SMALL;
+            }
+            else if (total <= P1_MEDIUM_SIZE)
+            {
+                targetCount = P1_MEDIUM_SIZE;
+            }
+            else
+            {
+                if (total <= P1_LARGE)
+                {
+                    targetCount = P1_LARGE;
+                }
+                else if (total <= (P1_LARGE + SUB_PAGE_SIZE))
+                {
+                    var overflow = total - P1_LARGE;
+                    var subPagesNeeded = (overflow + SUB_PAGE_SIZE - 1) / SUB_PAGE_SIZE;
+                    targetCount = P1_LARGE + (subPagesNeeded * SUB_PAGE_SIZE);
+                }
+                else
+                {
+                    var overflow = total - (P1_LARGE + SUB_PAGE_SIZE);
+                    var subPagesNeeded = (overflow + SUB_PAGES_SIZE - 1) / SUB_PAGES_SIZE;
+                    targetCount = P1_LARGE + SUB_PAGE_SIZE + (subPagesNeeded * SUB_PAGES_SIZE);
+                }
+            }
+            var padding = targetCount - total;
+            if (padding > 0)
+            {
+                AddFillerRows(data, padding);
+            }
+            
+            return data;
+        }
+
+        public static void AddFillerRows(List<FlatInvoiceRow> data, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                data.Add(new FlatInvoiceRow()
+                {
+                    RowNumber = string.Empty,
+                    ItemDesc = string.Empty,
+                    Qty = 0,
+                    Price = null,
+                    Total = null
+                });
+            }
+        }
+
+        public static (int small, int medium, int large, int subPage, int subPages) GetReportConfigByName(
+            string reportName) =>
+            ReportConfigs.TryGetValue(reportName, out var config) ? config 
+                : new ();
     }
 }

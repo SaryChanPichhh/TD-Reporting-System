@@ -19,8 +19,11 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
         {
             
             this.LoadLayoutFromXml(reportName);
-            xrSubreport1.BeforePrint += xrSubreport1_BeforePrint;
-            Console.WriteLine(dto.DecimalPrecision);
+            if (xrSubreport1 is not null)
+            {
+                xrSubreport1.BeforePrint += xrSubreport1_BeforePrint;
+            }
+            
             if (Parameters["DecimalPrecision"] is not null)
                 this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
             objectDataSource1.DataSource = dto;

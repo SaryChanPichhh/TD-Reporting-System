@@ -17,6 +17,7 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public string CustomerName { get; set; }
         public string CustomerTel1 { get; set; }
         public string CustomerTel2 { get; set; }
+        public string CustomerAddress { get; set; } = string.Empty;
         public decimal ExchangeRate { get; set; } = 0;
         [Browsable(false)]
         public List<string> Tables { get; set; } = [];
@@ -43,6 +44,8 @@ namespace BC.ACCOUNTING.REPORT.DTO.MB
         public decimal TotalReceivedRiel { get; set; } = 0;
         public decimal TotalChange { get; set; } = 0;
         public decimal TotalChangeRiel { get; set; } = 0;
+        public string? Field1 { get; set; } = string.Empty;
+        public string? Field2 { get; set; } = string.Empty;
         public string PaymentMethod { get; set; } = string.Empty;
         [Nullable(true)]
         [Browsable(false)]

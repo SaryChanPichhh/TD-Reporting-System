@@ -98,6 +98,28 @@
       "Address": "Im's Family, Hun Sen Blvd, 60M Road, Mean Chey Avenue Mall, Toul Roka3, Chak Angrekroam, Phnom Penh, Cambodia",
       "Phone_1": "069 71 06 71",
       "Phone_2": "070 60 90 71"
+    },
+    {
+      "BranchId": "M10",
+      "BranchName": "Mike's Event Catering",
+      "BranchName_KH": "Mike's Event Catering",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "ផ្លូវ ៦០ម៉ែត្រ, ផ្សារទំនើប Mean Chey Avenue, ទួលរកា ៣, ចាក់អង្រែក្រោម, ភ្នំពេញ",
+      "Address": "Im's Family, Hun Sen Blvd, 60M Road, Mean Chey Avenue Mall, Toul Roka3, Chak Angrekroam, Phnom Penh, Cambodia",
+      "Phone_1": "069 71 06 71",
+      "Phone_2": "070 60 90 71"
+    },
+    {
+      "BranchId": "M11",
+      "BranchName": "MIKE'S WAREHOUSE",
+      "BranchName_KH": "MIKE'S WAREHOUSE",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "ផ្លូវ ៦០ម៉ែត្រ, ផ្សារទំនើប Mean Chey Avenue, ទួលរកា ៣, ចាក់អង្រែក្រោម, ភ្នំពេញ",
+      "Address": "Im's Family, Hun Sen Blvd, 60M Road, Mean Chey Avenue Mall, Toul Roka3, Chak Angrekroam, Phnom Penh, Cambodia",
+      "Phone_1": "069 71 06 71",
+      "Phone_2": "070 60 90 71"
     }
   ]
 }

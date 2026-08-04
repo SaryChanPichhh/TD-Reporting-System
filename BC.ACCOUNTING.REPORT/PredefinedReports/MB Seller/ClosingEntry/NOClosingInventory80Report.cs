@@ -11,7 +11,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.ClosingEntry
 
         private void NOClosingInventory80Report_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
         {
-
+            
         }
     }
 }

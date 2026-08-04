@@ -6,10 +6,22 @@
     <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
     <NameOfLastUsedPublishProfile>D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.REPORT\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
-    <ActiveDebugProfile>Container (Dockerfile)</ActiveDebugProfile>
+    <ActiveDebugProfile>Reporting_ObjectDS_AspNetCore</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="PredefinedReports\Clock\Attendance\AttendanceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\Clock\OverTime\OverTimeReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\ClosingEntry\MBClosingInventoryA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventory80OriginReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventory80Report.cs">
@@ -18,13 +30,16 @@
     <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventoryA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\sample.cs">
+    <Compile Update="PredefinedReports\MB Seller\ClosingEntry\NOClosingInventoryA5Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\CreditNote\CreditNoteReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Customer\MBCustomerListingA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Exchange\ExchangeItemA5Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Inventory\Expired\InventoryExpiredReport.cs">
@@ -48,6 +63,12 @@
     <Compile Update="PredefinedReports\MB Seller\Purchase Order\SCS\PurchaseOrderByYearReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Quotation\QuotationA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Quotation\TD7\TD7QuotationA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\MBExpenseA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -69,6 +90,15 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Listing\SCS\SCSMBSaleListingCustomerReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\CH\CH7SaleInvoiceA5PortraitReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\Default\DefaultSaleInvoice80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\Default\DefaultSaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\HJ7\HJ7SaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -84,7 +114,19 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\HL\HL7SaleInvoiceA5Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\MB Seller\Sale Order\KC7\KC7SaleInvoiceA5PortraitReport.cs">
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\HS7\HS7SaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\KM7\KM7SaleInvoice80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\KM7\KM7SaleInvoice80SecondaryReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\KM7\KM7SaleInvoiceA5PortraitReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\KM7\KM7SaleInvoiceA5PortraitSecondaryReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\KS7\KS7SaleInvoice80Report.cs">
@@ -93,7 +135,10 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\KS7\KS7SaleInvoiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoice80mmReport.cs">
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\M11SaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\MBSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoice80Report.cs">
@@ -102,13 +147,34 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\NO\NOSaleInvoiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\OC7\OC7SaleInvoice80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\OC7\OC7SaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\OC7\OC7SaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\SaleInvoiceNoDisReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\SCS\SCSSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\SCS\SCSSaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\TD7\TD7SaleInvoiceA4ExternalReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\TD7\TD7SaleInvoiceA4InternalReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\TD7\TD7SaleInvoiceA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Sale Order\TD7\TDSaleServiceA4Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\MB Seller\Sale Order\VN7\VN7SaleInvoice80Report.cs">
@@ -117,10 +183,25 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\Y8S\Y8SSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Stock\DailyStockA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\MB Seller\Stock\DailyStockByDateA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\CustomerReport\DailyClosingInventoryByCategory80Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\CustomerReport\DailyClosingInventoryByCategoryA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetail80mmReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetailA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\Sale Order\SaleListingByInvoiceWithDeliveryFeeEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">
@@ -136,6 +217,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Sale Order\AKA\AKASaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\Sale Order\POSSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Sale Order\POSSaleInvoiceA5Report.cs">
@@ -423,6 +507,9 @@
     <Compile Update="PredefinedReports\SharedReport\AR\SCS\SCSARPaidReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\SharedReport\AR\TD7\TD7-AR.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByArea\DetailArea\SaleListingDailyDetailByAreaReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -622,6 +709,54 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\BySeller\Summary\SaleListingYearlySummaryBySellerWithProfitReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByArea\CH7SaleListingDailyDetailByAreaReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByArea\CH7SaleListingDetailByAreaReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByArea\CH7SaleListingSummaryByAreaReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByCustomer\CH7SaleListingDailyDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByCustomer\CH7SaleListingDailySummaryByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByCustomer\CH7SaleListingDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByCustomer\CH7SaleListingMonthlyDetailByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByCustomer\CH7SaleListingSummaryByCustomerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByDate\CH7SaleListingDailyDetailByDateReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByDate\CH7SaleListingSummaryDailyReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByInvoice\CH7SaleListingDailyDetailByInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByInvoice\CH7SaleListingDailySummaryByInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\ByInvoice\CH7SaleListingSummaryByInvoiceReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\BySeller\CH7SaleListingDailyDetailBySellerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\BySeller\CH7SaleListingDetailBySellerReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\SharedReport\Sale Listing\CH7\BySeller\CH7SaleListingSummaryBySellerReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\InvoiceRegisterReport.cs">

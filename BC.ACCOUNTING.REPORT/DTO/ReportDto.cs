@@ -1,9 +1,5 @@
-﻿using BC.ACCOUNTING.REPORT.Models;
-using DevExpress.Xpo;
+﻿using DevExpress.Xpo;
 using System.ComponentModel;
-using System.Diagnostics;
-using BC.ACCOUNTING.REPORT.Helper;
-using BC.ACCOUNTING.REPORT.Helper.Enums;
 using System.Runtime.Serialization;
 
 namespace BC.ACCOUNTING.REPORT.DTO
@@ -16,6 +12,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         public Export? ExportFormat { get; set; } = null; 
         [Browsable(false)] public string? Connection { get; set; } = "Default";
         [Browsable(false)] public Languages? Language { get; set; } = Languages.KM;
+        [Browsable(false)] public IsoNumericCountryCode? CountryCode { get; set; } = IsoNumericCountryCode.CAMBODIA;
         [Browsable(false)][Nullable(true)] public string DbCode { get; set; } = string.Empty;
         [Nullable(true)] public string CurrencySymbol { get; set; } = "$";
         [Nullable(true)] public string SubCurrencySymbol { get; set; } = "៛";

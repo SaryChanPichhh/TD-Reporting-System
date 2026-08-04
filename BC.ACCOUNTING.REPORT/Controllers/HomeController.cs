@@ -1,10 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-
 namespace BC.ACCOUNTING.REPORT.Controllers
 {
     public class HomeController : Controller

@@ -1,8 +1,10 @@
 ﻿
 
+using BC.ACCOUNTING.REPORT.DataSources.MB;
 using BC.ACCOUNTING.REPORT.DataSources.POS;
 using System.ComponentModel;
 using System.Drawing;
+using static System.Double;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
 {
@@ -28,17 +30,17 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
             }
 
             var globalPayments = inventoryDto.DailyClosings
-                .SelectMany(x => x.Payments ?? new List<PaymentMethodDataSource>())
+                .SelectMany(x => x.Payments ?? new List<ClosingDetailPaymentMethodDataSource>())
                 .GroupBy(p => p.PaymentType)
                 .Select(pg =>
                 {
                     var totalValue = pg.Sum(p => Parse(p.TotalRecieved));
-                    bool isRiel = pg.Key?.ToUpper().Contains("KHR") == true || pg.Key?.Contains("៛") == true;
+                    var isRiel = pg.Key?.ToUpper().Contains("KHR") == true || pg.Key?.Contains("៛") == true;
 
-                    return new PaymentMethodDataSource
+                    return new ClosingDetailPaymentMethodDataSource
                     {
                         PaymentType = pg.Key,
-                        TotalRecieved = isRiel ? totalValue.ToString("N0") : totalValue.ToString("N2"),
+                        TotalRecieved = totalValue.ToString(),
                         CurrencySymbol = isRiel ? "៛" : "$"
                     };
                 }).ToList();
@@ -53,13 +55,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
                         {
                             var qty = ig.Sum(x => x.Qty);
                             var unitPriceStr = ig.Key.Price;
-                            double.TryParse(unitPriceStr, out var unitPrice);
-
-                            var discount = ig.Sum(x =>
-                            {
-                                double.TryParse(x.DiscountPrice, out var d);
-                                return d;
-                            });
+                            decimal.TryParse(unitPriceStr.ToString(), out var unitPrice);
+                            
+                            var discount = ig.Sum(x => x.DiscountPrice);
 
                             return new ItemDataSource
                             {
@@ -67,8 +65,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.ClosingEntry
                                 ItemDesc = ig.First().ItemDesc,
                                 Qty = qty,
                                 Price = unitPriceStr,
-                                DiscountPrice = discount.ToString("N2"),
-                                Total = (qty * unitPrice - discount).ToString("N2")
+                                DiscountPrice = discount,
+                                // 2. Ensure qty and unitPrice are also decimals so the math is consistent
+                                Total = (qty * unitPrice - discount)
                             };
                         }).ToList();
 

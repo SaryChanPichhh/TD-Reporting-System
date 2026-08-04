@@ -1,6 +1,21 @@
-﻿
-using BC.ACCOUNTING.CORE.Entities;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.PO;
+
+using System.Data.Entity.Core.Common.CommandTrees;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Exchange;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Quotation;
+using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.CodeParser;
+using Microsoft.Extensions.DependencyInjection;
+using System.Text.Json;
+using BC.ACCOUNTING.CORE.DTO.Stock;
+using BC.ACCOUNTING.REPORT.DTO.Clock;
+using BC.ACCOUNTING.REPORT.PredefinedReports.Clock.Attendance;
+using BC.ACCOUNTING.REPORT.PredefinedReports.Clock.OverTime;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
+using DevExpress.XtraReports.Parameters;
+using JsonException = System.Text.Json.JsonException;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace BC.ACCOUNTING.REPORT.Controllers
 {
@@ -21,7 +36,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         private readonly IWebHostEnvironment _env;
         public ReportsController(IOptions<ReportSettings> options,IUnitOfWork unitOfWork, ReportExportService reportExportService, IConfiguration configuration,IHttpClientFactory factory, IHttpContextAccessor httpContextAccessor, IWebHostEnvironment env)
         {
-            
             _unitOfWork = unitOfWork;
             _reportExportService = reportExportService;
             _configuration = configuration;
@@ -33,11 +47,57 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 .GetSection("ImageRoute").Get<Dictionary<string, string>>(); 
             reportPOSDirectories =  _configuration
                 .GetSection("ReportDirectories:POS_PATH").Get<Dictionary<string, string>>();
-
-            ReportHelper.ReportDirectory = _reportDirectory;
-            ReportHelper.ImageUrl = _imageRoutes;
         }
 
+        [HttpPost("clone-report")]
+        public async Task<IActionResult> CloneReportAsync([FromBody] Dictionary<string,object> data)
+        {
+            
+            data.TryGetValue("FromBranch", out var fromBranch);
+            data.TryGetValue("ToBranch", out var toBranch);
+            if (fromBranch is null || toBranch is null || string.IsNullOrEmpty(fromBranch.ToString()) ||
+                string.IsNullOrEmpty(toBranch.ToString()))
+                return BadRequest("Data Is Incorrect!!!");
+            var excute = await _unitOfWork.ReportService.CloneReportAsync(fromBranch.ToString(), toBranch.ToString());
+            if (excute) return Ok("Report Cloned Successfully");
+            return BadRequest("An Error Accured");
+
+        }
+
+
+        [HttpPost("mb-viewstock")]
+        public async Task<IActionResult> GetStockReport([FromBody] StockReqDto dto)
+        {
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var date = string.Concat(dto.FromDate.ToString("MM/dd/yyyy")," ~ ",dto.ToDate.ToString("MM/dd/yyyy"));
+            var data = await _unitOfWork.InventoryRepository.GetInventoryByDateRangeAsync(new InventoryReqDto()
+            {
+                DbCode = dto.DbCode,
+                Connection = dto.Connection,
+                FromDate = dto.FromDate,
+                ToDate = dto.ToDate
+            });
+            var report = new DailyStockA4Report(data, reportPath, date);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
 
         [HttpPost("DailySaleReport")]
         public IActionResult DailySaleReport([FromBody] InvoiceReportDto dto)
@@ -147,7 +207,10 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             var objectDataSource = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource();
             objectDataSource.DataSource = arList;
             report.DataSource = objectDataSource;
-
+            if (report.Parameters["Company_Name"] is not null)
+            {
+                report.Parameters["Company_Name"].Value = dto.CompanyName;
+            }
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -218,7 +281,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
         }
 
-        [HttpPost("mb-nosaleinvoice")]
+        [HttpPost(template:"mb-nosaleinvoice")]
         public IActionResult NOSaleInvoice([FromBody] NOSaleInvoiceDto dto)
         {
             if (!ModelState.IsValid)
@@ -226,7 +289,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
             var jsonPath = Path.Combine(_env.WebRootPath,"jsonFiles","mikes_burger.json");
             var jsonString = System.IO.File.ReadAllText(path: jsonPath);
-            List<NoAddressInfoModel>? data = new();
+            List<NoAddressInfoModel>? data = [];
             try
             {
                 var token = JToken.Parse(jsonString);
@@ -248,7 +311,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             {
                 Console.WriteLine(ex.Message);
             }
-
             if (data != null) dto.Info = data.FirstOrDefault(x => x.BranchId == dto.DbCode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -258,7 +320,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
                 var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
-
                 return File(
                     fileBytes,
                     contentType,
@@ -267,7 +328,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
-
         }
 
         [HttpPost("mb-apcustomervoucher")]
@@ -509,8 +569,42 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
         }
         [HttpPost("SaleInvoice")]
-        public IActionResult SaleInvoice([FromBody] SaleInvoiceDto dto)
+        public async Task<IActionResult> SaleInvoice([FromBody] SaleInvoiceDto dto)
         {
+            var jsonPath = Path.Combine(_env.WebRootPath, "jsonFiles", "company_use_image.json");
+            var jsonString = await System.IO.File.ReadAllTextAsync(path: jsonPath);
+            List<string>? data = [];
+            try
+            {
+                var token = JToken.Parse(jsonString);
+
+                if (token.Type == JTokenType.Array)
+                {
+                    data = token.ToObject<List<string>>();
+                }
+                else if (token.Type == JTokenType.Object && token["Branches"] != null)
+                {
+                    data = token["Branches"]?.ToObject<List<string>>();
+                }
+                else
+                {
+                    data = [];
+                }
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            var imageUrl = Path.Combine(_imageRoutes[ImagesPath.MB_STORAGE_URL.GetEnumDescription()]);
+            var itemsImage = new Dictionary<string, string>();
+            if (data != null && data.Any(x => x.Equals(dto.DbCode)))
+            {
+                var itemCodes = dto.Items.Select(x => x.ItemCode).ToList();
+                var companyCode = await _unitOfWork.Branches.GetCompanyCodeByBranchCodeAsync(dto.DbCode);
+                itemsImage = (await _unitOfWork.ItemRepository.GetItemsAsync(dto.DbCode, itemCodes)).
+                    ToDictionary(x => x.ItemCode, y => $@"{imageUrl}{companyCode}/item/{y.Image}"); //Path.Combine(imageUrl,companyCode,"/item/",y.Image)
+            }
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -518,8 +612,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            var imageUrl = Path.Combine(_imageRoutes[ImagesPath.MB_SELLER_ROUTE.GetEnumDescription()]);
-            var  report = new SaleInvoiceReport(dto, reportPath, imageUrl);
+
+            var  report = new SaleInvoiceReport(dto, reportPath, itemsImage);
             
             if (dto.ExportFormat.HasValue)
             {
@@ -533,6 +627,60 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice",report);
+
+        }
+
+        [HttpPost("quotation")]
+        public IActionResult Quotation([FromBody] QuotationDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new QuotationA5Report(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
+        [HttpPost("sale-service")]
+        public IActionResult SaleService([FromBody] QuotationDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new TDSaleServiceA4Report(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
 
         }
 
@@ -724,31 +872,119 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
-
+        
         [HttpPost("dailyclosinginventory")]
-        public IActionResult Dailyclosinginventory([FromBody] DailyClosingInventoryDto dto)
+        public IActionResult Dailyclosinginventory([FromBody] JsonElement body)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
-                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
-            if (!System.IO.File.Exists(reportPath))
-                return NotFound("Report file not found.");
-            
-            var report = new DailyClosingInventoryReport(dto, reportPath);
-            if (dto.ExportFormat.HasValue)
-            {
-                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
-                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
 
-                return File(
-                    fileBytes,
-                    contentType,
-                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
-                );
+            var jsonPath = Path.Combine(_env.WebRootPath, "jsonFiles", "dynamic_data.json");
+            var jsonString = System.IO.File.ReadAllText(path: jsonPath);
+            var data = new List<GroupByKey>();
+            var branches = new List<string>();
+            try
+            {
+                var token = JToken.Parse(jsonString);
+                if (token.Type == JTokenType.Array)
+                {
+                    data = token["Group_Categories_Only_Category_Code"]?.ToObject<List<GroupByKey>>();
+                    branches = token["BranchesWhichUsedDailyClosingByCategory"]?.ToObject<List<string>>();
+                } else if (token.Type == JTokenType.Object && token["Group_Categories_Only_Category_Code"] != null)
+                {
+                    data = token["Group_Categories_Only_Category_Code"]?.ToObject<List<GroupByKey>>();
+                    branches = token["BranchesWhichUsedDailyClosingByCategory"]?.ToObject<List<string>>();
+                }
+                else
+                {
+                    data = [];
+                }
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            var report = new XtraReport();
+            try
+            {
+                var a = branches;
+                var dto = JsonSerializer.Deserialize<DailyClosing80Dto>(body.GetRawText());
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+                var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                    reportPOSDirectories[dto.Language.ToString() ?? nameof(Languages.KM)],
+                    ReportHelper.GetReportClosingInventoryNameByCode(branches,dto.DbCode, dto.ReportName), dto.Language ?? Languages.KM);
+                if (!System.IO.File.Exists(reportPath))
+                    return NotFound("Report file not found.");
+                report = new DailyClosingInventoryReport(dto, reportPath, data?.FirstOrDefault(x => x.DbCode.Equals(dto.DbCode)));
+                if (dto.ExportFormat.HasValue)
+                {
+                    var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                    var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                    return File(
+                        fileBytes,
+                        contentType,
+                        $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                    );
+                }
+            }
+            catch (JsonException)
+            {
+                // It did not match the requirements of DailyClosing80Dto
+            }
+
+            try
+            {
+                var dto = JsonSerializer.Deserialize<DailyClosingInventoryDto>(body.GetRawText());
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+                var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                    reportPOSDirectories[dto.Language.ToString() ?? nameof(Languages.KM)],
+                    ReportHelper.GetReportClosingInventoryNameByCode(branches,dto.DbCode, dto.ReportName), dto.Language ?? Languages.KM);
+                if (!System.IO.File.Exists(reportPath))
+                    return NotFound("Report file not found.");
+                report = new DailyClosingInventoryReport(dto, reportPath, data?.FirstOrDefault(x => x.DbCode.Equals(dto.DbCode)));
+                if (dto.ExportFormat.HasValue)
+                {
+                    var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                    var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                    return File(
+                        fileBytes,
+                        contentType,
+                        $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                    );
+                }
+            }
+            catch (JsonException)
+            {
+                // It did not match the requirements of DailyClosing80Dto
+            }
+            try
+            {
+                var dto = JsonSerializer.Deserialize<DailyClosingInventoryByCategoryDto>(body.GetRawText());
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+                var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                    reportPOSDirectories[dto.Language.ToString() ?? nameof(Languages.KM)],
+                    ReportHelper.GetReportClosingInventoryNameByCode(branches,dto.DbCode, dto.ReportName), dto.Language ?? Languages.KM);
+                if (!System.IO.File.Exists(reportPath))
+                    return NotFound("Report file not found.");
+                report = new DailyClosingInventoryReport(dto, reportPath, data?.FirstOrDefault(x => x.DbCode.Equals(dto.DbCode)));
+                if (dto.ExportFormat.HasValue)
+                {
+                    var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                    var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                    return File(
+                        fileBytes,
+                        contentType,
+                        $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                    );
+                }
+            }
+            catch (JsonException)
+            {
+                // It did not match the requirements of DailyClosing80Dto
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
@@ -916,11 +1152,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         }
 
         [HttpPost("pos/saleinvoice")]
-        public IActionResult PosSaleInvoice([FromBody] POSSaleInvoiceDto dto)
+        public async Task<IActionResult> PosSaleInvoice([FromBody] POSSaleInvoiceDto dto)
         {
-            //var user = _tokenValidator    .ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
+
             var imagePathPrefix = _imageRoutes?["POSImageRoute"];
 
             if (!ModelState.IsValid)
@@ -938,9 +1172,19 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                     ImageUrl = $@"{imagePathPrefix}{x.ImageUrl}"
                 })
                 .ToList();
-            Console.WriteLine(dto);
-            var report = new POSSaleInvoiceReport(dto, reportPath);
 
+            var report = new XtraReport();
+            if (dto.Connection.Equals("MBPOS"))
+            {
+                var preset =
+                    await _unitOfWork.SettingInvoicePresetRepository.GetSettingInvoicePresentAsync(dto.DbCode,
+                        dto.Connection);
+                report = new POSSaleInvoice80Report(dto, preset, reportPath);
+            }
+            else
+            {
+                report = new POSSaleInvoiceReport(dto, reportPath);
+            }
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1443,7 +1687,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         }
 
         [HttpPost("res/dailyclosinginventory")]
-        public IActionResult RestaurantSaleInvoice([FromBody] DailyClosingInventoryDto dto)
+        public IActionResult RestaurantSaleInvoice([FromBody] RESDailyClosingInventoryDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -1548,37 +1792,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
         }
         #endregion
-        //[HttpPost("res/purchaseorder")]
-        //public IActionResult RestaurantPurchaseOrder([FromBody] RESPurchaseOrderDto dto)
-        //{
-        //    //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-        //    //if (user == null)
-        //    //    return Unauthorized();
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
-        //    var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
-        //    if (!System.IO.File.Exists(reportPath))
-        //        return NotFound("Report file not found.");
-
-        //    var report = new POSPurchaseOrderByInvoiceReport(dto, reportPath);
-        //    if (dto.ExportFormat.HasValue)
-        //    {
-        //        var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
-        //        var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
-
-        //        return File(
-        //            fileBytes,
-        //            contentType,
-        //            $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
-        //        );
-        //    }
-        //    ViewBag.HideHeader = true;
-        //    return View("Invoice", report);
-
-        //}
-        // ======================
-
         [HttpPost("salelisting")]
         public async Task<IActionResult> SaleListingAsync([FromBody] SaleListingDto dto)
         {
@@ -1590,7 +1803,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 return NotFound("Report file not found.");
             var execute = new List<SaleListingModel>();
             
-             execute = dto.HeaderRecTypes?.Count>0?
+             execute = dto.HeaderRecTypes?.Count > 0 ?
                  await  _unitOfWork.SaleListingRepository.GetSaleListingsWithListOfInvoiceTypeAsync(dto):
                  await _unitOfWork.SaleListingRepository.GetSaleListingsAsync(dto);
             var report = new SaleListingSummaryDailyReport(execute, reportPath, dto);
@@ -1905,6 +2118,90 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+        [HttpPost("mb-exchangeitem")]
+        public async Task<IActionResult> MBExchangeIems([FromBody] ExchangeItemDto dto)
+        {
+
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+
+            var report = new ExchangeItemA5Report(dto, reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
+        #endregion
+
+
+        #region Clock 
+
+        [HttpPost("clock-overtimes")]
+        public IActionResult ClockOverTimes([FromBody] OverTimeDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new OverTimeReport(dto, reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
+        [HttpPost("clock-attendances")]
+        public IActionResult ClockAttendances([FromBody] AttendanceDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new AttendanceReport(dto, reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
         #endregion
     }
 }

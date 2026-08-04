@@ -1,0 +1,21 @@
+{
+  "Group_Categories_Only_Category_Code": [
+    {
+      "DbCode": "AA235",
+      "Keys": [ "CategoryCode" ],
+      "Values": [ "6019" ]
+    },
+    {
+      "DbCode": "AA045",
+      "Keys": [
+        "CategoryCode",
+        "CategoryDesc"
+      ],
+      "Values": [ "6019" ]
+    }
+  ],
+  "BranchesWhichUsedDailyClosingByCategory": [
+    "AA235",
+    "AA276"
+  ]
+}

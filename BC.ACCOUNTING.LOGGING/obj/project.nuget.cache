@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yo/sj/3GmQI=",
+  "dgSpecHash": "Lle9NOz1c8Y=",
   "success": true,
   "projectFilePath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj",
   "expectedPackageFiles": [
@@ -12,5 +12,18 @@
     "C:\\Users\\USER\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'log4net' 3.0.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4f7c-pmjv-c25w",
+      "projectPath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj",
+      "libraryId": "log4net",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

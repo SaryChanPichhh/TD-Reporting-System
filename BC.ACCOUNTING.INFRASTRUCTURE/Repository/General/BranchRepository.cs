@@ -2,6 +2,7 @@
 using BC.ACCOUNTING.CORE.DTO.General;
 using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE.DBAccess;
+using Dapper;
 using static Dapper.SqlMapper;
 
 namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.General
@@ -51,6 +52,15 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.General
             var sql = "SELECT DB_CODE DbCode,DB_NAME DbName FROM SIDBINFO WHERE DB_STAT = 'A'";
             return (await _sqlDataAccess.LoadData<BranchDTO, dynamic>(sql, new { })).ToList();
         }
+
+        public async Task<string> GetCompanyCodeByBranchCodeAsync(string dbCode)
+        {
+            var sql = $@"SELECT T.COMPANYCODE
+                       FROM TDDBDET T WHERE T.DB_CODE = @DB_CODE";
+            var execute = await _sqlDataAccess.LoadSingleData<string, dynamic>(sql,new{DB_CODE = dbCode},connectionString:"MB");
+            return execute;
+        }
+
         #endregion
 
         #region ===[ CRUD Branch methods  ]================================================== 

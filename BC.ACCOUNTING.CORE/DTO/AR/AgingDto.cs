@@ -1,5 +1,4 @@
 ﻿using BC.ACCOUNTING.CORE.DTO.General;
-
 namespace BC.ACCOUNTING.CORE.DTO.AR
 {
     public class AgingDto:ReportDTO
@@ -22,7 +21,6 @@ namespace BC.ACCOUNTING.CORE.DTO.AR
         public string T7 { get; set; } = "%";           // nvarchar(15)
         public string T8 { get; set; } = "%";           // nvarchar(15)
         public string T9 { get; set; } = "%";           // nvarchar(15)
-
         public string? CompanyName { get; set; }
 
     }

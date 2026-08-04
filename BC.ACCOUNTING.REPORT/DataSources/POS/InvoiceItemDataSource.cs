@@ -5,7 +5,7 @@ namespace BC.ACCOUNTING.REPORT.DataSources.POS
     public class InvoiceItemDataSource
     {
         public string TransRef { get; set; }
-        public DateTime InvoicDate { get; set; }
+        public string InvoicDate { get; set; }
         public string ItemCode { get; set; }
         public string ItemDesc { get; set; }
         public decimal Price1 { get; set; }

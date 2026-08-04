@@ -9,14 +9,14 @@
         public POSPOListingReport(POSPOListingDto dto,string reportPath)
         {
             LoadLayoutFromXml(reportPath);
-            this.objectDataSource1.DataSource = dto;
+            objectDataSource1.DataSource = dto;
             if (Parameters["DecimalPrecision"] is not null)
             {
-                this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+                DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
             }
             if (Parameters["SubDecimalPrecision"] is not null)
             {
-                this.SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
+                SubDecimalPrecision.Value = dto.SubDecimalPrecision.GetEnumDescription();
             }
         }
     }

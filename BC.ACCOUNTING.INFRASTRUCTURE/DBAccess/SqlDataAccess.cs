@@ -21,11 +21,17 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "Default":
                     connectionString = _settings.GetConnectionString("DBConnection")!;
                     break;
+                case "SIDB":
+                    connectionString = _settings.GetConnectionString("DBConnection")!;
+                    break;
                 case "MB":
                     connectionString = _settings.GetConnectionString("MBConnection")!;
                     break;
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
                     break;
             }
 
@@ -52,6 +58,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
                     break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
+                    break;
             }
             using var connection = new SqlConnection(connectionString);
             if (connection.State == ConnectionState.Closed)
@@ -73,6 +82,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
                     break;
             }
 
@@ -97,6 +109,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
                     break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
+                    break;
             }
             using var connection = new SqlConnection(connectionString);
             if (connection.State == ConnectionState.Closed)
@@ -118,6 +133,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
                     break;
             }
 
@@ -145,6 +163,9 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.DBAccess
                     break;
                 case "MBDev":
                     connectionString = _settings.GetConnectionString("MBDevConnection")!;
+                    break;
+                case "MBPOS":
+                    connectionString = _settings.GetConnectionString("POSConnection")!;
                     break;
             }
 

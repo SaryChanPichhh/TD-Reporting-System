@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using BC.ACCOUNTING.REPORT.DataSources;
-using BC.ACCOUNTING.REPORT.PredefinedReports;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+﻿using BC.ACCOUNTING.REPORT.DataSources;
 
 namespace BC.ACCOUNTING.REPORT.Controllers
 {

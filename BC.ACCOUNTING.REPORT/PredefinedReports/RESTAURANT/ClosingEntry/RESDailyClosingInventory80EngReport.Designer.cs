@@ -583,7 +583,7 @@
             // 
             // objectDataSource1
             // 
-            this.objectDataSource1.DataSource = typeof(global::BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDto);
+            this.objectDataSource1.DataSource = typeof(global::BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESDailyClosingInventoryDto);
             this.objectDataSource1.Name = "objectDataSource1";
             // 
             // DetailReport1

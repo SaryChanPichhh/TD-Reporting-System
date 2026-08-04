@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BC.ACCOUNTING.APPLICATION")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e864c0b76a3ddbef93e194b85479d453c064852c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6842cbd04d1969763132dcd8cb8751de38c7cabb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BC.ACCOUNTING.APPLICATION")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BC.ACCOUNTING.APPLICATION")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

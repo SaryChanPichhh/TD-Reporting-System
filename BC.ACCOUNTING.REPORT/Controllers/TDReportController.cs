@@ -1,7 +1,5 @@
-﻿using System.Threading.Tasks;
-using BC.ACCOUNTING.APPLICATION.Interfaces.ReportList;
+﻿using BC.ACCOUNTING.APPLICATION.Interfaces.ReportList;
 using BC.ACCOUNTING.CORE.Entities;
-using Microsoft.AspNetCore.Mvc;
 
 namespace BC.ACCOUNTING.REPORT.Controllers
 {

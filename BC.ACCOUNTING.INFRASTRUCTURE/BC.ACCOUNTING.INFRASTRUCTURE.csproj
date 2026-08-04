@@ -18,4 +18,8 @@
     <ProjectReference Include="..\BC.ACCOUNTING.CORE\BC.ACCOUNTING.CORE.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\NewFolder\" />
+  </ItemGroup>
+
 </Project>

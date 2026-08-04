@@ -36,24 +36,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDat
                 SubCurrencySymbol.Value = string.IsNullOrEmpty(dto.SubCurrencySymbol) ? "៛" : dto.SubCurrencySymbol;
 
 
-            if (reportName.Equals("M01SaleListingDetailBySellerReport"))
-            {
-                
-                
-
-                //    ForEach(x =>
-                //{
-                //    var list = x.SubItems.GroupBy(group => group.ItemCost).Select(newData=>new MOSubItemDataSource
-                //    {
-                //        ItemCost = newData.Key,
-                //        ItemDesc = newData.FirstOrDefault()?.ItemDesc,
-                //        ConvFromDesc = newData.FirstOrDefault()?.ConvFromDesc,
-
-                //    }).ToList();
-                //    x.SubItems = list;
-                //});
-            }
-
             objectDataSource1.DataSource = ls;
             prm_EndDate.Value = string.IsNullOrWhiteSpace(dto.Date2) ? dto.Prd2 : dto.Date2;
             prm_StartDate.Value = string.IsNullOrWhiteSpace(dto.Date1) ? dto.Prd1 : dto.Date1;
@@ -92,7 +74,9 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.SharedReport.Sale_Listing.ByDat
                 }
             }
             catch (Exception ex)
+            
             {
+                Console.WriteLine(ex.Message);
             }
         }
 

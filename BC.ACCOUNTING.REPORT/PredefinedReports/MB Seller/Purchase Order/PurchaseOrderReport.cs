@@ -35,12 +35,17 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Purchase_Order
             Parameters["SubTotal"].Value = dto.SubTotal;
             Parameters["Total"].Value = dto.Total;
             Parameters["Supplier"].Value = dto.Supplier;
-            Parameters["Checker"].Value = dto.Checker;
+            Parameters["Checker"].Value = dto.Checker; 
             Parameters["CheckDate"].Value = dto.CheckDate;
             Parameters["TotalRiel"].Value =  dto.Total;
             Parameters["CurrencySymbol"].Value = dto.CurrencySymbol;
-            if(Parameters["SubCurrencySymbol"]!=null)
+
+            if (Parameters["SupplierInvoiceRef"] is not null)
+                Parameters["SupplierInvoiceRef"].Value = dto.SupplierInvoiceRef;
+
+            if (Parameters["SubCurrencySymbol"]!=null)
                 Parameters["SubCurrencySymbol"].Value = dto.SubCurrencySymbol;
+
             if(Parameters["DecimalPrecision"]!=null)
             {
                 Parameters["DecimalPrecision"].Value = dto.DecimalPrecision.GetEnumDescription();

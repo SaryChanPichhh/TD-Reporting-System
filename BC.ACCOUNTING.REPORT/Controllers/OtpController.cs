@@ -1,18 +1,8 @@
-﻿using Azure.Core;
-using BC.ACCOUNTING.APPLICATION.Interfaces.General;
-using BC.ACCOUNTING.REPORT.Helper;
-using BC.ACCOUNTING.REPORT.Models;
-using BC.ACCOUNTING.REPORT.Services;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.Collections.Concurrent;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BC.ACCOUNTING.REPORT.Controllers
 {

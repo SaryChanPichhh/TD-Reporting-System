@@ -1,9 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
-namespace BC.ACCOUNTING.REPORT.Controllers;
+﻿namespace BC.ACCOUNTING.REPORT.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

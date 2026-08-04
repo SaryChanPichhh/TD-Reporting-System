@@ -56,13 +56,31 @@ namespace BC.ACCOUNTING.REPORT.Helper
         public static List<FlatInvoiceRow> Flatten(SaleInvoiceDto po)
         {
             var result = new List<FlatInvoiceRow>();
-            int rowNumber = 1;
-
+            var rowNumber = 1;
+            var data = new List<FlatInvoiceRow>();
             foreach (var item in po.Items)
             {
-                bool isFirst = true;
+                var isFirst = true;
                 foreach (var uc in item.UnitConvert)
                 {
+                    if (uc.Price.Equals(0))
+                    {
+                        data.Add(new FlatInvoiceRow
+                        {
+                            RowNumber = rowNumber++.ToString(),  
+                            ItemCode = item.ItemCode,
+                            ItemDesc = item.ItemDesc,
+                            Qty = uc.Qty,
+                            Discount = item.Discount,
+                            DiscountPercent = item.DiscountPercent,
+                            UnitStock = uc.UnitStock,
+                            Price = uc.Price,
+                            Total = uc.Total
+                        });
+                        continue;
+
+                    }
+                    
                     result.Add(new FlatInvoiceRow
                     {
                         RowNumber = isFirst ? rowNumber++.ToString() : string.Empty,  // Only show row number on first line
@@ -75,11 +93,12 @@ namespace BC.ACCOUNTING.REPORT.Helper
                         Price = uc.Price,
                         Total = uc.Total
                     });
-
                     isFirst = false;
                 }
             }
 
+            
+            result.AddRange(data);
             return result;
         }
 

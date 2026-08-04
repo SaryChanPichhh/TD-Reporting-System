@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\company_use_image.json",
+      "PackagePath": "staticwebassets\\JsonFiles\\company_use_image.json"
+    },
+    {
+      "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\dynamic_data.json",
+      "PackagePath": "staticwebassets\\JsonFiles\\dynamic_data.json"
+    },
+    {
       "Id": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\mikes_burger.json",
       "PackagePath": "staticwebassets\\JsonFiles\\mikes_burger.json"
     },

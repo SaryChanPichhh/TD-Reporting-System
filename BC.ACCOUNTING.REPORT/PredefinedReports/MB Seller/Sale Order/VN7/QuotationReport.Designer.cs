@@ -872,6 +872,7 @@
             this.DetailReport.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail1});
             this.DetailReport.DataSource = this.objectDataSource2;
+            this.DetailReport.Expanded = false;
             this.DetailReport.Level = 1;
             this.DetailReport.Name = "DetailReport";
             // 

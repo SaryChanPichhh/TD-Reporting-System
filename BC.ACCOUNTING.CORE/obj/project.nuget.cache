@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "nqNXCgpMvJg=",
+  "dgSpecHash": "LMOxGe8pLUM=",
   "success": true,
   "projectFilePath": "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\dnbuilder\\1.0.1\\dnbuilder.1.0.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\5.3.0\\microsoft.codeanalysis.analyzers.5.3.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.codeanalysis.common\\5.6.0\\microsoft.codeanalysis.common.5.6.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.codeanalysis.csharp\\5.6.0\\microsoft.codeanalysis.csharp.5.6.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.collections.immutable\\10.0.1\\system.collections.immutable.10.0.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.reflection.metadata\\10.0.1\\system.reflection.metadata.10.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

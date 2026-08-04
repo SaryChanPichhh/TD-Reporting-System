@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("95d0c8e1-5826-4180-b853-58018a7a035a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BC.ACCOUNTING.REPORT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e864c0b76a3ddbef93e194b85479d453c064852c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6842cbd04d1969763132dcd8cb8751de38c7cabb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BC.ACCOUNTING.REPORT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BC.ACCOUNTING.REPORT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

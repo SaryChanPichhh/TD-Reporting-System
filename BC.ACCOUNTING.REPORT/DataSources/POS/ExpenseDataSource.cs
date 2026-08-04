@@ -2,7 +2,9 @@
 {
     public class ExpenseDataSource
     {
-        public string Key { get; set; } 
-        public string Value { get; set; } 
+        public string ExpenseDesc { get; set; }
+        public string ExpenseBy { get; set; }
+        public string ExpenseAmount { get; set; }
+        public string CurrencySymbol { get; set; } = "$";
     }
 }

@@ -14,7 +14,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
         public DateTime PrintDate { get; set; }
         [Browsable(false)]
         [Nullable(true)]
-        public Languages? Language { get; set; } = Languages.KM;
         public List<InventoryDataSource> Items { get; set; }
 
     }

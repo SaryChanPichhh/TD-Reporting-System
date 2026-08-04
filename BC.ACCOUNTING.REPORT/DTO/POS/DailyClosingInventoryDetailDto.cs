@@ -6,9 +6,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS;
 
 public record DailyClosingInventoryDetailDto : ReportDto
 {
-    [Nullable(true)]
-    [Browsable(false)]
-    public Languages? Language { get; set; } = Languages.KM;
     public DateTime PrintDate { get; set; }
     public string Expense { get; set; } = string.Empty;
     public string ExpenseRiel { get; set; } = string.Empty;
@@ -22,5 +19,6 @@ public record DailyClosingInventoryDetailDto : ReportDto
     public string Subtotal { get; set; } = string.Empty;
     public string TotalRiel { get; set; } = string.Empty;
     public string TotalDollar { get; set; } = string.Empty;
-    public List<DailyClosingDetailDataSource> DailyClosings { get; set; } = new();
+    public bool IsFiltering { get; set; } = false;
+    public List<DailyClosingDetailDataSource> DailyClosings { get; set; } = [];
 }

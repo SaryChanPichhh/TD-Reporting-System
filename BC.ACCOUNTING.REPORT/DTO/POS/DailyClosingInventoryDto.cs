@@ -1,33 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using BC.ACCOUNTING.REPORT;
-using BC.ACCOUNTING.REPORT.DataSources.POS;
-using BC.ACCOUNTING.REPORT.Helper.Enums;
+﻿using BC.ACCOUNTING.REPORT.DataSources.POS;
 using DevExpress.Xpo;
 
 namespace BC.ACCOUNTING.REPORT.DTO.POS
 {
     public record DailyClosingInventoryDto:ReportDto
     {
-        [DevExpress.Xpo.DisplayName("អ្នកលក់")] public string Seller { get; set; }
-        [DevExpress.Xpo.DisplayName("ថ្ងៃ")] public string Dates { get; set; }
-        [DevExpress.Xpo.DisplayName("ថ្ងៃព្រីន")] public DateTime PrintDate { get; set; }
-        [DevExpress.Xpo.DisplayName("រយពេល")] public string Duration { get; set; }
-        [DevExpress.Xpo.DisplayName("សរុបរង")] public string Subtotal { get; set; }
-        [DevExpress.Xpo.DisplayName("បញ្ចុះតម្លៃលើវិក្កយបត្រ")] public string Discount { get; set; }
-        [DevExpress.Xpo.DisplayName("សរុបវិក្កយបត្រ")] public string? TotalPrice { get; set; }
-        [DevExpress.Xpo.DisplayName("សរុបរៀល")] public string TotalRiel { get; set; }
-        [DevExpress.Xpo.DisplayName("សរុបដុល្លារ")] public string TotalDollar { get; set; }
-        [DevExpress.Xpo.DisplayName("ចំណាយ")] public string Expense { get; set; }
-        [DevExpress.Xpo.DisplayName("ចំណាយរៀល")] public string ExpenseRiel { get; set; }
-        [DevExpress.Xpo.DisplayName("អត្រាប្តូរប្រាក់")] public string ExchangeRate { get; set; }
-        [DevExpress.Xpo.DisplayName("ពន្ធ")] public string Vat { get; set; }
-        [DevExpress.Xpo.DisplayName("ប្រាក់អាប់")] public string CashChange { get; set; }
-        [Nullable(true)]
-        [Browsable(false)]
-        public Languages? Language { get; set; } = Languages.KM;
+        [DisplayName("អ្នកលក់")] public string Seller { get; set; }
+        [DisplayName("ថ្ងៃ")] public string Dates { get; set; }
+        [DisplayName("ថ្ងៃព្រីន")] public DateTime PrintDate { get; set; }
+        [DisplayName("រយពេល")] public string Duration { get; set; }
+        [DisplayName("សរុបរង")] public decimal Subtotal { get; set; }
+        [DisplayName("បញ្ចុះតម្លៃលើវិក្កយបត្រ")] public decimal Discount { get; set; }
+        [DisplayName("សរុបវិក្កយបត្រ")] public string? TotalPrice { get; set; }
+        [DisplayName("សរុបរៀល")] public decimal TotalRiel { get; set; }
+        [DisplayName("សរុបដុល្លារ")] public decimal TotalDollar { get; set; }
+        [DisplayName("ចំណាយ")] public decimal Expense { get; set; }
+        [DisplayName("ចំណាយរៀល")] public decimal ExpenseRiel { get; set; }
+        [DisplayName("អត្រាប្តូរប្រាក់")] public decimal ExchangeRate { get; set; } = 0;
+        [DisplayName("ពន្ធ")] public decimal Vat { get; set; } = 0;
+        [DisplayName("ប្រាក់អាប់")] public string CashChange { get; set; } = string.Empty;
         public List<ItemDataSource> Items { get; set; }  
         public List<PaymentMethodDataSource> Payments { get; set; }
+        public List<ExpenseDataSource> Expenses { get; set; }
     }
 }

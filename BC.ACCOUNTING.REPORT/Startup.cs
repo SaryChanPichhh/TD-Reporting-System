@@ -1,4 +1,3 @@
-using BC.ACCOUNTING.CORE.Entities;
 using BC.ACCOUNTING.INFRASTRUCTURE;
 using BC.ACCOUNTING.REPORT.DataSources;
 using BC.ACCOUNTING.REPORT.Helper.ExpressionFunction;
@@ -17,6 +16,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System.Net;
+using BC.ACCOUNTING.REPORT.DTO.Clock;
+using BC.ACCOUNTING.REPORT.Models.MB;
+
 namespace BC.ACCOUNTING.REPORT
 {
     public class Startup
@@ -83,16 +85,6 @@ namespace BC.ACCOUNTING.REPORT
             //    });
 
             services.AddHttpContextAccessor();
-            services.AddScoped<ReadJsonBody>(); services.AddControllers(options =>
-                {
-                    options.Filters.Add<ReadJsonBody>();
-                })
-                .AddNewtonsoftJson(options =>
-                {
-                    
-                    options.SerializerSettings.ReferenceLoopHandling =
-                        Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                });
 
             services.AddMemoryCache();
             services
@@ -191,6 +183,19 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(APSupplierInvoiceDetailDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(POSPOListingDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosingInventoryDetailDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(RESDailyClosingInventoryDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosing80Dto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ExchangeItemDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(DailyClosingInventoryByCategoryDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(QuotationDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(ClosingInventoryCategoryModel));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(AttendanceDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(AttendancePivotDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(OverTimeDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(OverTimePivotDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(StockReqDto));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(StockModel));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(SettingInvoicePresetModel));
 
             // Register Built-in and Custom Expression Functions for DevExpress Reports
 
@@ -218,7 +223,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
             app.UseDevExpressControls();
             
-            System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;
+            ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
