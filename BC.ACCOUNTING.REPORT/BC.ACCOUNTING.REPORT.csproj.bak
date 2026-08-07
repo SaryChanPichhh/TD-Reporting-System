@@ -46,7 +46,7 @@
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.117" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="26.1.*-*" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="3.0.71" />
   </ItemGroup>
@@ -99,7 +99,7 @@
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingByInvoiceEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingMovementEVReport.cs">
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingMovementEVReport.repx.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderByDateReport.cs">
@@ -174,8 +174,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="wwwroot\assets\MB\" />
 	  <Folder Include="wwwroot\assets\RES\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="wwwroot\JsonFiles\mikes_burger.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>

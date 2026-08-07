@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Um66DbM3zfvkFU3QHmPYltfZUGdPu2kC3vX815CQJdk=",
+  "Hash": "hAkBdyn3f9uqtf9ptDGVI8hEjF8BrT09qACnYjZzxvk=",
   "Source": "BC.ACCOUNTING.REPORT",
   "BasePath": "_content/BC.ACCOUNTING.REPORT",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BC.ACCOUNTING.REPORT\\wwwroot",
       "Source": "BC.ACCOUNTING.REPORT",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger.jpg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/MB/M01/mikes_burger.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\MB\\M01\\mikes_burger.jpg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/MB/M01/mikes_burger_qr.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/No_Image_Available.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\No_Image_Available.jpg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/POS/user_image/AA091/4414.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/POS/user_image/AA094/4420.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "assets/POS/user_image/AA118/SOCHEATA.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ace.bundle.css",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ace.bundle.css",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/ace.bundle.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\ace.bundle.css"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/ambiance-1.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\ambiance-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/ambiance-2.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\ambiance-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-3.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-3.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/ambiance-3.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\ambiance-3.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/chrome-1.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\chrome-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/chrome-2.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\chrome-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_day-1.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_day-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_day-2.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_day-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_night_low_color-1.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_night_low_color-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_night_low_color-2.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_night_low_color-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_night-1.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_night-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cloud9_night-2.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cloud9_night-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/clouds_midnight-1.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\clouds_midnight-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/clouds_midnight-2.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\clouds_midnight-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/clouds-1.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\clouds-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/clouds-2.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\clouds-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cobalt-1.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cobalt-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/cobalt-2.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\cobalt-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/crimson_editor-1.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\crimson_editor-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/crimson_editor-2.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\crimson_editor-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dawn-1.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dawn-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dawn-2.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dawn-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dracula-1.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dracula-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dracula-2.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dracula-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dreamweaver-1.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dreamweaver-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/dreamweaver-2.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\dreamweaver-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/eclipse-1.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\eclipse-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/eclipse-2.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\eclipse-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github_dark-1.png",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github_dark-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github_dark-2.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github_dark-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github_light_default-1.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github_light_default-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github_light_default-2.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github_light_default-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github-1.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/github-2.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\github-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gob-1.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gob-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gob-2.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gob-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_dark_hard-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_dark_hard-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gruvbox_dark_hard-1.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gruvbox_dark_hard-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gruvbox_light_hard-1.png",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gruvbox_light_hard-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gruvbox_light_hard-2.png",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gruvbox_light_hard-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gruvbox-1.png",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gruvbox-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/gruvbox-2.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\gruvbox-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/idle_fingers-1.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\idle_fingers-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/idle_fingers-2.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\idle_fingers-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/iplastic-1.png",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\iplastic-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/iplastic-2.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\iplastic-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-3.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-3.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/iplastic-3.png",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\iplastic-3.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/katzenmilch-1.png",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\katzenmilch-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/katzenmilch-2.png",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\katzenmilch-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/kr_theme-1.png",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\kr_theme-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/kr_theme-2.png",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\kr_theme-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/kuroir-1.png",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\kuroir-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/kuroir-2.png",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\kuroir-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-1.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-10.png",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-10.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-10.svg",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-10.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-11.png",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-11.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-11.svg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-11.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-12.png",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-12.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-12.svg",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-12.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-13.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-13.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-13.png",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-13.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-14.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-14.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-14.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-14.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-15.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-15.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-15.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-15.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-16.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-16.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-16.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-16.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-17.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-17.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-17.png",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-17.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-18.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-18.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-18.png",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-18.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-19.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-19.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-19.png",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-19.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-2.png",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-20.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-20.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-20.png",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-20.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-21.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-21.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-21.png",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-21.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-22.png",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-22.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-22.svg",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-22.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-23.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-23.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-23.png",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-23.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-24.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-24.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-24.png",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-24.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-25.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-25.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-25.svg",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-25.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-26.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-26.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-26.png",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-26.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-3.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-3.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-3.png",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-3.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-4.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-4.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-4.png",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-4.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-5.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-5.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-5.svg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-5.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-6.png",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-6.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-6.svg",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-6.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-7.png",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-7.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-7.svg",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-7.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-8.png",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-8.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-8.svg",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-8.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-9.png",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-9.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.svg",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.svg",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/main-9.svg",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\main-9.svg"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/merbivore_soft-1.png",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\merbivore_soft-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/merbivore_soft-2.png",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\merbivore_soft-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/merbivore-1.png",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\merbivore-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/merbivore-2.png",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\merbivore-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/mono_industrial-1.png",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\mono_industrial-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/mono_industrial-2.png",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\mono_industrial-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/monokai-1.png",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\monokai-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/monokai-2.png",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\monokai-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/one_dark-1.png",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\one_dark-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/one_dark-2.png",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\one_dark-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/pastel_on_dark-1.png",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\pastel_on_dark-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/pastel_on_dark-2.png",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\pastel_on_dark-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/solarized_dark-1.png",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\solarized_dark-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/solarized_dark-2.png",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\solarized_dark-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/solarized_light-1.png",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\solarized_light-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/solarized_light-2.png",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\solarized_light-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/sqlserver-1.png",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\sqlserver-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/sqlserver-2.png",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\sqlserver-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/terminal-1.png",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\terminal-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/terminal-2.png",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\terminal-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/textmate-1.png",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\textmate-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/textmate-2.png",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\textmate-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_blue-1.png",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_blue-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_blue-2.png",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_blue-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_bright-1.png",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_bright-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_bright-2.png",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_bright-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_eighties-1.png",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_eighties-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night_eighties-2.png",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night_eighties-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night-1.png",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow_night-2.png",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow_night-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow-1.png",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/tomorrow-2.png",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\tomorrow-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/twilight-1.png",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\twilight-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/twilight-2.png",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\twilight-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/vibrant_ink-1.png",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\vibrant_ink-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/vibrant_ink-2.png",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\vibrant_ink-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-1.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-1.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/xcode-1.png",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\xcode-1.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-2.png",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-2.png",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/ace/xcode-2.png",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ace\\xcode-2.png"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\designer.part.bundle.css",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\designer.part.bundle.css",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/designer.part.bundle.css",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\css\\designer.part.bundle.css"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\dx-reporting-skeleton-screen.css",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\dx-reporting-skeleton-screen.css",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/dx-reporting-skeleton-screen.css",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dx-reporting-skeleton-screen.css"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.ttf",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.ttf",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxicons.ttf",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxicons.ttf"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxicons.woff",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxicons.woff"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff2",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff2",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxicons.woff2",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxicons.woff2"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.ttf",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.ttf",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxiconsmaterial.ttf",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxiconsmaterial.ttf"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxiconsmaterial.woff",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxiconsmaterial.woff"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff2",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff2",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/icons/dxiconsmaterial.woff2",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icons\\dxiconsmaterial.woff2"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\thirdparty.bundle.css",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\thirdparty.bundle.css",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/thirdparty.bundle.css",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\css\\thirdparty.bundle.css"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\viewer.part.bundle.css",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\viewer.part.bundle.css",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "css/viewer.part.bundle.css",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\css\\viewer.part.bundle.css"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\designer.part.bundle.js",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\designer.part.bundle.js",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "js/designer.part.bundle.js",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\js\\designer.part.bundle.js"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\reporting.thirdparty.bundle.js",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\reporting.thirdparty.bundle.js",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "js/reporting.thirdparty.bundle.js",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\js\\reporting.thirdparty.bundle.js"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\site.thirdparty.bundle.js",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\site.thirdparty.bundle.js",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "js/site.thirdparty.bundle.js",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.thirdparty.bundle.js"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\viewer.part.bundle.js",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\viewer.part.bundle.js",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "js/viewer.part.bundle.js",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\js\\viewer.part.bundle.js"
     },
     {
-      "Identity": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\mikes_burger.json",
+      "Identity": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\mikes_burger.json",
       "SourceId": "BC.ACCOUNTING.REPORT",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
+      "ContentRoot": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\",
       "BasePath": "_content/BC.ACCOUNTING.REPORT",
       "RelativePath": "JsonFiles/mikes_burger.json",
       "AssetKind": "All",

@@ -66,11 +66,11 @@
           }
         }
       },
-      "DevExpress.AspNetCore.Common/25.2.3": {
+      "DevExpress.AspNetCore.Common/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.AspNetCore.Core": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.dll": {
@@ -83,11 +83,11 @@
           }
         }
       },
-      "DevExpress.AspNetCore.Core/25.2.3": {
+      "DevExpress.AspNetCore.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Office.Core": "[25.2.9]",
           "Microsoft.Extensions.DependencyModel": "8.0.2"
         },
         "compile": {
@@ -101,18 +101,18 @@
           }
         }
       },
-      "DevExpress.AspNetCore.Reporting/25.2.3": {
+      "DevExpress.AspNetCore.Reporting/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Common": "[25.2.3]",
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common.Services": "[25.2.3]",
-          "DevExpress.Web.Resources": "[25.2.3]"
+          "DevExpress.AspNetCore.Common": "[25.2.9]",
+          "DevExpress.AspNetCore.Core": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.DataAccess": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
+          "DevExpress.Reporting.Core": "[25.2.9]",
+          "DevExpress.Web.Reporting.Common": "[25.2.9]",
+          "DevExpress.Web.Reporting.Common.Services": "[25.2.9]",
+          "DevExpress.Web.Resources": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.dll": {
@@ -125,14 +125,14 @@
           }
         }
       },
-      "DevExpress.Charts/25.2.3": {
+      "DevExpress.Charts/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataVisualization.Core": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Charts.Core": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.DataVisualization.Core": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -146,10 +146,10 @@
           }
         }
       },
-      "DevExpress.Charts.Core/25.2.3": {
+      "DevExpress.Charts.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.Data": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Charts.v25.2.Core.dll": {
@@ -162,10 +162,10 @@
           }
         }
       },
-      "DevExpress.CodeParser/25.2.3": {
+      "DevExpress.CodeParser/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
           "System.CodeDom": "8.0.0"
         },
         "compile": {
@@ -175,32 +175,32 @@
           "lib/net8.0/DevExpress.CodeParser.v25.2.dll": {}
         }
       },
-      "DevExpress.Data/25.2.3": {
+      "DevExpress.Data/25.2.9": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
           "lib/net8.0/DevExpress.Data.v25.2.dll": {
-            "related": ".xml"
+            "related": ".dll.dfx;.xml"
           }
         },
         "runtime": {
           "lib/net8.0/DevExpress.Data.v25.2.dll": {
-            "related": ".xml"
+            "related": ".dll.dfx;.xml"
           }
         }
       },
-      "DevExpress.DataAccess/25.2.3": {
+      "DevExpress.DataAccess/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.CodeParser": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]",
+          "DevExpress.CodeParser": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Office.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
+          "DevExpress.RichEdit.Core": "[25.2.9]",
+          "DevExpress.Xpo": "[25.2.9]",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.1",
@@ -217,11 +217,11 @@
           }
         }
       },
-      "DevExpress.DataVisualization.Core/25.2.3": {
+      "DevExpress.DataVisualization.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]"
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll": {}
@@ -230,10 +230,10 @@
           "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll": {}
         }
       },
-      "DevExpress.Drawing/25.2.3": {
+      "DevExpress.Drawing/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -247,12 +247,12 @@
           }
         }
       },
-      "DevExpress.Gauges.Core/25.2.3": {
+      "DevExpress.Gauges.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -266,13 +266,13 @@
           }
         }
       },
-      "DevExpress.Office.Core/25.2.3": {
+      "DevExpress.Office.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Pdf.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -286,11 +286,11 @@
           }
         }
       },
-      "DevExpress.Pdf.Core/25.2.3": {
+      "DevExpress.Pdf.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
           "System.Drawing.Common": "8.0.15",
           "System.Security.Cryptography.Pkcs": "8.0.1"
         },
@@ -305,12 +305,12 @@
           }
         }
       },
-      "DevExpress.Pdf.Drawing/25.2.3": {
+      "DevExpress.Pdf.Drawing/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Pdf.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -324,12 +324,12 @@
           }
         }
       },
-      "DevExpress.PivotGrid.Core/25.2.3": {
+      "DevExpress.PivotGrid.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
           "System.Data.OleDb": "8.0.1",
           "System.Drawing.Common": "8.0.15"
         },
@@ -344,14 +344,15 @@
           }
         }
       },
-      "DevExpress.Printing.Core/25.2.3": {
+      "DevExpress.Printing.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Pdf.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Pdf.Core": "[25.2.9]",
+          "DevExpress.Pdf.Drawing": "[25.2.9]",
           "System.Drawing.Common": "8.0.15",
+          "System.Security.Cryptography.Xml": "8.0.4",
           "System.ServiceModel.Http": "8.1.2"
         },
         "compile": {
@@ -365,25 +366,25 @@
           }
         }
       },
-      "DevExpress.Reporting.Core/25.2.3": {
+      "DevExpress.Reporting.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[25.2.3]",
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.CodeParser": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Gauges.Core": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Pdf.Drawing": "[25.2.3]",
-          "DevExpress.PivotGrid.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Export": "[25.2.3]",
-          "DevExpress.Sparkline.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]",
+          "DevExpress.Charts": "[25.2.9]",
+          "DevExpress.Charts.Core": "[25.2.9]",
+          "DevExpress.CodeParser": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.DataAccess": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Gauges.Core": "[25.2.9]",
+          "DevExpress.Office.Core": "[25.2.9]",
+          "DevExpress.Pdf.Core": "[25.2.9]",
+          "DevExpress.Pdf.Drawing": "[25.2.9]",
+          "DevExpress.PivotGrid.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
+          "DevExpress.RichEdit.Core": "[25.2.9]",
+          "DevExpress.RichEdit.Export": "[25.2.9]",
+          "DevExpress.Sparkline.Core": "[25.2.9]",
+          "DevExpress.Xpo": "[25.2.9]",
           "System.CodeDom": "8.0.0",
           "System.Drawing.Common": "8.0.15"
         },
@@ -401,14 +402,14 @@
           "buildTransitive/net8.0/DevExpress.Reporting.Core.targets": {}
         }
       },
-      "DevExpress.RichEdit.Core/25.2.3": {
+      "DevExpress.RichEdit.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Office.Core": "[25.2.9]",
+          "DevExpress.Pdf.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -422,14 +423,14 @@
           }
         }
       },
-      "DevExpress.RichEdit.Export/25.2.3": {
+      "DevExpress.RichEdit.Export/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Office.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
+          "DevExpress.RichEdit.Core": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -439,11 +440,11 @@
           "lib/net8.0/DevExpress.RichEdit.v25.2.Export.dll": {}
         }
       },
-      "DevExpress.Sparkline.Core/25.2.3": {
+      "DevExpress.Sparkline.Core/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
@@ -457,20 +458,20 @@
           }
         }
       },
-      "DevExpress.Web.Reporting.Common/25.2.3": {
+      "DevExpress.Web.Reporting.Common/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[25.2.3]",
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Gauges.Core": "[25.2.3]",
-          "DevExpress.PivotGrid.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Sparkline.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]"
+          "DevExpress.Charts": "[25.2.9]",
+          "DevExpress.Charts.Core": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.DataAccess": "[25.2.9]",
+          "DevExpress.Drawing": "[25.2.9]",
+          "DevExpress.Gauges.Core": "[25.2.9]",
+          "DevExpress.PivotGrid.Core": "[25.2.9]",
+          "DevExpress.Printing.Core": "[25.2.9]",
+          "DevExpress.Reporting.Core": "[25.2.9]",
+          "DevExpress.Sparkline.Core": "[25.2.9]",
+          "DevExpress.Xpo": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraReports.v25.2.Web.dll": {
@@ -483,13 +484,13 @@
           }
         }
       },
-      "DevExpress.Web.Reporting.Common.Services/25.2.3": {
+      "DevExpress.Web.Reporting.Common.Services/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common": "[25.2.3]"
+          "DevExpress.Data": "[25.2.9]",
+          "DevExpress.DataAccess": "[25.2.9]",
+          "DevExpress.Reporting.Core": "[25.2.9]",
+          "DevExpress.Web.Reporting.Common": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.dll": {
@@ -502,11 +503,11 @@
           }
         }
       },
-      "DevExpress.Web.Resources/25.2.3": {
+      "DevExpress.Web.Resources/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.AspNetCore.Core": "[25.2.9]",
+          "DevExpress.Data": "[25.2.9]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Web.Resources.v25.2.dll": {}
@@ -515,12 +516,13 @@
           "lib/net8.0/DevExpress.Web.Resources.v25.2.dll": {}
         }
       },
-      "DevExpress.Xpo/25.2.3": {
+      "DevExpress.Xpo/25.2.9": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[25.2.9]",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "System.Drawing.Common": "8.0.15",
+          "System.Security.Cryptography.Xml": "8.0.4",
           "System.ServiceModel.Http": "8.1.2",
           "System.ServiceModel.NetTcp": "8.1.2"
         },
@@ -2084,7 +2086,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Security.Cryptography.Xml/8.0.2": {
+      "System.Security.Cryptography.Xml/8.0.4": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "8.0.1"
@@ -2556,53 +2558,53 @@
         "readme.md"
       ]
     },
-    "DevExpress.AspNetCore.Common/25.2.3": {
-      "sha512": "08/16rNZKqg/NXBdjreZJ+vR1uRyWhpnU+vu3E5uN5MBXaS52GzwwEvbcOnlM7S2kmc/KTsrFXEBNBnLLCoXiQ==",
+    "DevExpress.AspNetCore.Common/25.2.9": {
+      "sha512": "8kwdjLWezg3d7U0wDs4q4bC4AKNeiJEA+yAe9asoqRBQ6UxUOEGLQ8sAX1WlwjYVZAc2H0Dgy31x9BYGlp6RSA==",
       "type": "package",
-      "path": "devexpress.aspnetcore.common/25.2.3",
+      "path": "devexpress.aspnetcore.common/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.common.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.common.25.2.9.nupkg.sha512",
         "devexpress.aspnetcore.common.nuspec",
         "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.dll",
         "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.xml"
       ]
     },
-    "DevExpress.AspNetCore.Core/25.2.3": {
-      "sha512": "+6gBlkGgous3X5mJ6WfsaF40nYSDIsgshS2RBOyjOm2Vamnvm1UfxrrXV/lkQ0FaPxAenERaiVeJIBEAwQ3spQ==",
+    "DevExpress.AspNetCore.Core/25.2.9": {
+      "sha512": "VfUPc6a0zOCTdmgG80iCLxwGfXCE63F8c4XCygiYNnddZszCGSSizhk+5IJCPIZFUcpVnKumqhNSWYypeK8Hnw==",
       "type": "package",
-      "path": "devexpress.aspnetcore.core/25.2.3",
+      "path": "devexpress.aspnetcore.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.core.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.core.25.2.9.nupkg.sha512",
         "devexpress.aspnetcore.core.nuspec",
         "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.dll",
         "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.xml"
       ]
     },
-    "DevExpress.AspNetCore.Reporting/25.2.3": {
-      "sha512": "vsvEal71ZdnmkJjJZ9kjAfmpDxzq3Nyaxz+R8VJUfgySOahBG6iNczI92Io8xrR1eIiZWtyiU6rxlbDBzru7jQ==",
+    "DevExpress.AspNetCore.Reporting/25.2.9": {
+      "sha512": "/ItWMhLy7VTM+X8yXH2Skz4gyqFBxZ/MoMRRqp1U6TIr6Pyf3D/QuSejCbSjXTBFAPlEhALUs0dNVYW5WBxbwQ==",
       "type": "package",
-      "path": "devexpress.aspnetcore.reporting/25.2.3",
+      "path": "devexpress.aspnetcore.reporting/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.reporting.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.reporting.25.2.9.nupkg.sha512",
         "devexpress.aspnetcore.reporting.nuspec",
         "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.dll",
         "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.xml"
       ]
     },
-    "DevExpress.Charts/25.2.3": {
-      "sha512": "GFhbs9mSlwcWyaYljxCf4LIDvw/PgVRLKdy//l0qsx4Zd6b5brOaxhAwtnptMWL21qNoQyevetb2yUP+FfW4Dg==",
+    "DevExpress.Charts/25.2.9": {
+      "sha512": "fR/UvSny3w1fGF8lwVJ6CGwLIsrAn7enDuM9Or1fljFSyBa0cHO2rgw4vFYvj46nXXvRGz0lQ6uKc3kZUK/EGA==",
       "type": "package",
-      "path": "devexpress.charts/25.2.3",
+      "path": "devexpress.charts/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.25.2.3.nupkg.sha512",
+        "devexpress.charts.25.2.9.nupkg.sha512",
         "devexpress.charts.nuspec",
         "lib/net462/DevExpress.XtraCharts.v25.2.dll",
         "lib/net462/DevExpress.XtraCharts.v25.2.xml",
@@ -2610,14 +2612,14 @@
         "lib/net8.0/DevExpress.XtraCharts.v25.2.xml"
       ]
     },
-    "DevExpress.Charts.Core/25.2.3": {
-      "sha512": "PHBExlCI+CRvijral1wWGGVNHuBssYipKHBvX5VQrRFjJD6Dff0egIiKVy4JzxCIbOHrSssIWdJrwIOl5f/Anw==",
+    "DevExpress.Charts.Core/25.2.9": {
+      "sha512": "1ldunpp7fYevZ4RB4HjceGBvfT+ESoOus3THXedu5w2sRZJypT1OtGSkmozx/JCW9LgnjCp6XWSJjDLkY6/z+Q==",
       "type": "package",
-      "path": "devexpress.charts.core/25.2.3",
+      "path": "devexpress.charts.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.core.25.2.3.nupkg.sha512",
+        "devexpress.charts.core.25.2.9.nupkg.sha512",
         "devexpress.charts.core.nuspec",
         "lib/net462/DevExpress.Charts.v25.2.Core.dll",
         "lib/net462/DevExpress.Charts.v25.2.Core.xml",
@@ -2625,49 +2627,51 @@
         "lib/net8.0/DevExpress.Charts.v25.2.Core.xml"
       ]
     },
-    "DevExpress.CodeParser/25.2.3": {
-      "sha512": "AKvRslXmV/NQ6bxVvlhkgTATBQbClEEm1WrSe2yJtycnU2/mKevJp5XqWSI3/mr+xJWJNMf9IzdspRtpz/cDTA==",
+    "DevExpress.CodeParser/25.2.9": {
+      "sha512": "YfIkFRw/GByoOmDcJsW/Iz4y4BhIj/KIqFc26CTcXn+mUrh8o800kzHrqiww/Ci4zXOaHlm9CKpLbtHxtCiDfg==",
       "type": "package",
-      "path": "devexpress.codeparser/25.2.3",
+      "path": "devexpress.codeparser/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.codeparser.25.2.3.nupkg.sha512",
+        "devexpress.codeparser.25.2.9.nupkg.sha512",
         "devexpress.codeparser.nuspec",
         "lib/net462/DevExpress.CodeParser.v25.2.dll",
         "lib/net8.0/DevExpress.CodeParser.v25.2.dll"
       ]
     },
-    "DevExpress.Data/25.2.3": {
-      "sha512": "6cSp+DyuazbtFWsytemOUoU04GG38r/osB2TeK6hd8ujc3KG6c8XH9p8NR89aHr8iKq96ub9PoCEBw6i8sUu7w==",
+    "DevExpress.Data/25.2.9": {
+      "sha512": "dgfa3OAZEZ1J9e9N5IqNp5vXY0YO8aj0ZdlrYOPZzFfXAR5lfH1BkSkdvvxtoYV6corkbuWZ1MugNevOyWNpMQ==",
       "type": "package",
-      "path": "devexpress.data/25.2.3",
+      "path": "devexpress.data/25.2.9",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/DevExpress.Generator.dll",
         "analyzers/dotnet/DevExpress.Generator.dll.dfx",
-        "devexpress.data.25.2.3.nupkg.sha512",
+        "devexpress.data.25.2.9.nupkg.sha512",
         "devexpress.data.nuspec",
         "lib/net462/DevExpress.Data.v25.2.dll",
+        "lib/net462/DevExpress.Data.v25.2.dll.dfx",
         "lib/net462/DevExpress.Data.v25.2.xml",
         "lib/net8.0/DevExpress.Data.v25.2.dll",
+        "lib/net8.0/DevExpress.Data.v25.2.dll.dfx",
         "lib/net8.0/DevExpress.Data.v25.2.xml",
         "tools/VisualStudioToolsManifest.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "DevExpress.DataAccess/25.2.3": {
-      "sha512": "HaaGdvkcEYVgcdzJumkstkyLKFPTFQG79oM9nEm1IS0ClbdJoAas5zBAdWZlEKdTR4n+VQ9J4xRp0aZf/QCreQ==",
+    "DevExpress.DataAccess/25.2.9": {
+      "sha512": "uYlaAqcdcgRdPNNC/nQ2TupCbk1v99Lb4YHycAf/iRpR/cksvmVZ2rs9yr4BpqE0YpWAnhUJdcO15yawJJW1PA==",
       "type": "package",
-      "path": "devexpress.dataaccess/25.2.3",
+      "path": "devexpress.dataaccess/25.2.9",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.dataaccess.25.2.3.nupkg.sha512",
+        "devexpress.dataaccess.25.2.9.nupkg.sha512",
         "devexpress.dataaccess.nuspec",
         "lib/net462/DevExpress.DataAccess.v25.2.dll",
         "lib/net462/DevExpress.DataAccess.v25.2.xml",
@@ -2676,27 +2680,27 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.DataVisualization.Core/25.2.3": {
-      "sha512": "br2Xgda2PDDAoI5Xpq4kaq+t1AypLCqLgyqsq8Jj9wPJzt43GSC8wYeNpP7zJfkMxNk4CksLGO1rwgvWVUtz1Q==",
+    "DevExpress.DataVisualization.Core/25.2.9": {
+      "sha512": "taR3Kq/ouH8Ak12T80yUj7wG7xmPr958Nu4awn/9D77Wkqm6KOw9B1LJoOiRDjIdo6HKn4T93vc6QSuPE8vfzQ==",
       "type": "package",
-      "path": "devexpress.datavisualization.core/25.2.3",
+      "path": "devexpress.datavisualization.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.datavisualization.core.25.2.3.nupkg.sha512",
+        "devexpress.datavisualization.core.25.2.9.nupkg.sha512",
         "devexpress.datavisualization.core.nuspec",
         "lib/net462/DevExpress.DataVisualization.v25.2.Core.dll",
         "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll"
       ]
     },
-    "DevExpress.Drawing/25.2.3": {
-      "sha512": "b1i2+gADRU0cS1up0jlN1ZszVwD5no9yeyDhY9C1f8cRRH6nrmv2NiIaTWE2m5oNHNR7OvNhmqSmeThMHRo46g==",
+    "DevExpress.Drawing/25.2.9": {
+      "sha512": "HGhJZ8dKioslVesSrCHMIyYxgxkAiU84m2AOnMbmsC1+i/05+TCcDfprzAEwnJ7ypJWqD9jrpOsA+Kq8JQokBA==",
       "type": "package",
-      "path": "devexpress.drawing/25.2.3",
+      "path": "devexpress.drawing/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.drawing.25.2.3.nupkg.sha512",
+        "devexpress.drawing.25.2.9.nupkg.sha512",
         "devexpress.drawing.nuspec",
         "lib/net462/DevExpress.Drawing.v25.2.dll",
         "lib/net462/DevExpress.Drawing.v25.2.xml",
@@ -2704,14 +2708,14 @@
         "lib/net8.0/DevExpress.Drawing.v25.2.xml"
       ]
     },
-    "DevExpress.Gauges.Core/25.2.3": {
-      "sha512": "adFCfS3A1xv6k3Yx1RqhFWXCPpgjAj9jCh4oEaGE7aOZxoaHwgUtjTP4vba3azjaPrZDqwN+qgvM62yD7E6FAg==",
+    "DevExpress.Gauges.Core/25.2.9": {
+      "sha512": "P6X41cLFEa/CuVyo1ozUhho+xY1optXSGLOIsCFsI6jlFX9a8rW54vKMBfrw6X9XYC70Fh+LCPNk+102kE1Yxw==",
       "type": "package",
-      "path": "devexpress.gauges.core/25.2.3",
+      "path": "devexpress.gauges.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.gauges.core.25.2.3.nupkg.sha512",
+        "devexpress.gauges.core.25.2.9.nupkg.sha512",
         "devexpress.gauges.core.nuspec",
         "lib/net462/DevExpress.XtraGauges.v25.2.Core.dll",
         "lib/net462/DevExpress.XtraGauges.v25.2.Core.xml",
@@ -2719,14 +2723,14 @@
         "lib/net8.0/DevExpress.XtraGauges.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Office.Core/25.2.3": {
-      "sha512": "2EfwRJmNbGMcus8hjYEETepkaKxYuniPydMguOPGeTJ0uaCO94K+HeFXWTRpCF+1AWxRgx7QivMcUw73du4ukw==",
+    "DevExpress.Office.Core/25.2.9": {
+      "sha512": "2b/If1M9TtV9mvRMrLxNPL9ZnaL8g0qiqxc7VGa4eYv6g2xB4AAgcA0q3JUHdM7QvMpVHGXP9BVHKXtix/oRDw==",
       "type": "package",
-      "path": "devexpress.office.core/25.2.3",
+      "path": "devexpress.office.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.office.core.25.2.3.nupkg.sha512",
+        "devexpress.office.core.25.2.9.nupkg.sha512",
         "devexpress.office.core.nuspec",
         "lib/net462/DevExpress.Office.v25.2.Core.dll",
         "lib/net462/DevExpress.Office.v25.2.Core.xml",
@@ -2734,14 +2738,14 @@
         "lib/net8.0/DevExpress.Office.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Core/25.2.3": {
-      "sha512": "QWv14KDPZ0oRF/si9BOR5mr/FZNmuitY/M2cXqsqA8SLrOsREYJaosTloXHCaIsWdUL/1158EIuY08qXG4NasQ==",
+    "DevExpress.Pdf.Core/25.2.9": {
+      "sha512": "SlCajW008/IvMnOR0JRfstLECA4UfV5fjabLV+teU5FcA6VpN+UZ3B9dAGHf5jQY3Ggef/9NZpAmf01+iVNYWw==",
       "type": "package",
-      "path": "devexpress.pdf.core/25.2.3",
+      "path": "devexpress.pdf.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.core.25.2.3.nupkg.sha512",
+        "devexpress.pdf.core.25.2.9.nupkg.sha512",
         "devexpress.pdf.core.nuspec",
         "lib/net462/DevExpress.Pdf.v25.2.Core.dll",
         "lib/net462/DevExpress.Pdf.v25.2.Core.xml",
@@ -2749,14 +2753,14 @@
         "lib/net8.0/DevExpress.Pdf.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Drawing/25.2.3": {
-      "sha512": "aQNmK2Ef6SMBySGLtBQBqyn0lTHwtSM/FPVKFJ/P0Ht3oAyTm97NrbBpyqCH58HERWAgIoDNCUb9kSHaLSeKHg==",
+    "DevExpress.Pdf.Drawing/25.2.9": {
+      "sha512": "HtuOLXVHFrCh8egy2uUZfG8kdv9fbAiX2X0CobAJ23T9O7KRvtVAh87vitlZe6o/HcvoySA4aSZFFR1FU8ojfA==",
       "type": "package",
-      "path": "devexpress.pdf.drawing/25.2.3",
+      "path": "devexpress.pdf.drawing/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.drawing.25.2.3.nupkg.sha512",
+        "devexpress.pdf.drawing.25.2.9.nupkg.sha512",
         "devexpress.pdf.drawing.nuspec",
         "lib/net462/DevExpress.Pdf.v25.2.Drawing.dll",
         "lib/net462/DevExpress.Pdf.v25.2.Drawing.xml",
@@ -2764,14 +2768,14 @@
         "lib/net8.0/DevExpress.Pdf.v25.2.Drawing.xml"
       ]
     },
-    "DevExpress.PivotGrid.Core/25.2.3": {
-      "sha512": "M+FC/gR7KrW1qVOSaH1ff+onFnJwEjUUFU3KRVfGayGUyAf9tVBtMBV1XMdXZCKMmP8YqU8JU9GUnVKx8tdwiw==",
+    "DevExpress.PivotGrid.Core/25.2.9": {
+      "sha512": "KSxqdm7YmSqyBqnhCEsHckZ1JM5PtqyVdeJCuSoIMo2esuCsvfUP/TRm+XKh4ZM4XbWOTzrDxFRjZIFlA6kN6A==",
       "type": "package",
-      "path": "devexpress.pivotgrid.core/25.2.3",
+      "path": "devexpress.pivotgrid.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pivotgrid.core.25.2.3.nupkg.sha512",
+        "devexpress.pivotgrid.core.25.2.9.nupkg.sha512",
         "devexpress.pivotgrid.core.nuspec",
         "lib/net462/DevExpress.PivotGrid.v25.2.Core.dll",
         "lib/net462/DevExpress.PivotGrid.v25.2.Core.xml",
@@ -2779,14 +2783,14 @@
         "lib/net8.0/DevExpress.PivotGrid.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Printing.Core/25.2.3": {
-      "sha512": "BAUv5AbB2Ww7La93b4JA2Vg9R/8E4k3CZhn+Ynsh3u2AyqfOkIayXo8Psta/jZdX/6/8OxyIH0woiG0e/dflCQ==",
+    "DevExpress.Printing.Core/25.2.9": {
+      "sha512": "xnGEgtst5VEXMs7jqYEnnXi5J6ntyjvj9CGjG0iNDP030KiMO0vmzOdi10ZSqVwVSAJ5tKuAh0wpzi0tVIQ5BA==",
       "type": "package",
-      "path": "devexpress.printing.core/25.2.3",
+      "path": "devexpress.printing.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.printing.core.25.2.3.nupkg.sha512",
+        "devexpress.printing.core.25.2.9.nupkg.sha512",
         "devexpress.printing.core.nuspec",
         "lib/net462/DevExpress.Printing.v25.2.Core.dll",
         "lib/net462/DevExpress.Printing.v25.2.Core.xml",
@@ -2794,17 +2798,17 @@
         "lib/net8.0/DevExpress.Printing.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Reporting.Core/25.2.3": {
-      "sha512": "KH6Uq3JCUCXZYlMXFkCS0tALPC8jZRYWjCSaS39sI2dvt3vh40vrD3YAHlArVknVAIcPZmfZmuRJHjgCs1UHHg==",
+    "DevExpress.Reporting.Core/25.2.9": {
+      "sha512": "V4w5Ao0TFR8VQFD+HTgHrtcrDivIgfb4JZH2WWmhzbCxtrhqX1HnL+f84FUCiqkuRz1FgqDaFbZIfB01SouNvw==",
       "type": "package",
-      "path": "devexpress.reporting.core/25.2.3",
+      "path": "devexpress.reporting.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0/DevExpress.Reporting.Core.targets",
         "buildMultiTargeting/net8.0/DevExpress.Reporting.Core.targets",
         "buildTransitive/net8.0/DevExpress.Reporting.Core.targets",
-        "devexpress.reporting.core.25.2.3.nupkg.sha512",
+        "devexpress.reporting.core.25.2.9.nupkg.sha512",
         "devexpress.reporting.core.nuspec",
         "lib/net462/DevExpress.XtraReports.v25.2.dll",
         "lib/net462/DevExpress.XtraReports.v25.2.xml",
@@ -2812,14 +2816,14 @@
         "lib/net8.0/DevExpress.XtraReports.v25.2.xml"
       ]
     },
-    "DevExpress.RichEdit.Core/25.2.3": {
-      "sha512": "KvcGcU1/vUgVCCmHYX3fxLeK6gz8C+FDRSpRyzIe/GJwopgcI/1UmOVBIhOfV/jwhuuc4r+piC20u+oIBVAr5g==",
+    "DevExpress.RichEdit.Core/25.2.9": {
+      "sha512": "ENPIy4DJ9bwHX2kd+mZxtomd5hqhfuVGJrGFiS5xxX+76puTNFiQNCjuffs+eCJhMQlT+V7w3PUBiRqTdblqsw==",
       "type": "package",
-      "path": "devexpress.richedit.core/25.2.3",
+      "path": "devexpress.richedit.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.core.25.2.3.nupkg.sha512",
+        "devexpress.richedit.core.25.2.9.nupkg.sha512",
         "devexpress.richedit.core.nuspec",
         "lib/net462/DevExpress.RichEdit.v25.2.Core.dll",
         "lib/net462/DevExpress.RichEdit.v25.2.Core.xml",
@@ -2827,27 +2831,27 @@
         "lib/net8.0/DevExpress.RichEdit.v25.2.Core.xml"
       ]
     },
-    "DevExpress.RichEdit.Export/25.2.3": {
-      "sha512": "pNJef10nPANkHvbQHbgNsYVn89naJ2PWR5TFWMgWX9FLjfdAzs2XpeHahVmK1GUuderhQDjlo1vEkzz0aXexHw==",
+    "DevExpress.RichEdit.Export/25.2.9": {
+      "sha512": "D5+1q8wQnp4wfUhqqy7hZqtRvw/PLhsRHsRN9hWJ2ycPf+AlTvEdUb44NSg/sjtkL7QAkjJl0LjLs6obCr6DXA==",
       "type": "package",
-      "path": "devexpress.richedit.export/25.2.3",
+      "path": "devexpress.richedit.export/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.export.25.2.3.nupkg.sha512",
+        "devexpress.richedit.export.25.2.9.nupkg.sha512",
         "devexpress.richedit.export.nuspec",
         "lib/net462/DevExpress.RichEdit.v25.2.Export.dll",
         "lib/net8.0/DevExpress.RichEdit.v25.2.Export.dll"
       ]
     },
-    "DevExpress.Sparkline.Core/25.2.3": {
-      "sha512": "1PeItwB/tOf6x8Pmx/TR7TpxV5OjYZDdoQUMLh21Wwoaw6WU+2afKjSjSO2prdiid0SUj6G1/O/7wVxgUW1oSQ==",
+    "DevExpress.Sparkline.Core/25.2.9": {
+      "sha512": "G+XCZ3yuZjU78ZhhIBKjNeEfE576L6BW79/6I1V1/JA/bWBfehJCB5d84vXa6wpkP3mZa628vBBqqYoUb8uFww==",
       "type": "package",
-      "path": "devexpress.sparkline.core/25.2.3",
+      "path": "devexpress.sparkline.core/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.sparkline.core.25.2.3.nupkg.sha512",
+        "devexpress.sparkline.core.25.2.9.nupkg.sha512",
         "devexpress.sparkline.core.nuspec",
         "lib/net462/DevExpress.Sparkline.v25.2.Core.dll",
         "lib/net462/DevExpress.Sparkline.v25.2.Core.xml",
@@ -2855,14 +2859,14 @@
         "lib/net8.0/DevExpress.Sparkline.v25.2.Core.xml"
       ]
     },
-    "DevExpress.Web.Reporting.Common/25.2.3": {
-      "sha512": "QFHM6APjFVb0R3XDh198HcBhE3InWx8C0KZhhNhqc+UQqjsaf0x6OwYfn4cBdy1nmoI7cr16tpVHYQsNH/bl6w==",
+    "DevExpress.Web.Reporting.Common/25.2.9": {
+      "sha512": "1kcwjx9OHngGUcwuCpciIskVrAlHeTyUmspLHui6YrCJKJm1wRD7QX0vN5HeB1AMwp42EGYRCn5Uz31PpX7vwQ==",
       "type": "package",
-      "path": "devexpress.web.reporting.common/25.2.3",
+      "path": "devexpress.web.reporting.common/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.reporting.common.25.2.3.nupkg.sha512",
+        "devexpress.web.reporting.common.25.2.9.nupkg.sha512",
         "devexpress.web.reporting.common.nuspec",
         "lib/net462/DevExpress.XtraReports.v25.2.Web.dll",
         "lib/net462/DevExpress.XtraReports.v25.2.Web.xml",
@@ -2870,41 +2874,41 @@
         "lib/net8.0/DevExpress.XtraReports.v25.2.Web.xml"
       ]
     },
-    "DevExpress.Web.Reporting.Common.Services/25.2.3": {
-      "sha512": "zISG/HdnPsjW1UFE0jEAbNdlU26nLaBZNFhn8fsECnnH9bNvo3NQgc7wgn3dW1YVDbwi2osRAYFlaqXiBB6uzA==",
+    "DevExpress.Web.Reporting.Common.Services/25.2.9": {
+      "sha512": "9JtIcyQGjGHuUSNB5W9lk0C8oAuN6siSFbIkj/W3M78neHqGiCRMfOS30m1BW7YjNIuWrBe7FUxG6KFz2kHoog==",
       "type": "package",
-      "path": "devexpress.web.reporting.common.services/25.2.3",
+      "path": "devexpress.web.reporting.common.services/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.reporting.common.services.25.2.3.nupkg.sha512",
+        "devexpress.web.reporting.common.services.25.2.9.nupkg.sha512",
         "devexpress.web.reporting.common.services.nuspec",
         "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.dll",
         "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.xml"
       ]
     },
-    "DevExpress.Web.Resources/25.2.3": {
-      "sha512": "UH8mcZYpP+8GK+NAlnqpm6deFZe9ZgJdVXIWyGAz3W+1Sz7qgdLc2ypUBlI2yqSZQtgTAJT3VygSPb07f2iu0A==",
+    "DevExpress.Web.Resources/25.2.9": {
+      "sha512": "iNrJ0mK8YYnmQ6wZ8XOpWdsYzPQagbyNDcOBR5F2dW36kCLMY90XQqo8zHoMj+q1E9ddnASL9nRucma+5p364w==",
       "type": "package",
-      "path": "devexpress.web.resources/25.2.3",
+      "path": "devexpress.web.resources/25.2.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.resources.25.2.3.nupkg.sha512",
+        "devexpress.web.resources.25.2.9.nupkg.sha512",
         "devexpress.web.resources.nuspec",
         "lib/net462/DevExpress.Web.Resources.v25.2.dll",
         "lib/net8.0/DevExpress.Web.Resources.v25.2.dll"
       ]
     },
-    "DevExpress.Xpo/25.2.3": {
-      "sha512": "omUaKauKRi8SU0AXbBkrJ0reXMfEHZUZ+whUJSovo9GHTD+Oqcayv8L+9xNYuwDv3AYg2sGYGpj4V07QCNo9yQ==",
+    "DevExpress.Xpo/25.2.9": {
+      "sha512": "0jxlWgwUIUX5pzUFANtnokt6LtOzzZszxghLJ5kIMp2+ohEcv8m5SqzeMeEDHWMor4SPuHZCiEBTribtkivaYA==",
       "type": "package",
-      "path": "devexpress.xpo/25.2.3",
+      "path": "devexpress.xpo/25.2.9",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.xpo.25.2.3.nupkg.sha512",
+        "devexpress.xpo.25.2.9.nupkg.sha512",
         "devexpress.xpo.nuspec",
         "lib/net462/DevExpress.Xpo.v25.2.dll",
         "lib/net462/DevExpress.Xpo.v25.2.xml",
@@ -5431,10 +5435,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Xml/8.0.2": {
-      "sha512": "aDM/wm0ZGEZ6ZYJLzgqjp2FZdHbDHh6/OmpGfb7AdZ105zYmPn/83JRU2xLIbwgoNz9U1SLUTJN0v5th3qmvjA==",
+    "System.Security.Cryptography.Xml/8.0.4": {
+      "sha512": "1y+ROEEmEOACrQWqRi37GkGHOThPc31m7vezOySpPE9xXN2nTN6ndLYjylvy42aCtQq4owlYhcqaKpQKMDFKFg==",
       "type": "package",
-      "path": "system.security.cryptography.xml/8.0.2",
+      "path": "system.security.cryptography.xml/8.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5455,7 +5459,7 @@
         "lib/net8.0/System.Security.Cryptography.Xml.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.8.0.2.nupkg.sha512",
+        "system.security.cryptography.xml.8.0.4.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -5866,6 +5870,7 @@
       "BC.ACCOUNTING.LOGGING >= 1.0.0",
       "BuildBundlerMinifier >= 3.2.449",
       "DevExpress.AspNetCore.Reporting >= 25.2.*-*",
+      "DevExpress.Reporting.Core >= 25.2.*-*",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.18",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.0",
       "Microsoft.Data.Sqlite >= 6.0.0",
@@ -5881,24 +5886,27 @@
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages": {},
+    "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\BC.ACCOUNTING.REPORT.csproj",
+      "projectUniqueName": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\BC.ACCOUNTING.REPORT.csproj",
       "projectName": "BC.ACCOUNTING.REPORT",
-      "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\BC.ACCOUNTING.REPORT.csproj",
+      "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\BC.ACCOUNTING.REPORT.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\obj\\",
+      "outputPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 26.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5908,20 +5916,21 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\DevExpress 26.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
-              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
+            "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
+              "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
             },
-            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj": {
-              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj"
+            "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj": {
+              "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj"
             },
-            "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj": {
-              "projectPath": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj"
+            "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj": {
+              "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.LOGGING\\BC.ACCOUNTING.LOGGING.csproj"
             }
           }
         }
@@ -5946,6 +5955,10 @@
             "version": "[3.2.449, )"
           },
           "DevExpress.AspNetCore.Reporting": {
+            "target": "Package",
+            "version": "[25.2.*-*, )"
+          },
+          "DevExpress.Reporting.Core": {
             "target": "Package",
             "version": "[25.2.*-*, )"
           },

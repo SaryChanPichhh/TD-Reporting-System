@@ -27,6 +27,7 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
         [Nullable(true)]
         [Browsable(false)]
         public Languages? Language { get; set; } = Languages.KM;
+        [Browsable(false)] public ReportModes? ReportMode { get; set; } = ReportModes.NormalMode;
         public List<ItemDataSource> Items { get; set; }  
         public List<PaymentMethodDataSource> Payments { get; set; }
     }

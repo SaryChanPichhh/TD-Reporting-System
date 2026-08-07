@@ -95,7 +95,70 @@
     <Compile Update="PredefinedReports\MB Seller\Sale Order\Y8S\Y8SSaleInvoice80Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\China\ClosingEntry\A4DailyClosingInventoryCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\ClosingEntry\DailyClosingCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\ClosingEntry\DailyClosingInventoryCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\CustomerOrder\CustomerOrderCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\Inventory\IUInventoryAuditA4CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\Inventory\POSInventoryOutOfStockCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\PurchaseOrder\POSPurchaseOrderByDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\PurchaseOrder\POSPurchaseOrderByInvoiceCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\PurchaseOrder\POSPurchaseOrderBySupplierCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\PurchaseOrder\POSPurchaseOrderListingCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\POSSaleListingCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\POSSaleListingSummaryCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingByDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingByInvoiceCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingByInvoiceNoProfitCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingBySellerCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingMovementCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleOrder\POSSaleInvoiceA5CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleOrder\POSSaleInvoiceCNReport.repx.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleOrder\POSSaleInvoiceWithDeliveryFeeCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\SaleListing\SaleListingBySellerNoProfitCNReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerNoProfitEVReport.cs">
@@ -126,6 +189,72 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\SaleListing\SaleListingBySellerWithDeliveryFeeReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\Audit\RESSaleAuditWithProfitA4CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\ClosingEntry\RESDailyClosingInventory80CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\ClosingEntry\RESDailyClosingInventoryA4CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\Inventory\RESInventoryOutOfStockCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\PurchaseOrder\RESPurchaseOrderByDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\PurchaseOrder\RESPurchaseOrderByInvoiceCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\PurchaseOrder\RESPurchaseOrderBySupplierCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\PurchaseOrder\RESPurchaseOrderCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESBZSaleInvoiceA5CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESSaleInvoice80CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESSaleInvoiceA4CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESSaleInvoiceA4WithProfitCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESSaleReceipt58CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleInvoice\RESSaleReceipt80CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceNoProfitByDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceNoProfitBySaleCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceNoProfitCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceProfitByDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceProfitBySellerDateCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingInvoiceProfitCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingMovementCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\RESTAURANT\China\China\SaleListing\RESSaleListingSummaryCNReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\RESTAURANT\Purchase Order\RESPurchaseOrderBySupplierReport.cs">

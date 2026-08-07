@@ -39,6 +39,14 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "POSSaleInvoiceReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceWithDeliveryFeeCNReport.repx"),
+                                    (ReportModes.NormalMode, "POSSaleInvoiceCNReport.repx")
+                                }
+                            }
                         }
                     },{
                         "POSSaleInvoiceA5Report",
@@ -57,6 +65,14 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5Report.repx"),
                                     (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5CNReport.repx"),
+                                    (ReportModes.NormalMode, "POSSaleInvoiceA5CNReport.repx")
                                 }
                             },
                         }
@@ -78,6 +94,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "A4DailyClosingInventoryReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "A4DailyClosingInventoryCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -95,6 +118,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "DailyClosingInventoryReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingInventoryCNReport.repx")
                                 }
                             },
                         }
@@ -117,6 +147,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "DailyClosingReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "DailyClosingCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -136,6 +173,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "CustomerOrderReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "CustomerOrderCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -153,6 +197,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "POSSaleListingReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSSaleListingCNReport.repx")
                                 }
                             },
                         }
@@ -175,6 +226,14 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx"),
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "SaleListingByInvoiceCNReport.repx"),
+                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeCNReport.repx"),
+                                }
+                            },
                         }
                     },
                     {
@@ -192,6 +251,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "SaleListingMovementReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "SaleListingMovementCNReport.repx")
                                 }
                             },
                         }
@@ -213,6 +279,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "IUInventoryAuditA4Report.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "IUInventoryAuditA4CNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -232,6 +305,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "POSInventoryOutOfStockReport.repx")
                                 }
                             },
+                            {
+                            Languages.ZH_CN,
+                            new List<(ReportModes reportModes, string reportName)>
+                            {
+                                (ReportModes.NormalMode, "POSInventoryOutOfStockCNReport.repx")
+                            }
+                        },
                         }
                     },
                     {
@@ -244,7 +324,15 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "POSSaleListingSummaryEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSSaleListingSummaryCNReport.repx")
+                                }
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -264,7 +352,15 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 {
                                     (ReportModes.NormalMode, "SaleListingByDateEVReport.repx")
                                 }
-                            },{
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "SaleListingByDateCNReport.repx")
+                                }
+                            },
+                            {
                                 Languages.KM,
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
@@ -292,6 +388,14 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.DeliveryFeeMode , "SaleListingBySellerWithDeliveryFeeReport.repx"),
                                 }
                             },
+                            {
+                            Languages.ZH_CN,
+                            new List<(ReportModes reportModes, string reportName)>
+                            {
+                                (ReportModes.NormalMode, "SaleListingBySellerCNReport.repx"),
+                                (ReportModes.DeliveryFeeMode , "SaleListingBySellerWithDeliveryFeeCNReport.repx"),
+                            }
+                        },
                         }
                     },
                     {
@@ -309,6 +413,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "SaleListingBySellerNoProfitReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "SaleListingBySellerNoProfitCNReport.repx")
                                 }
                             },
                         }
@@ -330,6 +441,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "SaleListingByInvoiceNoProfitReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "SaleListingByInvoiceNoProfitCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -347,6 +465,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderByDateReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderByDateCNReport.repx")
                                 }
                             },
                         }
@@ -368,6 +493,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "POSPurchaseOrderByInvoiceReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderByInvoiceCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -387,6 +519,39 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                     (ReportModes.NormalMode, "POSPurchaseOrderBySupplierReport.repx")
                                 }
                             },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderBySupplierCNReport.repx")
+                                }
+                            },
+                        }
+                    },
+                    {
+                        "POSPurchaseOrderInvoiceReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderInvoiceEVRReport.repx")
+                                }
+                            },{
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderInvoiceReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderInvoiceCNReport.repx")
+                                }
+                            },
                         }
                     },
                     {
@@ -404,6 +569,13 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 new List<(ReportModes reportModes, string reportName)>
                                 {
                                     (ReportModes.NormalMode, "POSPurchaseOrderListingReport.repx")
+                                }
+                            },
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "POSPurchaseOrderListingCNReport.repx")
                                 }
                             },
                         }
@@ -427,6 +599,446 @@ namespace BC.ACCOUNTING.REPORT.Helper
                             },
                         }
                     },
+
+
+
+                    // -- Report Rest
+
+                    // Restaurant reports
+
+                    {
+                        "RESSaleListingInvoiceProfitReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingInvoiceNoProfitByDateReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitByDateCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitByDateReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingInvoiceNoProfitBySaleReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitBySaleCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitBySaleReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingInvoiceNoProfitReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingInvoiceProfitByDateReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitByDateCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitByDateReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingInvoiceProfitBySellerDateReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitBySellerDateCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingInvoiceProfitBySellerDateReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingMovementReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingMovementCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingMovementReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleListingSummaryReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingSummaryCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleListingSummaryReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESDailyClosingInventory80Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESDailyClosingInventory80CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESDailyClosingInventory80Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESDailyClosingInventoryA4Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESDailyClosingInventoryA4CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESDailyClosingInventoryA4Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESInventoryOutOfStockReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESInventoryOutOfStockCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESInventoryOutOfStockReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESPurchaseOrderByDateReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderByDateCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderByDateReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESPurchaseOrderByInvoiceReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderByInvoiceCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderByInvoiceReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESPurchaseOrderBySupplierReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderBySupplierCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderBySupplierReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESPurchaseOrderReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESPurchaseOrderReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleInvoice80Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleInvoice80CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleInvoice80Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleInvoiceA4WithProfitReport",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleInvoiceA4WithProfitCNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleInvoiceA4WithProfitReport.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleReceipt58Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleReceipt58CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleReceipt58Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleReceipt80Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleReceipt80CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleReceipt80Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESSaleAuditWithProfitA4Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ZH_CN,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleAuditWithProfitA4CNReport.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESSaleAuditWithProfitA4Report.repx")
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "RESBZSaleInvoiceA5Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "RESBZSaleInvoiceA5Report.repx")
+                                }
+                            }
+                        }
+                    },
+        {
+            "RESSaleInvoiceA4Report",
+            new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+            {
+                {
+                    Languages.ZH_CN,
+                    new List<(ReportModes reportModes, string reportName)>
+                    {
+                        (ReportModes.NormalMode, "RESSaleInvoiceA4CNReport.repx")
+                    }
+                },
+                {
+                    Languages.KM,
+                    new List<(ReportModes reportModes, string reportName)>
+                    {
+                        (ReportModes.NormalMode, "RESSaleInvoiceA4Report.repx")
+                    }
+                }
+            }
+        }
                 };
         #endregion  
 
@@ -466,12 +1078,12 @@ namespace BC.ACCOUNTING.REPORT.Helper
         public static string PrinterName = string.Empty;
         public static string ReportName = string.Empty;
         #endregion
-        public static string 
-            GetReportPath(string reportDirectory,string folderPath, string reportName,Languages language = Languages.KM,ReportModes reportMode = ReportModes.NormalMode)
+        public static string
+            GetReportPath(string reportDirectory, string folderPath, string reportName, Languages language = Languages.KM, ReportModes reportMode = ReportModes.NormalMode)
         {
             var reportVer = reports.ContainsKey(reportName) && reports[reportName].ContainsKey(language)
                                                                 && reports[reportName][language].Any(x => x.reportModes == reportMode)
-                ? reports[reportName][language].Where(x => x.reportModes.Equals(reportMode)).Select(x => x.reportName).FirstOrDefault()??string.Empty
+                ? reports[reportName][language].Where(x => x.reportModes.Equals(reportMode)).Select(x => x.reportName).FirstOrDefault() ?? string.Empty
                 : string.Empty;
             return Path.Combine(reportDirectory, folderPath, reportVer);
         }

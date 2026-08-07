@@ -2118,13 +2118,13 @@
             this.objectDataSource1});
             this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Khmer OS Siemreap", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(30F, 30F, 12.04978F, 33.64768F);
+            this.Margins = new DevExpress.Drawing.DXMargins(30F, 28F, 12.04978F, 33.64768F);
             this.PageHeightF = 1169.291F;
             this.PageWidthF = 826.7717F;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
-            this.Version = "25.2";
+            this.Version = "26.1";
             this.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.RESSaleInventoryWithProfitA4Report_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();

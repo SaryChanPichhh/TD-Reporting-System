@@ -1097,13 +1097,15 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+
+
         [HttpPost("pos/purchaseorder")]
-        public async Task<IActionResult> POSPurchaseOrder([FromBody] RESPurchaseOrderDto dto,CancellationToken _cancellationToken)
+        public async Task<IActionResult> POSPurchaseOrder([FromBody] RESPurchaseOrderDto dto, CancellationToken _cancellationToken)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var reportPath = ReportHelper.GetReportPath(_reportDirectory,
-                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
@@ -1183,55 +1185,46 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
         }
 
-
-
-
         [HttpPost("res/inventoryoutofstock")]
-        public async Task<IActionResult> RESInventoryOutOfStock([FromBody] RESItemDto dto,CancellationToken cancellationToken)
+        public async Task<IActionResult> RESInventoryOutOfStock([FromBody] RESItemDto dto, CancellationToken cancellationToken)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
-            
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
+            var report = new RESInventoryOutOfStockReport(dto, reportPath);
 
-                  var  report = new RESInventoryOutOfStockReport(dto, reportPath);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
 
-                  if (dto.ExportFormat.HasValue)
-                  {
-                      var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
-                      var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
-
-                      return File(
-                          fileBytes,
-                          contentType,
-                          $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
-                      );
-                  }
-
-                  ViewBag.HideHeader = true;
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
             return View("Invoice", report);
 
         }
+
         [HttpPost("res/saleinvoice")]
         public IActionResult RestaurantSaleInvoice([FromBody] RESSaleInvoiceDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleInvoice80Report(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1247,21 +1240,19 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
-        
+
         [HttpPost("res/salereceipt")]
         public IActionResult RESSaleReceipt([FromBody] RESSaleReceiptDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleReceipt58Report(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1277,20 +1268,19 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+
         [HttpPost("res/salelisting")]
         public IActionResult RestaurantSaleListing([FromBody] RESSaleListingInvoiceDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleListingInvoiceProfitReport(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1310,17 +1300,15 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("res/saleaudit")]
         public IActionResult CheckingInventory([FromBody] RESSaleInventoryDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleAuditWithProfitA4Report(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1336,20 +1324,19 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+
         [HttpPost("res-purchaseorder")]
         public IActionResult RestaurantPurchaseOrder([FromBody] RESPurchaseOrderDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESPurchaseOrderReport(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1369,17 +1356,15 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("res/dailyclosinginventory")]
         public IActionResult RestaurantSaleInvoice([FromBody] DailyClosingInventoryDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESDailyClosingInventory80Report(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1398,17 +1383,15 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("res/salelistingsummary")]
         public IActionResult RestaurantSaleListingSummary([FromBody] RESSaleListingSummaryDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleListingSummaryReport(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1422,22 +1405,21 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
+
         }
-        
+
         [HttpPost("res/salelistingmovement")]
         public IActionResult RestaurantSaleListingMovement([FromBody] RESSaleListingMovementDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM,
+                dto.ReportMode ?? ReportModes.NormalMode);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-
             var report = new RESSaleListingMovementReport(dto, reportPath);
+
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -1451,38 +1433,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             ViewBag.HideHeader = true;
             return View("Invoice", report);
+
         }
         #endregion
-        //[HttpPost("res/purchaseorder")]
-        //public IActionResult RestaurantPurchaseOrder([FromBody] RESPurchaseOrderDto dto)
-        //{
-        //    //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-        //    //if (user == null)
-        //    //    return Unauthorized();
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
-        //    var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
-
-        //    if (!System.IO.File.Exists(reportPath))
-        //        return NotFound("Report file not found.");
-
-        //    var report = new POSPurchaseOrderByInvoiceReport(dto, reportPath);
-        //    if (dto.ExportFormat.HasValue)
-        //    {
-        //        var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
-        //        var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
-
-        //        return File(
-        //            fileBytes,
-        //            contentType,
-        //            $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
-        //        );
-        //    }
-        //    ViewBag.HideHeader = true;
-        //    return View("Invoice", report);
-
-        //}
-        // ======================
 
         [HttpPost("salelisting")]
         public async Task<IActionResult> SaleListingAsync([FromBody] SaleListingDto dto)

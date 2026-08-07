@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
 {
-    public partial class POSSaleInvoiceA5Report : DevExpress.XtraReports.UI.XtraReport
+    public partial class POSSaleInvoiceA5CNReport : DevExpress.XtraReports.UI.XtraReport
     {
-        public POSSaleInvoiceA5Report()
+        public POSSaleInvoiceA5CNReport()
         {
             InitializeComponent();
         }

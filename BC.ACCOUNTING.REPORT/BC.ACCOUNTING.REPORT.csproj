@@ -37,6 +37,7 @@
     <Exec Command="npm install" />
   </Target>
   <ItemGroup>
+    <PackageReference Include="DevExpress.Reporting.Core" Version="25.2.*-*" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
@@ -99,7 +100,7 @@
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingByInvoiceEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
-    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingMovementEVReport.cs">
+    <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingMovementEVReport.repx.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\Purchase Order\POSPurchaseOrderByDateReport.cs">
