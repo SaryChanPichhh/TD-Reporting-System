@@ -1,587 +1,587 @@
 {
   "Files": [
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\mikes_burger.json",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\JsonFiles\\mikes_burger.json",
       "PackagePath": "staticwebassets\\JsonFiles\\mikes_burger.json"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger.jpg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger.jpg",
       "PackagePath": "staticwebassets\\assets\\MB\\M01\\mikes_burger.jpg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\MB\\M01\\mikes_burger_qr.jpg",
       "PackagePath": "staticwebassets\\assets\\MB\\M01\\mikes_burger_qr.jpg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\No_Image_Available.jpg",
       "PackagePath": "staticwebassets\\assets\\No_Image_Available.jpg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA091\\4414.jpg",
       "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA091\\4414.jpg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA094\\4420.jpg",
       "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA094\\4420.jpg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\assets\\POS\\user_image\\AA118\\SOCHEATA.png",
       "PackagePath": "staticwebassets\\assets\\POS\\user_image\\AA118\\SOCHEATA.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ace.bundle.css",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ace.bundle.css",
       "PackagePath": "staticwebassets\\css\\ace\\ace.bundle.css"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\ambiance-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\ambiance-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-3.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\ambiance-3.png",
       "PackagePath": "staticwebassets\\css\\ace\\ambiance-3.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\chrome-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\chrome-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\chrome-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_day-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_day-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_day-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_night-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_night-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_night_low_color-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cloud9_night_low_color-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\cloud9_night_low_color-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\clouds-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\clouds-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\clouds_midnight-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\clouds_midnight-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\clouds_midnight-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\cobalt-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\cobalt-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\cobalt-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\crimson_editor-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\crimson_editor-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\crimson_editor-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\dawn-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dawn-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\dawn-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\dracula-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dracula-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\dracula-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\dreamweaver-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\dreamweaver-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\dreamweaver-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\eclipse-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\eclipse-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\eclipse-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\github-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\github-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\github_dark-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_dark-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\github_dark-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\github_light_default-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\github_light_default-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\github_light_default-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\gob-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gob-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\gob-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\gruvbox-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\gruvbox-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_dark_hard-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_dark_hard-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\gruvbox_dark_hard-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\gruvbox_light_hard-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\gruvbox_light_hard-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\gruvbox_light_hard-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\idle_fingers-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\idle_fingers-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\idle_fingers-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\iplastic-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\iplastic-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-3.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\iplastic-3.png",
       "PackagePath": "staticwebassets\\css\\ace\\iplastic-3.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\katzenmilch-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\katzenmilch-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\katzenmilch-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\kr_theme-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kr_theme-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\kr_theme-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\kuroir-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\kuroir-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\kuroir-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-10.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-10.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-10.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-11.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-11.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-11.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-12.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-12.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-12.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-13.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-13.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-13.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-14.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-14.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-14.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-15.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-15.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-15.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-16.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-16.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-16.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-17.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-17.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-17.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-18.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-18.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-18.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-19.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-19.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-19.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-20.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-20.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-20.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-21.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-21.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-21.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-22.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-22.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-22.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-23.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-23.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-23.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-24.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-24.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-24.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-25.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-25.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-25.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-26.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-26.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-26.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-3.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-3.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-3.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-4.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-4.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-4.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-5.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-5.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-5.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-6.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-6.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-6.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-7.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-7.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-7.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-8.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-8.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-8.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.png",
       "PackagePath": "staticwebassets\\css\\ace\\main-9.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.svg",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\main-9.svg",
       "PackagePath": "staticwebassets\\css\\ace\\main-9.svg"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\merbivore-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\merbivore-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\merbivore_soft-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\merbivore_soft-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\merbivore_soft-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\mono_industrial-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\mono_industrial-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\mono_industrial-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\monokai-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\monokai-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\monokai-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\one_dark-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\one_dark-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\one_dark-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\pastel_on_dark-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\pastel_on_dark-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\pastel_on_dark-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\solarized_dark-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_dark-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\solarized_dark-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\solarized_light-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\solarized_light-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\solarized_light-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\sqlserver-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\sqlserver-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\sqlserver-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\terminal-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\terminal-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\terminal-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\textmate-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\textmate-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\textmate-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_blue-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_blue-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_blue-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_bright-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_bright-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_bright-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_eighties-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\tomorrow_night_eighties-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\tomorrow_night_eighties-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\twilight-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\twilight-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\twilight-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\vibrant_ink-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\vibrant_ink-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\vibrant_ink-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-1.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-1.png",
       "PackagePath": "staticwebassets\\css\\ace\\xcode-1.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-2.png",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\ace\\xcode-2.png",
       "PackagePath": "staticwebassets\\css\\ace\\xcode-2.png"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\designer.part.bundle.css",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\designer.part.bundle.css",
       "PackagePath": "staticwebassets\\css\\designer.part.bundle.css"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\dx-reporting-skeleton-screen.css",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\dx-reporting-skeleton-screen.css",
       "PackagePath": "staticwebassets\\css\\dx-reporting-skeleton-screen.css"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.ttf",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.ttf",
       "PackagePath": "staticwebassets\\css\\icons\\dxicons.ttf"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff",
       "PackagePath": "staticwebassets\\css\\icons\\dxicons.woff"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff2",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxicons.woff2",
       "PackagePath": "staticwebassets\\css\\icons\\dxicons.woff2"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.ttf",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.ttf",
       "PackagePath": "staticwebassets\\css\\icons\\dxiconsmaterial.ttf"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff",
       "PackagePath": "staticwebassets\\css\\icons\\dxiconsmaterial.woff"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff2",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\icons\\dxiconsmaterial.woff2",
       "PackagePath": "staticwebassets\\css\\icons\\dxiconsmaterial.woff2"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\thirdparty.bundle.css",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\thirdparty.bundle.css",
       "PackagePath": "staticwebassets\\css\\thirdparty.bundle.css"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\viewer.part.bundle.css",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\css\\viewer.part.bundle.css",
       "PackagePath": "staticwebassets\\css\\viewer.part.bundle.css"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\designer.part.bundle.js",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\designer.part.bundle.js",
       "PackagePath": "staticwebassets\\js\\designer.part.bundle.js"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\reporting.thirdparty.bundle.js",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\reporting.thirdparty.bundle.js",
       "PackagePath": "staticwebassets\\js\\reporting.thirdparty.bundle.js"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\site.thirdparty.bundle.js",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\site.thirdparty.bundle.js",
       "PackagePath": "staticwebassets\\js\\site.thirdparty.bundle.js"
     },
     {
-      "Id": "D:\\coder\\TD\\TD\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\viewer.part.bundle.js",
+      "Id": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.REPORT\\wwwroot\\js\\viewer.part.bundle.js",
       "PackagePath": "staticwebassets\\js\\viewer.part.bundle.js"
     },
     {

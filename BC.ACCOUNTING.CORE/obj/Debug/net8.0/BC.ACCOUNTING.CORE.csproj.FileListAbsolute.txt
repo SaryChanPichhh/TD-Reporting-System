@@ -43,3 +43,15 @@ D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUN
 D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\refint\BC.ACCOUNTING.CORE.dll
 D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
 D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\ref\BC.ACCOUNTING.CORE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\bin\Debug\net8.0\BC.ACCOUNTING.CORE.deps.json
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.GeneratedMSBuildEditorConfig.editorconfig
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.AssemblyInfoInputs.cache
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.AssemblyInfo.cs
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.csproj.CoreCompileInputs.cache
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.sourcelink.json
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\refint\BC.ACCOUNTING.CORE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\TD-Reporting-System\BC.ACCOUNTING.CORE\obj\Debug\net8.0\ref\BC.ACCOUNTING.CORE.dll
