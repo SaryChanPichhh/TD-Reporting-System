@@ -17,5 +17,15 @@
   "BranchesWhichUsedDailyClosingByCategory": [
     "AA235",
     "AA276"
+  ],
+  "BranchesWhichUsedSaleInvoiceCustomizeReport": [
+    "សុជាតា"
+  ],
+  "InitPosReportForUrgentCustReportChange": [
+    {
+      "ShopName": "សុជាតា",
+      "Key": "POSSaleInvoiceReport",
+      "Value": "AA118SaleInvoiceA5Report"
+    }
   ]
 }

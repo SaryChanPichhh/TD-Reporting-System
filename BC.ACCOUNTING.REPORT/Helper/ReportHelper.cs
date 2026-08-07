@@ -1,4 +1,6 @@
-﻿using BC.ACCOUNTING.REPORT.DTO;
+﻿using BC.ACCOUNTING.REPORT.DataSources;
+using BC.ACCOUNTING.REPORT.DataSources.POS;
+using BC.ACCOUNTING.REPORT.DTO;
 using BC.ACCOUNTING.REPORT.Helper.Enums;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
 using DevExpress.XtraReports.UI;
@@ -8,7 +10,6 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using BC.ACCOUNTING.REPORT.DataSources;
 
 namespace BC.ACCOUNTING.REPORT.Helper
 {
@@ -573,8 +574,31 @@ namespace BC.ACCOUNTING.REPORT.Helper
                                 }
                             },
                         }
+                    },  {
+                        "AA118SaleInvoiceA5Report",
+                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                        {
+                            {
+                                Languages.ENG,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
+                                }
+                            },
+                            {
+                                Languages.KM,
+                                new List<(ReportModes reportModes, string reportName)>
+                                {
+                                    (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
+                                }
+                            },
+                        }
                     },
                 };
+
+        #endregion
+
+        #region Init Sale Invoice Report For POS
 
         #endregion
 
@@ -590,6 +614,7 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 { "HK7SaleInvoiceA5PortraitReport", (14, 41, 18, 23, 27) },
                 { "HL7SaleInvoiceA5Report", (9, 28, 27, 19, 27) },
                 { "CH7SaleInvoiceA5PortraitReport", (13, 41, 18, 23, 27) },
+                { "AA118SaleInvoiceA5Report", (16, 46, 18, 23, 27) },
             };
         #endregion
 
@@ -625,18 +650,6 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 1 => true,
                 _ => false,
             };
-        }
-        public static string GrandTotalDisplayByCurrency(ExchangesCurrency currencySymbol)
-        {
-            return currencySymbol switch
-            {
-                ExchangesCurrency.KHR => "សរុបរៀល",
-                ExchangesCurrency.USD => "សរុបដុល្លារ",
-                ExchangesCurrency.BTH => "សរុបបាត",
-                ExchangesCurrency.VND => "សរុបដុង",
-                _ => "សរុបដុល្លារ",
-            };
-
         }
         public static string FormatCurrency(decimal value, DecimalFormatting format)
         {
@@ -748,5 +761,55 @@ namespace BC.ACCOUNTING.REPORT.Helper
             string reportName) =>
             ReportConfigs.TryGetValue(reportName, out var config) ? config 
                 : new ();
+
+        private static int _rowCount = 0;
+        private static bool _firstBreakDone = false;
+        private static int totalRow = 0;
+        public static void Detail_BeforePrint(object sender, CancelEventArgs e,int firstPageLimit,int firstPageFullLimit
+            , int secondPageLimit, int secondPageFullLimit )
+        {
+            var detail  = sender as DetailBand;
+            _rowCount++;
+            var threshold = _firstBreakDone ? firstPageFullLimit : firstPageLimit;
+
+            if (_rowCount >= threshold && _rowCount == totalRow)
+            {
+                detail.PageBreak = PageBreak.AfterBand;
+                _rowCount = 0;
+                _firstBreakDone = true;
+            }
+            else if (_rowCount >= firstPageFullLimit)
+            {
+                if (!_firstBreakDone)
+                {
+                    detail.PageBreak = PageBreak.AfterBand;
+                    _firstBreakDone = true;
+                    totalRow -= _rowCount;
+                    _rowCount = 0;
+                }
+            }
+            else
+            {
+                detail.PageBreak = PageBreak.None;
+            }
+            if ((_firstBreakDone && _rowCount >= secondPageLimit && totalRow == _rowCount) || (_firstBreakDone && _rowCount >= secondPageFullLimit))
+            {
+                detail.PageBreak = PageBreak.AfterBand;
+                _rowCount = 0;
+            }
+
+        }
+
+    }
+    public class AppJson
+    {
+        public List<ReportChangeSetting> InitPosReportForUrgentCustReportChange { get; set; } = [];
+    }
+
+    public class ReportChangeSetting
+    {
+        public string ShopName { get; set; } = string.Empty;
+        public string Key { get; set; } = string.Empty;
+        public string Value { get; set; } = string.Empty;
     }
 }

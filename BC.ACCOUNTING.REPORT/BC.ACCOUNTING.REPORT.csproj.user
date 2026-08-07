@@ -216,6 +216,9 @@
     <Compile Update="PredefinedReports\POS\PO\POSPOListingReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\Sale Order\AA118\AA118SaleInvoiceA5Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\Sale Order\AKA\AKASaleInvoiceA5Report.cs">
       <SubType>XtraReport</SubType>
     </Compile>

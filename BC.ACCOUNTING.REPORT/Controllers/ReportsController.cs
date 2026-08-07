@@ -1,19 +1,20 @@
 
-using System.Data.Entity.Core.Common.CommandTrees;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Exchange;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Quotation;
-using DevExpress.ClipboardSource.SpreadsheetML;
-using DevExpress.CodeParser;
-using Microsoft.Extensions.DependencyInjection;
-using System.Text.Json;
 using BC.ACCOUNTING.CORE.DTO.Stock;
 using BC.ACCOUNTING.REPORT.DTO.Clock;
 using BC.ACCOUNTING.REPORT.PredefinedReports.Clock.Attendance;
 using BC.ACCOUNTING.REPORT.PredefinedReports.Clock.OverTime;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Exchange;
+using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Quotation;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
+using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.CodeParser;
 using DevExpress.XtraReports.Parameters;
+using Microsoft.Extensions.DependencyInjection;
+using System.Data.Entity.Core.Common.CommandTrees;
+using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 using JsonException = System.Text.Json.JsonException;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -1154,15 +1155,23 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("pos/saleinvoice")]
         public async Task<IActionResult> PosSaleInvoice([FromBody] POSSaleInvoiceDto dto)
         {
+            var jsonPath = Path.Combine(_env.WebRootPath, "jsonFiles", "dynamic_data.json");
+            var jsonString = await System.IO.File.ReadAllTextAsync(path: jsonPath);
+            var data = JsonSerializer.Deserialize<AppJson>(jsonString);
+            var reportName = data.InitPosReportForUrgentCustReportChange.
+                Where(x => x.ShopName.Equals(dto.ShopName)).Select(x=>x.Value).ToList();
 
             var imagePathPrefix = _imageRoutes?["POSImageRoute"];
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+            dto.ReportName = reportName.Count.Equals(0) ? dto.ReportName : reportName.FirstOrDefault();
+
             var reportPath = ReportHelper.GetReportPath(_reportDirectory,
-                reportPOSDirectories?[dto.Language.ToString()??nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM,
+                reportPOSDirectories?[dto.Language.ToString()??nameof(Languages.KM)],
+                dto.ReportName,
+                dto.Language ?? Languages.KM,
                 dto.ReportMode ?? ReportModes.NormalMode);
-      
             
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
