@@ -1,0 +1,1040 @@
+[
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.IssuranceInvoicesReportController",
+    "Method": "ReportDivideInvoices",
+    "RelativePath": "api/issuranceinvoicesreport/reportdivideinvoices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.List\u00601[[BC.ACCOUNTING.REPORT.DataSources.ReportDividedInvoiceToDeliveriesDataSource, BC.ACCOUNTING.REPORT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "deliveryName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.IssuranceInvoicesReportController",
+    "Method": "ReportDivideInvoicesView",
+    "RelativePath": "api/issuranceinvoicesreport/reportdivideinvoicesview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.OtpController",
+    "Method": "RequestOtp",
+    "RelativePath": "api/otp/request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BC.ACCOUNTING.REPORT.Models.OtpRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.OtpController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/otp/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BC.ACCOUNTING.REPORT.Models.OtpVerifyModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "AR",
+    "RelativePath": "api/reports/ar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.AR.AgingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArCustomer",
+    "RelativePath": "api/reports/arcustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArCustomerInvoice",
+    "RelativePath": "api/reports/arcustomerinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArCustomerPaidReceipt",
+    "RelativePath": "api/reports/arcustomerpaidreceipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerPaidDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArCustomerSumInv",
+    "RelativePath": "api/reports/arcustomersuminv",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerSumInvDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArCustomerSummary",
+    "RelativePath": "api/reports/arcustomersummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ARDepreciation",
+    "RelativePath": "api/reports/ardepreciation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArDepreciationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ArPaid",
+    "RelativePath": "api/reports/arpaid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArPaidDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "CustomerOrder",
+    "RelativePath": "api/reports/customerorder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.InvoiceItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "Dailyclosing",
+    "RelativePath": "api/reports/dailyclosing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "Dailyclosinginventory",
+    "RelativePath": "api/reports/dailyclosinginventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "DailySaleReceipt",
+    "RelativePath": "api/reports/dailysalereceipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.InvoiceReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "DailySaleReport",
+    "RelativePath": "api/reports/dailysalereport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.InvoiceReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "Inventory",
+    "RelativePath": "api/reports/inventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.InventoryReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "AP",
+    "RelativePath": "api/reports/mb-ap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.AR.AgingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "APCustomerReceipt",
+    "RelativePath": "api/reports/mb-apcustomerreceipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "APCustomerVoucher",
+    "RelativePath": "api/reports/mb-apcustomervoucher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.ArCustomerPaidDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "APPaidReport",
+    "RelativePath": "api/reports/mb-appaid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.APPaidDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "APSupplierInvoiceDetail",
+    "RelativePath": "api/reports/mb-apsupplierinvoicedetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.APSupplierInvoiceDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "APSupplierSummaryReport",
+    "RelativePath": "api/reports/mb-apsuppliersummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.APCustomerSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ARCustomerInvoiceDetail",
+    "RelativePath": "api/reports/mb-arcustomerinvoicedetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.ARCustomerInvoiceDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBClosingInventory",
+    "RelativePath": "api/reports/mb-closinginventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.ClosingInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBCreditNote",
+    "RelativePath": "api/reports/mb-creditnote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.CreditNoteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBCustomerListing",
+    "RelativePath": "api/reports/mb-customerlisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.MBCustomersDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBIncomeAndExpense",
+    "RelativePath": "api/reports/mb-incomeandexpense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.IncomeExpenseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBInventoryExpired",
+    "RelativePath": "api/reports/mb-inventoryexpired",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.InventoryExpiredDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ItemsInfo",
+    "RelativePath": "api/reports/mb-itemsinfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.ItemInfoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "NOSaleInvoice",
+    "RelativePath": "api/reports/mb-nosaleinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.NOSaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBPurchaseOrder",
+    "RelativePath": "api/reports/mb-purchaseorder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESPurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBSaleInvoiceSummary",
+    "RelativePath": "api/reports/mb-saleinvoicesummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.MBSaleInvoiceSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBSaleListingCustomer",
+    "RelativePath": "api/reports/mb-salelistingcustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.MBSaleListingCustomereDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "MBSaleListingSummary",
+    "RelativePath": "api/reports/mb-salelistingsummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.MBSaleListingSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleListingForMOAsync",
+    "RelativePath": "api/reports/mo-salelisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.SaleListing.SaleListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POListing",
+    "RelativePath": "api/reports/polisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POListingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSInventoryOutOfStock",
+    "RelativePath": "api/reports/pos-inventoryoutofstock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSInventoryAudit",
+    "RelativePath": "api/reports/pos/inventory-audit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.InventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSIUInventoryAudit",
+    "RelativePath": "api/reports/pos/inventoryaudit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.InventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSPOListing",
+    "RelativePath": "api/reports/pos/pospolisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSPOListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSPurchaseOrder",
+    "RelativePath": "api/reports/pos/purchaseorder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESPurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "PosSaleInvoice",
+    "RelativePath": "api/reports/pos/saleinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "PosSaleListing",
+    "RelativePath": "api/reports/pos/salelisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSaleListingByInvoiceDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "isShowed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "PosSaleListingMovement",
+    "RelativePath": "api/reports/pos/salelistingmovement",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSaleListingMovementDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleListingSummary",
+    "RelativePath": "api/reports/pos/salelistingsummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSalelistingSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleListingView",
+    "RelativePath": "api/reports/pos/salelistingsummerybydate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.POSSaleListingReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "PurchaseOrder",
+    "RelativePath": "api/reports/purchaseorder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.PurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RESBZSaleInvoice",
+    "RelativePath": "api/reports/res-bzsaleinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESBZSaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantPurchaseOrder",
+    "RelativePath": "api/reports/res-purchaseorder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESPurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantSaleInvoice",
+    "RelativePath": "api/reports/res/dailyclosinginventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RESInventoryOutOfStock",
+    "RelativePath": "api/reports/res/inventoryoutofstock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "CheckingInventory",
+    "RelativePath": "api/reports/res/saleaudit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantSaleInvoice",
+    "RelativePath": "api/reports/res/saleinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantSaleListing",
+    "RelativePath": "api/reports/res/salelisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleListingInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantSaleListingMovement",
+    "RelativePath": "api/reports/res/salelistingmovement",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleListingMovementDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RestaurantSaleListingSummary",
+    "RelativePath": "api/reports/res/salelistingsummary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleListingSummaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "RESSaleReceipt",
+    "RelativePath": "api/reports/res/salereceipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.RESTAURANT.RESSaleReceiptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleInvoice",
+    "RelativePath": "api/reports/saleinvoice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.SaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleInvoiceVn7",
+    "RelativePath": "api/reports/saleinvoice-vn7",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.SaleInvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleListingAsync",
+    "RelativePath": "api/reports/salelisting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.SaleListing.SaleListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "SaleReport",
+    "RelativePath": "api/reports/salereport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportStorageApiController",
+    "Method": "DownloadReport",
+    "RelativePath": "api/reportstorageapi/download/{reportName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportStorageApiController",
+    "Method": "UploadReport",
+    "RelativePath": "api/reportstorageapi/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
