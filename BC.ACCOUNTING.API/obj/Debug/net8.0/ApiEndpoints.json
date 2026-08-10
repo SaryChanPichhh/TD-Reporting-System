@@ -1,0 +1,126 @@
+[
+  {
+    "ContainingType": "BC.ACCOUNTING.API.Controllers.BranchesController",
+    "Method": "GetAllBranchesAsync",
+    "RelativePath": "api/branches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BC.ACCOUNTING.API.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[BC.ACCOUNTING.CORE.Entities.Branch, BC.ACCOUNTING.CORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.API.Controllers.BranchesController",
+    "Method": "CreateBranchesAsync",
+    "RelativePath": "api/branches",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branch",
+        "Type": "BC.ACCOUNTING.CORE.Entities.Branch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BC.ACCOUNTING.API.Models.ApiResponse\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.API.Controllers.BranchesController",
+    "Method": "GetLoginBranch",
+    "RelativePath": "api/branches/dbcodes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "appCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BC.ACCOUNTING.API.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[BC.ACCOUNTING.CORE.DTO.General.BranchDTO, BC.ACCOUNTING.CORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.API.Controllers.UsersController",
+    "Method": "GetBcUserCredentialAsync",
+    "RelativePath": "api/users/credentials",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "BC.ACCOUNTING.CORE.DTO.Login.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BC.ACCOUNTING.API.Models.ApiResponse\u00601[[BC.ACCOUNTING.CORE.DTO.Login.LoginResponseDTO, BC.ACCOUNTING.CORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "weatherforecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BC.ACCOUNTING.API.WeatherForecast, BC.ACCOUNTING.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

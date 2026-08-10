@@ -1,0 +1,44 @@
+{
+  "Branches": [
+    {
+      "BranchId": "M01",
+      "BranchName": "MIKESCAMKO BY B.MEAN",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "#81 ផ្លូវ អង្គរបុរី ខណ្ឌឬស្សីកែវ កាំកូស៊ីធី រាជធានីភ្នំពេញ",
+      "Address": "#81, Angkor Burey Blvd, Khan RusseyKao, Location,in Camko city Community Phnom Penh, Cambodia",
+      "Phone_1": "069 92 99 71",
+      "Phone_2": ""
+    },
+    {
+      "BranchId": "M08",
+      "BranchName": "នាងអនម្ហូបខ្មែរគ្រូសារបាត់ដំបង",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "#81 ផ្លូវ អង្គរបុរី ខណ្ឌឬស្សីកែវ កាំកូស៊ីធី រាជធានីភ្នំពេញ",
+      "Address": "Camko City Community behind Mike's Burger House, SM-C-113 Angkor Borey Blvd,Sangkat Toul Sangke 2,Khan Russey Keo,Phnom Penh, Cambodia",
+      "Phone_1": "069 94 94 71",
+      "Phone_2": "077 60 90 71"
+    },
+    {
+      "BranchId": "M09",
+      "BranchName": "នាងអនម្ហូបខ្មែរគ្រូសារបាត់ដំបង",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "#81 ផ្លូវ អង្គរបុរី ខណ្ឌឬស្សីកែវ កាំកូស៊ីធី រាជធានីភ្នំពេញ",
+      "Address": "Camko City Community behind Mike's Burger House, SM-B-102 Angkor Borey Blvd,Sangkat Toul Sangke 2,Khan Russey Keo,Phnom Penh, Cambodia",
+      "Phone_1": "069 94 94 71",
+      "Phone_2": "099 94 94 71"
+    },
+    {
+      "BranchId": "M10",
+      "BranchName": "នាងអនម្ហូបខ្មែរគ្រូសារបាត់ដំបង",
+      "Image": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger.jpg",
+      "QrCode": "https://accreport.tonairedigital.net/assets/mb/m01/mikes_burger_qr.jpg",
+      "Address_KH": "#81 ផ្លូវ អង្គរបុរី ខណ្ឌឬស្សីកែវ កាំកូស៊ីធី រាជធានីភ្នំពេញ",
+      "Address": "Hun Sen Bvld, 60M Road, Mean Chey Avenue Mall, Toul Roka3,Chak Angrekroam, Phnom Penh, Cambodia",
+      "Phone_1": "069 71 06 71",
+      "Phone_2": "070 60 90 71"
+    }
+  ]
+}

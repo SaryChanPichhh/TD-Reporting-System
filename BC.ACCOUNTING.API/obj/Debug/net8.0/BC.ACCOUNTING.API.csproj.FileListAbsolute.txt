@@ -1,0 +1,427 @@
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.Development.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.exe
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.deps.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.runtimeconfig.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Core.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Dapper.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\log4net.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Scalar.AspNetCore.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.ClientModel.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.AssemblyReference.cache
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfoInputs.cache
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfo.cs
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.CoreCompileInputs.cache
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.BC.ACCOUNTING.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BC.ACCOUNTING.API.props
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BC.ACCOUNTING.API.props
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BC.ACCOUNTING.API.props
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\scopedcss\bundle\BC.ACCOUNTING.API.styles.css
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOU.6DD9F11D.Up2Date
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\refint\BC.ACCOUNTING.API.dll
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.genruntimeconfig.cache
+D:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\ref\BC.ACCOUNTING.API.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.Development.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.exe
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.deps.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.runtimeconfig.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Core.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Identity.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Dapper.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\log4net.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Scalar.AspNetCore.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.ClientModel.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.AssemblyReference.cache
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfoInputs.cache
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfo.cs
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.CoreCompileInputs.cache
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cs
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.build.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.development.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.BC.ACCOUNTING.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BC.ACCOUNTING.API.props
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BC.ACCOUNTING.API.props
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BC.ACCOUNTING.API.props
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\scopedcss\bundle\BC.ACCOUNTING.API.styles.css
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOU.6DD9F11D.Up2Date
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\refint\BC.ACCOUNTING.API.dll
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.pdb
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.genruntimeconfig.cache
+E:\Project BC\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\ref\BC.ACCOUNTING.API.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.Development.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.exe
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.deps.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.runtimeconfig.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Core.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Dapper.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\log4net.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Scalar.AspNetCore.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.ClientModel.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.AssemblyReference.cache
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfoInputs.cache
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfo.cs
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.CoreCompileInputs.cache
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cs
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cache
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.BC.ACCOUNTING.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BC.ACCOUNTING.API.props
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BC.ACCOUNTING.API.props
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BC.ACCOUNTING.API.props
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\scopedcss\bundle\BC.ACCOUNTING.API.styles.css
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOU.6DD9F11D.Up2Date
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\refint\BC.ACCOUNTING.API.dll
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.genruntimeconfig.cache
+D:\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.SYSTEM\BC.ACCOUNTING.API\obj\Debug\net8.0\ref\BC.ACCOUNTING.API.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.Development.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.exe
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.deps.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.runtimeconfig.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Core.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Dapper.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\log4net.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Scalar.AspNetCore.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.ClientModel.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.AssemblyReference.cache
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfoInputs.cache
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfo.cs
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.CoreCompileInputs.cache
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cs
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cache
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.sourcelink.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.BC.ACCOUNTING.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BC.ACCOUNTING.API.props
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BC.ACCOUNTING.API.props
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BC.ACCOUNTING.API.props
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\scopedcss\bundle\BC.ACCOUNTING.API.styles.css
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOU.6DD9F11D.Up2Date
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\refint\BC.ACCOUNTING.API.dll
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.genruntimeconfig.cache
+D:\coder\TD\TD\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\ref\BC.ACCOUNTING.API.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.Development.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\appsettings.BC.ACCOUNTING.API.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.exe
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.deps.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.runtimeconfig.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Core.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Dapper.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\log4net.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Scalar.AspNetCore.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.ClientModel.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.APPLICATION.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.INFRASTRUCTURE.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.LOGGING.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\bin\Debug\net8.0\BC.ACCOUNTING.CORE.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.AssemblyReference.cache
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfoInputs.cache
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.AssemblyInfo.cs
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.csproj.CoreCompileInputs.cache
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cs
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.MvcApplicationPartsAssemblyInfo.cache
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.sourcelink.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.BC.ACCOUNTING.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BC.ACCOUNTING.API.props
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BC.ACCOUNTING.API.props
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BC.ACCOUNTING.API.props
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\scopedcss\bundle\BC.ACCOUNTING.API.styles.css
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOU.6DD9F11D.Up2Date
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\refint\BC.ACCOUNTING.API.dll
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.pdb
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\BC.ACCOUNTING.API.genruntimeconfig.cache
+D:\coder\TD-REPORT\TD-Reporting-System\BC.ACCOUNTING.API\obj\Debug\net8.0\ref\BC.ACCOUNTING.API.dll
