@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qbCc2l6ithg=",
+  "dgSpecHash": "wOrYuH31KYc=",
   "success": true,
-  "projectFilePath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
+  "projectFilePath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -37,7 +37,36 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             ReportHelper.ImageUrl = _imageRoutes;
         }
 
+        [HttpPost("pos-dailyclosingdetail")]
+        public IActionResult POSClosingInventoryDetailReport([FromBody] DailyClosingInventoryDetailDto dto)
+        {
 
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportPOSDirectories[dto.Language.ToString() ?? Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
+
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var report = new DailyClosingInventoryDetailA4Report(dto, reportPath);
+
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+    
         [HttpPost("DailySaleReport")]
         public IActionResult DailySaleReport([FromBody] InvoiceReportDto dto)
         {

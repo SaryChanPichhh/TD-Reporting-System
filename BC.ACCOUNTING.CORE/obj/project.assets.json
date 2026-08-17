@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
+      "projectUniqueName": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
       "projectName": "BC.ACCOUNTING.CORE",
-      "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
+      "projectPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\obj\\",
+      "outputPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",

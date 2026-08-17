@@ -608,6 +608,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSClosingInventoryDetailReport",
+    "RelativePath": "api/reports/pos-dailyclosingdetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.POS.DailyClosingInventoryDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "POSInventoryOutOfStock",
     "RelativePath": "api/reports/pos-inventoryoutofstock",
     "HttpMethod": "POST",

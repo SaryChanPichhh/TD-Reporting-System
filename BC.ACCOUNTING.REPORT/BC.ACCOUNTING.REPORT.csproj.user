@@ -104,6 +104,12 @@
     <Compile Update="PredefinedReports\POS\China\ClosingEntry\DailyClosingInventoryCNReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\POS\China\ClosingEntry\DailyClosingInventoryDetail80mmCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\ClosingEntry\DailyClosingInventoryDetailA4CNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\POS\China\CustomerOrder\CustomerOrderCNReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
@@ -111,6 +117,9 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\China\Inventory\POSInventoryOutOfStockCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\China\PO\POSPOListingCNReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\China\PurchaseOrder\POSPurchaseOrderByDateCNReport.cs">
@@ -153,6 +162,21 @@
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\China\SaleOrder\POSSaleInvoiceWithDeliveryFeeCNReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetail80mmReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ClosingEntry\DailyClosingInventoryDetailA4Report.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\ClosingEntry\DailyClosingInventoryDetail80mmEVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\ClosingEntry\DailyClosingInventoryDetailA4EVReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="PredefinedReports\POS\ENGVer\PO\POSPOListingEVReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
     <Compile Update="PredefinedReports\POS\ENGVer\SaleListing\SaleListingBySellerEVReport.cs">

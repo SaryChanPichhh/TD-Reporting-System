@@ -1952,11 +1952,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
+      "projectUniqueName": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
       "projectName": "BC.ACCOUNTING.INFRASTRUCTURE",
-      "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
+      "projectPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\BC.ACCOUNTING.INFRASTRUCTURE.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\obj\\",
+      "outputPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.INFRASTRUCTURE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
@@ -1983,11 +1983,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
-              "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
+            "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
+              "projectPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj"
             },
-            "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj": {
-              "projectPath": "D:\\coder\\TD-REPORT\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj"
+            "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj": {
+              "projectPath": "D:\\coder\\JAVA\\TD-Reporting-System\\TD-Reporting-System\\BC.ACCOUNTING.CORE\\BC.ACCOUNTING.CORE.csproj"
             }
           }
         }
