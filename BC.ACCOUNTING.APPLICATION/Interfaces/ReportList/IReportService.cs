@@ -11,5 +11,6 @@ namespace BC.ACCOUNTING.APPLICATION.Interfaces.ReportList
     {
         Task<bool> CloneReportAsync(string fromBranch,string toBranch);
         Task<bool> DeleteReportAsync(string branch);
+         
     }
 }

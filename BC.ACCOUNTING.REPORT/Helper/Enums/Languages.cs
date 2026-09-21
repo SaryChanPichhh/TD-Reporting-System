@@ -10,3 +10,4 @@ namespace BC.ACCOUNTING.REPORT.Helper.Enums
         [Description("English (United States)")] ENG = 2
     }
 }
+    

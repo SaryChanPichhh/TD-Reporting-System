@@ -10,7 +10,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.General
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public UnitOfWork(IBranchRepository branches, IUserRepository users, IAccountRecievableService accountRecievables, ISaleListingRepository saleListingRepository, IItemRepository itemRepository, IInventoryRepository inventoryRepository, IReportService reportService, ISettingInvoicePresetRepository settingInvoicePresetRepository)
+        public UnitOfWork(IBranchRepository branches, IUserRepository users, IAccountRecievableService accountRecievables, ISaleListingRepository saleListingRepository, IItemRepository itemRepository, IInventoryRepository inventoryRepository, IReportService reportService, ISettingInvoicePresetRepository settingInvoicePresetRepository, IReportManagementRepository reportManagementRepository)
         {
             Branches = branches;
             Users = users;
@@ -20,6 +20,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.General
             InventoryRepository = inventoryRepository;
             ReportService = reportService;
             SettingInvoicePresetRepository = settingInvoicePresetRepository;
+            ReportManagementRepository = reportManagementRepository;
         }
         public IBranchRepository Branches { get; set; }
         public IAccountRecievableService AccountRecievables { get; }
@@ -30,5 +31,6 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.General
         public IReportService ReportService { get; set; }
 
         public ISettingInvoicePresetRepository SettingInvoicePresetRepository { set; get; }
+        public IReportManagementRepository ReportManagementRepository { get; }
     }
 }

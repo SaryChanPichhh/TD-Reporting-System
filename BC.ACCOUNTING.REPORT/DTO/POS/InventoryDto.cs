@@ -12,8 +12,8 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
         public string? ShopName { get; set; }
         public string? ShopImage { get; set; }
         public DateTime PrintDate { get; set; }
-        [Browsable(false)]
-        [Nullable(true)]
+        [Browsable(false)] [Nullable(true)] public bool IsShowCost { get; set; } = true;
+        [Browsable(false)] [Nullable(true)] public bool IsShowSalePrice { get; set; } = false;
         public List<InventoryDataSource> Items { get; set; }
 
     }

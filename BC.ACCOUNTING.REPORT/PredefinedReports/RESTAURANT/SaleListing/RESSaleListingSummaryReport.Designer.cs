@@ -120,7 +120,7 @@
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(807.0005F, 25F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(806.7717F, 25F);
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseFont = false;
@@ -222,7 +222,7 @@
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
             this.xrTableCell25.Text = "ចំនេញសរុប";
-            this.xrTableCell25.Weight = 1.0577602614472292D;
+            this.xrTableCell25.Weight = 1.055626580873261D;
             // 
             // ReportHeader
             // 
@@ -248,7 +248,7 @@
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(807.0001F, 30.60893F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(806.7717F, 30.60893F);
             this.xrTable1.StylePriority.UseBackColor = false;
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
@@ -324,7 +324,7 @@
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Text = "ចំណេញសរុប";
-            this.xrTableCell7.Weight = 1.1535194285053472D;
+            this.xrTableCell7.Weight = 1.151196302731097D;
             // 
             // xrTable5
             // 
@@ -475,7 +475,7 @@
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(807.0005F, 25F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(806.7717F, 25F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseFont = false;
@@ -579,7 +579,7 @@
             xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell15.Summary = xrSummary7;
             this.xrTableCell15.Text = "ចំនេញសរុប";
-            this.xrTableCell15.Weight = 1.011862788417601D;
+            this.xrTableCell15.Weight = 1.0098216910466875D;
             // 
             // objectDataSource1
             // 
@@ -627,7 +627,7 @@
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();

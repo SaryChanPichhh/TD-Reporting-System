@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -18,8 +18,6 @@
     <ProjectReference Include="..\BC.ACCOUNTING.CORE\BC.ACCOUNTING.CORE.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\NewFolder\" />
-  </ItemGroup>
+
 
 </Project>

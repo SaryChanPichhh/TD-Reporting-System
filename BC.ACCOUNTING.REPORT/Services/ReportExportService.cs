@@ -24,7 +24,11 @@ public class ReportExportService
                 report.ExportToDocx(stream);
                 break;
             case Export.Image:
-                report.ExportToImage(stream);
+                report.ExportToImage(stream,new ImageExportOptions
+                {
+                    Resolution = 300,
+                    ExportMode = ImageExportMode.SingleFilePageByPage
+                });
                 break;
             default:
                 throw new InvalidOperationException("Unsupported export format.");
@@ -61,7 +65,11 @@ public class ReportExportService
                 report.ExportToDocx(stream);
                 break;
             case BC.ACCOUNTING.CORE.DTO.General.Export.Image:
-                report.ExportToImage(stream);
+                report.ExportToImage(stream,new ImageExportOptions
+                {
+                    Resolution = 300,
+                    ExportMode = ImageExportMode.SingleFilePageByPage
+                });
                 break;
             default:
                 throw new InvalidOperationException("Unsupported export format.");

@@ -10,6 +10,7 @@ namespace BC.ACCOUNTING.CORE.Entities
     {
         public DateTime MovDate { get; set; }
         public string ItemCode { get; set; }
+        public string ItemDesc { get; set; }
         public string Location { get; set; }
         public int Quantity { get; set; } = 0;
         public int OpeningInventory { get; set; } = 0;

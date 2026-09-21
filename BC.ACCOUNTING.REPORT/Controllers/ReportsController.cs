@@ -7,14 +7,8 @@ using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Exchange;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Quotation;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order.TD7;
 using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Stock;
-using DevExpress.ClipboardSource.SpreadsheetML;
-using DevExpress.CodeParser;
-using DevExpress.XtraReports.Parameters;
-using Microsoft.Extensions.DependencyInjection;
-using System.Data.Entity.Core.Common.CommandTrees;
+using BC.ACCOUNTING.REPORT.PredefinedReports.POS.Stock;
 using System.Text.Json;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using JsonException = System.Text.Json.JsonException;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -32,6 +26,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         private const string POSImageRoute = "ImageRoute:POSImageRoute";
         private readonly Dictionary<string, string>? _imageRoutes;
         private readonly Dictionary<string, string>? reportPOSDirectories;
+        private readonly Dictionary<string, string>? reportRESDirectories;
         private readonly IHttpClientFactory _factory;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _env;
@@ -48,6 +43,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 .GetSection("ImageRoute").Get<Dictionary<string, string>>(); 
             reportPOSDirectories =  _configuration
                 .GetSection("ReportDirectories:POS_PATH").Get<Dictionary<string, string>>();
+            reportRESDirectories =  _configuration
+                .GetSection("ReportDirectories:RES_PATH").Get<Dictionary<string, string>>();
         }
 
         [HttpPost("clone-report")]
@@ -64,7 +61,6 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return BadRequest("An Error Accured");
 
         }
-
 
         [HttpPost("mb-viewstock")]
         public async Task<IActionResult> GetStockReport([FromBody] StockReqDto dto)
@@ -85,6 +81,39 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 ToDate = dto.ToDate
             });
             var report = new DailyStockA4Report(data, reportPath, date);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+        }
+        [HttpPost("pos/inventory-transaction")]
+        public async Task<IActionResult> ViewStockPOSInventory([FromBody] StockReqDto dto)
+        {
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var date = string.Concat(dto.FromDate.ToString("MM/dd/yyyy")," ~ ",dto.ToDate.ToString("MM/dd/yyyy"));
+            var data = await _unitOfWork.InventoryRepository.GetInventoryByDateRangeAsync(new InventoryReqDto()
+            {
+                DbCode = dto.DbCode,
+                Connection = dto.Connection,
+                FromDate = dto.FromDate,
+                ToDate = dto.ToDate
+            });
+            var report = new InventoryTransactionReportA4Report(data, reportPath, date);
             if (dto.ExportFormat.HasValue)
             {
                 var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
@@ -904,10 +933,16 @@ namespace BC.ACCOUNTING.REPORT.Controllers
                 Console.WriteLine(ex.Message);
             }
             var report = new XtraReport();
+            var jsonOptions = new JsonSerializerOptions 
+            { 
+                PropertyNameCaseInsensitive = true,
+                Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() } 
+            };
+
             try
             {
                 var a = branches;
-                var dto = JsonSerializer.Deserialize<DailyClosing80Dto>(body.GetRawText());
+                var dto = JsonSerializer.Deserialize<DailyClosing80Dto>(body.GetRawText(), jsonOptions);
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
                 var reportPath = ReportHelper.GetReportPath(_reportDirectory,
@@ -935,7 +970,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
             try
             {
-                var dto = JsonSerializer.Deserialize<DailyClosingInventoryDto>(body.GetRawText());
+                var dto = JsonSerializer.Deserialize<DailyClosingInventoryDto>(body.GetRawText(), jsonOptions);
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
                 var reportPath = ReportHelper.GetReportPath(_reportDirectory,
@@ -962,7 +997,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             }
             try
             {
-                var dto = JsonSerializer.Deserialize<DailyClosingInventoryByCategoryDto>(body.GetRawText());
+                var dto = JsonSerializer.Deserialize<DailyClosingInventoryByCategoryDto>(body.GetRawText(), jsonOptions);
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
                 var reportPath = ReportHelper.GetReportPath(_reportDirectory,
@@ -1158,7 +1193,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             var jsonPath = Path.Combine(_env.WebRootPath, "jsonFiles", "dynamic_data.json");
             var jsonString = await System.IO.File.ReadAllTextAsync(path: jsonPath);
             var data = JsonSerializer.Deserialize<AppJson>(jsonString);
-            var reportName = data.InitPosReportForUrgentCustReportChange.
+            var reportName = data?.InitPosReportForUrgentCustReportChange.
                 Where(x => x.ShopName.Equals(dto.ShopName)).Select(x=>x.Value).ToList();
 
             var imagePathPrefix = _imageRoutes?["POSImageRoute"];
@@ -1302,22 +1337,29 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
         }
         [HttpPost("pos/inventoryaudit")]
-        public IActionResult POSIUInventoryAudit([FromBody] InventoryDto dto)
+        public async Task<IActionResult> POSIUInventoryAudit([FromBody] InventoryDto dto)
         {
 
-            if(!string.IsNullOrEmpty(dto.ShopImage))
+            var data = await ReportHelper.GetDataFromJson<List<string>>(_env.WebRootPath, "dynamic_data.json", "CustomerWhoUsedBarcodeInInventoryReport");
+
+            if (!string.IsNullOrEmpty(dto.ShopImage))
             {
                 dto.ShopImage =
                     Path.Combine(_configuration.GetSection(POSImageRoute).Value!, dto.ShopImage);
             }
-            
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+            if (dto is { IsShowCost: false, IsShowSalePrice: false })
+                dto.ReportName = "InventoryAuditHideCostA4Report";
+            else if (dto is {IsShowSalePrice:true,IsShowCost:true} )
+                dto.ReportName = "InventoryAuditWithSalePriceA4Report";
             var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
-            var report = new IUInventoryAuditA4Report(dto, reportPath);
+            var isUseBarcode = data != null && !string.IsNullOrEmpty(dto.DbCode) && data.Any(x => x.Equals(dto.DbCode, StringComparison.OrdinalIgnoreCase));
+            var report = new IUInventoryAuditA4Report(dto, reportPath, isUseBarcode: isUseBarcode);
 
             if (dto.ExportFormat.HasValue)
             {
@@ -1334,6 +1376,42 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             return View("Invoice", report);
 
         }
+
+        [HttpPost("pos/adjustment-history")]
+        public async Task<IActionResult> POSStockAdjustmentHistory([FromBody] AdjustmentHistoryDto dto)
+        {
+            var data = await ReportHelper.GetDataFromJson<List<string>>(_env.WebRootPath, "dynamic_data.json", "CustomerWhoUsedBarcodeInInventoryReport");
+            if (!string.IsNullOrEmpty(dto.ShopImage))
+            {
+                dto.ShopImage =
+                    Path.Combine(_configuration.GetSection(POSImageRoute).Value!, dto.ShopImage);
+            }
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            if (!dto.IsShowCost)
+                dto.ReportName = "StockAdjustmentHistoryHideCostA4Report";
+            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+
+            if (!System.IO.File.Exists(reportPath))
+                return NotFound("Report file not found.");
+            var isUseBarcode = data != null && !string.IsNullOrEmpty(dto.DbCode) && data.Any(x => x.Equals(dto.DbCode, StringComparison.OrdinalIgnoreCase));
+            var report = new StockAdjustmentHistoryA4Report(dto, reportPath, isUseBarcode: isUseBarcode);
+            if (dto.ExportFormat.HasValue)
+            {
+                var fileBytes = _reportExportService.ExportReportToBytes(report, dto.ExportFormat.Value);
+                var (contentType, extension) = _reportExportService.GetExportMetadata(dto.ExportFormat.Value);
+
+                return File(
+                    fileBytes,
+                    contentType,
+                    $"{dto.ReportName}_{DateTime.Now:yyyyMMdd_HHmmss}.{extension}"
+                );
+            }
+            ViewBag.HideHeader = true;
+            return View("Invoice", report);
+
+        }
+
         [HttpPost("pos/inventory-audit")]
         public IActionResult POSInventoryAudit([FromBody] InventoryDto dto)
         {
@@ -1429,8 +1507,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
             var reportPath = ReportHelper.GetReportPath(_reportDirectory,
-                reportPOSDirectories[dto.Language.ToString()??Languages.KM.ToString()], dto.ReportName, dto.Language ?? Languages.KM);
+                reportPOSDirectories[dto.Language.ToString()??nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             var report = new POSInventoryOutOfStockReport(dto, reportPath);
@@ -1452,7 +1531,7 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         #endregion
 
 
-        #region MB Restaurant
+        #region MBRestaurant
 
 
         [HttpPost("res-bzsaleinvoice")]
@@ -1461,12 +1540,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
             var report = new RESBZSaleInvoiceA5Report(dto, reportPath);
@@ -1497,7 +1572,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportPath = Path.Combine(_reportDirectory, dto.ReportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1529,13 +1605,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1566,12 +1637,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
-            
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
 
@@ -1599,12 +1667,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportName = dto.ReportName;
 
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories?[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1629,17 +1694,11 @@ namespace BC.ACCOUNTING.REPORT.Controllers
         [HttpPost("res/saleaudit")]
         public IActionResult CheckingInventory([FromBody] RESSaleInventoryDto dto)
         {
-            //var user = _tokenValidator.ValidateJwtFromCookie(Request);
-            //if (user == null)
-            //    return Unauthorized();
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1669,11 +1728,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1701,19 +1757,14 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
-
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
             if (!System.IO.File.Exists(reportPath))
-                return NotFound($"Report file not found: {reportName}.repx");
+                return NotFound($"Report file not found");
 
             var report = new RESDailyClosingInventory80Report(
                 dto,
-                Path.Combine(_reportDirectory, reportName + ".repx")
+                reportPath
             );
 
             if (dto.ExportFormat.HasValue)
@@ -1741,12 +1792,8 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var reportName = dto.ReportName;
-
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");
@@ -1775,12 +1822,9 @@ namespace BC.ACCOUNTING.REPORT.Controllers
             //    return Unauthorized();
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var reportName = dto.ReportName;
 
-            if (dto.Language == Languages.ENG && !reportName.Contains("Eng"))
-                reportName = reportName.Replace("Report", "EngReport");
-
-            var reportPath = Path.Combine(_reportDirectory, reportName + ".repx");
+            var reportPath = ReportHelper.GetReportPath(_reportDirectory,
+                reportRESDirectories[dto.Language.ToString() ?? nameof(Languages.KM)], dto.ReportName, dto.Language ?? Languages.KM);
 
             if (!System.IO.File.Exists(reportPath))
                 return NotFound("Report file not found.");

@@ -35,6 +35,7 @@ namespace BC.ACCOUNTING.REPORT.DTO
         [DisplayName("សរុបប្រាក់រៀល")] public decimal TotalKHR { get; set; }
         public decimal TotalMainCurr { get; set; } = 0;
         public decimal TotalSubCurr { get; set; } = 0;
+        public decimal DeliveryFee { get; set; } = 0;
         [DisplayName("សម្គាល់")] public string? Note { get; set; }
         public bool IsShow { get; set; } = true;
         public string? BookPrice { get; set; }

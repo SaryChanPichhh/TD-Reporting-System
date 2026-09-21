@@ -4,27 +4,15 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace BC.ACCOUNTING.REPORT
 {
-    public sealed class ErrorResponseLoggingMiddleware
+    public sealed class ErrorResponseLoggingMiddleware(
+        RequestDelegate next,
+        ILogger<ErrorResponseLoggingMiddleware> log,
+        IConfiguration cfg)
     {
-        private readonly RequestDelegate _next;
-        private readonly ILogger<ErrorResponseLoggingMiddleware> _log;
-        private readonly bool _logReqBody;
-        private readonly int _maxBody;
-        private readonly string[] _maskFields;
-        private readonly bool _pretty;
-
-        public ErrorResponseLoggingMiddleware(
-            RequestDelegate next,
-            ILogger<ErrorResponseLoggingMiddleware> log,
-            IConfiguration cfg)
-        {
-            _next = next;
-            _log = log;
-            _logReqBody = cfg.GetValue("Logging:LogRequestBodyOnError", true);
-            _maxBody = cfg.GetValue("Logging:MaxLoggedBodyBytes", 10485760);
-            _maskFields = cfg.GetSection("Logging:MaskFields").Get<string[]>() ?? Array.Empty<string>();
-            _pretty = cfg.GetValue("Logging:PrettyPrintJson", true);
-        }
+        private readonly bool _logReqBody = cfg.GetValue("Logging:LogRequestBodyOnError", true);
+        private readonly int _maxBody = cfg.GetValue("Logging:MaxLoggedBodyBytes", 10485760);
+        private readonly string[] _maskFields = cfg.GetSection("Logging:MaskFields").Get<string[]>() ?? [];
+        private readonly bool _pretty = cfg.GetValue("Logging:PrettyPrintJson", true);
 
         public async Task Invoke(HttpContext ctx)
         {
@@ -47,7 +35,7 @@ namespace BC.ACCOUNTING.REPORT
 
             try
             {
-                await _next(ctx);
+                await next(ctx);
             }
             finally
             {
@@ -67,7 +55,7 @@ namespace BC.ACCOUNTING.REPORT
                         ? Truncate(MaybePretty(responseText, _pretty), _maxBody)
                         : "(non-JSON response)";
 
-                    _log.LogWarning(
+                    log.LogWarning(
                         "HTTP {Status} {Method} {Path} CorrId={CorrelationId} User={User}\nReqBody:\n{ReqBody}\nResBody:\n{ResBody}",
                         ctx.Response.StatusCode, ctx.Request.Method, ctx.Request.Path, corrId, user,
                         requestBody ?? "(not logged)", resOut);

@@ -36,12 +36,6 @@ namespace BC.ACCOUNTING.REPORT.DTO.RESTAURANT
         public string? Field7 { get; set; } = string.Empty;
         public string? Field8 { get; set; } = string.Empty;
         public string? Field9 { get; set; } = string.Empty;
-        [Nullable(true)]
-        [Browsable(false)]
-        public Languages? Language { get; set; } = Languages.KM;
-        [Nullable(true)]
-        [Browsable(false)]
-        public ExchangesCurrency? CurrencyCode { get; set; } = ExchangesCurrency.USD;
-        public string CurrencySymbol => CurrencyCode.GetEnumDescription();
+
     }
 }

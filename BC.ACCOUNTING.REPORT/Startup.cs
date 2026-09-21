@@ -18,6 +18,8 @@ using Serilog;
 using System.Net;
 using BC.ACCOUNTING.REPORT.DTO.Clock;
 using BC.ACCOUNTING.REPORT.Models.MB;
+using System.Text.Json.Serialization;
+using BC.ACCOUNTING.REPORT.Services.Initialization;
 
 namespace BC.ACCOUNTING.REPORT
 {
@@ -42,12 +44,13 @@ namespace BC.ACCOUNTING.REPORT
             builder.Build();
             services.AddDevExpressControls();
             services.RegisterServices();
+            //services.AddHostedService<ReportInitializer>();
             services.Configure<ReportSettings>(Configuration.GetSection("ReportSettings"));
             services.AddScoped<ReportStorageWebExtension, CustomReportStorageWebExtension>();
             services.AddScoped<IConnectionStringsProvider, CustomSqlDataSourceProvider>();
             services.AddTransient<IWebDocumentViewerReportResolver, CustomWebDocumentViewerReportResolver>();
             services.AddTransient<ITokenValidatorService, TokenValidatorService>();
-           
+            
 
 
             services.Configure<RouteOptions>(options =>
@@ -123,7 +126,14 @@ namespace BC.ACCOUNTING.REPORT
                     
                 });
             });
-
+           services
+                .AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.Converters.Add(
+                        new JsonStringEnumConverter()
+                    );
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -196,6 +206,7 @@ namespace BC.ACCOUNTING.REPORT
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(StockReqDto));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(StockModel));
             DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(SettingInvoicePresetModel));
+            DevExpress.Utils.DeserializationSettings.RegisterTrustedClass(typeof(AdjustmentHistoryDto));
 
             // Register Built-in and Custom Expression Functions for DevExpress Reports
 
@@ -244,6 +255,10 @@ namespace BC.ACCOUNTING.REPORT
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "api_reports",
+                    pattern: "api/reports/{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

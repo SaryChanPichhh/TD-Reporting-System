@@ -720,6 +720,22 @@
   },
   {
     "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "POSStockAdjustmentHistory",
+    "RelativePath": "api/reports/pos/adjustment-history",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.MB.AdjustmentHistoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
     "Method": "POSInventoryAudit",
     "RelativePath": "api/reports/pos/inventory-audit",
     "HttpMethod": "POST",
@@ -729,6 +745,22 @@
       {
         "Name": "dto",
         "Type": "BC.ACCOUNTING.REPORT.DTO.POS.InventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BC.ACCOUNTING.REPORT.Controllers.ReportsController",
+    "Method": "ViewStockPOSInventory",
+    "RelativePath": "api/reports/pos/inventory-transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BC.ACCOUNTING.REPORT.DTO.StockReqDto",
         "IsRequired": true
       }
     ],

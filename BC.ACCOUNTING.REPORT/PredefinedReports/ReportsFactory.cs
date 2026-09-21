@@ -9,8 +9,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports
 {
     public static class ReportsFactory
     {
-
-     
         public static Dictionary<string, Func<XtraReport>> Reports = new Dictionary<string, Func<XtraReport>>()
         {
             ["DailySaleReport"] = () => new DailySaleReport(),

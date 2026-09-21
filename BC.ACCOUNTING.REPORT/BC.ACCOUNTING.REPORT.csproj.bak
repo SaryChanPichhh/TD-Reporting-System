@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <DefaultItemExcludes>Reports\**</DefaultItemExcludes>
     <Nullable>enable</Nullable>
+    <UserSecretsId>95d0c8e1-5826-4180-b853-58018a7a035a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Data\**" />
@@ -40,13 +42,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="Serilog" Version="4.3.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.117" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="25.2.3" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="3.0.71" />
   </ItemGroup>
@@ -141,6 +144,9 @@
     <Compile Update="PredefinedReports\SharedReport\Sale Listing\ByDate\ByInvoice\SaleListingDailyDetailByInvoiceWithProfitReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="PredefinedReports\Test\DailyClosingInventoryCloneReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="PredefinedReports\XtraReport1.cs">
       <DependentUpon>XtraReport1.repx</DependentUpon>
     </Compile>
@@ -174,8 +180,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="wwwroot\assets\MB\" />
 	  <Folder Include="wwwroot\assets\RES\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="wwwroot\JsonFiles\mikes_burger.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>

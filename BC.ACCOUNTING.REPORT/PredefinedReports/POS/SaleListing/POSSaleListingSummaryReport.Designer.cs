@@ -443,11 +443,11 @@
             // xrLabel1
             // 
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Khmer OS Muol", 13F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(281.0942F, 31.12818F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(203.5F, 31.12818F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(244.5833F, 26.32048F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(359.9999F, 26.32048F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "របាយការណ៍លក់សរុប";

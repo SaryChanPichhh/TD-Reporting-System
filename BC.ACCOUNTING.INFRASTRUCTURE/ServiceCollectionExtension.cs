@@ -1,4 +1,5 @@
-﻿using BC.ACCOUNTING.APPLICATION.Interfaces.AR;
+﻿using System.Data;
+using BC.ACCOUNTING.APPLICATION.Interfaces.AR;
 using BC.ACCOUNTING.APPLICATION.Interfaces.General;
 using BC.ACCOUNTING.APPLICATION.Interfaces.Inventory;
 using BC.ACCOUNTING.APPLICATION.Interfaces.Item;
@@ -14,6 +15,8 @@ using BC.ACCOUNTING.INFRASTRUCTURE.Repository.Item;
 using BC.ACCOUNTING.INFRASTRUCTURE.Repository.ReportList;
 using BC.ACCOUNTING.INFRASTRUCTURE.Repository.SaleListing;
 using BC.ACCOUNTING.INFRASTRUCTURE.Repository.Setting;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BC.ACCOUNTING.INFRASTRUCTURE
@@ -22,6 +25,12 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE
     {
         public static void RegisterServices(this IServiceCollection services)
         {
+            services.AddScoped<IDbConnection>(opt =>
+            {
+                var configuration = opt.GetService<IConfiguration>();
+                var connectionString = configuration?.GetConnectionString("DBConnectionDev");
+                return new SqlConnection(connectionString);
+            });
             services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<IBranchRepository, BranchRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
@@ -34,6 +43,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE
             services.AddTransient<IInventoryRepository, InventoryRepository>();
             services.AddTransient<IReportService, ReportService>();
             services.AddTransient<ISettingInvoicePresetRepository, SettingInvoicePresetService>();
+            services.AddTransient<IReportManagementRepository, ReportManagementRepository>();
         }
     }
 }

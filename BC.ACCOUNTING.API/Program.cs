@@ -63,6 +63,14 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services
+    .AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(
+            new JsonStringEnumConverter()
+        );
+    });
 //});
 
 // Add Swagger Auth Scheme.

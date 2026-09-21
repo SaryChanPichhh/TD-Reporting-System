@@ -10,20 +10,20 @@ namespace BC.ACCOUNTING.REPORT.DTO.POS
 {
     public record DailyClosingsDto : ReportDto
     {
-        public string Dates { get; set; }
-        public DateTime PrintDate { get; set; }
-        public string Seller { get; set; }
-        public string TotalInvoice { get; set; }
-        public string PaidTotal { get; set; }
-        public string OwnedAmount { get; set; }
-        public string CashOB { get; set; }
-        public string CashOBRiel { get; set; }
-        public string Subtotal { get; set; }
-        public string Discount { get; set; }
-        public string TotalRiel { get; set; }
-        public string TotalDollar { get; set; }
-        public string CashIn { get; set; }
-        public string Remaining { get; set; }
+        public string Dates { get; set; } = string.Empty;
+        public DateTime PrintDate { get; set; } = DateTime.Today;
+        public string Seller { get; set; } = string.Empty;
+        public string TotalInvoice { get; set; } = string.Empty;
+        public string PaidTotal { get; set; } = string.Empty;
+        public string OwnedAmount { get; set; } = string.Empty;
+        public string CashOB { get; set; } = string.Empty;
+        public string CashOBRiel { get; set; } = string.Empty;
+        public string Subtotal { get; set; } = string.Empty;
+        public string Discount { get; set; } = string.Empty;
+        public string TotalRiel { get; set; } = string.Empty;
+        public string TotalDollar { get; set; } = string.Empty;
+        public string CashIn { get; set; } = string.Empty;
+        public string Remaining { get; set; } = string.Empty;
         [Nullable(true)]
         [Browsable(false)]
         [NullValue(true)]

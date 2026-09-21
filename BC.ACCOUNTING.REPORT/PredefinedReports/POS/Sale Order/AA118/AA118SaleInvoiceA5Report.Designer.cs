@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AA118SaleInvoiceA5Report));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
@@ -697,8 +696,8 @@
             this.xrTableCell7.BorderWidth = 1F;
             this.xrTableCell7.CanGrow = false;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([UnitPrice]),\'\' ,  [CurrencySymbol]+\n  FormatString(\n    ?Decim" +
-                    "alPrecision,\n    Iif(IsNull([UnitPrice]), 0, [UnitPrice])\n  )\n )")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \'+Iif(IsNullOrEmpty([UnitPrice]),\'\' ,Iif(IsNull([UnitPrice]), 0, [UnitPrice])\n" +
+                    " \n )")});
             this.xrTableCell7.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 5F, 0F, 0F, 100F);
@@ -708,7 +707,6 @@
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.Text = "ឯកត្តាស្តុក";
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell7.TextFormatString = "{0:$0.00}";
             this.xrTableCell7.Weight = 0.911150881247806D;
             this.xrTableCell7.WordWrap = false;
             // 
@@ -716,7 +714,7 @@
             // 
             this.xrTableCell10.BorderWidth = 1F;
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([Discount]),\'\' ,FormatString(\'{0:}\', [Discount]) + \'%\'\n )")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \'+Iif(IsNullOrEmpty([Discount]),\'\' ,[Discount]\n )")});
             this.xrTableCell10.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
@@ -734,8 +732,8 @@
             this.xrTableCell9.BorderWidth = 1F;
             this.xrTableCell9.CanGrow = false;
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([TotalPrice]),\'\' ,[CurrencySymbol] +FormatString(?DecimalPrecis" +
-                    "ion,[TotalPrice]-(([UnitPrice]*[Qty]) *[Discount]/100))\n )")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \'+ Iif(IsNullOrEmpty([TotalPrice]),\'\' ,[TotalPrice]-(([UnitPrice]*[Qty]) *[Dis" +
+                    "count]/100))\n ")});
             this.xrTableCell9.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 5F, 0F, 0F, 100F);
@@ -745,7 +743,6 @@
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "សរុប";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell9.TextFormatString = "{0:$0.00}";
             this.xrTableCell9.Weight = 1.1611860718276272D;
             this.xrTableCell9.WordWrap = false;
             // 
@@ -797,8 +794,7 @@
             this.xrLabel28.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel28.CanGrow = false;
             this.xrLabel28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n0}\', Iif([CurrencySymbol]==\'៛\', Round(ToDouble([TransVal" +
-                    "ue])),Round(ToDouble([TransValueKH])*[ExchangeRate]) ))\n\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' + FormatString(\'{0:n0}\',Round(ToDouble([TransValueKH])))\n\n")});
             this.xrLabel28.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(446.2361F, 114.8615F);
             this.xrLabel28.Name = "xrLabel28";
@@ -832,7 +828,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel18.CanGrow = false;
             this.xrLabel18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", resources.GetString("xrLabel18.ExpressionBindings"))});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "ToDouble([TransValue])/ToDouble([ExchangeRate])")});
             this.xrLabel18.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(446.2323F, 57.43073F);
             this.xrLabel18.Name = "xrLabel18";
@@ -942,7 +938,7 @@
             this.xrLabel13.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrLabel13.CanGrow = false;
             this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(\'{0:#,##0.##}\',[DiscountInvoice])\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \' +FormatString(\'{0:#,##0.##}\',[DiscountInvoice])\n")});
             this.xrLabel13.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(446.2321F, 28.71543F);
             this.xrLabel13.Name = "xrLabel13";
@@ -992,8 +988,8 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel9.CanGrow = false;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CurrencySymbol] +FormatString(\'{0:#,##0.##}\',Iif(Contains([SubTotal], \'$\'),ToDec" +
-                    "imal(Trim(Replace([SubTotal], \'$\', \'\'))) , [SubTotal])\n)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'៛ \'+FormatString(\'{0:#,##0.##}\',Iif(Contains([SubTotal], \'$\'),ToDecimal(Trim(Rep" +
+                    "lace([SubTotal], \'$\', \'\'))) , [SubTotal])\n)\n")});
             this.xrLabel9.Font = new DevExpress.Drawing.DXFont("Khmer OS Battambang", 10F);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(446.236F, 0F);
             this.xrLabel9.Name = "xrLabel9";
@@ -1307,7 +1303,7 @@
             this.DecimalPrecision});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.xrControlStyle1});
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();

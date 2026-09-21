@@ -12,8 +12,6 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Audit
         {
             InitializeComponent();
         }
-
-
         public RESSaleAuditWithProfitA4Report(RESSaleInventoryDto dto,string reportPath)
         {
             LoadLayoutFromXml(reportPath);

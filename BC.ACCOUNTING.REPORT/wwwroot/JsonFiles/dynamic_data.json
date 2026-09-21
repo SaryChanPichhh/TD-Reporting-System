@@ -3,7 +3,7 @@
     {
       "DbCode": "AA235",
       "Keys": [ "CategoryCode" ],
-      "Values": [ "6019" ]
+      "Values": [ "6019" ]  
     },
     {
       "DbCode": "AA045",
@@ -27,5 +27,8 @@
       "Key": "POSSaleInvoiceReport",
       "Value": "AA118SaleInvoiceA5Report"
     }
+  ],
+  "CustomerWhoUsedBarcodeInInventoryReport": [
+    "AA276"
   ]
 }

@@ -1,609 +1,898 @@
-﻿using BC.ACCOUNTING.REPORT.DataSources;
-using BC.ACCOUNTING.REPORT.DataSources.POS;
-using BC.ACCOUNTING.REPORT.DTO;
-using BC.ACCOUNTING.REPORT.Helper.Enums;
-using BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order;
-using DevExpress.XtraReports.UI;
-using System;
-using System.Collections.Generic;
+using BC.ACCOUNTING.REPORT.DataSources;
+using DevExpress.PivotGrid.PivotTable;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 
 namespace BC.ACCOUNTING.REPORT.Helper
 {
     public static class ReportHelper
     {
+        
         #region Initialization Report+
 
-        private static readonly
-            Dictionary<string, Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>> Reports =
-                new()
-
-                {
-                    {
-                        "POSSaleInvoice80Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoice80EngReport.repx"),
-                                    (ReportModes.NormalMode, "POSSaleInvoice80EngReport.repx"),
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoice80Report.repx"),
-                                    (ReportModes.NormalMode, "POSSaleInvoice80Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingInventoryDetail80mmReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetail80mmReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "DailyClosingInventoryDetail80mmReport.repx"),
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetail80mmReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingInventoryDetailA4Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx"),
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx"),
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "DailyClosingInventoryDetailA4Report.repx"),
-                                    (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSSaleInvoiceReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleInvoiceEVReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceEVWithDeliveryReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceWithDeliveryFeeReport.repx"),
-                                    (ReportModes.NormalMode, "POSSaleInvoiceReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSSaleInvoiceA5Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5Report.repx"),
-                                    (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "A4DailyClosingInventoryReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "A4DailyClosingInventoryEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "A4DailyClosingInventoryReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingInventoryReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingInventoryByCategory80Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategory80Report.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategory80Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingInventoryByCategoryA4Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategoryA4Report.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingInventoryByCategoryA4Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "DailyClosingReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "DailyClosingReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "CustomerOrderReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "CustomerOrderEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "CustomerOrderReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSSaleListingReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleListingEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleListingReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingByInvoiceReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByInvoiceEVReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByInvoiceReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx"),
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingMovementReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingMovementEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingMovementReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "IUInventoryAuditA4Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "IUInventoryAuditA4EVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "IUInventoryAuditA4Report.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSInventoryOutOfStockReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSInventoryOutOfStockEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSInventoryOutOfStockReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSSaleListingSummaryReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleListingSummaryEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSSaleListingSummaryReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx"),
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingByDateReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByDateEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByDateReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "SaleListingByDateWithDeliveryFeeReport.repx"),
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingBySellerReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingBySellerEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingBySellerReport.repx"),
-                                    (ReportModes.DeliveryFeeMode, "SaleListingBySellerWithDeliveryFeeReport.repx"),
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingBySellerNoProfitReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingBySellerNoProfitEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingBySellerNoProfitReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "SaleListingByInvoiceNoProfitReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByInvoiceNoProfitEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "SaleListingByInvoiceNoProfitReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSPurchaseOrderByDateReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderByDateEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderByDateReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSPurchaseOrderByInvoiceReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderByInvoiceEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderByInvoiceReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSPurchaseOrderBySupplierReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderBySupplierEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderBySupplierReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSPurchaseOrderListingReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderListingEVReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPurchaseOrderListingReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "POSPOListingReport",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPOListingReport.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "POSPOListingReport.repx")
-                                }
-                            },
-                        }
-                    },
-                    {
-                        "AKASaleInvoiceA5Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")
-                                }
-                            },
-                        }
-                    },  {
-                        "AA118SaleInvoiceA5Report",
-                        new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
-                        {
-                            {
-                                Languages.ENG,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
-                                }
-                            },
-                            {
-                                Languages.KM,
-                                new List<(ReportModes reportModes, string reportName)>
-                                {
-                                    (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
-                                }
-                            },
-                        }
-                    },
-                };
-
+        private static
+            Dictionary<string, Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>> Reports = new ()
+                 {
+                     {
+                         "DailyClosingInventoryDetailA4Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                Languages.ENG,
+                                 [(ReportModes.NormalMode, "DailyClosingInventoryDetailA4EngReport.repx")]
+                             },
+                             {
+                Languages.KM,
+                                 [
+                                     (ReportModes.NormalMode, "DailyClosingInventoryDetailA4Report.repx"),
+                                 ]
+                             },
+                             {
+                Languages.ZH_CN,
+                                 [
+                                     (ReportModes.NormalMode, "DailyClosingInventoryDetailA4CNReport.repx")
+                                 ]
+                             }
+        }
+    }, 
+                     {
+                         "POSSaleInvoiceReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+            Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSSaleInvoiceEVReport.repx")]
+                             },
+                             {
+            Languages.KM,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceWithDeliveryFeeReport.repx"),
+                                     (ReportModes.NormalMode, "POSSaleInvoiceReport.repx")
+                                 ]
+                             },
+                             {
+            Languages.ZH_CN,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceWithDeliveryFeeCNReport.repx"),
+                                     (ReportModes.NormalMode, "POSSaleInvoiceCNReport.repx")
+                                 ]
+                             }
+    }
+},
+                     {
+    "AA118SaleInvoiceA5Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "AA118SaleInvoiceA5Report.repx"),
+                                     (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
+                                 ]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "AA118SaleInvoiceA5Report.repx"),
+                                     (ReportModes.NormalMode, "AA118SaleInvoiceA5Report.repx")
+                                 ]
+                             }
+                         }
+                     },
+                     {
+    "AKASaleInvoiceA5Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "AKASaleInvoiceA5Report.repx"),
+                                     (ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")
+                                 ]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "AKASaleInvoiceA5Report.repx"),
+                                     (ReportModes.NormalMode, "AKASaleInvoiceA5Report.repx")
+                                 ]
+                             }
+                         }
+                     },
+                     {
+    "POSSaleInvoiceA5Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5Report.repx"),
+                                     (ReportModes.NormalMode, "POSSaleInvoiceA5Report.repx")
+                                 ]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [
+                                     (ReportModes.DeliveryFeeMode, "POSSaleInvoiceA5CNReport.repx"),
+                                     (ReportModes.NormalMode, "POSSaleInvoiceA5CNReport.repx")
+                                 ]
+                             },
+                         }
+                     },
+                     {
+    "A4DailyClosingInventoryReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "A4DailyClosingInventoryEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "A4DailyClosingInventoryReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "A4DailyClosingInventoryCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "DailyClosingInventoryReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "DailyClosingInventoryEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "DailyClosingInventoryReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "DailyClosingInventoryCNReport.repx")]
+                             },
+                         }
+                     },
+        
+                     {
+    "DailyClosingReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "DailyClosingEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "DailyClosingReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "DailyClosingCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "CustomerOrderReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "CustomerOrderEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "CustomerOrderReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "CustomerOrderCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSSaleListingReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSSaleListingEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSSaleListingReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSSaleListingCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingByInvoiceReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingByInvoiceEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.NormalMode, "SaleListingByInvoiceReport.repx"),
+                                     (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx")
+                                 ]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [
+                                     (ReportModes.NormalMode, "SaleListingByInvoiceCNReport.repx"),
+                                     (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeCNReport.repx")
+                                 ]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingMovementReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingMovementEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "SaleListingMovementReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "SaleListingMovementCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "IUInventoryAuditA4Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "IUInventoryAuditA4EVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "IUInventoryAuditA4Report.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "IUInventoryAuditA4CNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSInventoryOutOfStockReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSInventoryOutOfStockEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSInventoryOutOfStockReport.repx")]
+                             },
+                             {
+                             Languages.ZH_CN,
+                             [(ReportModes.NormalMode, "POSInventoryOutOfStockCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSSaleListingSummaryReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSSaleListingSummaryEVReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSSaleListingSummaryCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.NormalMode, "POSSaleListingSummaryReport.repx"),
+                                     (ReportModes.DeliveryFeeMode, "SaleListingByInvoiceWithDeliveryFeeReport.repx")
+                                 ]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingByDateReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingByDateEVReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "SaleListingByDateCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.NormalMode, "SaleListingByDateReport.repx"),
+                                     (ReportModes.DeliveryFeeMode, "SaleListingByDateWithDeliveryFeeReport.repx")
+                                 ]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingBySellerReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingBySellerEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [
+                                     (ReportModes.NormalMode, "SaleListingBySellerReport.repx"),
+                                     (ReportModes.DeliveryFeeMode, "SaleListingBySellerWithDeliveryFeeReport.repx")
+                                 ]
+                             },
+                             {
+                             Languages.ZH_CN,
+                             [
+                                 (ReportModes.NormalMode, "SaleListingBySellerCNReport.repx"),
+                                 (ReportModes.DeliveryFeeMode, "SaleListingBySellerWithDeliveryFeeCNReport.repx")
+                             ]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingBySellerNoProfitReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingBySellerNoProfitEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "SaleListingBySellerNoProfitReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "SaleListingBySellerNoProfitCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "SaleListingByInvoiceNoProfitReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "SaleListingByInvoiceNoProfitEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "SaleListingByInvoiceNoProfitReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "SaleListingByInvoiceNoProfitCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPurchaseOrderByDateReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByDateEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByDateReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByDateCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPurchaseOrderByInvoiceReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByInvoiceEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByInvoiceReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderByInvoiceCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPurchaseOrderBySupplierReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderBySupplierEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderBySupplierReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderBySupplierCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPurchaseOrderInvoiceReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderInvoiceEVRReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderInvoiceReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderInvoiceCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPurchaseOrderListingReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderListingEVReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderListingReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPurchaseOrderListingCNReport.repx")]
+                             },
+                         }
+                     },
+                     {
+    "POSPOListingReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "POSPOListingEngReport.repx")]
+                             },{
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "POSPOListingCNReport.repx")]
+                             },{
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "POSPOListingReport.repx")]
+                             },
+                         }
+                     },
+        
+        
+        
+                     // -- Report Rest
+        
+                     // Restaurant reports
+        
+                     {
+    "RESSaleListingInvoiceProfitReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitCNReport.repx")]
+                             },
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitEngReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingInvoiceNoProfitByDateReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitByDateEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitByDateCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitByDateReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingInvoiceNoProfitBySaleReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitBySaleEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitBySaleCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitBySaleReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingInvoiceNoProfitReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceNoProfitReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingInvoiceProfitByDateReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitByDateEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitByDateCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitByDateReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingInvoiceProfitBySellerReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitBySellerEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitBySellerCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingInvoiceProfitBySellerReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingMovementReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingMovementEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingMovementCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingMovementReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleListingSummaryReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleListingSummaryEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleListingSummaryCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleListingSummaryReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESDailyClosingInventory80Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventory80CNReport.repx")]
+                             },
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventory80EngReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventory80Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESDailyClosingInventoryA4Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventoryA4CNReport.repx")]
+                             },
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventoryA4EngReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESDailyClosingInventoryA4Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESInventoryOutOfStockReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESInventoryOutOfStockCNReport.repx")]
+                             },
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESInventoryOutOfStockEngReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESInventoryOutOfStockReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESPurchaseOrderByDateReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByDateEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByDateCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByDateReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESPurchaseOrderByInvoiceReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByInvoiceEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByInvoiceCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderByInvoiceReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESPurchaseOrderBySupplierReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderBySupplierEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderBySupplierCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderBySupplierReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESPurchaseOrderReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESPurchaseOrderReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleInvoice80Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleInvoice80EngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleInvoice80CNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleInvoice80Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleInvoiceA4WithProfitReport",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleInvoiceA4WithProfitEngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleInvoiceA4WithProfitCNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleInvoiceA4WithProfitReport.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleReceipt58Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt58EngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt58CNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt58Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleReceipt80Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt80EngReport.repx")]
+                             },
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt80CNReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleReceipt80Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESSaleAuditWithProfitA4Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.ZH_CN,
+                                 [(ReportModes.NormalMode, "RESSaleAuditWithProfitA4CNReport.repx")]
+                             },
+                             {
+                                 Languages.ENG,
+                                 [(ReportModes.NormalMode, "RESSaleAuditWithProfitA4ENGReport.repx")]
+                             },
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESSaleAuditWithProfitA4Report.repx")]
+                             }
+                         }
+                     },
+                     {
+    "RESBZSaleInvoiceA5Report",
+                         new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+                         {
+                             {
+                                 Languages.KM,
+                                 [(ReportModes.NormalMode, "RESBZSaleInvoiceA5Report.repx")]
+                             }
+                         }
+                     },
+         {
+    "RESSaleInvoiceA4Report",
+             new Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>
+             {
+                 {
+                     Languages.ENG,
+                     [(ReportModes.NormalMode, "RESSaleInvoiceA4EngReport.repx")]
+                 },
+                 {
+                     Languages.ZH_CN,
+                     [(ReportModes.NormalMode, "RESSaleInvoiceA4CNReport.repx")]
+                 },
+                 {
+                     Languages.KM,
+                     [(ReportModes.NormalMode, "RESSaleInvoiceA4Report.repx")]
+                 }
+             }
+         }
+                 };
         #endregion
-
-        #region Init Sale Invoice Report For POS
-
-        #endregion
-
+//public static void Initialize(
+//            Dictionary<string, Dictionary<Languages, List<(ReportModes reportModes, string reportName)>>> reports)
+//        {
+//            Reports = reports;
+//        }
         #region Report Configuration For Generate Empty Rows
-
         public static Dictionary<string, (int small, int medium, int large, int subPage, int subPages)> ReportConfigs =
             new()
             {
@@ -622,6 +911,8 @@ namespace BC.ACCOUNTING.REPORT.Helper
             GetReportPath(string reportDirectory, string? folderPath, string reportName,
                 Languages language = Languages.KM, ReportModes reportMode = ReportModes.NormalMode)
         {
+
+            Console.WriteLine(Reports);
             var reportVer = Reports.ContainsKey(reportName) && Reports[reportName].ContainsKey(language)
                                                             && Reports[reportName][language]
                                                                 .Any(x => x.reportModes == reportMode)
@@ -798,6 +1089,47 @@ namespace BC.ACCOUNTING.REPORT.Helper
                 _rowCount = 0;
             }
 
+        }
+
+        public static async Task<TResponse?> GetDataFromJson<TResponse>(string jsonFilePath, string jsonFileName, string jsonKey)
+        {
+            if (string.IsNullOrEmpty(jsonFilePath) || string.IsNullOrEmpty(jsonFileName))
+                return default;
+
+            var jsonPath = Path.Combine(jsonFilePath, "JsonFiles", jsonFileName);
+            if (!File.Exists(jsonPath))
+            {
+                jsonPath = Path.Combine(jsonFilePath, "jsonFiles", jsonFileName);
+                if (!File.Exists(jsonPath))
+                    return default;
+            }
+
+            try
+            {
+                var jsonString = await File.ReadAllTextAsync(jsonPath);
+                var token = JToken.Parse(jsonString);
+
+                if (token is JObject obj)
+                {
+                    if (string.IsNullOrWhiteSpace(jsonKey))
+                        return obj.ToObject<TResponse>();
+
+                    var value = obj[jsonKey];
+                    return value != null ? value.ToObject<TResponse>() : default;
+                }
+
+                if (token is JArray)
+                {
+                    return token.ToObject<TResponse>();
+                }
+
+                return default;
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine($"Invalid JSON: {ex.Message}");
+                return default;
+            }
         }
 
     }

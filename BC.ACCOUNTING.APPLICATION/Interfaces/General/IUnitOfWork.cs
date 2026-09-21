@@ -23,5 +23,6 @@ namespace BC.ACCOUNTING.APPLICATION.Interfaces.General
         IInventoryRepository InventoryRepository { get; }
         IReportService ReportService { get; }
         ISettingInvoicePresetRepository SettingInvoicePresetRepository { get; }
+        IReportManagementRepository ReportManagementRepository { get; }
     }
 }

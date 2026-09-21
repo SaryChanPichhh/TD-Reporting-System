@@ -12,77 +12,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.Test
         {
             InitializeComponent();
         }
-        public DailyClosingInventoryCloneReport(DailyClosing80Dto inventoryDto, string reportName,GroupByKey branches)
-        {
-            this.LoadLayoutFromXml(reportName);
-            
-            if (this.Parameters["DecimalPrecision"] is not null)
-                this.DecimalPrecision.Value = inventoryDto.DecimalPrecision.GetEnumDescription();
-            if (xrLabel15 is not null)
-                this.xrLabel15.BeforePrint += xrLabel15_BeforePrint_80;
-            if (xrLabel16 is not null)
-                this.xrLabel16.BeforePrint += xrLabel16_BeforePrint_80;
-            if (branches is not null)
-                if (inventoryDto.DbCode.Equals(branches.DbCode??string.Empty))
-                {
-                    MappingCategoriesData(inventoryDto, branches);
-                }
-            var data = ConvertFromDtoToModel(inventoryDto);
-            objectDataSource1.DataSource = data;
-            this.DataSource = objectDataSource1;
-            PaymentMethod = data.Payments;
-        }
-        public DailyClosingInventoryCloneReport(DailyClosingInventoryDto inventoryDto, string reportName, GroupByKey branches)
-        {
-            this.LoadLayoutFromXml(reportName);
-            if (this.Parameters["DecimalPrecision"] is not null)
-                this.DecimalPrecision.Value = inventoryDto.DecimalPrecision.GetEnumDescription();
-            if(ReportHeader1 is not null)
-                this.ReportHeader1.BeforePrint += ReportHeader1_BeforePrint;
-            if (Detail2 is not null)
-                this.Detail2.BeforePrint += Detail2_BeforePrint;
-            if (ReportFooter2 is not null)
-                this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint;
-            if (xrLabel15 is not null)
-                this.xrLabel15.BeforePrint += xrLabel15_BeforePrint;
-            if (xrLabel16 is not null)
-                this.xrLabel16.BeforePrint += xrLabel16_BeforePrint;
-            if (branches is not null)
-                if (inventoryDto.DbCode.Equals(branches.DbCode))
-                {
-                    MappingCategoriesData(inventoryDto, branches);
-                }
-            objectDataSource1.DataSource = inventoryDto;
-            this.DataSource = objectDataSource1;
-            Payments = inventoryDto.Payments;
-        }
-
-        public DailyClosingInventoryCloneReport(DailyClosingInventoryByCategoryDto inventoryDto, string reportName, GroupByKey branches)
-        {
-            this.LoadLayoutFromXml(reportName);
-            if (this.Parameters["DecimalPrecision"] is not null)
-                this.DecimalPrecision.Value = inventoryDto.DecimalPrecision.GetEnumDescription();
-            if (ReportHeader1 is not null)
-                this.ReportHeader1.BeforePrint += ReportHeader1_BeforePrint_ByCategory;
-            if (Detail2 is not null)
-                this.Detail2.BeforePrint += Detail2_BeforePrint_ByCategory;
-            if (ReportFooter2 is not null)
-                this.ReportFooter2.BeforePrint += ReportFooter2_BeforePrint_ByCategory;
-            if (xrLabel15 is not null)
-                this.xrLabel15.BeforePrint += xrLabel15_BeforePrint_ByCategory;
-            if (xrLabel16 is not null)
-                this.xrLabel16.BeforePrint += xrLabel16_BeforePrint_ByCategory;
-            if (branches is not null)
-                if (inventoryDto.DbCode.Equals(branches.DbCode))
-                {
-                    MappingCategoriesData(inventoryDto, branches);
-                }
-
-
-            objectDataSource1.DataSource = inventoryDto;
-            this.DataSource = objectDataSource1;
-            Payments = inventoryDto.Payments;
-        }
+        
 
         #region Mapping Categories Data
 

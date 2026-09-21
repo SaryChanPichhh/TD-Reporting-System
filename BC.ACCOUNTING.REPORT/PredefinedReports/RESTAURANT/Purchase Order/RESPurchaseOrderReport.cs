@@ -2,6 +2,7 @@
 using BC.ACCOUNTING.REPORT.DTO.RESTAURANT;
 using BC.ACCOUNTING.REPORT.Helper;
 using System.ComponentModel;
+using System.Drawing;
 using DevExpress.XtraReports.UI;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Purchase_Order
@@ -64,6 +65,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.RESTAURANT.Purchase_Order
         {
             // reset group numbering
             RowNum = 0;
+            var color = Color.PeachPuff;
         }
 
         private void RESPurchaseOrderReport_BeforePrint(object sender, CancelEventArgs e)

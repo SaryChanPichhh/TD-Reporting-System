@@ -1,1 +1,22 @@
+# .NET build output
+bin/
+obj/
+**/bin/
+**/obj/
+
+# IDE files
 .vs/
+.idea/
+*.user
+
+# Docker and archive files
+*.tar
+*.zip
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+publish_report/
+run-container.ps1
+stop-container.ps1
+start.bat
+stop.bat

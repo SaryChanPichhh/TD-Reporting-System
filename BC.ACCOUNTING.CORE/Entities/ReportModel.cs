@@ -20,5 +20,6 @@ namespace BC.ACCOUNTING.CORE.Entities
         public string FilterKey { get; set; } = string.Empty;
         public string PaperSize { get; set; } = string.Empty;
         public string Field { get; set; } = string.Empty;
+        public string AppCode { get; set; } = string.Empty;
     }
 }

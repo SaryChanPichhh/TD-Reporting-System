@@ -66,334 +66,354 @@
           }
         }
       },
-      "DevExpress.AspNetCore.Common/25.2.3": {
+      "DevExpress.AspNetCore.Common/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.AspNetCore.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Common.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Common.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.AspNetCore.Core/25.2.3": {
+      "DevExpress.AspNetCore.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Office.Core": "[26.1.3]",
           "Microsoft.Extensions.DependencyModel": "8.0.2"
         },
         "compile": {
-          "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Core.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Core.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.AspNetCore.Reporting/25.2.3": {
+      "DevExpress.AspNetCore.Reporting/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Common": "[25.2.3]",
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common.Services": "[25.2.3]",
-          "DevExpress.Web.Resources": "[25.2.3]"
+          "DevExpress.AspNetCore.Common": "[26.1.3]",
+          "DevExpress.AspNetCore.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.DataAccess": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.Reporting.Core": "[26.1.3]",
+          "DevExpress.Web.Reporting.Common": "[26.1.3]",
+          "DevExpress.Web.Reporting.Common.Services": "[26.1.3]",
+          "DevExpress.Web.Resources": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Reporting.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.dll": {
+          "lib/net8.0/DevExpress.AspNetCore.Reporting.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Charts/25.2.3": {
+      "DevExpress.Charts/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataVisualization.Core": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Charts.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.DataVisualization.Core": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.XtraCharts.v25.2.dll": {
+          "lib/net8.0/DevExpress.XtraCharts.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.XtraCharts.v25.2.dll": {
+          "lib/net8.0/DevExpress.XtraCharts.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Charts.Core/25.2.3": {
+      "DevExpress.Charts.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.Data": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Charts.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Charts.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Charts.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Charts.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.CodeParser/25.2.3": {
+      "DevExpress.CodeParser/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
           "System.CodeDom": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/DevExpress.CodeParser.v25.2.dll": {}
+          "lib/net8.0/DevExpress.CodeParser.v26.1.dll": {}
         },
         "runtime": {
-          "lib/net8.0/DevExpress.CodeParser.v25.2.dll": {}
+          "lib/net8.0/DevExpress.CodeParser.v26.1.dll": {}
         }
       },
-      "DevExpress.Data/25.2.3": {
+      "DevExpress.Data/26.1.3": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Data.v25.2.dll": {
+          "lib/net8.0/DevExpress.Data.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Data.v25.2.dll": {
+          "lib/net8.0/DevExpress.Data.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.DataAccess/25.2.3": {
+      "DevExpress.DataAccess/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.CodeParser": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]",
+          "DevExpress.CodeParser": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Office.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.RichEdit.Core": "[26.1.3]",
+          "DevExpress.Xpo": "[26.1.3]",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.1",
           "System.Configuration.ConfigurationManager": "8.0.1"
         },
         "compile": {
-          "lib/net8.0/DevExpress.DataAccess.v25.2.dll": {
+          "lib/net8.0/DevExpress.DataAccess.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.DataAccess.v25.2.dll": {
+          "lib/net8.0/DevExpress.DataAccess.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.DataVisualization.Core/25.2.3": {
+      "DevExpress.DataVisualization.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]"
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll": {}
+          "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll": {}
         },
         "runtime": {
-          "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll": {}
+          "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll": {}
         }
       },
-      "DevExpress.Drawing/25.2.3": {
+      "DevExpress.Drawing/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Drawing.v25.2.dll": {
+          "lib/net8.0/DevExpress.Drawing.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Drawing.v25.2.dll": {
+          "lib/net8.0/DevExpress.Drawing.v26.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Gauges.Core/25.2.3": {
+      "DevExpress.Drawing.Skia/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "HarfBuzzSharp.NativeAssets.Linux": "8.3.1.2",
+          "Microsoft.ICU.ICU4C.Runtime": "72.1.0.3",
+          "SkiaSharp": "3.119.1",
+          "SkiaSharp.HarfBuzz": "3.119.1",
+          "SkiaSharp.NativeAssets.Linux": "3.119.1",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.XtraGauges.v25.2.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net8.0/DevExpress.Drawing.v26.1.Skia.dll": {}
         },
         "runtime": {
-          "lib/net8.0/DevExpress.XtraGauges.v25.2.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/net8.0/DevExpress.Drawing.v26.1.Skia.dll": {}
         }
       },
-      "DevExpress.Office.Core/25.2.3": {
+      "DevExpress.Gauges.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Office.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Office.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Core/25.2.3": {
+      "DevExpress.Office.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Pdf.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "System.Drawing.Common": "8.0.15"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Office.v26.1.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Office.v26.1.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExpress.Pdf.Core/26.1.3": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
           "System.Drawing.Common": "8.0.15",
           "System.Security.Cryptography.Pkcs": "8.0.1"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Pdf.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Pdf.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Pdf.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Pdf.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Drawing/25.2.3": {
+      "DevExpress.Pdf.Drawing/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Pdf.Core": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Pdf.v25.2.Drawing.dll": {
+          "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Pdf.v25.2.Drawing.dll": {
+          "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.PivotGrid.Core/25.2.3": {
+      "DevExpress.PivotGrid.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
           "System.Data.OleDb": "8.0.1",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.PivotGrid.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.PivotGrid.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.PivotGrid.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.PivotGrid.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Printing.Core/25.2.3": {
+      "DevExpress.Printing.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Pdf.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Pdf.Core": "[26.1.3]",
+          "DevExpress.Pdf.Drawing": "[26.1.3]",
           "System.Drawing.Common": "8.0.15",
+          "System.Security.Cryptography.Xml": "8.0.3",
           "System.ServiceModel.Http": "8.1.2"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Printing.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Printing.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Printing.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Printing.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Reporting.Core/25.2.3": {
+      "DevExpress.Reporting.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[25.2.3]",
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.CodeParser": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Gauges.Core": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Pdf.Drawing": "[25.2.3]",
-          "DevExpress.PivotGrid.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Export": "[25.2.3]",
-          "DevExpress.Sparkline.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]",
+          "DevExpress.Charts": "[26.1.3]",
+          "DevExpress.Charts.Core": "[26.1.3]",
+          "DevExpress.CodeParser": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.DataAccess": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Gauges.Core": "[26.1.3]",
+          "DevExpress.Office.Core": "[26.1.3]",
+          "DevExpress.Pdf.Core": "[26.1.3]",
+          "DevExpress.Pdf.Drawing": "[26.1.3]",
+          "DevExpress.PivotGrid.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.RichEdit.Core": "[26.1.3]",
+          "DevExpress.RichEdit.Export": "[26.1.3]",
+          "DevExpress.Sparkline.Core": "[26.1.3]",
+          "DevExpress.Xpo": "[26.1.3]",
           "System.CodeDom": "8.0.0",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.XtraReports.v25.2.dll": {
+          "lib/net8.0/DevExpress.XtraReports.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.XtraReports.v25.2.dll": {
+          "lib/net8.0/DevExpress.XtraReports.v26.1.dll": {
             "related": ".xml"
           }
         },
@@ -401,136 +421,146 @@
           "buildTransitive/net8.0/DevExpress.Reporting.Core.targets": {}
         }
       },
-      "DevExpress.RichEdit.Core/25.2.3": {
+      "DevExpress.Reporting.Rider.Design/26.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/DevExpress.Reporting.v26.1.Rider.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Reporting.v26.1.Rider.Design.dll": {}
+        }
+      },
+      "DevExpress.RichEdit.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Pdf.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Office.Core": "[26.1.3]",
+          "DevExpress.Pdf.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.RichEdit.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.RichEdit.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.RichEdit.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.RichEdit.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.RichEdit.Export/25.2.3": {
+      "DevExpress.RichEdit.Export/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Office.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.RichEdit.Core": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Office.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.RichEdit.Core": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.RichEdit.v25.2.Export.dll": {}
+          "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll": {}
         },
         "runtime": {
-          "lib/net8.0/DevExpress.RichEdit.v25.2.Export.dll": {}
+          "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll": {}
         }
       },
-      "DevExpress.Sparkline.Core/25.2.3": {
+      "DevExpress.Sparkline.Core/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
           "System.Drawing.Common": "8.0.15"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Sparkline.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Sparkline.v26.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Sparkline.v25.2.Core.dll": {
+          "lib/net8.0/DevExpress.Sparkline.v26.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Web.Reporting.Common/25.2.3": {
+      "DevExpress.Web.Reporting.Common/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[25.2.3]",
-          "DevExpress.Charts.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Drawing": "[25.2.3]",
-          "DevExpress.Gauges.Core": "[25.2.3]",
-          "DevExpress.PivotGrid.Core": "[25.2.3]",
-          "DevExpress.Printing.Core": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Sparkline.Core": "[25.2.3]",
-          "DevExpress.Xpo": "[25.2.3]"
+          "DevExpress.Charts": "[26.1.3]",
+          "DevExpress.Charts.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.DataAccess": "[26.1.3]",
+          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Gauges.Core": "[26.1.3]",
+          "DevExpress.PivotGrid.Core": "[26.1.3]",
+          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.Reporting.Core": "[26.1.3]",
+          "DevExpress.Sparkline.Core": "[26.1.3]",
+          "DevExpress.Xpo": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.XtraReports.v25.2.Web.dll": {
+          "lib/net8.0/DevExpress.XtraReports.v26.1.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.XtraReports.v25.2.Web.dll": {
+          "lib/net8.0/DevExpress.XtraReports.v26.1.Web.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Web.Reporting.Common.Services/25.2.3": {
+      "DevExpress.Web.Reporting.Common.Services/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
-          "DevExpress.DataAccess": "[25.2.3]",
-          "DevExpress.Reporting.Core": "[25.2.3]",
-          "DevExpress.Web.Reporting.Common": "[25.2.3]"
+          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.DataAccess": "[26.1.3]",
+          "DevExpress.Reporting.Core": "[26.1.3]",
+          "DevExpress.Web.Reporting.Common": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.dll": {
+          "lib/net8.0/DevExpress.Web.Reporting.v26.1.Common.Services.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.dll": {
+          "lib/net8.0/DevExpress.Web.Reporting.v26.1.Common.Services.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Web.Resources/25.2.3": {
+      "DevExpress.Web.Resources/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.AspNetCore.Core": "[25.2.3]",
-          "DevExpress.Data": "[25.2.3]"
+          "DevExpress.AspNetCore.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.3]"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Web.Resources.v25.2.dll": {}
+          "lib/net8.0/DevExpress.Web.Resources.v26.1.dll": {}
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Web.Resources.v25.2.dll": {}
+          "lib/net8.0/DevExpress.Web.Resources.v26.1.dll": {}
         }
       },
-      "DevExpress.Xpo/25.2.3": {
+      "DevExpress.Xpo/26.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[25.2.3]",
+          "DevExpress.Data": "[26.1.3]",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "System.Drawing.Common": "8.0.15",
+          "System.Security.Cryptography.Xml": "8.0.3",
           "System.ServiceModel.Http": "8.1.2",
           "System.ServiceModel.NetTcp": "8.1.2"
         },
         "compile": {
-          "lib/net8.0/DevExpress.Xpo.v25.2.dll": {
+          "lib/net8.0/DevExpress.Xpo.v26.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/DevExpress.Xpo.v25.2.dll": {
+          "lib/net8.0/DevExpress.Xpo.v26.1.dll": {
             "related": ".xml"
           }
         }
@@ -563,6 +593,116 @@
         "build": {
           "buildTransitive/netcoreapp3.0/EntityFramework.props": {},
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
+        }
+      },
+      "HarfBuzzSharp/8.3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "8.3.1.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "8.3.1.2"
+        },
+        "compile": {
+          "lib/net8.0/HarfBuzzSharp.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/HarfBuzzSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Linux/8.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-loongarch64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-loongarch64"
+          },
+          "runtimes/linux-musl-arm/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-loongarch64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-loongarch64"
+          },
+          "runtimes/linux-musl-riscv64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-riscv64"
+          },
+          "runtimes/linux-musl-x64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-riscv64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-riscv64"
+          },
+          "runtimes/linux-x64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/8.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/8.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
         }
       },
       "log4net/3.0.1": {
@@ -1121,6 +1261,101 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.ICU.ICU4C.Runtime/72.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ICU.ICU4C.Runtime.linux-arm64": "72.1.0.3",
+          "Microsoft.ICU.ICU4C.Runtime.linux-x64": "72.1.0.3",
+          "Microsoft.ICU.ICU4C.Runtime.win-arm64": "72.1.0.3",
+          "Microsoft.ICU.ICU4C.Runtime.win-x64": "72.1.0.3",
+          "Microsoft.ICU.ICU4C.Runtime.win-x86": "72.1.0.3"
+        }
+      },
+      "Microsoft.ICU.ICU4C.Runtime.linux-arm64/72.1.0.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libicudata.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libicui18n.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libicuuc.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "Microsoft.ICU.ICU4C.Runtime.linux-x64/72.1.0.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libicudata.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libicui18n.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libicuuc.so.72.1.0.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "Microsoft.ICU.ICU4C.Runtime.win-arm64/72.1.0.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/icudt72.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/icuin72.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/icuuc72.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          }
+        }
+      },
+      "Microsoft.ICU.ICU4C.Runtime.win-x64/72.1.0.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/icudt72.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/icuin72.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/icuuc72.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Microsoft.ICU.ICU4C.Runtime.win-x86/72.1.0.3": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x86/native/icudt72.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/icuin72.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/icuuc72.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.Identity.Client/4.61.3": {
         "type": "package",
         "dependencies": {
@@ -1556,6 +1791,131 @@
         "runtime": {
           "lib/net8.0/Serilog.Sinks.File.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1",
+          "SkiaSharp.NativeAssets.macOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "8.3.1.2",
+          "SkiaSharp": "3.119.1"
+        },
+        "compile": {
+          "lib/net8.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Linux/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-loongarch64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-loongarch64"
+          },
+          "runtimes/linux-musl-arm/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-loongarch64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-loongarch64"
+          },
+          "runtimes/linux-musl-riscv64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-riscv64"
+          },
+          "runtimes/linux-musl-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-riscv64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-riscv64"
+          },
+          "runtimes/linux-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
           }
         }
       },
@@ -2091,7 +2451,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Security.Cryptography.Xml/8.0.2": {
+      "System.Security.Cryptography.Xml/8.0.3": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "8.0.1"
@@ -2563,360 +2923,388 @@
         "readme.md"
       ]
     },
-    "DevExpress.AspNetCore.Common/25.2.3": {
-      "sha512": "08/16rNZKqg/NXBdjreZJ+vR1uRyWhpnU+vu3E5uN5MBXaS52GzwwEvbcOnlM7S2kmc/KTsrFXEBNBnLLCoXiQ==",
+    "DevExpress.AspNetCore.Common/26.1.3": {
+      "sha512": "mmLOecmryhVhmbyHmEiFVkd3r1I4DSzG4SsY8mHj/dkKWX3+eLc3rq91rY4B290qFF9bbGpqfx46UHK+ff2sPA==",
       "type": "package",
-      "path": "devexpress.aspnetcore.common/25.2.3",
+      "path": "devexpress.aspnetcore.common/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.common.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.common.26.1.3.nupkg.sha512",
         "devexpress.aspnetcore.common.nuspec",
-        "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.dll",
-        "lib/net8.0/DevExpress.AspNetCore.Common.v25.2.xml"
+        "lib/net8.0/DevExpress.AspNetCore.Common.v26.1.dll",
+        "lib/net8.0/DevExpress.AspNetCore.Common.v26.1.xml"
       ]
     },
-    "DevExpress.AspNetCore.Core/25.2.3": {
-      "sha512": "+6gBlkGgous3X5mJ6WfsaF40nYSDIsgshS2RBOyjOm2Vamnvm1UfxrrXV/lkQ0FaPxAenERaiVeJIBEAwQ3spQ==",
+    "DevExpress.AspNetCore.Core/26.1.3": {
+      "sha512": "wLyEntua2g/M0TFFZfjsbhnR70kCIvo/cwwjan0txCTBsulzfMuDE+fOL0+bm4P6wE8WzotArWpgQxwbrrDnvw==",
       "type": "package",
-      "path": "devexpress.aspnetcore.core/25.2.3",
+      "path": "devexpress.aspnetcore.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.core.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.core.26.1.3.nupkg.sha512",
         "devexpress.aspnetcore.core.nuspec",
-        "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.dll",
-        "lib/net8.0/DevExpress.AspNetCore.Core.v25.2.xml"
+        "lib/net8.0/DevExpress.AspNetCore.Core.v26.1.dll",
+        "lib/net8.0/DevExpress.AspNetCore.Core.v26.1.xml"
       ]
     },
-    "DevExpress.AspNetCore.Reporting/25.2.3": {
-      "sha512": "vsvEal71ZdnmkJjJZ9kjAfmpDxzq3Nyaxz+R8VJUfgySOahBG6iNczI92Io8xrR1eIiZWtyiU6rxlbDBzru7jQ==",
+    "DevExpress.AspNetCore.Reporting/26.1.3": {
+      "sha512": "DlphLKD6lB4Cx49LE5T9esEUnsELcqM0haNujSWxXwqFv7LM2/Yt682wH+WQszaE0doFmOa+eUJmMyoFvFuvkg==",
       "type": "package",
-      "path": "devexpress.aspnetcore.reporting/25.2.3",
+      "path": "devexpress.aspnetcore.reporting/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.aspnetcore.reporting.25.2.3.nupkg.sha512",
+        "devexpress.aspnetcore.reporting.26.1.3.nupkg.sha512",
         "devexpress.aspnetcore.reporting.nuspec",
-        "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.dll",
-        "lib/net8.0/DevExpress.AspNetCore.Reporting.v25.2.xml"
+        "lib/net8.0/DevExpress.AspNetCore.Reporting.v26.1.dll",
+        "lib/net8.0/DevExpress.AspNetCore.Reporting.v26.1.xml"
       ]
     },
-    "DevExpress.Charts/25.2.3": {
-      "sha512": "GFhbs9mSlwcWyaYljxCf4LIDvw/PgVRLKdy//l0qsx4Zd6b5brOaxhAwtnptMWL21qNoQyevetb2yUP+FfW4Dg==",
+    "DevExpress.Charts/26.1.3": {
+      "sha512": "GdtOH5wmx6bPRbX2ELOxNNFWx0hmG2FzaatalfArYfS7TXOc3KOR7Homn5SXVxUgzyhqLx3QcKC6k/AlB+q4aw==",
       "type": "package",
-      "path": "devexpress.charts/25.2.3",
+      "path": "devexpress.charts/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.25.2.3.nupkg.sha512",
+        "devexpress.charts.26.1.3.nupkg.sha512",
         "devexpress.charts.nuspec",
-        "lib/net462/DevExpress.XtraCharts.v25.2.dll",
-        "lib/net462/DevExpress.XtraCharts.v25.2.xml",
-        "lib/net8.0/DevExpress.XtraCharts.v25.2.dll",
-        "lib/net8.0/DevExpress.XtraCharts.v25.2.xml"
+        "lib/net462/DevExpress.XtraCharts.v26.1.dll",
+        "lib/net462/DevExpress.XtraCharts.v26.1.xml",
+        "lib/net8.0/DevExpress.XtraCharts.v26.1.dll",
+        "lib/net8.0/DevExpress.XtraCharts.v26.1.xml"
       ]
     },
-    "DevExpress.Charts.Core/25.2.3": {
-      "sha512": "PHBExlCI+CRvijral1wWGGVNHuBssYipKHBvX5VQrRFjJD6Dff0egIiKVy4JzxCIbOHrSssIWdJrwIOl5f/Anw==",
+    "DevExpress.Charts.Core/26.1.3": {
+      "sha512": "86AZ7MnJHqIZ8IT1X6iokhHVRtUS90j8LXCJ4XdQTc7hQvphItXGWGrU7PO2NPJVEpY+HFDdD4tOUqp+5BREHg==",
       "type": "package",
-      "path": "devexpress.charts.core/25.2.3",
+      "path": "devexpress.charts.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.core.25.2.3.nupkg.sha512",
+        "devexpress.charts.core.26.1.3.nupkg.sha512",
         "devexpress.charts.core.nuspec",
-        "lib/net462/DevExpress.Charts.v25.2.Core.dll",
-        "lib/net462/DevExpress.Charts.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.Charts.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.Charts.v25.2.Core.xml"
+        "lib/net462/DevExpress.Charts.v26.1.Core.dll",
+        "lib/net462/DevExpress.Charts.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.Charts.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.Charts.v26.1.Core.xml"
       ]
     },
-    "DevExpress.CodeParser/25.2.3": {
-      "sha512": "AKvRslXmV/NQ6bxVvlhkgTATBQbClEEm1WrSe2yJtycnU2/mKevJp5XqWSI3/mr+xJWJNMf9IzdspRtpz/cDTA==",
+    "DevExpress.CodeParser/26.1.3": {
+      "sha512": "KLrp5uQN213q7tilorrfaKsTetUT7biUzulgi9+8hCgo8sH83C7qonHv5/qqLI1WxmUsMHXWE8448SoMSN8M0A==",
       "type": "package",
-      "path": "devexpress.codeparser/25.2.3",
+      "path": "devexpress.codeparser/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.codeparser.25.2.3.nupkg.sha512",
+        "devexpress.codeparser.26.1.3.nupkg.sha512",
         "devexpress.codeparser.nuspec",
-        "lib/net462/DevExpress.CodeParser.v25.2.dll",
-        "lib/net8.0/DevExpress.CodeParser.v25.2.dll"
+        "lib/net462/DevExpress.CodeParser.v26.1.dll",
+        "lib/net8.0/DevExpress.CodeParser.v26.1.dll"
       ]
     },
-    "DevExpress.Data/25.2.3": {
-      "sha512": "6cSp+DyuazbtFWsytemOUoU04GG38r/osB2TeK6hd8ujc3KG6c8XH9p8NR89aHr8iKq96ub9PoCEBw6i8sUu7w==",
+    "DevExpress.Data/26.1.3": {
+      "sha512": "xRbKnHwqoHSEG50UlmUJqufSDAH1OqxFVL8svphGlG180fT71/GxZLMNlmXpeP5pRzBoSPvb4DoEbB4tAlHMBw==",
       "type": "package",
-      "path": "devexpress.data/25.2.3",
+      "path": "devexpress.data/26.1.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/DevExpress.Generator.dll",
         "analyzers/dotnet/DevExpress.Generator.dll.dfx",
-        "devexpress.data.25.2.3.nupkg.sha512",
+        "devexpress.data.26.1.3.nupkg.sha512",
         "devexpress.data.nuspec",
-        "lib/net462/DevExpress.Data.v25.2.dll",
-        "lib/net462/DevExpress.Data.v25.2.xml",
-        "lib/net8.0/DevExpress.Data.v25.2.dll",
-        "lib/net8.0/DevExpress.Data.v25.2.xml",
+        "lib/net462/DevExpress.Data.v26.1.dll",
+        "lib/net462/DevExpress.Data.v26.1.xml",
+        "lib/net8.0/DevExpress.Data.v26.1.dll",
+        "lib/net8.0/DevExpress.Data.v26.1.xml",
         "tools/VisualStudioToolsManifest.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "DevExpress.DataAccess/25.2.3": {
-      "sha512": "HaaGdvkcEYVgcdzJumkstkyLKFPTFQG79oM9nEm1IS0ClbdJoAas5zBAdWZlEKdTR4n+VQ9J4xRp0aZf/QCreQ==",
+    "DevExpress.DataAccess/26.1.3": {
+      "sha512": "6wprPkR8JYdi8EN+fBrNw9PE6InsVkvgYi+3OiYMuWkf4ht0XQbwHLdZ44AzGoD2NnT/jc6dJoJV3rCrFQSBJA==",
       "type": "package",
-      "path": "devexpress.dataaccess/25.2.3",
+      "path": "devexpress.dataaccess/26.1.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.dataaccess.25.2.3.nupkg.sha512",
+        "devexpress.dataaccess.26.1.3.nupkg.sha512",
         "devexpress.dataaccess.nuspec",
-        "lib/net462/DevExpress.DataAccess.v25.2.dll",
-        "lib/net462/DevExpress.DataAccess.v25.2.xml",
-        "lib/net8.0/DevExpress.DataAccess.v25.2.dll",
-        "lib/net8.0/DevExpress.DataAccess.v25.2.xml",
+        "lib/net462/DevExpress.DataAccess.v26.1.dll",
+        "lib/net462/DevExpress.DataAccess.v26.1.xml",
+        "lib/net8.0/DevExpress.DataAccess.v26.1.dll",
+        "lib/net8.0/DevExpress.DataAccess.v26.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.DataVisualization.Core/25.2.3": {
-      "sha512": "br2Xgda2PDDAoI5Xpq4kaq+t1AypLCqLgyqsq8Jj9wPJzt43GSC8wYeNpP7zJfkMxNk4CksLGO1rwgvWVUtz1Q==",
+    "DevExpress.DataVisualization.Core/26.1.3": {
+      "sha512": "32psysxRAXapL84OKzmCcE45EsBuGDb09cfJ0QitL9Dy+LcwtRlbJUbwNi9H8SMT1nbNBL+lvYXdup8UZnP2fg==",
       "type": "package",
-      "path": "devexpress.datavisualization.core/25.2.3",
+      "path": "devexpress.datavisualization.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.datavisualization.core.25.2.3.nupkg.sha512",
+        "devexpress.datavisualization.core.26.1.3.nupkg.sha512",
         "devexpress.datavisualization.core.nuspec",
-        "lib/net462/DevExpress.DataVisualization.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.DataVisualization.v25.2.Core.dll"
+        "lib/net462/DevExpress.DataVisualization.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll"
       ]
     },
-    "DevExpress.Drawing/25.2.3": {
-      "sha512": "b1i2+gADRU0cS1up0jlN1ZszVwD5no9yeyDhY9C1f8cRRH6nrmv2NiIaTWE2m5oNHNR7OvNhmqSmeThMHRo46g==",
+    "DevExpress.Drawing/26.1.3": {
+      "sha512": "ezIimsm4XMcL8deVPIQW9Js9Jkl7iA64kCL9rXFCTmasL2Cu/M/D8tZQpQGlOwUcenxvCk3lP+fumK/C2M57zw==",
       "type": "package",
-      "path": "devexpress.drawing/25.2.3",
+      "path": "devexpress.drawing/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.drawing.25.2.3.nupkg.sha512",
+        "devexpress.drawing.26.1.3.nupkg.sha512",
         "devexpress.drawing.nuspec",
-        "lib/net462/DevExpress.Drawing.v25.2.dll",
-        "lib/net462/DevExpress.Drawing.v25.2.xml",
-        "lib/net8.0/DevExpress.Drawing.v25.2.dll",
-        "lib/net8.0/DevExpress.Drawing.v25.2.xml"
+        "lib/net462/DevExpress.Drawing.v26.1.dll",
+        "lib/net462/DevExpress.Drawing.v26.1.xml",
+        "lib/net8.0/DevExpress.Drawing.v26.1.dll",
+        "lib/net8.0/DevExpress.Drawing.v26.1.xml"
       ]
     },
-    "DevExpress.Gauges.Core/25.2.3": {
-      "sha512": "adFCfS3A1xv6k3Yx1RqhFWXCPpgjAj9jCh4oEaGE7aOZxoaHwgUtjTP4vba3azjaPrZDqwN+qgvM62yD7E6FAg==",
+    "DevExpress.Drawing.Skia/26.1.3": {
+      "sha512": "ItHyk+lx4qdx/SkUU4eN4G068KvBW8mgz46w2AQlq8zgxConXn5tUtr7rnhXFDO/XOtiAK73xVv/jBRbIJf8IA==",
       "type": "package",
-      "path": "devexpress.gauges.core/25.2.3",
+      "path": "devexpress.drawing.skia/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.gauges.core.25.2.3.nupkg.sha512",
+        "devexpress.drawing.skia.26.1.3.nupkg.sha512",
+        "devexpress.drawing.skia.nuspec",
+        "lib/net462/DevExpress.Drawing.v26.1.Skia.dll",
+        "lib/net8.0/DevExpress.Drawing.v26.1.Skia.dll"
+      ]
+    },
+    "DevExpress.Gauges.Core/26.1.3": {
+      "sha512": "nmVo0UxPC/dEfx2A9IwyIX4ly47t6XkrY+uvSXlH1fzCAHo31pwgDH6c6NmMh5Z094OjDeQ+YDep50ChtvzhmQ==",
+      "type": "package",
+      "path": "devexpress.gauges.core/26.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.gauges.core.26.1.3.nupkg.sha512",
         "devexpress.gauges.core.nuspec",
-        "lib/net462/DevExpress.XtraGauges.v25.2.Core.dll",
-        "lib/net462/DevExpress.XtraGauges.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.XtraGauges.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.XtraGauges.v25.2.Core.xml"
+        "lib/net462/DevExpress.XtraGauges.v26.1.Core.dll",
+        "lib/net462/DevExpress.XtraGauges.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Office.Core/25.2.3": {
-      "sha512": "2EfwRJmNbGMcus8hjYEETepkaKxYuniPydMguOPGeTJ0uaCO94K+HeFXWTRpCF+1AWxRgx7QivMcUw73du4ukw==",
+    "DevExpress.Office.Core/26.1.3": {
+      "sha512": "ycggZ8EVIMtCpJ8x8TA1zvhdbAb0HoXOCKusnHY8oteyoHAL0KXdJp40OqlzNyBvO85sGKjIS2td0ciFZux9aQ==",
       "type": "package",
-      "path": "devexpress.office.core/25.2.3",
+      "path": "devexpress.office.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.office.core.25.2.3.nupkg.sha512",
+        "devexpress.office.core.26.1.3.nupkg.sha512",
         "devexpress.office.core.nuspec",
-        "lib/net462/DevExpress.Office.v25.2.Core.dll",
-        "lib/net462/DevExpress.Office.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.Office.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.Office.v25.2.Core.xml"
+        "lib/net462/DevExpress.Office.v26.1.Core.dll",
+        "lib/net462/DevExpress.Office.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.Office.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.Office.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Core/25.2.3": {
-      "sha512": "QWv14KDPZ0oRF/si9BOR5mr/FZNmuitY/M2cXqsqA8SLrOsREYJaosTloXHCaIsWdUL/1158EIuY08qXG4NasQ==",
+    "DevExpress.Pdf.Core/26.1.3": {
+      "sha512": "3TiiKQj3G/YgYersJA53YLHVhIXF2JULfY8NMrOw39TCZl5BrjoAyt74QU89q8N668J8tR6QoMgIwNoZNxpSTg==",
       "type": "package",
-      "path": "devexpress.pdf.core/25.2.3",
+      "path": "devexpress.pdf.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.core.25.2.3.nupkg.sha512",
+        "devexpress.pdf.core.26.1.3.nupkg.sha512",
         "devexpress.pdf.core.nuspec",
-        "lib/net462/DevExpress.Pdf.v25.2.Core.dll",
-        "lib/net462/DevExpress.Pdf.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.Pdf.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.Pdf.v25.2.Core.xml"
+        "lib/net462/DevExpress.Pdf.v26.1.Core.dll",
+        "lib/net462/DevExpress.Pdf.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.Pdf.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.Pdf.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Drawing/25.2.3": {
-      "sha512": "aQNmK2Ef6SMBySGLtBQBqyn0lTHwtSM/FPVKFJ/P0Ht3oAyTm97NrbBpyqCH58HERWAgIoDNCUb9kSHaLSeKHg==",
+    "DevExpress.Pdf.Drawing/26.1.3": {
+      "sha512": "yke30vDqpL/AkViov+0K0dvIjtuBnpSFc+4DOpzyowHX/JAMk2QpSK0gJ9RvGOF2RZZPfXBUsD+30jAUfaWl6w==",
       "type": "package",
-      "path": "devexpress.pdf.drawing/25.2.3",
+      "path": "devexpress.pdf.drawing/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.drawing.25.2.3.nupkg.sha512",
+        "devexpress.pdf.drawing.26.1.3.nupkg.sha512",
         "devexpress.pdf.drawing.nuspec",
-        "lib/net462/DevExpress.Pdf.v25.2.Drawing.dll",
-        "lib/net462/DevExpress.Pdf.v25.2.Drawing.xml",
-        "lib/net8.0/DevExpress.Pdf.v25.2.Drawing.dll",
-        "lib/net8.0/DevExpress.Pdf.v25.2.Drawing.xml"
+        "lib/net462/DevExpress.Pdf.v26.1.Drawing.dll",
+        "lib/net462/DevExpress.Pdf.v26.1.Drawing.xml",
+        "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.dll",
+        "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.xml"
       ]
     },
-    "DevExpress.PivotGrid.Core/25.2.3": {
-      "sha512": "M+FC/gR7KrW1qVOSaH1ff+onFnJwEjUUFU3KRVfGayGUyAf9tVBtMBV1XMdXZCKMmP8YqU8JU9GUnVKx8tdwiw==",
+    "DevExpress.PivotGrid.Core/26.1.3": {
+      "sha512": "9wUq4PPKI8uuzs/AEjfEFhfGAQ9xFsDUzRy4MkUSo/psXqoZO1W7+x/bSZi2x6C1eBFoXNlpRuKy0hWcNcMU4g==",
       "type": "package",
-      "path": "devexpress.pivotgrid.core/25.2.3",
+      "path": "devexpress.pivotgrid.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pivotgrid.core.25.2.3.nupkg.sha512",
+        "devexpress.pivotgrid.core.26.1.3.nupkg.sha512",
         "devexpress.pivotgrid.core.nuspec",
-        "lib/net462/DevExpress.PivotGrid.v25.2.Core.dll",
-        "lib/net462/DevExpress.PivotGrid.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.PivotGrid.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.PivotGrid.v25.2.Core.xml"
+        "lib/net462/DevExpress.PivotGrid.v26.1.Core.dll",
+        "lib/net462/DevExpress.PivotGrid.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.PivotGrid.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.PivotGrid.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Printing.Core/25.2.3": {
-      "sha512": "BAUv5AbB2Ww7La93b4JA2Vg9R/8E4k3CZhn+Ynsh3u2AyqfOkIayXo8Psta/jZdX/6/8OxyIH0woiG0e/dflCQ==",
+    "DevExpress.Printing.Core/26.1.3": {
+      "sha512": "rxMdPDvUPzuq5Daao+hej/8tpx8wXTlNu4K0vv42iMwMLZ9u+SKxfHVKfDgQffgHM+HWV0DE09VPmINl2E9vTQ==",
       "type": "package",
-      "path": "devexpress.printing.core/25.2.3",
+      "path": "devexpress.printing.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.printing.core.25.2.3.nupkg.sha512",
+        "devexpress.printing.core.26.1.3.nupkg.sha512",
         "devexpress.printing.core.nuspec",
-        "lib/net462/DevExpress.Printing.v25.2.Core.dll",
-        "lib/net462/DevExpress.Printing.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.Printing.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.Printing.v25.2.Core.xml"
+        "lib/net462/DevExpress.Printing.v26.1.Core.dll",
+        "lib/net462/DevExpress.Printing.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.Printing.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.Printing.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Reporting.Core/25.2.3": {
-      "sha512": "KH6Uq3JCUCXZYlMXFkCS0tALPC8jZRYWjCSaS39sI2dvt3vh40vrD3YAHlArVknVAIcPZmfZmuRJHjgCs1UHHg==",
+    "DevExpress.Reporting.Core/26.1.3": {
+      "sha512": "5tWJkM8vTBoutxxWMtB4OrlLOnl86oRm7tH6+V9cyyAcHlCLQrCpzu8t/1JG4dkl2hCddtmsJwdPQfXIzYvV4Q==",
       "type": "package",
-      "path": "devexpress.reporting.core/25.2.3",
+      "path": "devexpress.reporting.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0/DevExpress.Reporting.Core.targets",
         "buildMultiTargeting/net8.0/DevExpress.Reporting.Core.targets",
         "buildTransitive/net8.0/DevExpress.Reporting.Core.targets",
-        "devexpress.reporting.core.25.2.3.nupkg.sha512",
+        "devexpress.reporting.core.26.1.3.nupkg.sha512",
         "devexpress.reporting.core.nuspec",
-        "lib/net462/DevExpress.XtraReports.v25.2.dll",
-        "lib/net462/DevExpress.XtraReports.v25.2.xml",
-        "lib/net8.0/DevExpress.XtraReports.v25.2.dll",
-        "lib/net8.0/DevExpress.XtraReports.v25.2.xml"
+        "lib/net462/DevExpress.XtraReports.v26.1.dll",
+        "lib/net462/DevExpress.XtraReports.v26.1.xml",
+        "lib/net8.0/DevExpress.XtraReports.v26.1.dll",
+        "lib/net8.0/DevExpress.XtraReports.v26.1.xml"
       ]
     },
-    "DevExpress.RichEdit.Core/25.2.3": {
-      "sha512": "KvcGcU1/vUgVCCmHYX3fxLeK6gz8C+FDRSpRyzIe/GJwopgcI/1UmOVBIhOfV/jwhuuc4r+piC20u+oIBVAr5g==",
+    "DevExpress.Reporting.Rider.Design/26.1.3": {
+      "sha512": "KO+Oq9HJggwJI9DbW/FotQoq+Fzf5PbTeoo+adaTgoqUzQs975FqqoM7BbXerWXa65mz6YDh4U7dhE2yoPmh1A==",
       "type": "package",
-      "path": "devexpress.richedit.core/25.2.3",
+      "path": "devexpress.reporting.rider.design/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.core.25.2.3.nupkg.sha512",
+        "devexpress.reporting.rider.design.26.1.3.nupkg.sha512",
+        "devexpress.reporting.rider.design.nuspec",
+        "lib/net8.0/Design/WinForms/Server/DevExpress.Reporting.Design.Routing.v26.1.dll",
+        "lib/net8.0/Design/WinForms/Server/lib/DevExpress.XtraReports.v26.1.Design.dll",
+        "lib/net8.0/DevExpress.Reporting.v26.1.Rider.Design.dll",
+        "readme.md"
+      ]
+    },
+    "DevExpress.RichEdit.Core/26.1.3": {
+      "sha512": "4nkH0gzAIk5wkN1KDo7NOXnizUMCM72cR6tI5DDRh3xTRq/bt9TfmxysYWll3R4PeUCr5fQUh8/E5pO2sEQvzA==",
+      "type": "package",
+      "path": "devexpress.richedit.core/26.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.richedit.core.26.1.3.nupkg.sha512",
         "devexpress.richedit.core.nuspec",
-        "lib/net462/DevExpress.RichEdit.v25.2.Core.dll",
-        "lib/net462/DevExpress.RichEdit.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.RichEdit.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.RichEdit.v25.2.Core.xml"
+        "lib/net462/DevExpress.RichEdit.v26.1.Core.dll",
+        "lib/net462/DevExpress.RichEdit.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.RichEdit.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.RichEdit.v26.1.Core.xml"
       ]
     },
-    "DevExpress.RichEdit.Export/25.2.3": {
-      "sha512": "pNJef10nPANkHvbQHbgNsYVn89naJ2PWR5TFWMgWX9FLjfdAzs2XpeHahVmK1GUuderhQDjlo1vEkzz0aXexHw==",
+    "DevExpress.RichEdit.Export/26.1.3": {
+      "sha512": "K5tIzipM39XwVirrumEQ+//2ELRP8PmAGZwk2iUstIQghFOTSegsxCiCGyviGyfzLralr/zrY7HSF2gbQrfiJw==",
       "type": "package",
-      "path": "devexpress.richedit.export/25.2.3",
+      "path": "devexpress.richedit.export/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.export.25.2.3.nupkg.sha512",
+        "devexpress.richedit.export.26.1.3.nupkg.sha512",
         "devexpress.richedit.export.nuspec",
-        "lib/net462/DevExpress.RichEdit.v25.2.Export.dll",
-        "lib/net8.0/DevExpress.RichEdit.v25.2.Export.dll"
+        "lib/net462/DevExpress.RichEdit.v26.1.Export.dll",
+        "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll"
       ]
     },
-    "DevExpress.Sparkline.Core/25.2.3": {
-      "sha512": "1PeItwB/tOf6x8Pmx/TR7TpxV5OjYZDdoQUMLh21Wwoaw6WU+2afKjSjSO2prdiid0SUj6G1/O/7wVxgUW1oSQ==",
+    "DevExpress.Sparkline.Core/26.1.3": {
+      "sha512": "2n6vWT84P1lRRZEwHO7CRm3vrpVkXpCGc9mfdaVhSiw//x6PxlIXKE/YoJ5F7yn4+HRjfVnHIdPh8GFMogeTxw==",
       "type": "package",
-      "path": "devexpress.sparkline.core/25.2.3",
+      "path": "devexpress.sparkline.core/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.sparkline.core.25.2.3.nupkg.sha512",
+        "devexpress.sparkline.core.26.1.3.nupkg.sha512",
         "devexpress.sparkline.core.nuspec",
-        "lib/net462/DevExpress.Sparkline.v25.2.Core.dll",
-        "lib/net462/DevExpress.Sparkline.v25.2.Core.xml",
-        "lib/net8.0/DevExpress.Sparkline.v25.2.Core.dll",
-        "lib/net8.0/DevExpress.Sparkline.v25.2.Core.xml"
+        "lib/net462/DevExpress.Sparkline.v26.1.Core.dll",
+        "lib/net462/DevExpress.Sparkline.v26.1.Core.xml",
+        "lib/net8.0/DevExpress.Sparkline.v26.1.Core.dll",
+        "lib/net8.0/DevExpress.Sparkline.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Web.Reporting.Common/25.2.3": {
-      "sha512": "QFHM6APjFVb0R3XDh198HcBhE3InWx8C0KZhhNhqc+UQqjsaf0x6OwYfn4cBdy1nmoI7cr16tpVHYQsNH/bl6w==",
+    "DevExpress.Web.Reporting.Common/26.1.3": {
+      "sha512": "qm6zmAffYBZtEHiP7pl+NoRN0Re8xhl8sHwdHqLbrIkj9z7p9szgpUNgsE8l1dbJMCgkQ2agDmVPpq1j4YF8DA==",
       "type": "package",
-      "path": "devexpress.web.reporting.common/25.2.3",
+      "path": "devexpress.web.reporting.common/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.reporting.common.25.2.3.nupkg.sha512",
+        "devexpress.web.reporting.common.26.1.3.nupkg.sha512",
         "devexpress.web.reporting.common.nuspec",
-        "lib/net462/DevExpress.XtraReports.v25.2.Web.dll",
-        "lib/net462/DevExpress.XtraReports.v25.2.Web.xml",
-        "lib/net8.0/DevExpress.XtraReports.v25.2.Web.dll",
-        "lib/net8.0/DevExpress.XtraReports.v25.2.Web.xml"
+        "lib/net462/DevExpress.XtraReports.v26.1.Web.dll",
+        "lib/net462/DevExpress.XtraReports.v26.1.Web.xml",
+        "lib/net8.0/DevExpress.XtraReports.v26.1.Web.dll",
+        "lib/net8.0/DevExpress.XtraReports.v26.1.Web.xml"
       ]
     },
-    "DevExpress.Web.Reporting.Common.Services/25.2.3": {
-      "sha512": "zISG/HdnPsjW1UFE0jEAbNdlU26nLaBZNFhn8fsECnnH9bNvo3NQgc7wgn3dW1YVDbwi2osRAYFlaqXiBB6uzA==",
+    "DevExpress.Web.Reporting.Common.Services/26.1.3": {
+      "sha512": "qemCBkbqemDuKqNaTNwrW+dt5gxoWQrMUIWiHG9Aj0XW5T+icYuJtdexer02K5FLUa0XQM3NaDRvL8M3EB+1WQ==",
       "type": "package",
-      "path": "devexpress.web.reporting.common.services/25.2.3",
+      "path": "devexpress.web.reporting.common.services/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.reporting.common.services.25.2.3.nupkg.sha512",
+        "devexpress.web.reporting.common.services.26.1.3.nupkg.sha512",
         "devexpress.web.reporting.common.services.nuspec",
-        "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.dll",
-        "lib/net8.0/DevExpress.Web.Reporting.v25.2.Common.Services.xml"
+        "lib/net8.0/DevExpress.Web.Reporting.v26.1.Common.Services.dll",
+        "lib/net8.0/DevExpress.Web.Reporting.v26.1.Common.Services.xml"
       ]
     },
-    "DevExpress.Web.Resources/25.2.3": {
-      "sha512": "UH8mcZYpP+8GK+NAlnqpm6deFZe9ZgJdVXIWyGAz3W+1Sz7qgdLc2ypUBlI2yqSZQtgTAJT3VygSPb07f2iu0A==",
+    "DevExpress.Web.Resources/26.1.3": {
+      "sha512": "qwKEtdMm/toJu0s+4qO0mh0RLBs4XZP3BgJCmyUlf/hbCzcZs3Eidz+pPsye2daERz2gg17FsiyNUMvLOEK2JA==",
       "type": "package",
-      "path": "devexpress.web.resources/25.2.3",
+      "path": "devexpress.web.resources/26.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.web.resources.25.2.3.nupkg.sha512",
+        "devexpress.web.resources.26.1.3.nupkg.sha512",
         "devexpress.web.resources.nuspec",
-        "lib/net462/DevExpress.Web.Resources.v25.2.dll",
-        "lib/net8.0/DevExpress.Web.Resources.v25.2.dll"
+        "lib/net462/DevExpress.Web.Resources.v26.1.dll",
+        "lib/net8.0/DevExpress.Web.Resources.v26.1.dll"
       ]
     },
-    "DevExpress.Xpo/25.2.3": {
-      "sha512": "omUaKauKRi8SU0AXbBkrJ0reXMfEHZUZ+whUJSovo9GHTD+Oqcayv8L+9xNYuwDv3AYg2sGYGpj4V07QCNo9yQ==",
+    "DevExpress.Xpo/26.1.3": {
+      "sha512": "2vn58FI4+3z0lomBm27Vl4I2eSfjIhGr41j4nSnmdkgrp+3xpcWHCr2z5rgiFc467p+AzoaGccHDZ2nhob5LbA==",
       "type": "package",
-      "path": "devexpress.xpo/25.2.3",
+      "path": "devexpress.xpo/26.1.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.xpo.25.2.3.nupkg.sha512",
+        "devexpress.xpo.26.1.3.nupkg.sha512",
         "devexpress.xpo.nuspec",
-        "lib/net462/DevExpress.Xpo.v25.2.dll",
-        "lib/net462/DevExpress.Xpo.v25.2.xml",
-        "lib/net8.0/DevExpress.Xpo.v25.2.dll",
-        "lib/net8.0/DevExpress.Xpo.v25.2.xml",
+        "lib/net462/DevExpress.Xpo.v26.1.dll",
+        "lib/net462/DevExpress.Xpo.v26.1.xml",
+        "lib/net8.0/DevExpress.Xpo.v26.1.dll",
+        "lib/net8.0/DevExpress.Xpo.v26.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
@@ -2975,6 +3363,127 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "HarfBuzzSharp/8.3.1.2": {
+      "sha512": "fqZTo17dEIn/u/YZ1A6avsmF8BYoLSvDsHm+uDp38wortckHWZhJ5pMwJW97xTeOZ9/oxqwUQfRMkf6ni9s5Gw==",
+      "type": "package",
+      "path": "harfbuzzsharp/8.3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "harfbuzzsharp.8.3.1.2.nupkg.sha512",
+        "harfbuzzsharp.nuspec",
+        "icon.png",
+        "lib/net462/HarfBuzzSharp.dll",
+        "lib/net462/HarfBuzzSharp.pdb",
+        "lib/net6.0/HarfBuzzSharp.dll",
+        "lib/net6.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-android34.0/HarfBuzzSharp.dll",
+        "lib/net8.0-android34.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-android34.0/HarfBuzzSharp.xml",
+        "lib/net8.0-ios17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-ios17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-maccatalyst17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-macos14.0/HarfBuzzSharp.dll",
+        "lib/net8.0-macos14.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-tizen7.0/HarfBuzzSharp.dll",
+        "lib/net8.0-tizen7.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-tvos17.0/HarfBuzzSharp.dll",
+        "lib/net8.0-tvos17.0/HarfBuzzSharp.pdb",
+        "lib/net8.0-windows10.0.19041/HarfBuzzSharp.dll",
+        "lib/net8.0-windows10.0.19041/HarfBuzzSharp.pdb",
+        "lib/net8.0/HarfBuzzSharp.dll",
+        "lib/net8.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.0/HarfBuzzSharp.dll",
+        "lib/netstandard2.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.1/HarfBuzzSharp.dll",
+        "lib/netstandard2.1/HarfBuzzSharp.pdb"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Linux/8.3.1.2": {
+      "sha512": "//Zak/ddP1XC2tMcWNEQboiFNmsQrZBnnzUyJAmibrZsd/0P1rvCaXip7MtPGkuvfwmu8Im39RytFDZERWySaw==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.linux/8.3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Linux.targets",
+        "harfbuzzsharp.nativeassets.linux.8.3.1.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.linux.nuspec",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/linux-arm/native/libHarfBuzzSharp.so",
+        "runtimes/linux-arm64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-loongarch64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-arm/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-arm64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-loongarch64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-riscv64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-x64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-riscv64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-x64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-x86/native/libHarfBuzzSharp.so"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/8.3.1.2": {
+      "sha512": "+0NtlZSQA540z6VpVoajXldvAOuj5D+BWceh70U3YApxcpUKD/5hjdbdzvyhRaTSTCSZNjRxeaWpBpgJ1U1YcQ==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.macos/8.3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "harfbuzzsharp.nativeassets.macos.8.3.1.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.macos.nuspec",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libHarfBuzzSharp.dylib"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/8.3.1.2": {
+      "sha512": "qmYJsYtOPVeLg7NQoKO5fq1oc5mRKzdgxBXWICx0R03epZ1RIsuzgWRFhVNN0br3c+J+9rIQhy0SXdBwVv0ebA==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.win32/8.3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "harfbuzzsharp.nativeassets.win32.8.3.1.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.win32.nuspec",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x86/native/libHarfBuzzSharp.dll"
       ]
     },
     "log4net/3.0.1": {
@@ -3859,6 +4368,99 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.ICU.ICU4C.Runtime/72.1.0.3": {
+      "sha512": "Z42uzvs0TN9Y02xgHtRgPcumLRnvK3MHVHZ0Pr3OrnvyZYhBwqDgdYBOvoELcTsayUgwqrPLb+C5Fqqk66zlUg==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.nuspec",
+        "version.txt"
+      ]
+    },
+    "Microsoft.ICU.ICU4C.Runtime.linux-arm64/72.1.0.3": {
+      "sha512": "u/2cPX6JBgSgTOeDjkb2A672LsL3zQo60ViYUTqHOrxuFOIx0ag6bFu2WgN4zRZ71K6L0fubnrlS1HpN+k5kyA==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime.linux-arm64/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.linux-arm64.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.linux-arm64.nuspec",
+        "runtimes/linux-arm64/native/libicudata.so.72.1.0.3",
+        "runtimes/linux-arm64/native/libicui18n.so.72.1.0.3",
+        "runtimes/linux-arm64/native/libicuuc.so.72.1.0.3",
+        "version.txt"
+      ]
+    },
+    "Microsoft.ICU.ICU4C.Runtime.linux-x64/72.1.0.3": {
+      "sha512": "q1iHc4EGCBYbpb+gfMZGn6L/WuBei/la52pRbxlVy4ed7FdB9UmvUXhoRzv6OsYa6E4VlTlj6EKgYvrwPkVGKQ==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime.linux-x64/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.linux-x64.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.linux-x64.nuspec",
+        "runtimes/linux-x64/native/libicudata.so.72.1.0.3",
+        "runtimes/linux-x64/native/libicui18n.so.72.1.0.3",
+        "runtimes/linux-x64/native/libicuuc.so.72.1.0.3",
+        "version.txt"
+      ]
+    },
+    "Microsoft.ICU.ICU4C.Runtime.win-arm64/72.1.0.3": {
+      "sha512": "/h8OPK1fqrI9t8hKNmpnSy7MYssGB1CtoXANsduFqf0Sc+OOtfoCIvRp2Mt9Fk80CmtU/53TldGvt1oCH7KpEA==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime.win-arm64/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.win-arm64.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.win-arm64.nuspec",
+        "runtimes/win-arm64/native/icudt72.dll",
+        "runtimes/win-arm64/native/icuin72.dll",
+        "runtimes/win-arm64/native/icuuc72.dll",
+        "version.txt"
+      ]
+    },
+    "Microsoft.ICU.ICU4C.Runtime.win-x64/72.1.0.3": {
+      "sha512": "7j6NsmvKuVxgoFsoy0Ty7I09V/tvrQBZN+ddfHtz/OWNRaEIy7PsAguGoyD4AcQZh/KkfT9RQlHoQJ4xVQPr6g==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime.win-x64/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.win-x64.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.win-x64.nuspec",
+        "runtimes/win-x64/native/icudt72.dll",
+        "runtimes/win-x64/native/icuin72.dll",
+        "runtimes/win-x64/native/icuuc72.dll",
+        "version.txt"
+      ]
+    },
+    "Microsoft.ICU.ICU4C.Runtime.win-x86/72.1.0.3": {
+      "sha512": "xTHoHJKtgHDsYkQ/RU3o4U36ktjQqnR+ML00HDDK2SWr+9nMekxnXvtLZ2I4cqF8s51frxqTRgx1jDVtIzCf3w==",
+      "type": "package",
+      "path": "microsoft.icu.icu4c.runtime.win-x86/72.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "microsoft.icu.icu4c.runtime.win-x86.72.1.0.3.nupkg.sha512",
+        "microsoft.icu.icu4c.runtime.win-x86.nuspec",
+        "runtimes/win-x86/native/icudt72.dll",
+        "runtimes/win-x86/native/icuin72.dll",
+        "runtimes/win-x86/native/icuuc72.dll",
+        "version.txt"
+      ]
+    },
     "Microsoft.Identity.Client/4.61.3": {
       "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
       "type": "package",
@@ -4630,6 +5232,167 @@
         "serilog-sink-nuget.png",
         "serilog.sinks.file.7.0.0.nupkg.sha512",
         "serilog.sinks.file.nuspec"
+      ]
+    },
+    "SkiaSharp/3.119.1": {
+      "sha512": "+Ru1BTSZQne3Vp+vbSb50Ke3Nlc3ZnItxx4+751J9WZ8YzLKAV/n+9DAo4zFTyeCI//ueT63c+VybmTTpYBEiw==",
+      "type": "package",
+      "path": "skiasharp/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.dll",
+        "lib/net8.0-android34.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.xml",
+        "lib/net8.0-ios17.0/SkiaSharp.dll",
+        "lib/net8.0-ios17.0/SkiaSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.pdb",
+        "lib/net8.0-macos14.0/SkiaSharp.dll",
+        "lib/net8.0-macos14.0/SkiaSharp.pdb",
+        "lib/net8.0-tizen7.0/SkiaSharp.dll",
+        "lib/net8.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net8.0-tvos17.0/SkiaSharp.dll",
+        "lib/net8.0-tvos17.0/SkiaSharp.pdb",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.pdb",
+        "lib/net8.0/SkiaSharp.dll",
+        "lib/net8.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "ref/net462/SkiaSharp.dll",
+        "ref/net6.0/SkiaSharp.dll",
+        "ref/net8.0-android34.0/SkiaSharp.dll",
+        "ref/net8.0-ios17.0/SkiaSharp.dll",
+        "ref/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "ref/net8.0-macos14.0/SkiaSharp.dll",
+        "ref/net8.0-tizen7.0/SkiaSharp.dll",
+        "ref/net8.0-tvos17.0/SkiaSharp.dll",
+        "ref/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "ref/net8.0/SkiaSharp.dll",
+        "ref/netstandard2.0/SkiaSharp.dll",
+        "ref/netstandard2.1/SkiaSharp.dll",
+        "skiasharp.3.119.1.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.HarfBuzz/3.119.1": {
+      "sha512": "+Lu9kCmxgEJVUeIljhEOgrB4dr4iwPP08jgswKk3bGPUwInmqDGUUriMoYD9prFlVa0wOWDLG/hfl3HIHNJHRg==",
+      "type": "package",
+      "path": "skiasharp.harfbuzz/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "lib/net462/SkiaSharp.HarfBuzz.dll",
+        "lib/net462/SkiaSharp.HarfBuzz.pdb",
+        "lib/net6.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net6.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/net8.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net8.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.pdb",
+        "skiasharp.harfbuzz.3.119.1.nupkg.sha512",
+        "skiasharp.harfbuzz.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Linux/3.119.1": {
+      "sha512": "9YNoc4SeKvQhrwiqwT4ezkNfMywPdPSK+UFvo/CaoXqLixcnYOTsQKm5BF9mc4+q3vKgDtEgMt0d1ygZhJTEHg==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.linux/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Linux.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Linux.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/linux-arm/native/libSkiaSharp.so",
+        "runtimes/linux-arm64/native/libSkiaSharp.so",
+        "runtimes/linux-loongarch64/native/libSkiaSharp.so",
+        "runtimes/linux-musl-arm/native/libSkiaSharp.so",
+        "runtimes/linux-musl-arm64/native/libSkiaSharp.so",
+        "runtimes/linux-musl-loongarch64/native/libSkiaSharp.so",
+        "runtimes/linux-musl-riscv64/native/libSkiaSharp.so",
+        "runtimes/linux-musl-x64/native/libSkiaSharp.so",
+        "runtimes/linux-riscv64/native/libSkiaSharp.so",
+        "runtimes/linux-x64/native/libSkiaSharp.so",
+        "runtimes/linux-x86/native/libSkiaSharp.so",
+        "skiasharp.nativeassets.linux.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.linux.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/3.119.1": {
+      "sha512": "6hR3BdLhApjDxR1bFrJ7/lMydPfI01s3K+3WjIXFUlfC0MFCFCwRzv+JtzIkW9bDXs7XUVQS+6EVf0uzCasnGQ==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/SkiaSharp.NativeAssets.macOS.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/3.119.1": {
+      "sha512": "8C4GSXVJqSr0y3Tyyv5jz6MJSTVUyYkMjeKrzK+VyZPGLo89MNoUEclVuYahzOCDdtbfXrd2HtxXfDuvoSXrUw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
@@ -5518,10 +6281,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Xml/8.0.2": {
-      "sha512": "aDM/wm0ZGEZ6ZYJLzgqjp2FZdHbDHh6/OmpGfb7AdZ105zYmPn/83JRU2xLIbwgoNz9U1SLUTJN0v5th3qmvjA==",
+    "System.Security.Cryptography.Xml/8.0.3": {
+      "sha512": "1cHAWDYwOyyoRy+nxS7/Ro/Zcio6i5yHoIJ6xUA+fU8lNu4yGQgja5dEovAxBVud3RnfwRVWOl0B2vr+9LP/mg==",
       "type": "package",
-      "path": "system.security.cryptography.xml/8.0.2",
+      "path": "system.security.cryptography.xml/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5542,7 +6305,7 @@
         "lib/net8.0/System.Security.Cryptography.Xml.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.8.0.2.nupkg.sha512",
+        "system.security.cryptography.xml.8.0.3.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -5952,7 +6715,10 @@
       "BC.ACCOUNTING.INFRASTRUCTURE >= 1.0.0",
       "BC.ACCOUNTING.LOGGING >= 1.0.0",
       "BuildBundlerMinifier >= 3.2.449",
-      "DevExpress.AspNetCore.Reporting >= 25.2.3",
+      "DevExpress.AspNetCore.Reporting >= 26.1.3",
+      "DevExpress.Drawing.Skia >= 26.1.3",
+      "DevExpress.Reporting.Core >= 26.1.3",
+      "DevExpress.Reporting.Rider.Design >= 26.1.3",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.18",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.0",
       "Microsoft.Data.Sqlite >= 6.0.0",
@@ -5969,6 +6735,7 @@
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages": {},
+    "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -5982,11 +6749,13 @@
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
+        "C:\\Program Files\\DevExpress 26.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 26.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5996,11 +6765,11 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\DevExpress 26.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
             "D:\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.SYSTEM\\BC.ACCOUNTING.APPLICATION\\BC.ACCOUNTING.APPLICATION.csproj": {
@@ -6028,7 +6797,6 @@
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "BuildBundlerMinifier": {
@@ -6037,7 +6805,19 @@
           },
           "DevExpress.AspNetCore.Reporting": {
             "target": "Package",
-            "version": "[25.2.3, )"
+            "version": "[26.1.3, )"
+          },
+          "DevExpress.Drawing.Skia": {
+            "target": "Package",
+            "version": "[26.1.3, )"
+          },
+          "DevExpress.Reporting.Core": {
+            "target": "Package",
+            "version": "[26.1.3, )"
+          },
+          "DevExpress.Reporting.Rider.Design": {
+            "target": "Package",
+            "version": "[26.1.3, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",

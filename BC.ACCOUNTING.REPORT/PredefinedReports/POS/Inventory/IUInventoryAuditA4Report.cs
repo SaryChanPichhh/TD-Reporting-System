@@ -1,9 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Diagnostics;
-using BC.ACCOUNTING.REPORT.DTO.POS;
-using BC.ACCOUNTING.REPORT.Helper;
-using DevExpress.XtraReports.UI;
-
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
 {
     public partial class IUInventoryAuditA4Report : XtraReport
@@ -13,7 +8,7 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
             InitializeComponent();
         }
 
-        public IUInventoryAuditA4Report(InventoryDto dto, string reportName)
+        public IUInventoryAuditA4Report(InventoryDto dto, string reportName,bool isUseBarcode = false)
         {
             LoadLayoutFromXml(reportName);
             this.objectDataSource1.DataSource = dto;
@@ -21,6 +16,8 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Inventory
                 GroupHeader1.BeforePrint += GroupHeader1_BeforePrint;
             if (this.Parameters["DecimalPrecision"] is not null)
                 this.DecimalPrecision.Value = dto.DecimalPrecision.GetEnumDescription();
+            if (this.Parameters["IsUseBarcode"] is not null)
+                this.IsUseBarcode.Value = isUseBarcode;
 
         }
 

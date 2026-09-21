@@ -16,6 +16,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.Inventory
         {
             var sql = $@"SELECT [PIVOT].Location
                       ,[PIVOT].ItemCode
+                      ,[PIVOT].ItemDesc
                       ,[PIVOT].MovDate
                       ,[PIVOT].OpeningInventory
                       ,[PIVOT].PurchaseOrder
@@ -23,7 +24,7 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.Inventory
                       ,[PIVOT].Transfer
                       ,[PIVOT].CreditNote
                       ,[PIVOT].InventoryAdjustment FROM(
-                      SELECT [LOCATION] [Location],ITEM_CODE ItemCode,QUANTITY Quantity,TRY_CONVERT(DATETIME,MOV_DATE,101) [MovDate],
+                      SELECT [LOCATION] [Location],MOV.ITEM_CODE ItemCode,S.ITEM_DESC ItemDesc,QUANTITY Quantity,TRY_CONVERT(DATETIME,MOV_DATE,101) [MovDate],
                       CASE WHEN REC_TYPE = 'T' THEN 'Transfer'
                       WHEN REC_TYPE = 'P' THEN 'PurchaseOrder'
                       WHEN REC_TYPE = 'S' THEN 'Sale' 
@@ -31,7 +32,8 @@ namespace BC.ACCOUNTING.INFRASTRUCTURE.Repository.Inventory
                       WHEN REC_TYPE = 'M' THEN 'InventoryAdjustment'  
                       WHEN REC_TYPE = 'O' THEN 'OpeningInventory'
                       END [Status]
-                      FROM {dto.DbCode}SIINVMOV WHERE REC_TYPE IN ('T','P','S','C','M','O') AND TRY_CONVERT(DATETIME,MOV_DATE,101) BETWEEN CONVERT(DATETIME,@START_DATE,101)
+                      FROM {dto.DbCode}SIINVMOV MOV INNER JOIN SIITEMS S ON MOV.ITEM_CODE = S.ITEM_CODE
+                        WHERE REC_TYPE IN ('T','P','S','C','M','O') AND TRY_CONVERT(DATETIME,MOV_DATE,101) BETWEEN CONVERT(DATETIME,@START_DATE,101)
                     AND CONVERT(DATETIME,@END_DATE,101)
                    ) TAB PIVOT (SUM(Quantity) FOR [Status] IN ([OpeningInventory], [PurchaseOrder],[Sale],[Transfer],[CreditNote],[InventoryAdjustment])) AS [PIVOT]
                 ";

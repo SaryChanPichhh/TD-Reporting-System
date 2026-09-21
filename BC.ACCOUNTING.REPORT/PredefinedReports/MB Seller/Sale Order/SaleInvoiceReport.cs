@@ -306,6 +306,10 @@ namespace BC.ACCOUNTING.REPORT.PredefinedReports.MB_Seller.Sale_Order
             {
                 Parameters["Phone2"].Value = dto.Phone2;
             }
+            if (Parameters["DeliveryFee"] is not null)
+            {
+                Parameters["DeliveryFee"].Value = dto.DeliveryFee;
+            }
 
             if (Parameters["AddressFormatting"] is not null)
             {

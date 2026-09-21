@@ -1,12 +1,6 @@
-﻿using BC.ACCOUNTING.REPORT.DTO.POS;
-using BC.ACCOUNTING.REPORT.Helper;
-using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SubReport;
-using DevExpress.ClipboardSource.SpreadsheetML;
-using DevExpress.XtraReports.UI;
-using System;
+﻿using BC.ACCOUNTING.REPORT.PredefinedReports.POS.SubReport;
 using System.ComponentModel;
 using System.Drawing;
-using System.IO;
 
 namespace BC.ACCOUNTING.REPORT.PredefinedReports.POS.Sale_Order
 {
